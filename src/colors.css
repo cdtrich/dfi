@@ -1,0 +1,198 @@
+/* https://coolors.co/palette/32baa7-e6b95e-962c8c-fff200-643291-ceeae4-034ea2-3c4099-000000-d9d4ea */
+
+:root {
+  /* CSS HEX */
+  --keppel: #32baa7ff;
+  --hunyadi-yellow: #e6b95eff;
+  --plum: #962c8c;
+  --canary: #fff200ff;
+  --rebecca-purple: #643291ff;
+  --mint-green: #ceeae4ff;
+  --polynesian-blue: #034ea2ff;
+  --marian-blue: #3c4099ff;
+  --black: #000000ff;
+  --lavender-web: #d9d4eaff;
+
+  /* additional coolors */
+  --taupe: #463f3a;
+  --bittersweet: #e87461;
+  --rose-quartz: #ada8b6;
+
+  /* CSS RGB */
+  --keppel: rgb(50, 186, 167);
+  --hunyadi-yellow: rgb(230, 185, 94);
+  --plum: rgb(150, 44, 140);
+  --canary: rgb(255, 242, 0);
+  --rebecca-purple: rgb(100, 50, 145);
+  --mint-green: rgb(206, 234, 228);
+  --polynesian-blue: rgb(3, 78, 162);
+  --marian-blue: rgb(60, 64, 153);
+  --black: rgb(0, 0, 0);
+  --lavender-web: rgb(217, 212, 234);
+
+  /* CSS HSL */
+  --keppel: hsla(172, 58%, 46%, 1);
+  --hunyadi-yellow: hsla(40, 73%, 64%, 1);
+  --plum: hsla(306, 55%, 38%, 1);
+  --canary: hsla(57, 100%, 50%, 1);
+  --rebecca-purple: hsla(272, 49%, 38%, 1);
+  --mint-green: hsla(167, 40%, 86%, 1);
+  --polynesian-blue: hsla(212, 96%, 32%, 1);
+  --marian-blue: hsla(237, 44%, 42%, 1);
+  --black: hsla(0, 0%, 0%, 1);
+  --lavender-web: hsla(254, 34%, 87%, 1);
+
+  /* SCSS HEX */
+  /* $keppel: #32baa7ff;
+  $hunyadi-yellow: #e6b95eff;
+  $plum: #962c8cff;
+  $canary: #fff200ff;
+  $rebecca-purple: #643291ff;
+  $mint-green: #ceeae4ff;
+  $polynesian-blue: #034ea2ff;
+  $marian-blue: #3c4099ff;
+  $black: #000000ff;
+  $lavender-web: #d9d4eaff; */
+
+  /* SCSS HSL */
+  /* $keppel: hsla(172, 58%, 46%, 1);
+  $hunyadi-yellow: hsla(40, 73%, 64%, 1);
+  $plum: hsla(306, 55%, 38%, 1);
+  $canary: hsla(57, 100%, 50%, 1);
+  $rebecca-purple: hsla(272, 49%, 38%, 1);
+  $mint-green: hsla(167, 40%, 86%, 1);
+  $polynesian-blue: hsla(212, 96%, 32%, 1);
+  $marian-blue: hsla(237, 44%, 42%, 1);
+  $black: hsla(0, 0%, 0%, 1);
+  $lavender-web: hsla(254, 34%, 87%, 1); */
+
+  /* SCSS RGB */
+  /* $keppel: rgba(50, 186, 167, 1);
+  $hunyadi-yellow: rgba(230, 185, 94, 1);
+  $plum: rgba(150, 44, 140, 1);
+  $canary: rgba(255, 242, 0, 1);
+  $rebecca-purple: rgba(100, 50, 145, 1);
+  $mint-green: rgba(206, 234, 228, 1);
+  $polynesian-blue: rgba(3, 78, 162, 1);
+  $marian-blue: rgba(60, 64, 153, 1);
+  $black: rgba(0, 0, 0, 1);
+  $lavender-web: rgba(217, 212, 234, 1); */
+
+  /* SCSS Gradient */
+  /* $gradient-top: linear-gradient(
+    0deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-right: linear-gradient(
+    90deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-bottom: linear-gradient(
+    180deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-left: linear-gradient(
+    270deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-top-right: linear-gradient(
+    45deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-bottom-right: linear-gradient(
+    135deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-top-left: linear-gradient(
+    225deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-bottom-left: linear-gradient(
+    315deg,
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  );
+  $gradient-radial: radial-gradient(
+    #32baa7ff,
+    #e6b95eff,
+    #962c8cff,
+    #fff200ff,
+    #643291ff,
+    #ceeae4ff,
+    #034ea2ff,
+    #3c4099ff,
+    #000000ff,
+    #d9d4eaff
+  ); */
+}

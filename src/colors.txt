@@ -1,0 +1,69 @@
+TEALS
+- Tailwind
+
+{ 'dark_cyan': { DEFAULT: '#119da4', 100: '#031f20', 200: '#073e41', 300: '#0a5d61', 400: '#0e7b81', 500: '#119da4', 600: '#17d4de', 700: '#4be4ec', 800: '#87edf2', 900: '#c3f6f9' }, 'cerulean': { DEFAULT: '#0c7489', 100: '#02171b', 200: '#052e36', 300: '#074552', 400: '#095c6d', 500: '#0c7489', 600: '#12accb', 700: '#37cfee', 800: '#7adff3', 900: '#bceff9' }, 'midnight_green': { DEFAULT: '#13505b', 100: '#041013', 200: '#082125', 300: '#0c3138', 400: '#10414a', 500: '#13505b', 600: '#228c9e', 700: '#3abed5', 800: '#7cd4e3', 900: '#bde9f1' }, 'black': { DEFAULT: '#040404', 100: '#010101', 200: '#020202', 300: '#030303', 400: '#040404', 500: '#040404', 600: '#373737', 700: '#696969', 800: '#9b9b9b', 900: '#cdcdcd' }, 'timberwolf': { DEFAULT: '#d7d9ce', 100: '#2e3025', 200: '#5c604a', 300: '#898f6e', 400: '#b0b49e', 500: '#d7d9ce', 600: '#dfe1d8', 700: '#e7e8e2', 800: '#eff0eb', 900: '#f7f7f5' } }
+
+- CSV
+
+119da4,0c7489,13505b,040404,d7d9ce
+
+- With #
+
+#119da4, #0c7489, #13505b, #040404, #d7d9ce
+
+- Array
+
+["119da4","0c7489","13505b","040404","d7d9ce"]
+
+- Object
+
+{"Dark cyan":"119da4","Cerulean":"0c7489","Midnight green":"13505b","Black":"040404","Timberwolf":"d7d9ce"}
+
+- Extended Array
+
+[{"name":"Dark cyan","hex":"119da4","rgb":[17,157,164],"cmyk":[90,4,0,36],"hsb":[183,90,64],"hsl":[183,81,35],"lab":[59,-31,-13]},{"name":"Cerulean","hex":"0c7489","rgb":[12,116,137],"cmyk":[91,15,0,46],"hsb":[190,91,54],"hsl":[190,84,29],"lab":[45,-19,-19]},{"name":"Midnight green","hex":"13505b","rgb":[19,80,91],"cmyk":[79,12,0,64],"hsb":[189,79,36],"hsl":[189,65,22],"lab":[31,-15,-12]},{"name":"Black","hex":"040404","rgb":[4,4,4],"cmyk":[0,0,0,98],"hsb":[0,0,2],"hsl":[0,0,2],"lab":[1,0,0]},{"name":"Timberwolf","hex":"d7d9ce","rgb":[215,217,206],"cmyk":[1,0,5,15],"hsb":[71,5,85],"hsl":[71,13,83],"lab":[86,-3,5]}]
+
+- XML
+
+<palette>
+  <color name="Dark cyan" hex="119da4" r="17" g="157" b="164" />
+  <color name="Cerulean" hex="0c7489" r="12" g="116" b="137" />
+  <color name="Midnight green" hex="13505b" r="19" g="80" b="91" />
+  <color name="Black" hex="040404" r="4" g="4" b="4" />
+  <color name="Timberwolf" hex="d7d9ce" r="215" g="217" b="206" />
+</palette>
+
+REDS
+- Tailwind
+
+{ 'light_orange': { DEFAULT: '#f9dbbd', 100: '#502c07', 200: '#a1580f', 300: '#ea841d', 400: '#f1af6d', 500: '#f9dbbd', 600: '#fae2cb', 700: '#fbead8', 800: '#fdf1e5', 900: '#fef8f2' }, 'salmon_pink': { DEFAULT: '#ffa5ab', 100: '#540006', 200: '#a7000b', 300: '#fb0011', 400: '#ff505b', 500: '#ffa5ab', 600: '#ffb6ba', 700: '#ffc8cc', 800: '#ffdadd', 900: '#ffedee' }, 'blush': { DEFAULT: '#da627d', 100: '#330c15', 200: '#661829', 300: '#9a243e', 400: '#cd3052', 500: '#da627d', 600: '#e28196', 700: '#e9a1b0', 800: '#f0c0cb', 900: '#f8e0e5' }, 'raspberry_rose': { DEFAULT: '#a53860', 100: '#210b13', 200: '#411626', 300: '#622239', 400: '#832d4c', 500: '#a53860', 600: '#c4527c', 700: '#d37d9c', 800: '#e1a8bd', 900: '#f0d4de' }, 'chocolate_cosmos': { DEFAULT: '#450920', 100: '#0e0206', 200: '#1b040d', 300: '#290513', 400: '#360719', 500: '#450920', 600: '#901343', 700: '#dd1d67', 800: '#eb6699', 900: '#f5b2cc' } }
+
+- CSV
+
+f9dbbd,ffa5ab,da627d,a53860,450920
+
+- With #
+
+#f9dbbd, #ffa5ab, #da627d, #a53860, #450920
+
+- Array
+
+["f9dbbd","ffa5ab","da627d","a53860","450920"]
+
+- Object
+
+{"Light orange":"f9dbbd","Salmon pink":"ffa5ab","Blush":"da627d","Raspberry rose":"a53860","Chocolate cosmos":"450920"}
+
+- Extended Array
+
+[{"name":"Light orange","hex":"f9dbbd","rgb":[249,219,189],"cmyk":[0,12,24,2],"hsb":[30,24,98],"hsl":[30,83,86],"lab":[89,6,19]},{"name":"Salmon pink","hex":"ffa5ab","rgb":[255,165,171],"cmyk":[0,35,33,0],"hsb":[356,35,100],"hsl":[356,100,82],"lab":[77,34,11]},{"name":"Blush","hex":"da627d","rgb":[218,98,125],"cmyk":[0,55,43,15],"hsb":[347,55,85],"hsl":[347,62,62],"lab":[57,50,8]},{"name":"Raspberry rose","hex":"a53860","rgb":[165,56,96],"cmyk":[0,66,42,35],"hsb":[338,66,65],"hsl":[338,49,43],"lab":[41,48,1]},{"name":"Chocolate cosmos","hex":"450920","rgb":[69,9,32],"cmyk":[0,87,54,73],"hsb":[337,87,27],"hsl":[337,77,15],"lab":[13,30,2]}]
+
+- XML
+
+<palette>
+  <color name="Light orange" hex="f9dbbd" r="249" g="219" b="189" />
+  <color name="Salmon pink" hex="ffa5ab" r="255" g="165" b="171" />
+  <color name="Blush" hex="da627d" r="218" g="98" b="125" />
+  <color name="Raspberry rose" hex="a53860" r="165" g="56" b="96" />
+  <color name="Chocolate cosmos" hex="450920" r="69" g="9" b="32" />
+</palette>

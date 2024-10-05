@@ -1,0 +1,259 @@
+/* background */
+html {
+  /* background: rgb(60, 64, 153); */
+  background: linear-gradient(
+    /* to bottom, */ 180deg,
+    rgb(100, 50, 145) 10%,
+    rgb(60, 64, 153) 90%
+  );
+  min-height: 100vh; /* Ensure the body always covers the full viewport height */
+  background-repeat: no-repeat;
+  /* the following is too much - original header from factsheet */
+  /* background: -moz-linear-gradient(90deg, rgb(60, 64, 153) 20%, rgb(150, 44, 140) 70%, rgb(100, 50, 145) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(60, 64, 153) 20%, rgb(150, 44, 140) 70%, rgb(100, 50, 145) 100%);
+  background: linear-gradient(90deg, rgb(60, 64, 153) 20%, rgb(150, 44, 140) 70%, rgb(100, 50, 145) 100%); */
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c7489",endColorstr="#040404",GradientType=1); */
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--sans-serif);
+  margin: 4rem 0 8rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 2rem 0;
+  max-width: none;
+  font-size: 14vw;
+  font-weight: 900;
+  line-height: 1;
+  color: #d9d4eaff;
+  /* color: #040404; */
+  background-clip: text;
+}
+
+h2 {
+  padding-top: 1em;
+  font-weight: normal;
+}
+
+.hero h2 {
+  margin: 0;
+  max-width: 34em;
+  font-size: 20px;
+  font-style: initial;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #d9d4eaff;
+}
+
+a.observablehq-header-anchor {
+  color: white !important;
+}
+
+/* toc */
+.observablehq-secondary-link-highlight {
+  background-color: #fff !important;
+}
+
+.observablehq-secondary-link-active a {
+  color: #fff !important;
+}
+/* Base styling for the cards */
+.goodpracticecard {
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Thin white outline */
+  border-radius: 8px; /* Rounded edges */
+  font-size: 0.9em;
+  color: white; /* White text (including the span text) */
+  padding: 16px; /* Add some padding inside the card */
+  text-align: left; /* Center the text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+/* Ensure the text inside the card (span) is white */
+.goodpracticecard span {
+  color: white; /* Text color inside the card */
+}
+
+/* Remove underline from link text inside the card */
+.goodpracticecard a {
+  text-decoration: none !important; /* No underline by default */
+}
+
+/* Maintain no underline on hover */
+a:hover {
+  text-decoration: none !important; /* Keep text-decoration none on hover */
+}
+
+/* Hover effect */
+.goodpracticecard:hover {
+  background-color: white; /* Fill with white on hover */
+  color: #3c4099; /* Change the general text color on hover */
+}
+
+/* Ensure the span text changes color on hover */
+.goodpracticecard:hover span {
+  color: #3c4099; /* Change span text color to #3c4099 on hover */
+}
+
+/* #observablehq-sidebar {
+    background-color: "#ffffff";
+    color-scheme: "light";
+  } */
+
+.card {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.card .key {
+  border: solid 1px var (--theme-foreground-faintest);
+}
+
+/* a[href] {
+  color: #450920 !important;
+} */
+
+/* text */
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+text,
+tspan {
+  /* font-size: 1.5em; */
+}
+
+/* back to root button */
+.back-to-root {
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(100, 50, 145);
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  z-index: 10;
+}
+
+.back-to-root:hover {
+  opacity: 0; /* Fade out the circle and the arrow on hover */
+}
+
+.back-to-root:hover::before {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.back-to-root .arrow {
+  display: inline-block;
+  border: solid white;
+  border-width: 0px 0px 2px 2px;
+  padding: 5px;
+  transform: rotate(45deg);
+  transition: opacity 0.3s ease;
+}
+
+.back-to-root:hover .arrow {
+  opacity: 0; /* Arrow fades out */
+}
+
+.back-to-root:focus {
+  outline: none;
+}
+
+/* focus on active DOT on hover and lower opacity of the rest */
+
+[aria-label="dot"]:hover cricle:not(:hover) {
+  opacity: 1;
+  stroke-opacity: 1;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+[aria-label="dot"] circle:hover {
+  opacity: 1;
+  stroke-opacity: 1;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+g:hover circle {
+  opacity: 0.2;
+  stroke-opacity: 0.2;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+/* focus on active COUNTRY on hover and lower opacity of the rest */
+[aria-label="geo"]:hover path:not(:hover) {
+  opacity: 0.2;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+[aria-label="geo"] path:hover {
+  opacity: 1;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+/* this also triggers the href lines in polarPlotMultiples.js */
+/* g:hover path {
+  opacity: 0.2;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+} */
+
+/* focus on active PILLAR on hover and lower opacity of the rest */
+[aria-label="voronoi"]:hover path:not(:hover) {
+  opacity: 0.2;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+[aria-label="voronoi"] path:hover {
+  opacity: 1;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+/* g:hover path {
+  opacity: 0.2;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+} */
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+
+/* prevent native tooltip on polarplot */
+/* Hide the default tooltip by overriding it */
+/* circle[title] {
+    pointer-events: none;
+  } */
+
+/* Ensure custom CSS to disable native tooltips */
+circle[title]::after {
+  content: none;
+}
+
+/* circle:hover::after {
+    content: attr(title);
+    position: absolute;
+    display: none;
+  } */
