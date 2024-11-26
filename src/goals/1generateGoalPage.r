@@ -7,7 +7,7 @@ library(stringr)
 library(foreach)
 # library(googlesheets4)
 
-# generateCountryPages
+# generateGoalsPages
 getwd()
 # go up one folder
 # setwd("..")
@@ -15,16 +15,13 @@ getwd()
 data <- read_csv("src/.observablehq/cache/data/dfi.csv") %>%
     print()
 
-country <- data %>%
-    distinct(NAME_ENGL) %>%
+goal <- data %>%
+    distinct(goal) %>%
+    arrange(goal) %>%
     pull()
 
-country_url <- data %>%
-    distinct(NAME_ENGL, .keep_all = TRUE) %>%
-    pull(country_url)
-
-country_url_source <- country_url %>%
-    str_remove(".")
+goal_url <- goal %>%
+    str_remove_all(" ")
 
 # read md template
 breakFun <- function(x) {
@@ -36,18 +33,18 @@ breakFun <- function(x) {
     }
 }
 
-storeLines <- readLines("src/countries/1countryPageTemplate.md")
+storeLines <- readLines("src/goals/1goalPageTemplate.md")
 
-foreach(i = 1:length(country)) %do% {
+foreach(i = 1:length(goal)) %do% {
     cleanLines <- storeLines %>%
-        str_replace_all("cntr", country[i])
+        str_replace_all("gl", goal[i])
 
-    countryLines <- cleanLines %>%
+    goalLines <- cleanLines %>%
         # paste0(lapply(storeLines, FUN = function(x) breakFun(x)), collapse = "") %>%
-        str_replace_all("cntr", country[i])
+        str_replace_all("gl", goal[i])
 
     write_lines(
-        countryLines,
-        paste0("src", country_url_source[i], ".md")
+        goalLines,
+        paste0("src/goals/", goal_url[i], ".md")
     )
 }

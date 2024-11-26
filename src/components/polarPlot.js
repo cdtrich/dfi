@@ -1,8 +1,18 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
 
-export function polarPlot(data, commitments, { width, height } = {}) {
+export function polarPlot(
+  data,
+  commitments,
+  selectedCountry,
+  { width, height } = {}
+) {
+  // params
   const vh = window.innerHeight;
+
+  // is a country selected?
+  const selected = selectedCountry.length < 2;
+  // console.log(selected);
 
   // dot position
   const longitude = d3
@@ -82,6 +92,7 @@ export function polarPlot(data, commitments, { width, height } = {}) {
       range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
     },
     marks: [
+      // PILLARS
       Plot.link(pillars, {
         x1: (d) => longitude(d.x1),
         x2: (d) => longitude(d.x2),
@@ -102,6 +113,7 @@ export function polarPlot(data, commitments, { width, height } = {}) {
         textAnchor: "center",
         href: "url",
       }),
+      // DOTS
       Plot.text(commitments, {
         x: (d, i) => longitude(commitments[i]),
         y: 20,
@@ -114,11 +126,35 @@ export function polarPlot(data, commitments, { width, height } = {}) {
         y: (d) => 90 - d.value, // Use the new y position
         stroke: (d) => d.pillar,
         r: (d) => d.value,
-        opacity: 0.2,
+        opacity: selected ? 0.1 : 0.2,
         href: "country_url",
         title: (d) => d.NAME_ENGL,
         tip: false, // Disable automatic tooltips
       }),
+      // Plot.dot(data, {
+      //   x: (d) => longitude(d.commitment_txt), // Use the new x position calculated by the force simulation
+      //   y: (d) => 90 - d.value, // Use the new y position
+      //   stroke: (d) => d.pillar,
+      //   r: (d) => d.value,
+      //   opacity: 0.2,
+      //   href: "country_url",
+      //   title: (d) => d.NAME_ENGL,
+      //   tip: false, // Disable automatic tooltips
+      // }),
+      Plot.dot(
+        data.filter((d) => d.NAME_ENGL == selectedCountry),
+        {
+          x: (d) => longitude(d.commitment_txt), // Use the new x position calculated by the force simulation
+          y: (d) => 90 - d.value, // Use the new y position
+          // stroke: (d) => d.pillar,
+          fill: (d) => d.pillar,
+          r: (d) => d.value,
+          opacity: 1,
+          href: "country_url",
+          title: (d) => d.NAME_ENGL,
+          tip: false, // Disable automatic tooltips
+        }
+      ),
       // Plot.dot(
       //   data,
       //   Plot.pointer({

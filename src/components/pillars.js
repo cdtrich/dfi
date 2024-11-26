@@ -6,9 +6,10 @@ import * as Plot from "npm:@observablehq/plot";
 export function pillars(data, { width, height } = {}) {
   return Plot.plot({
     width: width,
+    // height: width / 5 * 2,
     marginLeft: 0,
     marginRight: 0,
-    height: height,
+    height: width * 0.2,
     // title: "The state of the internet",
     // subtitle: "As expressed in thousands of dots",
     x: { domain: [0, 100], axis: false },

@@ -17,15 +17,20 @@ theme: [ocean-floor, alt]
 <!-- import components -->
 
 ```js
+// libraries
+import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+// conmponents
 import { straightPlot } from "./components/straightPlot.js";
 import { onlyUnique } from "./components/onlyUnique.js";
 import { polarPlot } from "./components/polarPlot.js";
 import { polarPlotLines } from "./components/polarPlotLines.js";
 import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
+// import { gridPlotMultiple } from "./components/gridPlotMultiple.js";
 import { countryPageLink } from "./components/countryPageLink.js";
 import { dendro } from "./components/dendro.js";
 import { worldMap } from "./components/worldMap.js";
 import { pillars } from "./components/pillars.js";
+import { goalsGrid } from "./components/goalsGrid.js";
 ```
 
 <div class="hero">
@@ -57,15 +62,9 @@ const dfi = FileAttachment("./data/dfi.csv").csv({ typed: true });
 
 &#x2611; add normalization to data loader
 
-&#x2611; special characters generate garbled country_urls
-
 #### goals
 
 &#x2611; load goals data
-
-- add goals section, and goals to data: goals cover commitments from different pillars
-
-- add voronoi that shows overlap of goals in different pillars?!
 
 - [Parameterized routes](https://observablehq.com/framework/params) for countries, pillars, goals
 
@@ -97,6 +96,7 @@ const dfi = FileAttachment("./data/dfi.csv").csv({ typed: true });
 ## Commitments
 
 ```js
+console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
 // display(dfi);
 ```
 
@@ -109,13 +109,42 @@ const dfi = FileAttachment("./data/dfi.csv").csv({ typed: true });
 The commitments of internet freedom outline the concrete actions and responsibilities that governments, organizations, and individuals should undertake to preserve and promote an open and free internet. These commitments include actively protecting the rights of users to access and share information without censorship or undue restrictions. Stakeholders are also committed to ensuring the privacy and security of online communications by adopting robust data protection measures and resisting mass surveillance. Furthermore, there is a commitment to fostering inclusivity by bridging the digital divide, ensuring that all people, regardless of their socioeconomic status or location, can benefit from internet access. Additionally, these commitments involve promoting transparency in internet governance and policy-making processes, encouraging the participation of a broad range of voices to shape the future of the internet. Ultimately, these commitments seek to maintain the internet as a global public resource, free from undue control and open to innovation and expression.
 
 ```js
-// display(dfi.filter((d) => d.NAME_ENGL == "Angola"));
-// console.log(dfi);
+const selectCountryRadial = view(
+  Inputs.search(countryUnique, {
+    datalist: countryUnique,
+    placeholder: "Search countries",
+  })
+);
+// display(dfi);
 ```
+
+```js
+// // Construct the markdown text with the country name as a link
+// const findSelectCountryRadial = dfi.find(
+//   (d) => d.NAME_ENGL === selectCountryRadial
+// );
+
+// const urlSelectCountryRadial = findSelectCountryRadial
+//   ? findSelectCountryRadial.country_url
+//   : "#"; // Default to '#' if not found
+
+// console.log(urlSelectCountryRadial);
+
+// // Generate markdown as a string
+// const countryMarkdown = `Got to country page of [${selectCountryRadial}](${urlSelectCountryRadial})`;
+
+// // Display the markdown in the div as a link
+// document.getElementById("country-link").innerHTML = marked(countryMarkdown); // Use a markdown parser like marked.js if available
+```
+
+<!-- <p>Go to country page of <a href=`${urlSelectCountryRadial}`>${selectCountryRadial}</a></p>
+<p>test</p>
+
+Go to other country page of [${selectCountryRadial}](${urlSelectCountryRadial}) -->
 
   <div class="grid grid-cols-1">
   <div class="card">
-      ${resize((width) => polarPlot(dfi, commitmentUnique, {width}))}
+      ${resize((width) => polarPlot(dfi, commitmentUnique, selectCountryRadial, {width}))}
     </div>
   </div>
 
@@ -138,10 +167,12 @@ const pillarsCards = [
 ```
 
 <!-- plot -->
-<div class="grid grid-cols-2">
+<div class="grid grid-cols-1">
   The pillars of internet freedom serve as the foundational principles that guide the protection and promotion of an open and free internet. These pillars typically include access to information, freedom of expression, privacy, and security. Access to information ensures that all individuals can seek, receive, and impart information freely over the internet. Freedom of expression safeguards the right to express opinions and ideas without censorship. Privacy guarantees that individuals can use the internet without unwarranted surveillance or the violation of their personal data. Security ensures that the internet remains a safe space for users to interact, free from threats like cyber-attacks or malicious activities.
 <!-- <div class="card"> -->
-  <div class="card" style="width: 100%; height: 50vh; padding: 0;">
+</div>
+<div class="grid grid-cols-1">
+  <div class="card">
     ${resize((width) => pillars(pillarsCards, {width}))}
   </div>
 </div>
@@ -157,6 +188,17 @@ const pillarsCards = [
 ```js
 var countries = dfi.map((d) => d.NAME_ENGL);
 var countryUnique = countries.filter(onlyUnique);
+```
+
+<!-- // Generating clickable links for each country -->
+
+<!-- ### Available Countries: -->
+
+```js
+countryUnique
+  .map((country) => html`<a href="/country/${country}">${country}</a>`)
+  .join(", ");
+// display(countryUnique);
 ```
 
 ```js
@@ -180,44 +222,22 @@ var countryUnique = countries.filter(onlyUnique);
   </div>
 
 ```js
-const selectCountry = view(
-  Inputs.search(countryUnique, {
-    datalist: countryUnique,
-    placeholder: "Search countries",
-  })
-);
+const dfiGrid = FileAttachment("./data/dfi_grid.csv").csv({
+  typed: true,
+});
 ```
-
-<!-- HOW CAN I MAKE THIS RUN EVERY TIME THE PLOT RUNS (on resize etc) -->
 
 ```js
-let fxLabel = document.querySelectorAll('[aria-label="fx-axis tick label"]');
-fxLabel.forEach((element) => {
-  // element.style.display = "none";
-  // element.style.opacity = 0;
-});
-
-let fyLabel = document.querySelectorAll('[aria-label="fy-axis tick label"]');
-fyLabel.forEach((element) => {
-  // element.style.display = "none";
-  // element.style.opacity = 0;
-});
-// display(dfi);
+// display(dfiGrid);
 ```
+
+<!-- <div class="card">
+  ${resize((width) => gridPlotMultiple(dfiGrid,  selectCountry, {width}))}
+</div> -->
 
 <div class="card">
-  ${resize((width) => polarPlotMultiple(dfi,  selectCountry, {width}))}
+  ${resize((width) => polarPlotMultiple(dfi,  {width}))}
 </div>
-
-<!-- <a href=${countryPage}>Visit ${country}</a> -->
-
-<!-- ### to do
-
-- -->
-
-```js
-// display(Inputs.table(dfi, { width: 1200 }));
-```
 
 ## Goals
 
@@ -229,13 +249,20 @@ const goals = FileAttachment("./data/goals.csv").csv({ typed: true });
 // display(goals);
 ```
 
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-1">
 The Declaration on the Future of the Internet (DFI) sets out key goals aimed at promoting a free, open, and secure internet globally. Its objectives include safeguarding human rights online, ensuring that digital spaces remain accessible and inclusive, and fostering innovation while maintaining privacy and security. The DFI focuses on upholding democratic values by preventing the misuse of technology for censorship, surveillance, or the suppression of free speech. By setting a global standard for the governance and development of the internet, the DFI encourages collaboration between nations to create an equitable, safe, and resilient digital environment for all.
-
-  <div class="card">
-    ${resize((width) => dendro(goals, {width}))}
-  </div>
 </div>
+
+  <div class="grid grid-cols-1">
+    <div class="card" id="goalsGrid">
+      ${resize((width) => goalsGrid(goals, dfi, "#goalsGrid", {width}))}
+    </div> 
+  </div>
+
+```js
+// display(goals);
+// console.log(goals); // Log to verify the data structure
+```
 
 ## DFI implementation
 

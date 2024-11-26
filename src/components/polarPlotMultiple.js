@@ -8,23 +8,23 @@ export function polarPlotMultiple(
   data,
   // country,
   // commitments,
-  selectCountry,
+  // selectCountry,
   { width, height } = {}
 ) {
-  const n = 6; // number of facet columns
+  // chart width
+  const vw = window.innerWidth;
+
+  const n = vw > 760 ? 6 : 2; // number of facet columns
   const keys = Array.from(d3.union(data.map((d) => d.NAME_ENGL)));
   const index = new Map(keys.map((key, i) => [key, i]));
   const fx = (key) => index.get(key) % n;
   const fy = (key) => Math.floor(index.get(key) / n);
 
-  // chart width
-  const vw = window.innerWidth;
-
   // Get filtered data based on selectCountry
-  const filteredData =
-    selectCountry && selectCountry.length > 0
-      ? data.filter((item) => selectCountry.includes(item.NAME_ENGL))
-      : data; // If no input or array is empty, use all data
+  // const filteredData =
+  //   selectCountry && selectCountry.length > 0
+  //     ? data.filter((item) => selectCountry.includes(item.NAME_ENGL))
+  //     : data; // If no input or array is empty, use all data
 
   // console.log(selectCountry);
   // console.log(filteredData);
@@ -53,7 +53,7 @@ export function polarPlotMultiple(
   // });
 
   // country name labels
-  const countryNames = filteredData
+  const countryNames = data
     .filter((item) => item.commitment_txt === "commitment A") // Step 1: Filter by commitment_txt
     .reduce((acc, current) => {
       // Step 2: Ensure only one entry per NAME_ENGL
@@ -65,7 +65,7 @@ export function polarPlotMultiple(
 
   // console.log(countryNames);
 
-  return Plot.plot({
+  const plot = Plot.plot({
     width: width,
     height: height,
     // title: "The state of the internet",
@@ -78,11 +78,11 @@ export function polarPlotMultiple(
     },
     // strokeWidth: { range: [0.1, 1] },
     r: { range: [0.2, 5] },
-    x: { ticks: 0, label: null },
-    y: { ticks: 0, label: null },
-    fx: { padding: 0, ticks: 0, label: null }, // No labels or ticks on fx facet
-    fy: { padding: 0, ticks: 0, label: null }, // No labels or ticks on fy facet
-    tickLabel: "",
+    x: { ticks: 0, label: null }, // Disable x-axis ticks and label
+    y: { ticks: 0, label: null }, // Disable y-axis ticks and label
+    fx: { padding: 0, ticks: 0, label: null }, // No fx facet ticks or labels
+    fy: { padding: 0, ticks: 0, label: null }, // No fy facet ticks or labels
+    // tickLabel: "",
     facet: { label: null }, // Ensure no facet label is generated
     color: {
       legend: false,
@@ -91,7 +91,7 @@ export function polarPlotMultiple(
     },
     marks: [
       // lines
-      Plot.link(filteredData, {
+      Plot.link(data, {
         x1: (d) => longitude(d.commitment_txt),
         x2: (d) => longitude(d.commitment_txt),
         y1: (d) => 90,
@@ -133,25 +133,26 @@ export function polarPlotMultiple(
       //   r: (d) => d.value,
       //   opacity: 0.05,
       // }),
-      Plot.dot(filteredData, {
+      Plot.dot(data, {
         x: (d) => longitude(d.commitment_txt),
         y: (d) => 90 - d.value,
         fx: (d) => fx(d.NAME_ENGL),
         fy: (d) => fy(d.NAME_ENGL),
-        fill: "#3C4099",
-        stroke: (d) => d.pillar,
+        // fill: "#3C4099",
+        fill: (d) => d.pillar,
         r: (d) => d.value,
         opacity: 1,
         href: "country_url",
       }),
       Plot.dot(
-        filteredData,
+        data,
         Plot.pointer({
           x: (d) => longitude(d.commitment_txt),
           y: (d) => 90 - d.value,
           fx: (d) => fx(d.NAME_ENGL),
           fy: (d) => fy(d.NAME_ENGL),
-          fill: (d) => d.pillar,
+          stroke: (d) => d.pillar,
+          strokeWidth: 3,
           r: (d) => d.value,
           opacity: 1,
           // href: "country_url",
@@ -162,7 +163,7 @@ export function polarPlotMultiple(
       // Plot.axisX(data, { label: null, lineWidth: 0 }),
       // Plot.axisY(data, { label: null, lineWidth: 0 }),
       // invisible large lines that make whole graph clickable
-      Plot.link(filteredData, {
+      Plot.link(data, {
         x1: (d) => longitude(d.commitment_txt),
         x2: (d) => longitude(d.commitment_txt),
         y1: (d) => 90,
@@ -206,4 +207,10 @@ export function polarPlotMultiple(
       }),
     ],
   });
+
+  // Remove elements with aria-label for tick labels
+  // d3.selectAll('g[aria-label="fy-axis tick label"]').attr("opacity", 0);
+  // d3.selectAll('g[aria-label="fx-axis tick label"]').attr("opacity", 0);
+
+  return plot;
 }

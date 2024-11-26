@@ -96,6 +96,8 @@ export function straightPlot(data, country, { width, height } = {}) {
           stroke: "pillar",
           fill: "pillar",
           r: (d) => (d.NAME_ENGL === country ? 6 : 1),
+          // tip: true,
+          // title: "NAME_ENGL",
           // opacity: (d) => (d.NAME_ENGL === country ? 1 : 0.33),
           fillOpacity: (d) => (d.NAME_ENGL === country ? 1 : 0),
           strokeOpacity: (d) => (d.NAME_ENGL === country ? 0 : 0.33),

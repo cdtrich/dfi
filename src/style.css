@@ -148,7 +148,7 @@ tspan {
 }
 
 .back-to-root:hover {
-  opacity: 0; /* Fade out the circle and the arrow on hover */
+  opacity: 0.5; /* Fade out the circle and the arrow on hover */
 }
 
 .back-to-root:hover::before {
@@ -250,6 +250,26 @@ g:hover circle {
 /* Ensure custom CSS to disable native tooltips */
 circle[title]::after {
   content: none;
+}
+
+/* style tooltip */
+
+/* Target the tooltip fill */
+g[aria-label="tip"] path {
+  fill: #dcdcee; /* Tooltip background color */
+}
+
+/* Target the text color inside the tooltip */
+g[aria-label="tip"] text {
+  fill: #000; /* Tooltip text color */
+}
+
+/* remove facet numbers on multiple radials */
+g[aria-label="fy-axis tick label"] > g > text {
+  display: none;
+}
+g[aria-label="fx-axis tick label"] > g > text {
+  display: none;
 }
 
 /* circle:hover::after {

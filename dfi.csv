@@ -1,751 +1,751 @@
-NAME_ENGL,ISO3_CODE,pillar,commitment_num,prisec,commitment_txt,value,indicator,source,goal,min,max,country_url,pillar_url
-Afghanistan,AFG,Pillar 1,1,NA,commitment A,26.823529411764703,NA,NA,NA,0,1,./countries/Afghanistan,./pillars/Pillar1
-Afghanistan,AFG,Pillar 1,2,NA,commitment B,31.8235294117647,NA,NA,NA,0,1,./countries/Afghanistan,./pillars/Pillar1
-Afghanistan,AFG,Pillar 1,3,NA,commitment C,18.8235294117647,NA,NA,NA,0,1,./countries/Afghanistan,./pillars/Pillar1
-Afghanistan,AFG,Pillar 2,4,NA,commitment D,36.823529411764696,NA,NA,NA,10,0,./countries/Afghanistan,./pillars/Pillar2
-Afghanistan,AFG,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,NA,10,0,./countries/Afghanistan,./pillars/Pillar2
-Afghanistan,AFG,Pillar 2,6,NA,commitment F,16.823529411764696,NA,NA,NA,10,0,./countries/Afghanistan,./pillars/Pillar2
-Afghanistan,AFG,Pillar 3,7,NA,commitment G,24.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar3
-Afghanistan,AFG,Pillar 3,8,NA,commitment H,30.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar3
-Afghanistan,AFG,Pillar 3,9,NA,commitment I,35.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar3
-Afghanistan,AFG,Pillar 4,10,NA,commitment J,20.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar4
-Afghanistan,AFG,Pillar 4,11,NA,commitment K,39.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar4
-Afghanistan,AFG,Pillar 4,12,NA,commitment L,28.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar4
-Afghanistan,AFG,Pillar 5,13,NA,commitment M,26.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar5
-Afghanistan,AFG,Pillar 5,14,NA,commitment N,40.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar5
-Afghanistan,AFG,Pillar 5,15,NA,commitment O,28.8235294117647,NA,NA,NA,0,100,./countries/Afghanistan,./pillars/Pillar5
-Albania,ALB,Pillar 1,1,NA,commitment A,34.8235294117647,NA,NA,NA,0,1,./countries/Albania,./pillars/Pillar1
-Albania,ALB,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,NA,0,1,./countries/Albania,./pillars/Pillar1
-Albania,ALB,Pillar 1,3,NA,commitment C,35.8235294117647,NA,NA,NA,0,1,./countries/Albania,./pillars/Pillar1
-Albania,ALB,Pillar 2,4,NA,commitment D,42.82352941176471,NA,NA,NA,10,0,./countries/Albania,./pillars/Pillar2
-Albania,ALB,Pillar 2,5,NA,commitment E,38.823529411764696,NA,NA,NA,10,0,./countries/Albania,./pillars/Pillar2
-Albania,ALB,Pillar 2,6,NA,commitment F,32.82352941176471,NA,NA,NA,10,0,./countries/Albania,./pillars/Pillar2
-Albania,ALB,Pillar 3,7,NA,commitment G,41.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar3
-Albania,ALB,Pillar 3,8,NA,commitment H,28.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar3
-Albania,ALB,Pillar 3,9,NA,commitment I,25.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar3
-Albania,ALB,Pillar 4,10,NA,commitment J,31.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar4
-Albania,ALB,Pillar 4,11,NA,commitment K,18.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar4
-Albania,ALB,Pillar 4,12,NA,commitment L,11.823529411764701,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar4
-Albania,ALB,Pillar 5,13,NA,commitment M,25.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar5
-Albania,ALB,Pillar 5,14,NA,commitment N,24.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar5
-Albania,ALB,Pillar 5,15,NA,commitment O,38.8235294117647,NA,NA,NA,0,100,./countries/Albania,./pillars/Pillar5
-American Samoa,ASM,Pillar 1,1,NA,commitment A,20.8235294117647,NA,NA,NA,0,1,./countries/AmericanSamoa,./pillars/Pillar1
-American Samoa,ASM,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,NA,0,1,./countries/AmericanSamoa,./pillars/Pillar1
-American Samoa,ASM,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,NA,0,1,./countries/AmericanSamoa,./pillars/Pillar1
-American Samoa,ASM,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,NA,10,0,./countries/AmericanSamoa,./pillars/Pillar2
-American Samoa,ASM,Pillar 2,5,NA,commitment E,24.823529411764696,NA,NA,NA,10,0,./countries/AmericanSamoa,./pillars/Pillar2
-American Samoa,ASM,Pillar 2,6,NA,commitment F,34.82352941176471,NA,NA,NA,10,0,./countries/AmericanSamoa,./pillars/Pillar2
-American Samoa,ASM,Pillar 3,7,NA,commitment G,23.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar3
-American Samoa,ASM,Pillar 3,8,NA,commitment H,25.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar3
-American Samoa,ASM,Pillar 3,9,NA,commitment I,26.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar3
-American Samoa,ASM,Pillar 4,10,NA,commitment J,36.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar4
-American Samoa,ASM,Pillar 4,11,NA,commitment K,40.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar4
-American Samoa,ASM,Pillar 4,12,NA,commitment L,42.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar4
-American Samoa,ASM,Pillar 5,13,NA,commitment M,43.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar5
-American Samoa,ASM,Pillar 5,14,NA,commitment N,22.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar5
-American Samoa,ASM,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,NA,0,100,./countries/AmericanSamoa,./pillars/Pillar5
-Andorra,AND,Pillar 1,1,NA,commitment A,33.8235294117647,NA,NA,NA,0,1,./countries/Andorra,./pillars/Pillar1
-Andorra,AND,Pillar 1,2,NA,commitment B,31.8235294117647,NA,NA,NA,0,1,./countries/Andorra,./pillars/Pillar1
-Andorra,AND,Pillar 1,3,NA,commitment C,1.8235294117647003,NA,NA,NA,0,1,./countries/Andorra,./pillars/Pillar1
-Andorra,AND,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,NA,10,0,./countries/Andorra,./pillars/Pillar2
-Andorra,AND,Pillar 2,5,NA,commitment E,26.823529411764696,NA,NA,NA,10,0,./countries/Andorra,./pillars/Pillar2
-Andorra,AND,Pillar 2,6,NA,commitment F,26.823529411764696,NA,NA,NA,10,0,./countries/Andorra,./pillars/Pillar2
-Andorra,AND,Pillar 3,7,NA,commitment G,37.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar3
-Andorra,AND,Pillar 3,8,NA,commitment H,43.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar3
-Andorra,AND,Pillar 3,9,NA,commitment I,25.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar3
-Andorra,AND,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar4
-Andorra,AND,Pillar 4,11,NA,commitment K,33.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar4
-Andorra,AND,Pillar 4,12,NA,commitment L,37.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar4
-Andorra,AND,Pillar 5,13,NA,commitment M,32.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar5
-Andorra,AND,Pillar 5,14,NA,commitment N,13.823529411764701,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar5
-Andorra,AND,Pillar 5,15,NA,commitment O,55.8235294117647,NA,NA,NA,0,100,./countries/Andorra,./pillars/Pillar5
-Angola,AGO,Pillar 1,1,NA,commitment A,20.8235294117647,NA,NA,NA,0,1,./countries/Angola,./pillars/Pillar1
-Angola,AGO,Pillar 1,2,NA,commitment B,27.823529411764696,NA,NA,NA,0,1,./countries/Angola,./pillars/Pillar1
-Angola,AGO,Pillar 1,3,NA,commitment C,30.8235294117647,NA,NA,NA,0,1,./countries/Angola,./pillars/Pillar1
-Angola,AGO,Pillar 2,4,NA,commitment D,39.82352941176471,NA,NA,NA,10,0,./countries/Angola,./pillars/Pillar2
-Angola,AGO,Pillar 2,5,NA,commitment E,37.82352941176471,NA,NA,NA,10,0,./countries/Angola,./pillars/Pillar2
-Angola,AGO,Pillar 2,6,NA,commitment F,43.823529411764696,NA,NA,NA,10,0,./countries/Angola,./pillars/Pillar2
-Angola,AGO,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar3
-Angola,AGO,Pillar 3,8,NA,commitment H,43.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar3
-Angola,AGO,Pillar 3,9,NA,commitment I,41.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar3
-Angola,AGO,Pillar 4,10,NA,commitment J,29.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar4
-Angola,AGO,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar4
-Angola,AGO,Pillar 4,12,NA,commitment L,17.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar4
-Angola,AGO,Pillar 5,13,NA,commitment M,27.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar5
-Angola,AGO,Pillar 5,14,NA,commitment N,21.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar5
-Angola,AGO,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,NA,0,100,./countries/Angola,./pillars/Pillar5
-Anguilla,AIA,Pillar 1,1,NA,commitment A,34.8235294117647,NA,NA,NA,0,1,./countries/Anguilla,./pillars/Pillar1
-Anguilla,AIA,Pillar 1,2,NA,commitment B,41.8235294117647,NA,NA,NA,0,1,./countries/Anguilla,./pillars/Pillar1
-Anguilla,AIA,Pillar 1,3,NA,commitment C,26.823529411764703,NA,NA,NA,0,1,./countries/Anguilla,./pillars/Pillar1
-Anguilla,AIA,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,NA,10,0,./countries/Anguilla,./pillars/Pillar2
-Anguilla,AIA,Pillar 2,5,NA,commitment E,23.823529411764696,NA,NA,NA,10,0,./countries/Anguilla,./pillars/Pillar2
-Anguilla,AIA,Pillar 2,6,NA,commitment F,12.823529411764696,NA,NA,NA,10,0,./countries/Anguilla,./pillars/Pillar2
-Anguilla,AIA,Pillar 3,7,NA,commitment G,30.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar3
-Anguilla,AIA,Pillar 3,8,NA,commitment H,38.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar3
-Anguilla,AIA,Pillar 3,9,NA,commitment I,10.823529411764701,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar3
-Anguilla,AIA,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar4
-Anguilla,AIA,Pillar 4,11,NA,commitment K,30.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar4
-Anguilla,AIA,Pillar 4,12,NA,commitment L,24.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar4
-Anguilla,AIA,Pillar 5,13,NA,commitment M,21.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar5
-Anguilla,AIA,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar5
-Anguilla,AIA,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,NA,0,100,./countries/Anguilla,./pillars/Pillar5
-Antigua and Barbuda,ATG,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,NA,0,1,./countries/AntiguaandBarbuda,./pillars/Pillar1
-Antigua and Barbuda,ATG,Pillar 1,2,NA,commitment B,21.8235294117647,NA,NA,NA,0,1,./countries/AntiguaandBarbuda,./pillars/Pillar1
-Antigua and Barbuda,ATG,Pillar 1,3,NA,commitment C,41.8235294117647,NA,NA,NA,0,1,./countries/AntiguaandBarbuda,./pillars/Pillar1
-Antigua and Barbuda,ATG,Pillar 2,4,NA,commitment D,25.82352941176471,NA,NA,NA,10,0,./countries/AntiguaandBarbuda,./pillars/Pillar2
-Antigua and Barbuda,ATG,Pillar 2,5,NA,commitment E,23.823529411764696,NA,NA,NA,10,0,./countries/AntiguaandBarbuda,./pillars/Pillar2
-Antigua and Barbuda,ATG,Pillar 2,6,NA,commitment F,31.823529411764696,NA,NA,NA,10,0,./countries/AntiguaandBarbuda,./pillars/Pillar2
-Antigua and Barbuda,ATG,Pillar 3,7,NA,commitment G,29.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar3
-Antigua and Barbuda,ATG,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar3
-Antigua and Barbuda,ATG,Pillar 3,9,NA,commitment I,33.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar3
-Antigua and Barbuda,ATG,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar4
-Antigua and Barbuda,ATG,Pillar 4,11,NA,commitment K,35.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar4
-Antigua and Barbuda,ATG,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar4
-Antigua and Barbuda,ATG,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar5
-Antigua and Barbuda,ATG,Pillar 5,14,NA,commitment N,26.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar5
-Antigua and Barbuda,ATG,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,NA,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar5
-Argentina,ARG,Pillar 1,1,NA,commitment A,36.8235294117647,NA,NA,NA,0,1,./countries/Argentina,./pillars/Pillar1
-Argentina,ARG,Pillar 1,2,NA,commitment B,21.8235294117647,NA,NA,NA,0,1,./countries/Argentina,./pillars/Pillar1
-Argentina,ARG,Pillar 1,3,NA,commitment C,17.8235294117647,NA,NA,NA,0,1,./countries/Argentina,./pillars/Pillar1
-Argentina,ARG,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,NA,10,0,./countries/Argentina,./pillars/Pillar2
-Argentina,ARG,Pillar 2,5,NA,commitment E,35.82352941176471,NA,NA,NA,10,0,./countries/Argentina,./pillars/Pillar2
-Argentina,ARG,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,NA,10,0,./countries/Argentina,./pillars/Pillar2
-Argentina,ARG,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar3
-Argentina,ARG,Pillar 3,8,NA,commitment H,16.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar3
-Argentina,ARG,Pillar 3,9,NA,commitment I,7.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar3
-Argentina,ARG,Pillar 4,10,NA,commitment J,32.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar4
-Argentina,ARG,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar4
-Argentina,ARG,Pillar 4,12,NA,commitment L,43.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar4
-Argentina,ARG,Pillar 5,13,NA,commitment M,45.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar5
-Argentina,ARG,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar5
-Argentina,ARG,Pillar 5,15,NA,commitment O,37.8235294117647,NA,NA,NA,0,100,./countries/Argentina,./pillars/Pillar5
-Armenia,ARM,Pillar 1,1,NA,commitment A,17.8235294117647,NA,NA,NA,0,1,./countries/Armenia,./pillars/Pillar1
-Armenia,ARM,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,NA,0,1,./countries/Armenia,./pillars/Pillar1
-Armenia,ARM,Pillar 1,3,NA,commitment C,24.8235294117647,NA,NA,NA,0,1,./countries/Armenia,./pillars/Pillar1
-Armenia,ARM,Pillar 2,4,NA,commitment D,22.823529411764696,NA,NA,NA,10,0,./countries/Armenia,./pillars/Pillar2
-Armenia,ARM,Pillar 2,5,NA,commitment E,28.823529411764696,NA,NA,NA,10,0,./countries/Armenia,./pillars/Pillar2
-Armenia,ARM,Pillar 2,6,NA,commitment F,31.823529411764696,NA,NA,NA,10,0,./countries/Armenia,./pillars/Pillar2
-Armenia,ARM,Pillar 3,7,NA,commitment G,39.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar3
-Armenia,ARM,Pillar 3,8,NA,commitment H,46.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar3
-Armenia,ARM,Pillar 3,9,NA,commitment I,17.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar3
-Armenia,ARM,Pillar 4,10,NA,commitment J,27.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar4
-Armenia,ARM,Pillar 4,11,NA,commitment K,9.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar4
-Armenia,ARM,Pillar 4,12,NA,commitment L,38.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar4
-Armenia,ARM,Pillar 5,13,NA,commitment M,13.823529411764701,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar5
-Armenia,ARM,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar5
-Armenia,ARM,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,NA,0,100,./countries/Armenia,./pillars/Pillar5
-Aruba,ABW,Pillar 1,1,NA,commitment A,16.8235294117647,NA,NA,NA,0,1,./countries/Aruba,./pillars/Pillar1
-Aruba,ABW,Pillar 1,2,NA,commitment B,5.8235294117647,NA,NA,NA,0,1,./countries/Aruba,./pillars/Pillar1
-Aruba,ABW,Pillar 1,3,NA,commitment C,31.8235294117647,NA,NA,NA,0,1,./countries/Aruba,./pillars/Pillar1
-Aruba,ABW,Pillar 2,4,NA,commitment D,17.823529411764696,NA,NA,NA,10,0,./countries/Aruba,./pillars/Pillar2
-Aruba,ABW,Pillar 2,5,NA,commitment E,20.82352941176471,NA,NA,NA,10,0,./countries/Aruba,./pillars/Pillar2
-Aruba,ABW,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,NA,10,0,./countries/Aruba,./pillars/Pillar2
-Aruba,ABW,Pillar 3,7,NA,commitment G,29.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar3
-Aruba,ABW,Pillar 3,8,NA,commitment H,41.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar3
-Aruba,ABW,Pillar 3,9,NA,commitment I,44.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar3
-Aruba,ABW,Pillar 4,10,NA,commitment J,38.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar4
-Aruba,ABW,Pillar 4,11,NA,commitment K,11.823529411764701,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar4
-Aruba,ABW,Pillar 4,12,NA,commitment L,30.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar4
-Aruba,ABW,Pillar 5,13,NA,commitment M,34.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar5
-Aruba,ABW,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar5
-Aruba,ABW,Pillar 5,15,NA,commitment O,34.8235294117647,NA,NA,NA,0,100,./countries/Aruba,./pillars/Pillar5
-Australia,AUS,Pillar 1,1,NA,commitment A,7.8235294117647,NA,NA,NA,0,1,./countries/Australia,./pillars/Pillar1
-Australia,AUS,Pillar 1,2,NA,commitment B,20.8235294117647,NA,NA,NA,0,1,./countries/Australia,./pillars/Pillar1
-Australia,AUS,Pillar 1,3,NA,commitment C,38.8235294117647,NA,NA,NA,0,1,./countries/Australia,./pillars/Pillar1
-Australia,AUS,Pillar 2,4,NA,commitment D,40.82352941176471,NA,NA,NA,10,0,./countries/Australia,./pillars/Pillar2
-Australia,AUS,Pillar 2,5,NA,commitment E,10.82352941176471,NA,NA,NA,10,0,./countries/Australia,./pillars/Pillar2
-Australia,AUS,Pillar 2,6,NA,commitment F,27.823529411764696,NA,NA,NA,10,0,./countries/Australia,./pillars/Pillar2
-Australia,AUS,Pillar 3,7,NA,commitment G,25.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar3
-Australia,AUS,Pillar 3,8,NA,commitment H,16.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar3
-Australia,AUS,Pillar 3,9,NA,commitment I,34.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar3
-Australia,AUS,Pillar 4,10,NA,commitment J,32.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar4
-Australia,AUS,Pillar 4,11,NA,commitment K,21.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar4
-Australia,AUS,Pillar 4,12,NA,commitment L,36.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar4
-Australia,AUS,Pillar 5,13,NA,commitment M,17.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar5
-Australia,AUS,Pillar 5,14,NA,commitment N,36.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar5
-Australia,AUS,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,NA,0,100,./countries/Australia,./pillars/Pillar5
-Austria,AUT,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,NA,0,1,./countries/Austria,./pillars/Pillar1
-Austria,AUT,Pillar 1,2,NA,commitment B,55.8235294117647,NA,NA,NA,0,1,./countries/Austria,./pillars/Pillar1
-Austria,AUT,Pillar 1,3,NA,commitment C,13.823529411764698,NA,NA,NA,0,1,./countries/Austria,./pillars/Pillar1
-Austria,AUT,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,NA,10,0,./countries/Austria,./pillars/Pillar2
-Austria,AUT,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,NA,10,0,./countries/Austria,./pillars/Pillar2
-Austria,AUT,Pillar 2,6,NA,commitment F,21.823529411764696,NA,NA,NA,10,0,./countries/Austria,./pillars/Pillar2
-Austria,AUT,Pillar 3,7,NA,commitment G,0.823529411764706,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar3
-Austria,AUT,Pillar 3,8,NA,commitment H,14.823529411764701,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar3
-Austria,AUT,Pillar 3,9,NA,commitment I,31.8235294117647,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar3
-Austria,AUT,Pillar 4,10,NA,commitment J,18.8235294117647,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar4
-Austria,AUT,Pillar 4,11,NA,commitment K,11.823529411764701,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar4
-Austria,AUT,Pillar 4,12,NA,commitment L,38.8235294117647,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar4
-Austria,AUT,Pillar 5,13,NA,commitment M,29.8235294117647,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar5
-Austria,AUT,Pillar 5,14,NA,commitment N,10.823529411764701,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar5
-Austria,AUT,Pillar 5,15,NA,commitment O,33.8235294117647,NA,NA,NA,0,100,./countries/Austria,./pillars/Pillar5
-Azerbaijan,AZE,Pillar 1,1,NA,commitment A,43.8235294117647,NA,NA,NA,0,1,./countries/Azerbaijan,./pillars/Pillar1
-Azerbaijan,AZE,Pillar 1,2,NA,commitment B,31.8235294117647,NA,NA,NA,0,1,./countries/Azerbaijan,./pillars/Pillar1
-Azerbaijan,AZE,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,NA,0,1,./countries/Azerbaijan,./pillars/Pillar1
-Azerbaijan,AZE,Pillar 2,4,NA,commitment D,31.823529411764696,NA,NA,NA,10,0,./countries/Azerbaijan,./pillars/Pillar2
-Azerbaijan,AZE,Pillar 2,5,NA,commitment E,29.823529411764696,NA,NA,NA,10,0,./countries/Azerbaijan,./pillars/Pillar2
-Azerbaijan,AZE,Pillar 2,6,NA,commitment F,21.823529411764696,NA,NA,NA,10,0,./countries/Azerbaijan,./pillars/Pillar2
-Azerbaijan,AZE,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar3
-Azerbaijan,AZE,Pillar 3,8,NA,commitment H,25.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar3
-Azerbaijan,AZE,Pillar 3,9,NA,commitment I,27.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar3
-Azerbaijan,AZE,Pillar 4,10,NA,commitment J,9.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar4
-Azerbaijan,AZE,Pillar 4,11,NA,commitment K,28.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar4
-Azerbaijan,AZE,Pillar 4,12,NA,commitment L,28.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar4
-Azerbaijan,AZE,Pillar 5,13,NA,commitment M,38.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar5
-Azerbaijan,AZE,Pillar 5,14,NA,commitment N,18.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar5
-Azerbaijan,AZE,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,NA,0,100,./countries/Azerbaijan,./pillars/Pillar5
-Bahamas,BHS,Pillar 1,1,NA,commitment A,27.823529411764696,NA,NA,NA,0,1,./countries/Bahamas,./pillars/Pillar1
-Bahamas,BHS,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,NA,0,1,./countries/Bahamas,./pillars/Pillar1
-Bahamas,BHS,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,NA,0,1,./countries/Bahamas,./pillars/Pillar1
-Bahamas,BHS,Pillar 2,4,NA,commitment D,6.823529411764696,NA,NA,NA,10,0,./countries/Bahamas,./pillars/Pillar2
-Bahamas,BHS,Pillar 2,5,NA,commitment E,28.823529411764696,NA,NA,NA,10,0,./countries/Bahamas,./pillars/Pillar2
-Bahamas,BHS,Pillar 2,6,NA,commitment F,20.82352941176471,NA,NA,NA,10,0,./countries/Bahamas,./pillars/Pillar2
-Bahamas,BHS,Pillar 3,7,NA,commitment G,22.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar3
-Bahamas,BHS,Pillar 3,8,NA,commitment H,46.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar3
-Bahamas,BHS,Pillar 3,9,NA,commitment I,39.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar3
-Bahamas,BHS,Pillar 4,10,NA,commitment J,28.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar4
-Bahamas,BHS,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar4
-Bahamas,BHS,Pillar 4,12,NA,commitment L,47.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar4
-Bahamas,BHS,Pillar 5,13,NA,commitment M,9.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar5
-Bahamas,BHS,Pillar 5,14,NA,commitment N,30.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar5
-Bahamas,BHS,Pillar 5,15,NA,commitment O,37.8235294117647,NA,NA,NA,0,100,./countries/Bahamas,./pillars/Pillar5
-Bahrain,BHR,Pillar 1,1,NA,commitment A,16.8235294117647,NA,NA,NA,0,1,./countries/Bahrain,./pillars/Pillar1
-Bahrain,BHR,Pillar 1,2,NA,commitment B,44.8235294117647,NA,NA,NA,0,1,./countries/Bahrain,./pillars/Pillar1
-Bahrain,BHR,Pillar 1,3,NA,commitment C,40.8235294117647,NA,NA,NA,0,1,./countries/Bahrain,./pillars/Pillar1
-Bahrain,BHR,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,NA,10,0,./countries/Bahrain,./pillars/Pillar2
-Bahrain,BHR,Pillar 2,5,NA,commitment E,46.823529411764696,NA,NA,NA,10,0,./countries/Bahrain,./pillars/Pillar2
-Bahrain,BHR,Pillar 2,6,NA,commitment F,28.823529411764696,NA,NA,NA,10,0,./countries/Bahrain,./pillars/Pillar2
-Bahrain,BHR,Pillar 3,7,NA,commitment G,14.823529411764701,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar3
-Bahrain,BHR,Pillar 3,8,NA,commitment H,7.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar3
-Bahrain,BHR,Pillar 3,9,NA,commitment I,21.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar3
-Bahrain,BHR,Pillar 4,10,NA,commitment J,35.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar4
-Bahrain,BHR,Pillar 4,11,NA,commitment K,25.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar4
-Bahrain,BHR,Pillar 4,12,NA,commitment L,42.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar4
-Bahrain,BHR,Pillar 5,13,NA,commitment M,27.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar5
-Bahrain,BHR,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar5
-Bahrain,BHR,Pillar 5,15,NA,commitment O,35.8235294117647,NA,NA,NA,0,100,./countries/Bahrain,./pillars/Pillar5
-Bangladesh,BGD,Pillar 1,1,NA,commitment A,14.8235294117647,NA,NA,NA,0,1,./countries/Bangladesh,./pillars/Pillar1
-Bangladesh,BGD,Pillar 1,2,NA,commitment B,26.823529411764703,NA,NA,NA,0,1,./countries/Bangladesh,./pillars/Pillar1
-Bangladesh,BGD,Pillar 1,3,NA,commitment C,27.823529411764696,NA,NA,NA,0,1,./countries/Bangladesh,./pillars/Pillar1
-Bangladesh,BGD,Pillar 2,4,NA,commitment D,41.823529411764696,NA,NA,NA,10,0,./countries/Bangladesh,./pillars/Pillar2
-Bangladesh,BGD,Pillar 2,5,NA,commitment E,42.82352941176471,NA,NA,NA,10,0,./countries/Bangladesh,./pillars/Pillar2
-Bangladesh,BGD,Pillar 2,6,NA,commitment F,24.823529411764696,NA,NA,NA,10,0,./countries/Bangladesh,./pillars/Pillar2
-Bangladesh,BGD,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar3
-Bangladesh,BGD,Pillar 3,8,NA,commitment H,48.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar3
-Bangladesh,BGD,Pillar 3,9,NA,commitment I,44.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar3
-Bangladesh,BGD,Pillar 4,10,NA,commitment J,24.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar4
-Bangladesh,BGD,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar4
-Bangladesh,BGD,Pillar 4,12,NA,commitment L,31.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar4
-Bangladesh,BGD,Pillar 5,13,NA,commitment M,39.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar5
-Bangladesh,BGD,Pillar 5,14,NA,commitment N,26.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar5
-Bangladesh,BGD,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,NA,0,100,./countries/Bangladesh,./pillars/Pillar5
-Barbados,BRB,Pillar 1,1,NA,commitment A,35.8235294117647,NA,NA,NA,0,1,./countries/Barbados,./pillars/Pillar1
-Barbados,BRB,Pillar 1,2,NA,commitment B,30.8235294117647,NA,NA,NA,0,1,./countries/Barbados,./pillars/Pillar1
-Barbados,BRB,Pillar 1,3,NA,commitment C,21.8235294117647,NA,NA,NA,0,1,./countries/Barbados,./pillars/Pillar1
-Barbados,BRB,Pillar 2,4,NA,commitment D,43.823529411764696,NA,NA,NA,10,0,./countries/Barbados,./pillars/Pillar2
-Barbados,BRB,Pillar 2,5,NA,commitment E,31.823529411764696,NA,NA,NA,10,0,./countries/Barbados,./pillars/Pillar2
-Barbados,BRB,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,NA,10,0,./countries/Barbados,./pillars/Pillar2
-Barbados,BRB,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar3
-Barbados,BRB,Pillar 3,8,NA,commitment H,20.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar3
-Barbados,BRB,Pillar 3,9,NA,commitment I,17.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar3
-Barbados,BRB,Pillar 4,10,NA,commitment J,18.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar4
-Barbados,BRB,Pillar 4,11,NA,commitment K,30.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar4
-Barbados,BRB,Pillar 4,12,NA,commitment L,37.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar4
-Barbados,BRB,Pillar 5,13,NA,commitment M,42.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar5
-Barbados,BRB,Pillar 5,14,NA,commitment N,31.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar5
-Barbados,BRB,Pillar 5,15,NA,commitment O,35.8235294117647,NA,NA,NA,0,100,./countries/Barbados,./pillars/Pillar5
-Belarus,BLR,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,NA,0,1,./countries/Belarus,./pillars/Pillar1
-Belarus,BLR,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,NA,0,1,./countries/Belarus,./pillars/Pillar1
-Belarus,BLR,Pillar 1,3,NA,commitment C,18.8235294117647,NA,NA,NA,0,1,./countries/Belarus,./pillars/Pillar1
-Belarus,BLR,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,NA,10,0,./countries/Belarus,./pillars/Pillar2
-Belarus,BLR,Pillar 2,5,NA,commitment E,17.823529411764696,NA,NA,NA,10,0,./countries/Belarus,./pillars/Pillar2
-Belarus,BLR,Pillar 2,6,NA,commitment F,43.823529411764696,NA,NA,NA,10,0,./countries/Belarus,./pillars/Pillar2
-Belarus,BLR,Pillar 3,7,NA,commitment G,25.8235294117647,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar3
-Belarus,BLR,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar3
-Belarus,BLR,Pillar 3,9,NA,commitment I,31.8235294117647,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar3
-Belarus,BLR,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar4
-Belarus,BLR,Pillar 4,11,NA,commitment K,15.823529411764701,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar4
-Belarus,BLR,Pillar 4,12,NA,commitment L,33.8235294117647,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar4
-Belarus,BLR,Pillar 5,13,NA,commitment M,15.823529411764701,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar5
-Belarus,BLR,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar5
-Belarus,BLR,Pillar 5,15,NA,commitment O,18.8235294117647,NA,NA,NA,0,100,./countries/Belarus,./pillars/Pillar5
-Belgium,BEL,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,NA,0,1,./countries/Belgium,./pillars/Pillar1
-Belgium,BEL,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,NA,0,1,./countries/Belgium,./pillars/Pillar1
-Belgium,BEL,Pillar 1,3,NA,commitment C,31.8235294117647,NA,NA,NA,0,1,./countries/Belgium,./pillars/Pillar1
-Belgium,BEL,Pillar 2,4,NA,commitment D,39.82352941176471,NA,NA,NA,10,0,./countries/Belgium,./pillars/Pillar2
-Belgium,BEL,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,NA,10,0,./countries/Belgium,./pillars/Pillar2
-Belgium,BEL,Pillar 2,6,NA,commitment F,21.823529411764696,NA,NA,NA,10,0,./countries/Belgium,./pillars/Pillar2
-Belgium,BEL,Pillar 3,7,NA,commitment G,24.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar3
-Belgium,BEL,Pillar 3,8,NA,commitment H,35.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar3
-Belgium,BEL,Pillar 3,9,NA,commitment I,32.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar3
-Belgium,BEL,Pillar 4,10,NA,commitment J,23.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar4
-Belgium,BEL,Pillar 4,11,NA,commitment K,25.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar4
-Belgium,BEL,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar4
-Belgium,BEL,Pillar 5,13,NA,commitment M,22.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar5
-Belgium,BEL,Pillar 5,14,NA,commitment N,35.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar5
-Belgium,BEL,Pillar 5,15,NA,commitment O,31.8235294117647,NA,NA,NA,0,100,./countries/Belgium,./pillars/Pillar5
-Belize,BLZ,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,NA,0,1,./countries/Belize,./pillars/Pillar1
-Belize,BLZ,Pillar 1,2,NA,commitment B,41.8235294117647,NA,NA,NA,0,1,./countries/Belize,./pillars/Pillar1
-Belize,BLZ,Pillar 1,3,NA,commitment C,37.8235294117647,NA,NA,NA,0,1,./countries/Belize,./pillars/Pillar1
-Belize,BLZ,Pillar 2,4,NA,commitment D,46.823529411764696,NA,NA,NA,10,0,./countries/Belize,./pillars/Pillar2
-Belize,BLZ,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,NA,10,0,./countries/Belize,./pillars/Pillar2
-Belize,BLZ,Pillar 2,6,NA,commitment F,40.82352941176471,NA,NA,NA,10,0,./countries/Belize,./pillars/Pillar2
-Belize,BLZ,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar3
-Belize,BLZ,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar3
-Belize,BLZ,Pillar 3,9,NA,commitment I,43.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar3
-Belize,BLZ,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar4
-Belize,BLZ,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar4
-Belize,BLZ,Pillar 4,12,NA,commitment L,25.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar4
-Belize,BLZ,Pillar 5,13,NA,commitment M,26.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar5
-Belize,BLZ,Pillar 5,14,NA,commitment N,20.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar5
-Belize,BLZ,Pillar 5,15,NA,commitment O,20.8235294117647,NA,NA,NA,0,100,./countries/Belize,./pillars/Pillar5
-Benin,BEN,Pillar 1,1,NA,commitment A,17.8235294117647,NA,NA,NA,0,1,./countries/Benin,./pillars/Pillar1
-Benin,BEN,Pillar 1,2,NA,commitment B,18.8235294117647,NA,NA,NA,0,1,./countries/Benin,./pillars/Pillar1
-Benin,BEN,Pillar 1,3,NA,commitment C,35.8235294117647,NA,NA,NA,0,1,./countries/Benin,./pillars/Pillar1
-Benin,BEN,Pillar 2,4,NA,commitment D,40.82352941176471,NA,NA,NA,10,0,./countries/Benin,./pillars/Pillar2
-Benin,BEN,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,NA,10,0,./countries/Benin,./pillars/Pillar2
-Benin,BEN,Pillar 2,6,NA,commitment F,41.823529411764696,NA,NA,NA,10,0,./countries/Benin,./pillars/Pillar2
-Benin,BEN,Pillar 3,7,NA,commitment G,50.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar3
-Benin,BEN,Pillar 3,8,NA,commitment H,28.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar3
-Benin,BEN,Pillar 3,9,NA,commitment I,11.823529411764701,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar3
-Benin,BEN,Pillar 4,10,NA,commitment J,41.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar4
-Benin,BEN,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar4
-Benin,BEN,Pillar 4,12,NA,commitment L,47.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar4
-Benin,BEN,Pillar 5,13,NA,commitment M,34.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar5
-Benin,BEN,Pillar 5,14,NA,commitment N,29.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar5
-Benin,BEN,Pillar 5,15,NA,commitment O,19.8235294117647,NA,NA,NA,0,100,./countries/Benin,./pillars/Pillar5
-Bermuda,BMU,Pillar 1,1,NA,commitment A,13.823529411764698,NA,NA,NA,0,1,./countries/Bermuda,./pillars/Pillar1
-Bermuda,BMU,Pillar 1,2,NA,commitment B,30.8235294117647,NA,NA,NA,0,1,./countries/Bermuda,./pillars/Pillar1
-Bermuda,BMU,Pillar 1,3,NA,commitment C,23.8235294117647,NA,NA,NA,0,1,./countries/Bermuda,./pillars/Pillar1
-Bermuda,BMU,Pillar 2,4,NA,commitment D,34.82352941176471,NA,NA,NA,10,0,./countries/Bermuda,./pillars/Pillar2
-Bermuda,BMU,Pillar 2,5,NA,commitment E,22.823529411764696,NA,NA,NA,10,0,./countries/Bermuda,./pillars/Pillar2
-Bermuda,BMU,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,NA,10,0,./countries/Bermuda,./pillars/Pillar2
-Bermuda,BMU,Pillar 3,7,NA,commitment G,29.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar3
-Bermuda,BMU,Pillar 3,8,NA,commitment H,30.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar3
-Bermuda,BMU,Pillar 3,9,NA,commitment I,19.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar3
-Bermuda,BMU,Pillar 4,10,NA,commitment J,30.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar4
-Bermuda,BMU,Pillar 4,11,NA,commitment K,31.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar4
-Bermuda,BMU,Pillar 4,12,NA,commitment L,31.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar4
-Bermuda,BMU,Pillar 5,13,NA,commitment M,13.823529411764701,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar5
-Bermuda,BMU,Pillar 5,14,NA,commitment N,38.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar5
-Bermuda,BMU,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,NA,0,100,./countries/Bermuda,./pillars/Pillar5
-Bhutan,BTN,Pillar 1,1,NA,commitment A,41.8235294117647,NA,NA,NA,0,1,./countries/Bhutan,./pillars/Pillar1
-Bhutan,BTN,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,NA,0,1,./countries/Bhutan,./pillars/Pillar1
-Bhutan,BTN,Pillar 1,3,NA,commitment C,26.823529411764703,NA,NA,NA,0,1,./countries/Bhutan,./pillars/Pillar1
-Bhutan,BTN,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,NA,10,0,./countries/Bhutan,./pillars/Pillar2
-Bhutan,BTN,Pillar 2,5,NA,commitment E,26.823529411764696,NA,NA,NA,10,0,./countries/Bhutan,./pillars/Pillar2
-Bhutan,BTN,Pillar 2,6,NA,commitment F,34.82352941176471,NA,NA,NA,10,0,./countries/Bhutan,./pillars/Pillar2
-Bhutan,BTN,Pillar 3,7,NA,commitment G,19.8235294117647,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar3
-Bhutan,BTN,Pillar 3,8,NA,commitment H,40.8235294117647,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar3
-Bhutan,BTN,Pillar 3,9,NA,commitment I,14.823529411764701,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar3
-Bhutan,BTN,Pillar 4,10,NA,commitment J,31.8235294117647,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar4
-Bhutan,BTN,Pillar 4,11,NA,commitment K,10.823529411764701,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar4
-Bhutan,BTN,Pillar 4,12,NA,commitment L,34.8235294117647,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar4
-Bhutan,BTN,Pillar 5,13,NA,commitment M,21.8235294117647,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar5
-Bhutan,BTN,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar5
-Bhutan,BTN,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,NA,0,100,./countries/Bhutan,./pillars/Pillar5
-Bolivia,BOL,Pillar 1,1,NA,commitment A,36.8235294117647,NA,NA,NA,0,1,./countries/Bolivia,./pillars/Pillar1
-Bolivia,BOL,Pillar 1,2,NA,commitment B,51.8235294117647,NA,NA,NA,0,1,./countries/Bolivia,./pillars/Pillar1
-Bolivia,BOL,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,NA,0,1,./countries/Bolivia,./pillars/Pillar1
-Bolivia,BOL,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,NA,10,0,./countries/Bolivia,./pillars/Pillar2
-Bolivia,BOL,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,NA,10,0,./countries/Bolivia,./pillars/Pillar2
-Bolivia,BOL,Pillar 2,6,NA,commitment F,34.82352941176471,NA,NA,NA,10,0,./countries/Bolivia,./pillars/Pillar2
-Bolivia,BOL,Pillar 3,7,NA,commitment G,14.823529411764701,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar3
-Bolivia,BOL,Pillar 3,8,NA,commitment H,12.823529411764701,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar3
-Bolivia,BOL,Pillar 3,9,NA,commitment I,20.8235294117647,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar3
-Bolivia,BOL,Pillar 4,10,NA,commitment J,14.823529411764701,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar4
-Bolivia,BOL,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar4
-Bolivia,BOL,Pillar 4,12,NA,commitment L,22.8235294117647,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar4
-Bolivia,BOL,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar5
-Bolivia,BOL,Pillar 5,14,NA,commitment N,28.8235294117647,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar5
-Bolivia,BOL,Pillar 5,15,NA,commitment O,18.8235294117647,NA,NA,NA,0,100,./countries/Bolivia,./pillars/Pillar5
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 1,1,NA,commitment A,34.8235294117647,NA,NA,NA,0,1,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar1
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 1,2,NA,commitment B,35.8235294117647,NA,NA,NA,0,1,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar1
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,NA,0,1,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar1
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 2,4,NA,commitment D,44.82352941176471,NA,NA,NA,10,0,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar2
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 2,5,NA,commitment E,22.823529411764696,NA,NA,NA,10,0,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar2
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 2,6,NA,commitment F,13.823529411764696,NA,NA,NA,10,0,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar2
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 3,7,NA,commitment G,21.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar3
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 3,8,NA,commitment H,31.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar3
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 3,9,NA,commitment I,32.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar3
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 4,10,NA,commitment J,31.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar4
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar4
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 4,12,NA,commitment L,35.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar4
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 5,13,NA,commitment M,41.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar5
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 5,14,NA,commitment N,15.823529411764701,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar5
-"Bonaire, Sint Eustatius and Saba",BES,Pillar 5,15,NA,commitment O,40.8235294117647,NA,NA,NA,0,100,./countries/BonaireSintEustatiusandSaba,./pillars/Pillar5
-Bosnia and Herzegovina,BIH,Pillar 1,1,NA,commitment A,46.8235294117647,NA,NA,NA,0,1,./countries/BosniaandHerzegovina,./pillars/Pillar1
-Bosnia and Herzegovina,BIH,Pillar 1,2,NA,commitment B,13.823529411764698,NA,NA,NA,0,1,./countries/BosniaandHerzegovina,./pillars/Pillar1
-Bosnia and Herzegovina,BIH,Pillar 1,3,NA,commitment C,36.8235294117647,NA,NA,NA,0,1,./countries/BosniaandHerzegovina,./pillars/Pillar1
-Bosnia and Herzegovina,BIH,Pillar 2,4,NA,commitment D,31.823529411764696,NA,NA,NA,10,0,./countries/BosniaandHerzegovina,./pillars/Pillar2
-Bosnia and Herzegovina,BIH,Pillar 2,5,NA,commitment E,27.823529411764696,NA,NA,NA,10,0,./countries/BosniaandHerzegovina,./pillars/Pillar2
-Bosnia and Herzegovina,BIH,Pillar 2,6,NA,commitment F,27.823529411764696,NA,NA,NA,10,0,./countries/BosniaandHerzegovina,./pillars/Pillar2
-Bosnia and Herzegovina,BIH,Pillar 3,7,NA,commitment G,32.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar3
-Bosnia and Herzegovina,BIH,Pillar 3,8,NA,commitment H,31.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar3
-Bosnia and Herzegovina,BIH,Pillar 3,9,NA,commitment I,21.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar3
-Bosnia and Herzegovina,BIH,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar4
-Bosnia and Herzegovina,BIH,Pillar 4,11,NA,commitment K,7.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar4
-Bosnia and Herzegovina,BIH,Pillar 4,12,NA,commitment L,36.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar4
-Bosnia and Herzegovina,BIH,Pillar 5,13,NA,commitment M,16.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar5
-Bosnia and Herzegovina,BIH,Pillar 5,14,NA,commitment N,35.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar5
-Bosnia and Herzegovina,BIH,Pillar 5,15,NA,commitment O,23.8235294117647,NA,NA,NA,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar5
-Botswana,BWA,Pillar 1,1,NA,commitment A,23.8235294117647,NA,NA,NA,0,1,./countries/Botswana,./pillars/Pillar1
-Botswana,BWA,Pillar 1,2,NA,commitment B,33.8235294117647,NA,NA,NA,0,1,./countries/Botswana,./pillars/Pillar1
-Botswana,BWA,Pillar 1,3,NA,commitment C,15.8235294117647,NA,NA,NA,0,1,./countries/Botswana,./pillars/Pillar1
-Botswana,BWA,Pillar 2,4,NA,commitment D,33.823529411764696,NA,NA,NA,10,0,./countries/Botswana,./pillars/Pillar2
-Botswana,BWA,Pillar 2,5,NA,commitment E,39.82352941176471,NA,NA,NA,10,0,./countries/Botswana,./pillars/Pillar2
-Botswana,BWA,Pillar 2,6,NA,commitment F,41.823529411764696,NA,NA,NA,10,0,./countries/Botswana,./pillars/Pillar2
-Botswana,BWA,Pillar 3,7,NA,commitment G,33.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar3
-Botswana,BWA,Pillar 3,8,NA,commitment H,24.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar3
-Botswana,BWA,Pillar 3,9,NA,commitment I,19.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar3
-Botswana,BWA,Pillar 4,10,NA,commitment J,40.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar4
-Botswana,BWA,Pillar 4,11,NA,commitment K,36.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar4
-Botswana,BWA,Pillar 4,12,NA,commitment L,21.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar4
-Botswana,BWA,Pillar 5,13,NA,commitment M,26.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar5
-Botswana,BWA,Pillar 5,14,NA,commitment N,13.823529411764701,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar5
-Botswana,BWA,Pillar 5,15,NA,commitment O,6.8235294117647,NA,NA,NA,0,100,./countries/Botswana,./pillars/Pillar5
-Bouvet Island,BVT,Pillar 1,1,NA,commitment A,35.8235294117647,NA,NA,NA,0,1,./countries/BouvetIsland,./pillars/Pillar1
-Bouvet Island,BVT,Pillar 1,2,NA,commitment B,23.8235294117647,NA,NA,NA,0,1,./countries/BouvetIsland,./pillars/Pillar1
-Bouvet Island,BVT,Pillar 1,3,NA,commitment C,35.8235294117647,NA,NA,NA,0,1,./countries/BouvetIsland,./pillars/Pillar1
-Bouvet Island,BVT,Pillar 2,4,NA,commitment D,26.823529411764696,NA,NA,NA,10,0,./countries/BouvetIsland,./pillars/Pillar2
-Bouvet Island,BVT,Pillar 2,5,NA,commitment E,31.823529411764696,NA,NA,NA,10,0,./countries/BouvetIsland,./pillars/Pillar2
-Bouvet Island,BVT,Pillar 2,6,NA,commitment F,14.82352941176471,NA,NA,NA,10,0,./countries/BouvetIsland,./pillars/Pillar2
-Bouvet Island,BVT,Pillar 3,7,NA,commitment G,34.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar3
-Bouvet Island,BVT,Pillar 3,8,NA,commitment H,6.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar3
-Bouvet Island,BVT,Pillar 3,9,NA,commitment I,23.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar3
-Bouvet Island,BVT,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar4
-Bouvet Island,BVT,Pillar 4,11,NA,commitment K,16.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar4
-Bouvet Island,BVT,Pillar 4,12,NA,commitment L,13.823529411764701,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar4
-Bouvet Island,BVT,Pillar 5,13,NA,commitment M,28.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar5
-Bouvet Island,BVT,Pillar 5,14,NA,commitment N,43.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar5
-Bouvet Island,BVT,Pillar 5,15,NA,commitment O,29.8235294117647,NA,NA,NA,0,100,./countries/BouvetIsland,./pillars/Pillar5
-Brazil,BRA,Pillar 1,1,NA,commitment A,23.8235294117647,NA,NA,NA,0,1,./countries/Brazil,./pillars/Pillar1
-Brazil,BRA,Pillar 1,2,NA,commitment B,34.8235294117647,NA,NA,NA,0,1,./countries/Brazil,./pillars/Pillar1
-Brazil,BRA,Pillar 1,3,NA,commitment C,34.8235294117647,NA,NA,NA,0,1,./countries/Brazil,./pillars/Pillar1
-Brazil,BRA,Pillar 2,4,NA,commitment D,14.82352941176471,NA,NA,NA,10,0,./countries/Brazil,./pillars/Pillar2
-Brazil,BRA,Pillar 2,5,NA,commitment E,30.82352941176471,NA,NA,NA,10,0,./countries/Brazil,./pillars/Pillar2
-Brazil,BRA,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,NA,10,0,./countries/Brazil,./pillars/Pillar2
-Brazil,BRA,Pillar 3,7,NA,commitment G,40.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar3
-Brazil,BRA,Pillar 3,8,NA,commitment H,39.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar3
-Brazil,BRA,Pillar 3,9,NA,commitment I,9.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar3
-Brazil,BRA,Pillar 4,10,NA,commitment J,54.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar4
-Brazil,BRA,Pillar 4,11,NA,commitment K,48.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar4
-Brazil,BRA,Pillar 4,12,NA,commitment L,38.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar4
-Brazil,BRA,Pillar 5,13,NA,commitment M,14.823529411764701,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar5
-Brazil,BRA,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar5
-Brazil,BRA,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,NA,0,100,./countries/Brazil,./pillars/Pillar5
-Brunei,BRN,Pillar 1,1,NA,commitment A,17.8235294117647,NA,NA,NA,0,1,./countries/Brunei,./pillars/Pillar1
-Brunei,BRN,Pillar 1,2,NA,commitment B,34.8235294117647,NA,NA,NA,0,1,./countries/Brunei,./pillars/Pillar1
-Brunei,BRN,Pillar 1,3,NA,commitment C,23.8235294117647,NA,NA,NA,0,1,./countries/Brunei,./pillars/Pillar1
-Brunei,BRN,Pillar 2,4,NA,commitment D,15.82352941176471,NA,NA,NA,10,0,./countries/Brunei,./pillars/Pillar2
-Brunei,BRN,Pillar 2,5,NA,commitment E,36.823529411764696,NA,NA,NA,10,0,./countries/Brunei,./pillars/Pillar2
-Brunei,BRN,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,NA,10,0,./countries/Brunei,./pillars/Pillar2
-Brunei,BRN,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar3
-Brunei,BRN,Pillar 3,8,NA,commitment H,37.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar3
-Brunei,BRN,Pillar 3,9,NA,commitment I,41.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar3
-Brunei,BRN,Pillar 4,10,NA,commitment J,20.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar4
-Brunei,BRN,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar4
-Brunei,BRN,Pillar 4,12,NA,commitment L,28.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar4
-Brunei,BRN,Pillar 5,13,NA,commitment M,30.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar5
-Brunei,BRN,Pillar 5,14,NA,commitment N,44.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar5
-Brunei,BRN,Pillar 5,15,NA,commitment O,23.8235294117647,NA,NA,NA,0,100,./countries/Brunei,./pillars/Pillar5
-Bulgaria,BGR,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,NA,0,1,./countries/Bulgaria,./pillars/Pillar1
-Bulgaria,BGR,Pillar 1,2,NA,commitment B,26.823529411764703,NA,NA,NA,0,1,./countries/Bulgaria,./pillars/Pillar1
-Bulgaria,BGR,Pillar 1,3,NA,commitment C,22.8235294117647,NA,NA,NA,0,1,./countries/Bulgaria,./pillars/Pillar1
-Bulgaria,BGR,Pillar 2,4,NA,commitment D,40.82352941176471,NA,NA,NA,10,0,./countries/Bulgaria,./pillars/Pillar2
-Bulgaria,BGR,Pillar 2,5,NA,commitment E,38.823529411764696,NA,NA,NA,10,0,./countries/Bulgaria,./pillars/Pillar2
-Bulgaria,BGR,Pillar 2,6,NA,commitment F,25.82352941176471,NA,NA,NA,10,0,./countries/Bulgaria,./pillars/Pillar2
-Bulgaria,BGR,Pillar 3,7,NA,commitment G,17.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar3
-Bulgaria,BGR,Pillar 3,8,NA,commitment H,32.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar3
-Bulgaria,BGR,Pillar 3,9,NA,commitment I,35.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar3
-Bulgaria,BGR,Pillar 4,10,NA,commitment J,32.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar4
-Bulgaria,BGR,Pillar 4,11,NA,commitment K,16.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar4
-Bulgaria,BGR,Pillar 4,12,NA,commitment L,51.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar4
-Bulgaria,BGR,Pillar 5,13,NA,commitment M,28.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar5
-Bulgaria,BGR,Pillar 5,14,NA,commitment N,28.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar5
-Bulgaria,BGR,Pillar 5,15,NA,commitment O,9.8235294117647,NA,NA,NA,0,100,./countries/Bulgaria,./pillars/Pillar5
-Burkina Faso,BFA,Pillar 1,1,NA,commitment A,28.8235294117647,NA,NA,NA,0,1,./countries/BurkinaFaso,./pillars/Pillar1
-Burkina Faso,BFA,Pillar 1,2,NA,commitment B,22.8235294117647,NA,NA,NA,0,1,./countries/BurkinaFaso,./pillars/Pillar1
-Burkina Faso,BFA,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,NA,0,1,./countries/BurkinaFaso,./pillars/Pillar1
-Burkina Faso,BFA,Pillar 2,4,NA,commitment D,57.82352941176471,NA,NA,NA,10,0,./countries/BurkinaFaso,./pillars/Pillar2
-Burkina Faso,BFA,Pillar 2,5,NA,commitment E,29.823529411764696,NA,NA,NA,10,0,./countries/BurkinaFaso,./pillars/Pillar2
-Burkina Faso,BFA,Pillar 2,6,NA,commitment F,27.823529411764696,NA,NA,NA,10,0,./countries/BurkinaFaso,./pillars/Pillar2
-Burkina Faso,BFA,Pillar 3,7,NA,commitment G,17.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar3
-Burkina Faso,BFA,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar3
-Burkina Faso,BFA,Pillar 3,9,NA,commitment I,16.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar3
-Burkina Faso,BFA,Pillar 4,10,NA,commitment J,29.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar4
-Burkina Faso,BFA,Pillar 4,11,NA,commitment K,28.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar4
-Burkina Faso,BFA,Pillar 4,12,NA,commitment L,32.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar4
-Burkina Faso,BFA,Pillar 5,13,NA,commitment M,22.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar5
-Burkina Faso,BFA,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar5
-Burkina Faso,BFA,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,NA,0,100,./countries/BurkinaFaso,./pillars/Pillar5
-Burundi,BDI,Pillar 1,1,NA,commitment A,29.8235294117647,NA,NA,NA,0,1,./countries/Burundi,./pillars/Pillar1
-Burundi,BDI,Pillar 1,2,NA,commitment B,25.8235294117647,NA,NA,NA,0,1,./countries/Burundi,./pillars/Pillar1
-Burundi,BDI,Pillar 1,3,NA,commitment C,5.8235294117647,NA,NA,NA,0,1,./countries/Burundi,./pillars/Pillar1
-Burundi,BDI,Pillar 2,4,NA,commitment D,19.82352941176471,NA,NA,NA,10,0,./countries/Burundi,./pillars/Pillar2
-Burundi,BDI,Pillar 2,5,NA,commitment E,29.823529411764696,NA,NA,NA,10,0,./countries/Burundi,./pillars/Pillar2
-Burundi,BDI,Pillar 2,6,NA,commitment F,36.823529411764696,NA,NA,NA,10,0,./countries/Burundi,./pillars/Pillar2
-Burundi,BDI,Pillar 3,7,NA,commitment G,8.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar3
-Burundi,BDI,Pillar 3,8,NA,commitment H,1.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar3
-Burundi,BDI,Pillar 3,9,NA,commitment I,33.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar3
-Burundi,BDI,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar4
-Burundi,BDI,Pillar 4,11,NA,commitment K,31.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar4
-Burundi,BDI,Pillar 4,12,NA,commitment L,44.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar4
-Burundi,BDI,Pillar 5,13,NA,commitment M,11.823529411764701,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar5
-Burundi,BDI,Pillar 5,14,NA,commitment N,22.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar5
-Burundi,BDI,Pillar 5,15,NA,commitment O,21.8235294117647,NA,NA,NA,0,100,./countries/Burundi,./pillars/Pillar5
-Cameroon,CMR,Pillar 1,1,NA,commitment A,32.8235294117647,NA,NA,NA,0,1,./countries/Cameroon,./pillars/Pillar1
-Cameroon,CMR,Pillar 1,2,NA,commitment B,18.8235294117647,NA,NA,NA,0,1,./countries/Cameroon,./pillars/Pillar1
-Cameroon,CMR,Pillar 1,3,NA,commitment C,39.8235294117647,NA,NA,NA,0,1,./countries/Cameroon,./pillars/Pillar1
-Cameroon,CMR,Pillar 2,4,NA,commitment D,11.823529411764696,NA,NA,NA,10,0,./countries/Cameroon,./pillars/Pillar2
-Cameroon,CMR,Pillar 2,5,NA,commitment E,35.82352941176471,NA,NA,NA,10,0,./countries/Cameroon,./pillars/Pillar2
-Cameroon,CMR,Pillar 2,6,NA,commitment F,24.823529411764696,NA,NA,NA,10,0,./countries/Cameroon,./pillars/Pillar2
-Cameroon,CMR,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar3
-Cameroon,CMR,Pillar 3,8,NA,commitment H,40.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar3
-Cameroon,CMR,Pillar 3,9,NA,commitment I,40.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar3
-Cameroon,CMR,Pillar 4,10,NA,commitment J,46.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar4
-Cameroon,CMR,Pillar 4,11,NA,commitment K,41.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar4
-Cameroon,CMR,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar4
-Cameroon,CMR,Pillar 5,13,NA,commitment M,20.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar5
-Cameroon,CMR,Pillar 5,14,NA,commitment N,46.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar5
-Cameroon,CMR,Pillar 5,15,NA,commitment O,23.8235294117647,NA,NA,NA,0,100,./countries/Cameroon,./pillars/Pillar5
-Cape Verde,CPV,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,NA,0,1,./countries/CapeVerde,./pillars/Pillar1
-Cape Verde,CPV,Pillar 1,2,NA,commitment B,21.8235294117647,NA,NA,NA,0,1,./countries/CapeVerde,./pillars/Pillar1
-Cape Verde,CPV,Pillar 1,3,NA,commitment C,30.8235294117647,NA,NA,NA,0,1,./countries/CapeVerde,./pillars/Pillar1
-Cape Verde,CPV,Pillar 2,4,NA,commitment D,30.82352941176471,NA,NA,NA,10,0,./countries/CapeVerde,./pillars/Pillar2
-Cape Verde,CPV,Pillar 2,5,NA,commitment E,62.82352941176471,NA,NA,NA,10,0,./countries/CapeVerde,./pillars/Pillar2
-Cape Verde,CPV,Pillar 2,6,NA,commitment F,32.82352941176471,NA,NA,NA,10,0,./countries/CapeVerde,./pillars/Pillar2
-Cape Verde,CPV,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar3
-Cape Verde,CPV,Pillar 3,8,NA,commitment H,22.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar3
-Cape Verde,CPV,Pillar 3,9,NA,commitment I,23.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar3
-Cape Verde,CPV,Pillar 4,10,NA,commitment J,24.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar4
-Cape Verde,CPV,Pillar 4,11,NA,commitment K,26.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar4
-Cape Verde,CPV,Pillar 4,12,NA,commitment L,23.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar4
-Cape Verde,CPV,Pillar 5,13,NA,commitment M,20.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar5
-Cape Verde,CPV,Pillar 5,14,NA,commitment N,23.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar5
-Cape Verde,CPV,Pillar 5,15,NA,commitment O,33.8235294117647,NA,NA,NA,0,100,./countries/CapeVerde,./pillars/Pillar5
-China,CHN,Pillar 1,1,NA,commitment A,22.8235294117647,NA,NA,NA,0,1,./countries/China,./pillars/Pillar1
-China,CHN,Pillar 1,2,NA,commitment B,33.8235294117647,NA,NA,NA,0,1,./countries/China,./pillars/Pillar1
-China,CHN,Pillar 1,3,NA,commitment C,13.823529411764698,NA,NA,NA,0,1,./countries/China,./pillars/Pillar1
-China,CHN,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,NA,10,0,./countries/China,./pillars/Pillar2
-China,CHN,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,NA,10,0,./countries/China,./pillars/Pillar2
-China,CHN,Pillar 2,6,NA,commitment F,40.82352941176471,NA,NA,NA,10,0,./countries/China,./pillars/Pillar2
-China,CHN,Pillar 3,7,NA,commitment G,37.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar3
-China,CHN,Pillar 3,8,NA,commitment H,25.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar3
-China,CHN,Pillar 3,9,NA,commitment I,34.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar3
-China,CHN,Pillar 4,10,NA,commitment J,35.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar4
-China,CHN,Pillar 4,11,NA,commitment K,33.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar4
-China,CHN,Pillar 4,12,NA,commitment L,17.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar4
-China,CHN,Pillar 5,13,NA,commitment M,33.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar5
-China,CHN,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar5
-China,CHN,Pillar 5,15,NA,commitment O,45.8235294117647,NA,NA,NA,0,100,./countries/China,./pillars/Pillar5
-Christmas Island,CXR,Pillar 1,1,NA,commitment A,30.8235294117647,NA,NA,NA,0,1,./countries/ChristmasIsland,./pillars/Pillar1
-Christmas Island,CXR,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,NA,0,1,./countries/ChristmasIsland,./pillars/Pillar1
-Christmas Island,CXR,Pillar 1,3,NA,commitment C,33.8235294117647,NA,NA,NA,0,1,./countries/ChristmasIsland,./pillars/Pillar1
-Christmas Island,CXR,Pillar 2,4,NA,commitment D,39.82352941176471,NA,NA,NA,10,0,./countries/ChristmasIsland,./pillars/Pillar2
-Christmas Island,CXR,Pillar 2,5,NA,commitment E,9.82352941176471,NA,NA,NA,10,0,./countries/ChristmasIsland,./pillars/Pillar2
-Christmas Island,CXR,Pillar 2,6,NA,commitment F,22.823529411764696,NA,NA,NA,10,0,./countries/ChristmasIsland,./pillars/Pillar2
-Christmas Island,CXR,Pillar 3,7,NA,commitment G,36.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar3
-Christmas Island,CXR,Pillar 3,8,NA,commitment H,20.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar3
-Christmas Island,CXR,Pillar 3,9,NA,commitment I,30.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar3
-Christmas Island,CXR,Pillar 4,10,NA,commitment J,27.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar4
-Christmas Island,CXR,Pillar 4,11,NA,commitment K,33.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar4
-Christmas Island,CXR,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar4
-Christmas Island,CXR,Pillar 5,13,NA,commitment M,37.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar5
-Christmas Island,CXR,Pillar 5,14,NA,commitment N,21.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar5
-Christmas Island,CXR,Pillar 5,15,NA,commitment O,35.8235294117647,NA,NA,NA,0,100,./countries/ChristmasIsland,./pillars/Pillar5
-Clipperton Island,CPT,Pillar 1,1,NA,commitment A,36.8235294117647,NA,NA,NA,0,1,./countries/ClippertonIsland,./pillars/Pillar1
-Clipperton Island,CPT,Pillar 1,2,NA,commitment B,46.8235294117647,NA,NA,NA,0,1,./countries/ClippertonIsland,./pillars/Pillar1
-Clipperton Island,CPT,Pillar 1,3,NA,commitment C,41.8235294117647,NA,NA,NA,0,1,./countries/ClippertonIsland,./pillars/Pillar1
-Clipperton Island,CPT,Pillar 2,4,NA,commitment D,17.823529411764696,NA,NA,NA,10,0,./countries/ClippertonIsland,./pillars/Pillar2
-Clipperton Island,CPT,Pillar 2,5,NA,commitment E,44.82352941176471,NA,NA,NA,10,0,./countries/ClippertonIsland,./pillars/Pillar2
-Clipperton Island,CPT,Pillar 2,6,NA,commitment F,38.823529411764696,NA,NA,NA,10,0,./countries/ClippertonIsland,./pillars/Pillar2
-Clipperton Island,CPT,Pillar 3,7,NA,commitment G,34.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar3
-Clipperton Island,CPT,Pillar 3,8,NA,commitment H,53.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar3
-Clipperton Island,CPT,Pillar 3,9,NA,commitment I,40.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar3
-Clipperton Island,CPT,Pillar 4,10,NA,commitment J,8.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar4
-Clipperton Island,CPT,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar4
-Clipperton Island,CPT,Pillar 4,12,NA,commitment L,42.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar4
-Clipperton Island,CPT,Pillar 5,13,NA,commitment M,38.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar5
-Clipperton Island,CPT,Pillar 5,14,NA,commitment N,35.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar5
-Clipperton Island,CPT,Pillar 5,15,NA,commitment O,47.8235294117647,NA,NA,NA,0,100,./countries/ClippertonIsland,./pillars/Pillar5
-Colombia,COL,Pillar 1,1,NA,commitment A,19.8235294117647,NA,NA,NA,0,1,./countries/Colombia,./pillars/Pillar1
-Colombia,COL,Pillar 1,2,NA,commitment B,26.823529411764703,NA,NA,NA,0,1,./countries/Colombia,./pillars/Pillar1
-Colombia,COL,Pillar 1,3,NA,commitment C,38.8235294117647,NA,NA,NA,0,1,./countries/Colombia,./pillars/Pillar1
-Colombia,COL,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,NA,10,0,./countries/Colombia,./pillars/Pillar2
-Colombia,COL,Pillar 2,5,NA,commitment E,24.823529411764696,NA,NA,NA,10,0,./countries/Colombia,./pillars/Pillar2
-Colombia,COL,Pillar 2,6,NA,commitment F,48.8235294117647,NA,NA,NA,10,0,./countries/Colombia,./pillars/Pillar2
-Colombia,COL,Pillar 3,7,NA,commitment G,45.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar3
-Colombia,COL,Pillar 3,8,NA,commitment H,17.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar3
-Colombia,COL,Pillar 3,9,NA,commitment I,17.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar3
-Colombia,COL,Pillar 4,10,NA,commitment J,22.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar4
-Colombia,COL,Pillar 4,11,NA,commitment K,11.823529411764701,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar4
-Colombia,COL,Pillar 4,12,NA,commitment L,17.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar4
-Colombia,COL,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar5
-Colombia,COL,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar5
-Colombia,COL,Pillar 5,15,NA,commitment O,40.8235294117647,NA,NA,NA,0,100,./countries/Colombia,./pillars/Pillar5
-Costa Rica,CRI,Pillar 1,1,NA,commitment A,30.8235294117647,NA,NA,NA,0,1,./countries/CostaRica,./pillars/Pillar1
-Costa Rica,CRI,Pillar 1,2,NA,commitment B,27.823529411764696,NA,NA,NA,0,1,./countries/CostaRica,./pillars/Pillar1
-Costa Rica,CRI,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,NA,0,1,./countries/CostaRica,./pillars/Pillar1
-Costa Rica,CRI,Pillar 2,4,NA,commitment D,31.823529411764696,NA,NA,NA,10,0,./countries/CostaRica,./pillars/Pillar2
-Costa Rica,CRI,Pillar 2,5,NA,commitment E,25.82352941176471,NA,NA,NA,10,0,./countries/CostaRica,./pillars/Pillar2
-Costa Rica,CRI,Pillar 2,6,NA,commitment F,53.8235294117647,NA,NA,NA,10,0,./countries/CostaRica,./pillars/Pillar2
-Costa Rica,CRI,Pillar 3,7,NA,commitment G,17.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar3
-Costa Rica,CRI,Pillar 3,8,NA,commitment H,23.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar3
-Costa Rica,CRI,Pillar 3,9,NA,commitment I,19.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar3
-Costa Rica,CRI,Pillar 4,10,NA,commitment J,40.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar4
-Costa Rica,CRI,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar4
-Costa Rica,CRI,Pillar 4,12,NA,commitment L,24.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar4
-Costa Rica,CRI,Pillar 5,13,NA,commitment M,16.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar5
-Costa Rica,CRI,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar5
-Costa Rica,CRI,Pillar 5,15,NA,commitment O,14.823529411764701,NA,NA,NA,0,100,./countries/CostaRica,./pillars/Pillar5
-Cuba,CUB,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,NA,0,1,./countries/Cuba,./pillars/Pillar1
-Cuba,CUB,Pillar 1,2,NA,commitment B,18.8235294117647,NA,NA,NA,0,1,./countries/Cuba,./pillars/Pillar1
-Cuba,CUB,Pillar 1,3,NA,commitment C,27.823529411764696,NA,NA,NA,0,1,./countries/Cuba,./pillars/Pillar1
-Cuba,CUB,Pillar 2,4,NA,commitment D,19.82352941176471,NA,NA,NA,10,0,./countries/Cuba,./pillars/Pillar2
-Cuba,CUB,Pillar 2,5,NA,commitment E,46.823529411764696,NA,NA,NA,10,0,./countries/Cuba,./pillars/Pillar2
-Cuba,CUB,Pillar 2,6,NA,commitment F,28.823529411764696,NA,NA,NA,10,0,./countries/Cuba,./pillars/Pillar2
-Cuba,CUB,Pillar 3,7,NA,commitment G,12.823529411764701,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar3
-Cuba,CUB,Pillar 3,8,NA,commitment H,39.8235294117647,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar3
-Cuba,CUB,Pillar 3,9,NA,commitment I,33.8235294117647,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar3
-Cuba,CUB,Pillar 4,10,NA,commitment J,16.8235294117647,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar4
-Cuba,CUB,Pillar 4,11,NA,commitment K,27.8235294117647,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar4
-Cuba,CUB,Pillar 4,12,NA,commitment L,0.823529411764706,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar4
-Cuba,CUB,Pillar 5,13,NA,commitment M,17.8235294117647,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar5
-Cuba,CUB,Pillar 5,14,NA,commitment N,28.8235294117647,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar5
-Cuba,CUB,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,NA,0,100,./countries/Cuba,./pillars/Pillar5
-Curaçao,CUW,Pillar 1,1,NA,commitment A,27.823529411764696,NA,NA,NA,0,1,./countries/Curacao,./pillars/Pillar1
-Curaçao,CUW,Pillar 1,2,NA,commitment B,20.8235294117647,NA,NA,NA,0,1,./countries/Curacao,./pillars/Pillar1
-Curaçao,CUW,Pillar 1,3,NA,commitment C,18.8235294117647,NA,NA,NA,0,1,./countries/Curacao,./pillars/Pillar1
-Curaçao,CUW,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,NA,10,0,./countries/Curacao,./pillars/Pillar2
-Curaçao,CUW,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,NA,10,0,./countries/Curacao,./pillars/Pillar2
-Curaçao,CUW,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,NA,10,0,./countries/Curacao,./pillars/Pillar2
-Curaçao,CUW,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar3
-Curaçao,CUW,Pillar 3,8,NA,commitment H,41.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar3
-Curaçao,CUW,Pillar 3,9,NA,commitment I,34.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar3
-Curaçao,CUW,Pillar 4,10,NA,commitment J,17.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar4
-Curaçao,CUW,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar4
-Curaçao,CUW,Pillar 4,12,NA,commitment L,36.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar4
-Curaçao,CUW,Pillar 5,13,NA,commitment M,25.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar5
-Curaçao,CUW,Pillar 5,14,NA,commitment N,20.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar5
-Curaçao,CUW,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,NA,0,100,./countries/Curacao,./pillars/Pillar5
-Cyprus,CYP,Pillar 1,1,NA,commitment A,18.8235294117647,NA,NA,NA,0,1,./countries/Cyprus,./pillars/Pillar1
-Cyprus,CYP,Pillar 1,2,NA,commitment B,33.8235294117647,NA,NA,NA,0,1,./countries/Cyprus,./pillars/Pillar1
-Cyprus,CYP,Pillar 1,3,NA,commitment C,36.8235294117647,NA,NA,NA,0,1,./countries/Cyprus,./pillars/Pillar1
-Cyprus,CYP,Pillar 2,4,NA,commitment D,30.82352941176471,NA,NA,NA,10,0,./countries/Cyprus,./pillars/Pillar2
-Cyprus,CYP,Pillar 2,5,NA,commitment E,28.823529411764696,NA,NA,NA,10,0,./countries/Cyprus,./pillars/Pillar2
-Cyprus,CYP,Pillar 2,6,NA,commitment F,22.823529411764696,NA,NA,NA,10,0,./countries/Cyprus,./pillars/Pillar2
-Cyprus,CYP,Pillar 3,7,NA,commitment G,35.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar3
-Cyprus,CYP,Pillar 3,8,NA,commitment H,44.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar3
-Cyprus,CYP,Pillar 3,9,NA,commitment I,12.823529411764701,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar3
-Cyprus,CYP,Pillar 4,10,NA,commitment J,38.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar4
-Cyprus,CYP,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar4
-Cyprus,CYP,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar4
-Cyprus,CYP,Pillar 5,13,NA,commitment M,30.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar5
-Cyprus,CYP,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar5
-Cyprus,CYP,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,NA,0,100,./countries/Cyprus,./pillars/Pillar5
-Czechia,CZE,Pillar 1,1,NA,commitment A,32.8235294117647,NA,NA,NA,0,1,./countries/Czechia,./pillars/Pillar1
-Czechia,CZE,Pillar 1,2,NA,commitment B,39.8235294117647,NA,NA,NA,0,1,./countries/Czechia,./pillars/Pillar1
-Czechia,CZE,Pillar 1,3,NA,commitment C,33.8235294117647,NA,NA,NA,0,1,./countries/Czechia,./pillars/Pillar1
-Czechia,CZE,Pillar 2,4,NA,commitment D,19.82352941176471,NA,NA,NA,10,0,./countries/Czechia,./pillars/Pillar2
-Czechia,CZE,Pillar 2,5,NA,commitment E,13.823529411764696,NA,NA,NA,10,0,./countries/Czechia,./pillars/Pillar2
-Czechia,CZE,Pillar 2,6,NA,commitment F,0.8235294117647101,NA,NA,NA,10,0,./countries/Czechia,./pillars/Pillar2
-Czechia,CZE,Pillar 3,7,NA,commitment G,22.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar3
-Czechia,CZE,Pillar 3,8,NA,commitment H,23.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar3
-Czechia,CZE,Pillar 3,9,NA,commitment I,37.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar3
-Czechia,CZE,Pillar 4,10,NA,commitment J,33.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar4
-Czechia,CZE,Pillar 4,11,NA,commitment K,34.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar4
-Czechia,CZE,Pillar 4,12,NA,commitment L,13.823529411764701,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar4
-Czechia,CZE,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar5
-Czechia,CZE,Pillar 5,14,NA,commitment N,30.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar5
-Czechia,CZE,Pillar 5,15,NA,commitment O,47.8235294117647,NA,NA,NA,0,100,./countries/Czechia,./pillars/Pillar5
-Gambia,GMB,Pillar 1,1,NA,commitment A,23.8235294117647,NA,NA,NA,0,1,./countries/Gambia,./pillars/Pillar1
-Gambia,GMB,Pillar 1,2,NA,commitment B,35.8235294117647,NA,NA,NA,0,1,./countries/Gambia,./pillars/Pillar1
-Gambia,GMB,Pillar 1,3,NA,commitment C,46.8235294117647,NA,NA,NA,0,1,./countries/Gambia,./pillars/Pillar1
-Gambia,GMB,Pillar 2,4,NA,commitment D,26.823529411764696,NA,NA,NA,10,0,./countries/Gambia,./pillars/Pillar2
-Gambia,GMB,Pillar 2,5,NA,commitment E,26.823529411764696,NA,NA,NA,10,0,./countries/Gambia,./pillars/Pillar2
-Gambia,GMB,Pillar 2,6,NA,commitment F,30.82352941176471,NA,NA,NA,10,0,./countries/Gambia,./pillars/Pillar2
-Gambia,GMB,Pillar 3,7,NA,commitment G,35.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar3
-Gambia,GMB,Pillar 3,8,NA,commitment H,34.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar3
-Gambia,GMB,Pillar 3,9,NA,commitment I,12.823529411764701,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar3
-Gambia,GMB,Pillar 4,10,NA,commitment J,36.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar4
-Gambia,GMB,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar4
-Gambia,GMB,Pillar 4,12,NA,commitment L,31.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar4
-Gambia,GMB,Pillar 5,13,NA,commitment M,38.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar5
-Gambia,GMB,Pillar 5,14,NA,commitment N,29.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar5
-Gambia,GMB,Pillar 5,15,NA,commitment O,39.8235294117647,NA,NA,NA,0,100,./countries/Gambia,./pillars/Pillar5
-Greenland,GRL,Pillar 1,1,NA,commitment A,44.8235294117647,NA,NA,NA,0,1,./countries/Greenland,./pillars/Pillar1
-Greenland,GRL,Pillar 1,2,NA,commitment B,24.8235294117647,NA,NA,NA,0,1,./countries/Greenland,./pillars/Pillar1
-Greenland,GRL,Pillar 1,3,NA,commitment C,27.823529411764696,NA,NA,NA,0,1,./countries/Greenland,./pillars/Pillar1
-Greenland,GRL,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,NA,10,0,./countries/Greenland,./pillars/Pillar2
-Greenland,GRL,Pillar 2,5,NA,commitment E,31.823529411764696,NA,NA,NA,10,0,./countries/Greenland,./pillars/Pillar2
-Greenland,GRL,Pillar 2,6,NA,commitment F,16.823529411764696,NA,NA,NA,10,0,./countries/Greenland,./pillars/Pillar2
-Greenland,GRL,Pillar 3,7,NA,commitment G,26.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar3
-Greenland,GRL,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar3
-Greenland,GRL,Pillar 3,9,NA,commitment I,21.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar3
-Greenland,GRL,Pillar 4,10,NA,commitment J,38.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar4
-Greenland,GRL,Pillar 4,11,NA,commitment K,41.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar4
-Greenland,GRL,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar4
-Greenland,GRL,Pillar 5,13,NA,commitment M,32.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar5
-Greenland,GRL,Pillar 5,14,NA,commitment N,16.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar5
-Greenland,GRL,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,NA,0,100,./countries/Greenland,./pillars/Pillar5
-Guinea,GIN,Pillar 1,1,NA,commitment A,37.8235294117647,NA,NA,NA,0,1,./countries/Guinea,./pillars/Pillar1
-Guinea,GIN,Pillar 1,2,NA,commitment B,37.8235294117647,NA,NA,NA,0,1,./countries/Guinea,./pillars/Pillar1
-Guinea,GIN,Pillar 1,3,NA,commitment C,13.823529411764698,NA,NA,NA,0,1,./countries/Guinea,./pillars/Pillar1
-Guinea,GIN,Pillar 2,4,NA,commitment D,16.823529411764696,NA,NA,NA,10,0,./countries/Guinea,./pillars/Pillar2
-Guinea,GIN,Pillar 2,5,NA,commitment E,7.823529411764696,NA,NA,NA,10,0,./countries/Guinea,./pillars/Pillar2
-Guinea,GIN,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,NA,10,0,./countries/Guinea,./pillars/Pillar2
-Guinea,GIN,Pillar 3,7,NA,commitment G,30.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar3
-Guinea,GIN,Pillar 3,8,NA,commitment H,27.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar3
-Guinea,GIN,Pillar 3,9,NA,commitment I,36.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar3
-Guinea,GIN,Pillar 4,10,NA,commitment J,29.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar4
-Guinea,GIN,Pillar 4,11,NA,commitment K,31.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar4
-Guinea,GIN,Pillar 4,12,NA,commitment L,47.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar4
-Guinea,GIN,Pillar 5,13,NA,commitment M,27.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar5
-Guinea,GIN,Pillar 5,14,NA,commitment N,50.8235294117647,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar5
-Guinea,GIN,Pillar 5,15,NA,commitment O,12.823529411764701,NA,NA,NA,0,100,./countries/Guinea,./pillars/Pillar5
-Saint Barthélemy,BLM,Pillar 1,1,NA,commitment A,19.8235294117647,NA,NA,NA,0,1,./countries/SaintBarthelemy,./pillars/Pillar1
-Saint Barthélemy,BLM,Pillar 1,2,NA,commitment B,24.8235294117647,NA,NA,NA,0,1,./countries/SaintBarthelemy,./pillars/Pillar1
-Saint Barthélemy,BLM,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,NA,0,1,./countries/SaintBarthelemy,./pillars/Pillar1
-Saint Barthélemy,BLM,Pillar 2,4,NA,commitment D,27.823529411764696,NA,NA,NA,10,0,./countries/SaintBarthelemy,./pillars/Pillar2
-Saint Barthélemy,BLM,Pillar 2,5,NA,commitment E,41.823529411764696,NA,NA,NA,10,0,./countries/SaintBarthelemy,./pillars/Pillar2
-Saint Barthélemy,BLM,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,NA,10,0,./countries/SaintBarthelemy,./pillars/Pillar2
-Saint Barthélemy,BLM,Pillar 3,7,NA,commitment G,39.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar3
-Saint Barthélemy,BLM,Pillar 3,8,NA,commitment H,18.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar3
-Saint Barthélemy,BLM,Pillar 3,9,NA,commitment I,15.823529411764701,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar3
-Saint Barthélemy,BLM,Pillar 4,10,NA,commitment J,33.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar4
-Saint Barthélemy,BLM,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar4
-Saint Barthélemy,BLM,Pillar 4,12,NA,commitment L,29.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar4
-Saint Barthélemy,BLM,Pillar 5,13,NA,commitment M,36.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar5
-Saint Barthélemy,BLM,Pillar 5,14,NA,commitment N,39.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar5
-Saint Barthélemy,BLM,Pillar 5,15,NA,commitment O,42.8235294117647,NA,NA,NA,0,100,./countries/SaintBarthelemy,./pillars/Pillar5
-Sudan,ATA,Pillar 1,1,NA,commitment A,40.8235294117647,NA,NA,NA,0,1,./countries/Sudan,./pillars/Pillar1
-Sudan,ATA,Pillar 1,2,NA,commitment B,41.8235294117647,NA,NA,NA,0,1,./countries/Sudan,./pillars/Pillar1
-Sudan,ATA,Pillar 1,3,NA,commitment C,45.8235294117647,NA,NA,NA,0,1,./countries/Sudan,./pillars/Pillar1
-Sudan,ATA,Pillar 2,4,NA,commitment D,45.82352941176471,NA,NA,NA,10,0,./countries/Sudan,./pillars/Pillar2
-Sudan,ATA,Pillar 2,5,NA,commitment E,22.823529411764696,NA,NA,NA,10,0,./countries/Sudan,./pillars/Pillar2
-Sudan,ATA,Pillar 2,6,NA,commitment F,19.82352941176471,NA,NA,NA,10,0,./countries/Sudan,./pillars/Pillar2
-Sudan,ATA,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar3
-Sudan,ATA,Pillar 3,8,NA,commitment H,28.8235294117647,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar3
-Sudan,ATA,Pillar 3,9,NA,commitment I,14.823529411764701,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar3
-Sudan,ATA,Pillar 4,10,NA,commitment J,8.8235294117647,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar4
-Sudan,ATA,Pillar 4,11,NA,commitment K,30.8235294117647,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar4
-Sudan,ATA,Pillar 4,12,NA,commitment L,30.8235294117647,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar4
-Sudan,ATA,Pillar 5,13,NA,commitment M,15.823529411764701,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar5
-Sudan,ATA,Pillar 5,14,NA,commitment N,50.8235294117647,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar5
-Sudan,ATA,Pillar 5,15,NA,commitment O,33.8235294117647,NA,NA,NA,0,100,./countries/Sudan,./pillars/Pillar5
-United Arab Emirates,ARE,Pillar 1,1,NA,commitment A,20.8235294117647,NA,NA,NA,0,1,./countries/UnitedArabEmirates,./pillars/Pillar1
-United Arab Emirates,ARE,Pillar 1,2,NA,commitment B,43.8235294117647,NA,NA,NA,0,1,./countries/UnitedArabEmirates,./pillars/Pillar1
-United Arab Emirates,ARE,Pillar 1,3,NA,commitment C,39.8235294117647,NA,NA,NA,0,1,./countries/UnitedArabEmirates,./pillars/Pillar1
-United Arab Emirates,ARE,Pillar 2,4,NA,commitment D,21.823529411764696,NA,NA,NA,10,0,./countries/UnitedArabEmirates,./pillars/Pillar2
-United Arab Emirates,ARE,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,NA,10,0,./countries/UnitedArabEmirates,./pillars/Pillar2
-United Arab Emirates,ARE,Pillar 2,6,NA,commitment F,40.82352941176471,NA,NA,NA,10,0,./countries/UnitedArabEmirates,./pillars/Pillar2
-United Arab Emirates,ARE,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar3
-United Arab Emirates,ARE,Pillar 3,8,NA,commitment H,23.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar3
-United Arab Emirates,ARE,Pillar 3,9,NA,commitment I,11.823529411764701,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar3
-United Arab Emirates,ARE,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar4
-United Arab Emirates,ARE,Pillar 4,11,NA,commitment K,36.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar4
-United Arab Emirates,ARE,Pillar 4,12,NA,commitment L,5.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar4
-United Arab Emirates,ARE,Pillar 5,13,NA,commitment M,33.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar5
-United Arab Emirates,ARE,Pillar 5,14,NA,commitment N,25.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar5
-United Arab Emirates,ARE,Pillar 5,15,NA,commitment O,27.8235294117647,NA,NA,NA,0,100,./countries/UnitedArabEmirates,./pillars/Pillar5
+NAME_ENGL,ISO3_CODE,pillar,commitment_num,prisec,commitment_txt,value,indicator,source,goal,min,max,country_url,pillar_url,goal_url
+Afghanistan,AFG,Pillar 1,1,NA,commitment A,26.823529411764703,NA,NA,Goal 3,0,1,./countries/Afghanistan,./pillars/Pillar1,./goals/Goal3
+Afghanistan,AFG,Pillar 1,2,NA,commitment B,31.8235294117647,NA,NA,Goal 3,0,1,./countries/Afghanistan,./pillars/Pillar1,./goals/Goal3
+Afghanistan,AFG,Pillar 1,3,NA,commitment C,18.8235294117647,NA,NA,Goal 2,0,1,./countries/Afghanistan,./pillars/Pillar1,./goals/Goal2
+Afghanistan,AFG,Pillar 2,4,NA,commitment D,36.823529411764696,NA,NA,Goal 3,10,0,./countries/Afghanistan,./pillars/Pillar2,./goals/Goal3
+Afghanistan,AFG,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,Goal 2,10,0,./countries/Afghanistan,./pillars/Pillar2,./goals/Goal2
+Afghanistan,AFG,Pillar 2,6,NA,commitment F,16.823529411764696,NA,NA,Goal 1,10,0,./countries/Afghanistan,./pillars/Pillar2,./goals/Goal1
+Afghanistan,AFG,Pillar 3,7,NA,commitment G,24.8235294117647,NA,NA,Goal 4,0,100,./countries/Afghanistan,./pillars/Pillar3,./goals/Goal4
+Afghanistan,AFG,Pillar 3,8,NA,commitment H,30.8235294117647,NA,NA,Goal 1,0,100,./countries/Afghanistan,./pillars/Pillar3,./goals/Goal1
+Afghanistan,AFG,Pillar 3,9,NA,commitment I,35.8235294117647,NA,NA,Goal 4,0,100,./countries/Afghanistan,./pillars/Pillar3,./goals/Goal4
+Afghanistan,AFG,Pillar 4,10,NA,commitment J,20.8235294117647,NA,NA,Goal 3,0,100,./countries/Afghanistan,./pillars/Pillar4,./goals/Goal3
+Afghanistan,AFG,Pillar 4,11,NA,commitment K,39.8235294117647,NA,NA,Goal 5,0,100,./countries/Afghanistan,./pillars/Pillar4,./goals/Goal5
+Afghanistan,AFG,Pillar 4,12,NA,commitment L,28.8235294117647,NA,NA,Goal 5,0,100,./countries/Afghanistan,./pillars/Pillar4,./goals/Goal5
+Afghanistan,AFG,Pillar 5,13,NA,commitment M,26.8235294117647,NA,NA,Goal 1,0,100,./countries/Afghanistan,./pillars/Pillar5,./goals/Goal1
+Afghanistan,AFG,Pillar 5,14,NA,commitment N,40.8235294117647,NA,NA,Goal 1,0,100,./countries/Afghanistan,./pillars/Pillar5,./goals/Goal1
+Afghanistan,AFG,Pillar 5,15,NA,commitment O,28.8235294117647,NA,NA,Goal 5,0,100,./countries/Afghanistan,./pillars/Pillar5,./goals/Goal5
+Albania,ALB,Pillar 1,1,NA,commitment A,34.8235294117647,NA,NA,Goal 4,0,1,./countries/Albania,./pillars/Pillar1,./goals/Goal4
+Albania,ALB,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,Goal 4,0,1,./countries/Albania,./pillars/Pillar1,./goals/Goal4
+Albania,ALB,Pillar 1,3,NA,commitment C,35.8235294117647,NA,NA,Goal 3,0,1,./countries/Albania,./pillars/Pillar1,./goals/Goal3
+Albania,ALB,Pillar 2,4,NA,commitment D,42.82352941176471,NA,NA,Goal 1,10,0,./countries/Albania,./pillars/Pillar2,./goals/Goal1
+Albania,ALB,Pillar 2,5,NA,commitment E,38.823529411764696,NA,NA,Goal 3,10,0,./countries/Albania,./pillars/Pillar2,./goals/Goal3
+Albania,ALB,Pillar 2,6,NA,commitment F,32.82352941176471,NA,NA,Goal 1,10,0,./countries/Albania,./pillars/Pillar2,./goals/Goal1
+Albania,ALB,Pillar 3,7,NA,commitment G,41.8235294117647,NA,NA,Goal 1,0,100,./countries/Albania,./pillars/Pillar3,./goals/Goal1
+Albania,ALB,Pillar 3,8,NA,commitment H,28.8235294117647,NA,NA,Goal 3,0,100,./countries/Albania,./pillars/Pillar3,./goals/Goal3
+Albania,ALB,Pillar 3,9,NA,commitment I,25.8235294117647,NA,NA,Goal 1,0,100,./countries/Albania,./pillars/Pillar3,./goals/Goal1
+Albania,ALB,Pillar 4,10,NA,commitment J,31.8235294117647,NA,NA,Goal 2,0,100,./countries/Albania,./pillars/Pillar4,./goals/Goal2
+Albania,ALB,Pillar 4,11,NA,commitment K,18.8235294117647,NA,NA,Goal 2,0,100,./countries/Albania,./pillars/Pillar4,./goals/Goal2
+Albania,ALB,Pillar 4,12,NA,commitment L,11.823529411764701,NA,NA,Goal 4,0,100,./countries/Albania,./pillars/Pillar4,./goals/Goal4
+Albania,ALB,Pillar 5,13,NA,commitment M,25.8235294117647,NA,NA,Goal 2,0,100,./countries/Albania,./pillars/Pillar5,./goals/Goal2
+Albania,ALB,Pillar 5,14,NA,commitment N,24.8235294117647,NA,NA,Goal 5,0,100,./countries/Albania,./pillars/Pillar5,./goals/Goal5
+Albania,ALB,Pillar 5,15,NA,commitment O,38.8235294117647,NA,NA,Goal 4,0,100,./countries/Albania,./pillars/Pillar5,./goals/Goal4
+American Samoa,ASM,Pillar 1,1,NA,commitment A,20.8235294117647,NA,NA,Goal 4,0,1,./countries/AmericanSamoa,./pillars/Pillar1,./goals/Goal4
+American Samoa,ASM,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,Goal 1,0,1,./countries/AmericanSamoa,./pillars/Pillar1,./goals/Goal1
+American Samoa,ASM,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,Goal 5,0,1,./countries/AmericanSamoa,./pillars/Pillar1,./goals/Goal5
+American Samoa,ASM,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,Goal 4,10,0,./countries/AmericanSamoa,./pillars/Pillar2,./goals/Goal4
+American Samoa,ASM,Pillar 2,5,NA,commitment E,24.823529411764696,NA,NA,Goal 5,10,0,./countries/AmericanSamoa,./pillars/Pillar2,./goals/Goal5
+American Samoa,ASM,Pillar 2,6,NA,commitment F,34.82352941176471,NA,NA,Goal 4,10,0,./countries/AmericanSamoa,./pillars/Pillar2,./goals/Goal4
+American Samoa,ASM,Pillar 3,7,NA,commitment G,23.8235294117647,NA,NA,Goal 3,0,100,./countries/AmericanSamoa,./pillars/Pillar3,./goals/Goal3
+American Samoa,ASM,Pillar 3,8,NA,commitment H,25.8235294117647,NA,NA,Goal 3,0,100,./countries/AmericanSamoa,./pillars/Pillar3,./goals/Goal3
+American Samoa,ASM,Pillar 3,9,NA,commitment I,26.8235294117647,NA,NA,Goal 5,0,100,./countries/AmericanSamoa,./pillars/Pillar3,./goals/Goal5
+American Samoa,ASM,Pillar 4,10,NA,commitment J,36.8235294117647,NA,NA,Goal 4,0,100,./countries/AmericanSamoa,./pillars/Pillar4,./goals/Goal4
+American Samoa,ASM,Pillar 4,11,NA,commitment K,40.8235294117647,NA,NA,Goal 4,0,100,./countries/AmericanSamoa,./pillars/Pillar4,./goals/Goal4
+American Samoa,ASM,Pillar 4,12,NA,commitment L,42.8235294117647,NA,NA,Goal 3,0,100,./countries/AmericanSamoa,./pillars/Pillar4,./goals/Goal3
+American Samoa,ASM,Pillar 5,13,NA,commitment M,43.8235294117647,NA,NA,Goal 1,0,100,./countries/AmericanSamoa,./pillars/Pillar5,./goals/Goal1
+American Samoa,ASM,Pillar 5,14,NA,commitment N,22.8235294117647,NA,NA,Goal 2,0,100,./countries/AmericanSamoa,./pillars/Pillar5,./goals/Goal2
+American Samoa,ASM,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,Goal 1,0,100,./countries/AmericanSamoa,./pillars/Pillar5,./goals/Goal1
+Andorra,AND,Pillar 1,1,NA,commitment A,33.8235294117647,NA,NA,Goal 3,0,1,./countries/Andorra,./pillars/Pillar1,./goals/Goal3
+Andorra,AND,Pillar 1,2,NA,commitment B,31.8235294117647,NA,NA,Goal 5,0,1,./countries/Andorra,./pillars/Pillar1,./goals/Goal5
+Andorra,AND,Pillar 1,3,NA,commitment C,1.8235294117647003,NA,NA,Goal 3,0,1,./countries/Andorra,./pillars/Pillar1,./goals/Goal3
+Andorra,AND,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,Goal 5,10,0,./countries/Andorra,./pillars/Pillar2,./goals/Goal5
+Andorra,AND,Pillar 2,5,NA,commitment E,26.823529411764696,NA,NA,Goal 2,10,0,./countries/Andorra,./pillars/Pillar2,./goals/Goal2
+Andorra,AND,Pillar 2,6,NA,commitment F,26.823529411764696,NA,NA,Goal 3,10,0,./countries/Andorra,./pillars/Pillar2,./goals/Goal3
+Andorra,AND,Pillar 3,7,NA,commitment G,37.8235294117647,NA,NA,Goal 5,0,100,./countries/Andorra,./pillars/Pillar3,./goals/Goal5
+Andorra,AND,Pillar 3,8,NA,commitment H,43.8235294117647,NA,NA,Goal 4,0,100,./countries/Andorra,./pillars/Pillar3,./goals/Goal4
+Andorra,AND,Pillar 3,9,NA,commitment I,25.8235294117647,NA,NA,Goal 1,0,100,./countries/Andorra,./pillars/Pillar3,./goals/Goal1
+Andorra,AND,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,Goal 1,0,100,./countries/Andorra,./pillars/Pillar4,./goals/Goal1
+Andorra,AND,Pillar 4,11,NA,commitment K,33.8235294117647,NA,NA,Goal 2,0,100,./countries/Andorra,./pillars/Pillar4,./goals/Goal2
+Andorra,AND,Pillar 4,12,NA,commitment L,37.8235294117647,NA,NA,Goal 4,0,100,./countries/Andorra,./pillars/Pillar4,./goals/Goal4
+Andorra,AND,Pillar 5,13,NA,commitment M,32.8235294117647,NA,NA,Goal 4,0,100,./countries/Andorra,./pillars/Pillar5,./goals/Goal4
+Andorra,AND,Pillar 5,14,NA,commitment N,13.823529411764701,NA,NA,Goal 2,0,100,./countries/Andorra,./pillars/Pillar5,./goals/Goal2
+Andorra,AND,Pillar 5,15,NA,commitment O,55.8235294117647,NA,NA,Goal 1,0,100,./countries/Andorra,./pillars/Pillar5,./goals/Goal1
+Angola,AGO,Pillar 1,1,NA,commitment A,20.8235294117647,NA,NA,Goal 3,0,1,./countries/Angola,./pillars/Pillar1,./goals/Goal3
+Angola,AGO,Pillar 1,2,NA,commitment B,27.823529411764696,NA,NA,Goal 1,0,1,./countries/Angola,./pillars/Pillar1,./goals/Goal1
+Angola,AGO,Pillar 1,3,NA,commitment C,30.8235294117647,NA,NA,Goal 3,0,1,./countries/Angola,./pillars/Pillar1,./goals/Goal3
+Angola,AGO,Pillar 2,4,NA,commitment D,39.82352941176471,NA,NA,Goal 4,10,0,./countries/Angola,./pillars/Pillar2,./goals/Goal4
+Angola,AGO,Pillar 2,5,NA,commitment E,37.82352941176471,NA,NA,Goal 1,10,0,./countries/Angola,./pillars/Pillar2,./goals/Goal1
+Angola,AGO,Pillar 2,6,NA,commitment F,43.823529411764696,NA,NA,Goal 4,10,0,./countries/Angola,./pillars/Pillar2,./goals/Goal4
+Angola,AGO,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,Goal 5,0,100,./countries/Angola,./pillars/Pillar3,./goals/Goal5
+Angola,AGO,Pillar 3,8,NA,commitment H,43.8235294117647,NA,NA,Goal 4,0,100,./countries/Angola,./pillars/Pillar3,./goals/Goal4
+Angola,AGO,Pillar 3,9,NA,commitment I,41.8235294117647,NA,NA,Goal 4,0,100,./countries/Angola,./pillars/Pillar3,./goals/Goal4
+Angola,AGO,Pillar 4,10,NA,commitment J,29.8235294117647,NA,NA,Goal 2,0,100,./countries/Angola,./pillars/Pillar4,./goals/Goal2
+Angola,AGO,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,Goal 3,0,100,./countries/Angola,./pillars/Pillar4,./goals/Goal3
+Angola,AGO,Pillar 4,12,NA,commitment L,17.8235294117647,NA,NA,Goal 2,0,100,./countries/Angola,./pillars/Pillar4,./goals/Goal2
+Angola,AGO,Pillar 5,13,NA,commitment M,27.8235294117647,NA,NA,Goal 2,0,100,./countries/Angola,./pillars/Pillar5,./goals/Goal2
+Angola,AGO,Pillar 5,14,NA,commitment N,21.8235294117647,NA,NA,Goal 5,0,100,./countries/Angola,./pillars/Pillar5,./goals/Goal5
+Angola,AGO,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,Goal 2,0,100,./countries/Angola,./pillars/Pillar5,./goals/Goal2
+Anguilla,AIA,Pillar 1,1,NA,commitment A,34.8235294117647,NA,NA,Goal 3,0,1,./countries/Anguilla,./pillars/Pillar1,./goals/Goal3
+Anguilla,AIA,Pillar 1,2,NA,commitment B,41.8235294117647,NA,NA,Goal 2,0,1,./countries/Anguilla,./pillars/Pillar1,./goals/Goal2
+Anguilla,AIA,Pillar 1,3,NA,commitment C,26.823529411764703,NA,NA,Goal 3,0,1,./countries/Anguilla,./pillars/Pillar1,./goals/Goal3
+Anguilla,AIA,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,Goal 4,10,0,./countries/Anguilla,./pillars/Pillar2,./goals/Goal4
+Anguilla,AIA,Pillar 2,5,NA,commitment E,23.823529411764696,NA,NA,Goal 3,10,0,./countries/Anguilla,./pillars/Pillar2,./goals/Goal3
+Anguilla,AIA,Pillar 2,6,NA,commitment F,12.823529411764696,NA,NA,Goal 3,10,0,./countries/Anguilla,./pillars/Pillar2,./goals/Goal3
+Anguilla,AIA,Pillar 3,7,NA,commitment G,30.8235294117647,NA,NA,Goal 5,0,100,./countries/Anguilla,./pillars/Pillar3,./goals/Goal5
+Anguilla,AIA,Pillar 3,8,NA,commitment H,38.8235294117647,NA,NA,Goal 1,0,100,./countries/Anguilla,./pillars/Pillar3,./goals/Goal1
+Anguilla,AIA,Pillar 3,9,NA,commitment I,10.823529411764701,NA,NA,Goal 1,0,100,./countries/Anguilla,./pillars/Pillar3,./goals/Goal1
+Anguilla,AIA,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,Goal 2,0,100,./countries/Anguilla,./pillars/Pillar4,./goals/Goal2
+Anguilla,AIA,Pillar 4,11,NA,commitment K,30.8235294117647,NA,NA,Goal 5,0,100,./countries/Anguilla,./pillars/Pillar4,./goals/Goal5
+Anguilla,AIA,Pillar 4,12,NA,commitment L,24.8235294117647,NA,NA,Goal 1,0,100,./countries/Anguilla,./pillars/Pillar4,./goals/Goal1
+Anguilla,AIA,Pillar 5,13,NA,commitment M,21.8235294117647,NA,NA,Goal 5,0,100,./countries/Anguilla,./pillars/Pillar5,./goals/Goal5
+Anguilla,AIA,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,Goal 2,0,100,./countries/Anguilla,./pillars/Pillar5,./goals/Goal2
+Anguilla,AIA,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,Goal 3,0,100,./countries/Anguilla,./pillars/Pillar5,./goals/Goal3
+Antigua and Barbuda,ATG,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,Goal 1,0,1,./countries/AntiguaandBarbuda,./pillars/Pillar1,./goals/Goal1
+Antigua and Barbuda,ATG,Pillar 1,2,NA,commitment B,21.8235294117647,NA,NA,Goal 2,0,1,./countries/AntiguaandBarbuda,./pillars/Pillar1,./goals/Goal2
+Antigua and Barbuda,ATG,Pillar 1,3,NA,commitment C,41.8235294117647,NA,NA,Goal 2,0,1,./countries/AntiguaandBarbuda,./pillars/Pillar1,./goals/Goal2
+Antigua and Barbuda,ATG,Pillar 2,4,NA,commitment D,25.82352941176471,NA,NA,Goal 4,10,0,./countries/AntiguaandBarbuda,./pillars/Pillar2,./goals/Goal4
+Antigua and Barbuda,ATG,Pillar 2,5,NA,commitment E,23.823529411764696,NA,NA,Goal 4,10,0,./countries/AntiguaandBarbuda,./pillars/Pillar2,./goals/Goal4
+Antigua and Barbuda,ATG,Pillar 2,6,NA,commitment F,31.823529411764696,NA,NA,Goal 5,10,0,./countries/AntiguaandBarbuda,./pillars/Pillar2,./goals/Goal5
+Antigua and Barbuda,ATG,Pillar 3,7,NA,commitment G,29.8235294117647,NA,NA,Goal 3,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar3,./goals/Goal3
+Antigua and Barbuda,ATG,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,Goal 3,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar3,./goals/Goal3
+Antigua and Barbuda,ATG,Pillar 3,9,NA,commitment I,33.8235294117647,NA,NA,Goal 3,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar3,./goals/Goal3
+Antigua and Barbuda,ATG,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,Goal 3,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar4,./goals/Goal3
+Antigua and Barbuda,ATG,Pillar 4,11,NA,commitment K,35.8235294117647,NA,NA,Goal 5,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar4,./goals/Goal5
+Antigua and Barbuda,ATG,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,Goal 1,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar4,./goals/Goal1
+Antigua and Barbuda,ATG,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,Goal 1,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar5,./goals/Goal1
+Antigua and Barbuda,ATG,Pillar 5,14,NA,commitment N,26.8235294117647,NA,NA,Goal 3,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar5,./goals/Goal3
+Antigua and Barbuda,ATG,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,Goal 1,0,100,./countries/AntiguaandBarbuda,./pillars/Pillar5,./goals/Goal1
+Argentina,ARG,Pillar 1,1,NA,commitment A,36.8235294117647,NA,NA,Goal 2,0,1,./countries/Argentina,./pillars/Pillar1,./goals/Goal2
+Argentina,ARG,Pillar 1,2,NA,commitment B,21.8235294117647,NA,NA,Goal 5,0,1,./countries/Argentina,./pillars/Pillar1,./goals/Goal5
+Argentina,ARG,Pillar 1,3,NA,commitment C,17.8235294117647,NA,NA,Goal 5,0,1,./countries/Argentina,./pillars/Pillar1,./goals/Goal5
+Argentina,ARG,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,Goal 3,10,0,./countries/Argentina,./pillars/Pillar2,./goals/Goal3
+Argentina,ARG,Pillar 2,5,NA,commitment E,35.82352941176471,NA,NA,Goal 2,10,0,./countries/Argentina,./pillars/Pillar2,./goals/Goal2
+Argentina,ARG,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,Goal 2,10,0,./countries/Argentina,./pillars/Pillar2,./goals/Goal2
+Argentina,ARG,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,Goal 1,0,100,./countries/Argentina,./pillars/Pillar3,./goals/Goal1
+Argentina,ARG,Pillar 3,8,NA,commitment H,16.8235294117647,NA,NA,Goal 4,0,100,./countries/Argentina,./pillars/Pillar3,./goals/Goal4
+Argentina,ARG,Pillar 3,9,NA,commitment I,7.8235294117647,NA,NA,Goal 4,0,100,./countries/Argentina,./pillars/Pillar3,./goals/Goal4
+Argentina,ARG,Pillar 4,10,NA,commitment J,32.8235294117647,NA,NA,Goal 4,0,100,./countries/Argentina,./pillars/Pillar4,./goals/Goal4
+Argentina,ARG,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,Goal 2,0,100,./countries/Argentina,./pillars/Pillar4,./goals/Goal2
+Argentina,ARG,Pillar 4,12,NA,commitment L,43.8235294117647,NA,NA,Goal 1,0,100,./countries/Argentina,./pillars/Pillar4,./goals/Goal1
+Argentina,ARG,Pillar 5,13,NA,commitment M,45.8235294117647,NA,NA,Goal 2,0,100,./countries/Argentina,./pillars/Pillar5,./goals/Goal2
+Argentina,ARG,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,Goal 5,0,100,./countries/Argentina,./pillars/Pillar5,./goals/Goal5
+Argentina,ARG,Pillar 5,15,NA,commitment O,37.8235294117647,NA,NA,Goal 2,0,100,./countries/Argentina,./pillars/Pillar5,./goals/Goal2
+Armenia,ARM,Pillar 1,1,NA,commitment A,17.8235294117647,NA,NA,Goal 1,0,1,./countries/Armenia,./pillars/Pillar1,./goals/Goal1
+Armenia,ARM,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,Goal 3,0,1,./countries/Armenia,./pillars/Pillar1,./goals/Goal3
+Armenia,ARM,Pillar 1,3,NA,commitment C,24.8235294117647,NA,NA,Goal 4,0,1,./countries/Armenia,./pillars/Pillar1,./goals/Goal4
+Armenia,ARM,Pillar 2,4,NA,commitment D,22.823529411764696,NA,NA,Goal 4,10,0,./countries/Armenia,./pillars/Pillar2,./goals/Goal4
+Armenia,ARM,Pillar 2,5,NA,commitment E,28.823529411764696,NA,NA,Goal 5,10,0,./countries/Armenia,./pillars/Pillar2,./goals/Goal5
+Armenia,ARM,Pillar 2,6,NA,commitment F,31.823529411764696,NA,NA,Goal 1,10,0,./countries/Armenia,./pillars/Pillar2,./goals/Goal1
+Armenia,ARM,Pillar 3,7,NA,commitment G,39.8235294117647,NA,NA,Goal 1,0,100,./countries/Armenia,./pillars/Pillar3,./goals/Goal1
+Armenia,ARM,Pillar 3,8,NA,commitment H,46.8235294117647,NA,NA,Goal 3,0,100,./countries/Armenia,./pillars/Pillar3,./goals/Goal3
+Armenia,ARM,Pillar 3,9,NA,commitment I,17.8235294117647,NA,NA,Goal 2,0,100,./countries/Armenia,./pillars/Pillar3,./goals/Goal2
+Armenia,ARM,Pillar 4,10,NA,commitment J,27.8235294117647,NA,NA,Goal 4,0,100,./countries/Armenia,./pillars/Pillar4,./goals/Goal4
+Armenia,ARM,Pillar 4,11,NA,commitment K,9.8235294117647,NA,NA,Goal 2,0,100,./countries/Armenia,./pillars/Pillar4,./goals/Goal2
+Armenia,ARM,Pillar 4,12,NA,commitment L,38.8235294117647,NA,NA,Goal 2,0,100,./countries/Armenia,./pillars/Pillar4,./goals/Goal2
+Armenia,ARM,Pillar 5,13,NA,commitment M,13.823529411764701,NA,NA,Goal 4,0,100,./countries/Armenia,./pillars/Pillar5,./goals/Goal4
+Armenia,ARM,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,Goal 3,0,100,./countries/Armenia,./pillars/Pillar5,./goals/Goal3
+Armenia,ARM,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,Goal 2,0,100,./countries/Armenia,./pillars/Pillar5,./goals/Goal2
+Aruba,ABW,Pillar 1,1,NA,commitment A,16.8235294117647,NA,NA,Goal 4,0,1,./countries/Aruba,./pillars/Pillar1,./goals/Goal4
+Aruba,ABW,Pillar 1,2,NA,commitment B,5.8235294117647,NA,NA,Goal 2,0,1,./countries/Aruba,./pillars/Pillar1,./goals/Goal2
+Aruba,ABW,Pillar 1,3,NA,commitment C,31.8235294117647,NA,NA,Goal 4,0,1,./countries/Aruba,./pillars/Pillar1,./goals/Goal4
+Aruba,ABW,Pillar 2,4,NA,commitment D,17.823529411764696,NA,NA,Goal 5,10,0,./countries/Aruba,./pillars/Pillar2,./goals/Goal5
+Aruba,ABW,Pillar 2,5,NA,commitment E,20.82352941176471,NA,NA,Goal 2,10,0,./countries/Aruba,./pillars/Pillar2,./goals/Goal2
+Aruba,ABW,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,Goal 2,10,0,./countries/Aruba,./pillars/Pillar2,./goals/Goal2
+Aruba,ABW,Pillar 3,7,NA,commitment G,29.8235294117647,NA,NA,Goal 1,0,100,./countries/Aruba,./pillars/Pillar3,./goals/Goal1
+Aruba,ABW,Pillar 3,8,NA,commitment H,41.8235294117647,NA,NA,Goal 3,0,100,./countries/Aruba,./pillars/Pillar3,./goals/Goal3
+Aruba,ABW,Pillar 3,9,NA,commitment I,44.8235294117647,NA,NA,Goal 2,0,100,./countries/Aruba,./pillars/Pillar3,./goals/Goal2
+Aruba,ABW,Pillar 4,10,NA,commitment J,38.8235294117647,NA,NA,Goal 4,0,100,./countries/Aruba,./pillars/Pillar4,./goals/Goal4
+Aruba,ABW,Pillar 4,11,NA,commitment K,11.823529411764701,NA,NA,Goal 5,0,100,./countries/Aruba,./pillars/Pillar4,./goals/Goal5
+Aruba,ABW,Pillar 4,12,NA,commitment L,30.8235294117647,NA,NA,Goal 1,0,100,./countries/Aruba,./pillars/Pillar4,./goals/Goal1
+Aruba,ABW,Pillar 5,13,NA,commitment M,34.8235294117647,NA,NA,Goal 5,0,100,./countries/Aruba,./pillars/Pillar5,./goals/Goal5
+Aruba,ABW,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,Goal 2,0,100,./countries/Aruba,./pillars/Pillar5,./goals/Goal2
+Aruba,ABW,Pillar 5,15,NA,commitment O,34.8235294117647,NA,NA,Goal 5,0,100,./countries/Aruba,./pillars/Pillar5,./goals/Goal5
+Australia,AUS,Pillar 1,1,NA,commitment A,7.8235294117647,NA,NA,Goal 1,0,1,./countries/Australia,./pillars/Pillar1,./goals/Goal1
+Australia,AUS,Pillar 1,2,NA,commitment B,20.8235294117647,NA,NA,Goal 5,0,1,./countries/Australia,./pillars/Pillar1,./goals/Goal5
+Australia,AUS,Pillar 1,3,NA,commitment C,38.8235294117647,NA,NA,Goal 4,0,1,./countries/Australia,./pillars/Pillar1,./goals/Goal4
+Australia,AUS,Pillar 2,4,NA,commitment D,40.82352941176471,NA,NA,Goal 5,10,0,./countries/Australia,./pillars/Pillar2,./goals/Goal5
+Australia,AUS,Pillar 2,5,NA,commitment E,10.82352941176471,NA,NA,Goal 3,10,0,./countries/Australia,./pillars/Pillar2,./goals/Goal3
+Australia,AUS,Pillar 2,6,NA,commitment F,27.823529411764696,NA,NA,Goal 3,10,0,./countries/Australia,./pillars/Pillar2,./goals/Goal3
+Australia,AUS,Pillar 3,7,NA,commitment G,25.8235294117647,NA,NA,Goal 1,0,100,./countries/Australia,./pillars/Pillar3,./goals/Goal1
+Australia,AUS,Pillar 3,8,NA,commitment H,16.8235294117647,NA,NA,Goal 2,0,100,./countries/Australia,./pillars/Pillar3,./goals/Goal2
+Australia,AUS,Pillar 3,9,NA,commitment I,34.8235294117647,NA,NA,Goal 4,0,100,./countries/Australia,./pillars/Pillar3,./goals/Goal4
+Australia,AUS,Pillar 4,10,NA,commitment J,32.8235294117647,NA,NA,Goal 1,0,100,./countries/Australia,./pillars/Pillar4,./goals/Goal1
+Australia,AUS,Pillar 4,11,NA,commitment K,21.8235294117647,NA,NA,Goal 3,0,100,./countries/Australia,./pillars/Pillar4,./goals/Goal3
+Australia,AUS,Pillar 4,12,NA,commitment L,36.8235294117647,NA,NA,Goal 1,0,100,./countries/Australia,./pillars/Pillar4,./goals/Goal1
+Australia,AUS,Pillar 5,13,NA,commitment M,17.8235294117647,NA,NA,Goal 4,0,100,./countries/Australia,./pillars/Pillar5,./goals/Goal4
+Australia,AUS,Pillar 5,14,NA,commitment N,36.8235294117647,NA,NA,Goal 3,0,100,./countries/Australia,./pillars/Pillar5,./goals/Goal3
+Australia,AUS,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,Goal 1,0,100,./countries/Australia,./pillars/Pillar5,./goals/Goal1
+Austria,AUT,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,Goal 3,0,1,./countries/Austria,./pillars/Pillar1,./goals/Goal3
+Austria,AUT,Pillar 1,2,NA,commitment B,55.8235294117647,NA,NA,Goal 2,0,1,./countries/Austria,./pillars/Pillar1,./goals/Goal2
+Austria,AUT,Pillar 1,3,NA,commitment C,13.823529411764698,NA,NA,Goal 1,0,1,./countries/Austria,./pillars/Pillar1,./goals/Goal1
+Austria,AUT,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,Goal 3,10,0,./countries/Austria,./pillars/Pillar2,./goals/Goal3
+Austria,AUT,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,Goal 1,10,0,./countries/Austria,./pillars/Pillar2,./goals/Goal1
+Austria,AUT,Pillar 2,6,NA,commitment F,21.823529411764696,NA,NA,Goal 1,10,0,./countries/Austria,./pillars/Pillar2,./goals/Goal1
+Austria,AUT,Pillar 3,7,NA,commitment G,0.823529411764706,NA,NA,Goal 1,0,100,./countries/Austria,./pillars/Pillar3,./goals/Goal1
+Austria,AUT,Pillar 3,8,NA,commitment H,14.823529411764701,NA,NA,Goal 4,0,100,./countries/Austria,./pillars/Pillar3,./goals/Goal4
+Austria,AUT,Pillar 3,9,NA,commitment I,31.8235294117647,NA,NA,Goal 1,0,100,./countries/Austria,./pillars/Pillar3,./goals/Goal1
+Austria,AUT,Pillar 4,10,NA,commitment J,18.8235294117647,NA,NA,Goal 5,0,100,./countries/Austria,./pillars/Pillar4,./goals/Goal5
+Austria,AUT,Pillar 4,11,NA,commitment K,11.823529411764701,NA,NA,Goal 5,0,100,./countries/Austria,./pillars/Pillar4,./goals/Goal5
+Austria,AUT,Pillar 4,12,NA,commitment L,38.8235294117647,NA,NA,Goal 3,0,100,./countries/Austria,./pillars/Pillar4,./goals/Goal3
+Austria,AUT,Pillar 5,13,NA,commitment M,29.8235294117647,NA,NA,Goal 5,0,100,./countries/Austria,./pillars/Pillar5,./goals/Goal5
+Austria,AUT,Pillar 5,14,NA,commitment N,10.823529411764701,NA,NA,Goal 5,0,100,./countries/Austria,./pillars/Pillar5,./goals/Goal5
+Austria,AUT,Pillar 5,15,NA,commitment O,33.8235294117647,NA,NA,Goal 3,0,100,./countries/Austria,./pillars/Pillar5,./goals/Goal3
+Azerbaijan,AZE,Pillar 1,1,NA,commitment A,43.8235294117647,NA,NA,Goal 2,0,1,./countries/Azerbaijan,./pillars/Pillar1,./goals/Goal2
+Azerbaijan,AZE,Pillar 1,2,NA,commitment B,31.8235294117647,NA,NA,Goal 4,0,1,./countries/Azerbaijan,./pillars/Pillar1,./goals/Goal4
+Azerbaijan,AZE,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,Goal 5,0,1,./countries/Azerbaijan,./pillars/Pillar1,./goals/Goal5
+Azerbaijan,AZE,Pillar 2,4,NA,commitment D,31.823529411764696,NA,NA,Goal 5,10,0,./countries/Azerbaijan,./pillars/Pillar2,./goals/Goal5
+Azerbaijan,AZE,Pillar 2,5,NA,commitment E,29.823529411764696,NA,NA,Goal 2,10,0,./countries/Azerbaijan,./pillars/Pillar2,./goals/Goal2
+Azerbaijan,AZE,Pillar 2,6,NA,commitment F,21.823529411764696,NA,NA,Goal 2,10,0,./countries/Azerbaijan,./pillars/Pillar2,./goals/Goal2
+Azerbaijan,AZE,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,Goal 1,0,100,./countries/Azerbaijan,./pillars/Pillar3,./goals/Goal1
+Azerbaijan,AZE,Pillar 3,8,NA,commitment H,25.8235294117647,NA,NA,Goal 3,0,100,./countries/Azerbaijan,./pillars/Pillar3,./goals/Goal3
+Azerbaijan,AZE,Pillar 3,9,NA,commitment I,27.8235294117647,NA,NA,Goal 5,0,100,./countries/Azerbaijan,./pillars/Pillar3,./goals/Goal5
+Azerbaijan,AZE,Pillar 4,10,NA,commitment J,9.8235294117647,NA,NA,Goal 2,0,100,./countries/Azerbaijan,./pillars/Pillar4,./goals/Goal2
+Azerbaijan,AZE,Pillar 4,11,NA,commitment K,28.8235294117647,NA,NA,Goal 1,0,100,./countries/Azerbaijan,./pillars/Pillar4,./goals/Goal1
+Azerbaijan,AZE,Pillar 4,12,NA,commitment L,28.8235294117647,NA,NA,Goal 2,0,100,./countries/Azerbaijan,./pillars/Pillar4,./goals/Goal2
+Azerbaijan,AZE,Pillar 5,13,NA,commitment M,38.8235294117647,NA,NA,Goal 5,0,100,./countries/Azerbaijan,./pillars/Pillar5,./goals/Goal5
+Azerbaijan,AZE,Pillar 5,14,NA,commitment N,18.8235294117647,NA,NA,Goal 4,0,100,./countries/Azerbaijan,./pillars/Pillar5,./goals/Goal4
+Azerbaijan,AZE,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,Goal 3,0,100,./countries/Azerbaijan,./pillars/Pillar5,./goals/Goal3
+Bahamas,BHS,Pillar 1,1,NA,commitment A,27.823529411764696,NA,NA,Goal 1,0,1,./countries/Bahamas,./pillars/Pillar1,./goals/Goal1
+Bahamas,BHS,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,Goal 5,0,1,./countries/Bahamas,./pillars/Pillar1,./goals/Goal5
+Bahamas,BHS,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,Goal 3,0,1,./countries/Bahamas,./pillars/Pillar1,./goals/Goal3
+Bahamas,BHS,Pillar 2,4,NA,commitment D,6.823529411764696,NA,NA,Goal 1,10,0,./countries/Bahamas,./pillars/Pillar2,./goals/Goal1
+Bahamas,BHS,Pillar 2,5,NA,commitment E,28.823529411764696,NA,NA,Goal 5,10,0,./countries/Bahamas,./pillars/Pillar2,./goals/Goal5
+Bahamas,BHS,Pillar 2,6,NA,commitment F,20.82352941176471,NA,NA,Goal 3,10,0,./countries/Bahamas,./pillars/Pillar2,./goals/Goal3
+Bahamas,BHS,Pillar 3,7,NA,commitment G,22.8235294117647,NA,NA,Goal 4,0,100,./countries/Bahamas,./pillars/Pillar3,./goals/Goal4
+Bahamas,BHS,Pillar 3,8,NA,commitment H,46.8235294117647,NA,NA,Goal 5,0,100,./countries/Bahamas,./pillars/Pillar3,./goals/Goal5
+Bahamas,BHS,Pillar 3,9,NA,commitment I,39.8235294117647,NA,NA,Goal 5,0,100,./countries/Bahamas,./pillars/Pillar3,./goals/Goal5
+Bahamas,BHS,Pillar 4,10,NA,commitment J,28.8235294117647,NA,NA,Goal 3,0,100,./countries/Bahamas,./pillars/Pillar4,./goals/Goal3
+Bahamas,BHS,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,Goal 3,0,100,./countries/Bahamas,./pillars/Pillar4,./goals/Goal3
+Bahamas,BHS,Pillar 4,12,NA,commitment L,47.8235294117647,NA,NA,Goal 5,0,100,./countries/Bahamas,./pillars/Pillar4,./goals/Goal5
+Bahamas,BHS,Pillar 5,13,NA,commitment M,9.8235294117647,NA,NA,Goal 5,0,100,./countries/Bahamas,./pillars/Pillar5,./goals/Goal5
+Bahamas,BHS,Pillar 5,14,NA,commitment N,30.8235294117647,NA,NA,Goal 2,0,100,./countries/Bahamas,./pillars/Pillar5,./goals/Goal2
+Bahamas,BHS,Pillar 5,15,NA,commitment O,37.8235294117647,NA,NA,Goal 3,0,100,./countries/Bahamas,./pillars/Pillar5,./goals/Goal3
+Bahrain,BHR,Pillar 1,1,NA,commitment A,16.8235294117647,NA,NA,Goal 1,0,1,./countries/Bahrain,./pillars/Pillar1,./goals/Goal1
+Bahrain,BHR,Pillar 1,2,NA,commitment B,44.8235294117647,NA,NA,Goal 5,0,1,./countries/Bahrain,./pillars/Pillar1,./goals/Goal5
+Bahrain,BHR,Pillar 1,3,NA,commitment C,40.8235294117647,NA,NA,Goal 5,0,1,./countries/Bahrain,./pillars/Pillar1,./goals/Goal5
+Bahrain,BHR,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,Goal 5,10,0,./countries/Bahrain,./pillars/Pillar2,./goals/Goal5
+Bahrain,BHR,Pillar 2,5,NA,commitment E,46.823529411764696,NA,NA,Goal 3,10,0,./countries/Bahrain,./pillars/Pillar2,./goals/Goal3
+Bahrain,BHR,Pillar 2,6,NA,commitment F,28.823529411764696,NA,NA,Goal 1,10,0,./countries/Bahrain,./pillars/Pillar2,./goals/Goal1
+Bahrain,BHR,Pillar 3,7,NA,commitment G,14.823529411764701,NA,NA,Goal 3,0,100,./countries/Bahrain,./pillars/Pillar3,./goals/Goal3
+Bahrain,BHR,Pillar 3,8,NA,commitment H,7.8235294117647,NA,NA,Goal 3,0,100,./countries/Bahrain,./pillars/Pillar3,./goals/Goal3
+Bahrain,BHR,Pillar 3,9,NA,commitment I,21.8235294117647,NA,NA,Goal 3,0,100,./countries/Bahrain,./pillars/Pillar3,./goals/Goal3
+Bahrain,BHR,Pillar 4,10,NA,commitment J,35.8235294117647,NA,NA,Goal 1,0,100,./countries/Bahrain,./pillars/Pillar4,./goals/Goal1
+Bahrain,BHR,Pillar 4,11,NA,commitment K,25.8235294117647,NA,NA,Goal 2,0,100,./countries/Bahrain,./pillars/Pillar4,./goals/Goal2
+Bahrain,BHR,Pillar 4,12,NA,commitment L,42.8235294117647,NA,NA,Goal 3,0,100,./countries/Bahrain,./pillars/Pillar4,./goals/Goal3
+Bahrain,BHR,Pillar 5,13,NA,commitment M,27.8235294117647,NA,NA,Goal 3,0,100,./countries/Bahrain,./pillars/Pillar5,./goals/Goal3
+Bahrain,BHR,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,Goal 5,0,100,./countries/Bahrain,./pillars/Pillar5,./goals/Goal5
+Bahrain,BHR,Pillar 5,15,NA,commitment O,35.8235294117647,NA,NA,Goal 2,0,100,./countries/Bahrain,./pillars/Pillar5,./goals/Goal2
+Bangladesh,BGD,Pillar 1,1,NA,commitment A,14.8235294117647,NA,NA,Goal 5,0,1,./countries/Bangladesh,./pillars/Pillar1,./goals/Goal5
+Bangladesh,BGD,Pillar 1,2,NA,commitment B,26.823529411764703,NA,NA,Goal 3,0,1,./countries/Bangladesh,./pillars/Pillar1,./goals/Goal3
+Bangladesh,BGD,Pillar 1,3,NA,commitment C,27.823529411764696,NA,NA,Goal 4,0,1,./countries/Bangladesh,./pillars/Pillar1,./goals/Goal4
+Bangladesh,BGD,Pillar 2,4,NA,commitment D,41.823529411764696,NA,NA,Goal 1,10,0,./countries/Bangladesh,./pillars/Pillar2,./goals/Goal1
+Bangladesh,BGD,Pillar 2,5,NA,commitment E,42.82352941176471,NA,NA,Goal 1,10,0,./countries/Bangladesh,./pillars/Pillar2,./goals/Goal1
+Bangladesh,BGD,Pillar 2,6,NA,commitment F,24.823529411764696,NA,NA,Goal 4,10,0,./countries/Bangladesh,./pillars/Pillar2,./goals/Goal4
+Bangladesh,BGD,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,Goal 5,0,100,./countries/Bangladesh,./pillars/Pillar3,./goals/Goal5
+Bangladesh,BGD,Pillar 3,8,NA,commitment H,48.8235294117647,NA,NA,Goal 2,0,100,./countries/Bangladesh,./pillars/Pillar3,./goals/Goal2
+Bangladesh,BGD,Pillar 3,9,NA,commitment I,44.8235294117647,NA,NA,Goal 3,0,100,./countries/Bangladesh,./pillars/Pillar3,./goals/Goal3
+Bangladesh,BGD,Pillar 4,10,NA,commitment J,24.8235294117647,NA,NA,Goal 1,0,100,./countries/Bangladesh,./pillars/Pillar4,./goals/Goal1
+Bangladesh,BGD,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,Goal 1,0,100,./countries/Bangladesh,./pillars/Pillar4,./goals/Goal1
+Bangladesh,BGD,Pillar 4,12,NA,commitment L,31.8235294117647,NA,NA,Goal 2,0,100,./countries/Bangladesh,./pillars/Pillar4,./goals/Goal2
+Bangladesh,BGD,Pillar 5,13,NA,commitment M,39.8235294117647,NA,NA,Goal 1,0,100,./countries/Bangladesh,./pillars/Pillar5,./goals/Goal1
+Bangladesh,BGD,Pillar 5,14,NA,commitment N,26.8235294117647,NA,NA,Goal 5,0,100,./countries/Bangladesh,./pillars/Pillar5,./goals/Goal5
+Bangladesh,BGD,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,Goal 4,0,100,./countries/Bangladesh,./pillars/Pillar5,./goals/Goal4
+Barbados,BRB,Pillar 1,1,NA,commitment A,35.8235294117647,NA,NA,Goal 5,0,1,./countries/Barbados,./pillars/Pillar1,./goals/Goal5
+Barbados,BRB,Pillar 1,2,NA,commitment B,30.8235294117647,NA,NA,Goal 5,0,1,./countries/Barbados,./pillars/Pillar1,./goals/Goal5
+Barbados,BRB,Pillar 1,3,NA,commitment C,21.8235294117647,NA,NA,Goal 1,0,1,./countries/Barbados,./pillars/Pillar1,./goals/Goal1
+Barbados,BRB,Pillar 2,4,NA,commitment D,43.823529411764696,NA,NA,Goal 2,10,0,./countries/Barbados,./pillars/Pillar2,./goals/Goal2
+Barbados,BRB,Pillar 2,5,NA,commitment E,31.823529411764696,NA,NA,Goal 5,10,0,./countries/Barbados,./pillars/Pillar2,./goals/Goal5
+Barbados,BRB,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,Goal 3,10,0,./countries/Barbados,./pillars/Pillar2,./goals/Goal3
+Barbados,BRB,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,Goal 5,0,100,./countries/Barbados,./pillars/Pillar3,./goals/Goal5
+Barbados,BRB,Pillar 3,8,NA,commitment H,20.8235294117647,NA,NA,Goal 1,0,100,./countries/Barbados,./pillars/Pillar3,./goals/Goal1
+Barbados,BRB,Pillar 3,9,NA,commitment I,17.8235294117647,NA,NA,Goal 3,0,100,./countries/Barbados,./pillars/Pillar3,./goals/Goal3
+Barbados,BRB,Pillar 4,10,NA,commitment J,18.8235294117647,NA,NA,Goal 1,0,100,./countries/Barbados,./pillars/Pillar4,./goals/Goal1
+Barbados,BRB,Pillar 4,11,NA,commitment K,30.8235294117647,NA,NA,Goal 3,0,100,./countries/Barbados,./pillars/Pillar4,./goals/Goal3
+Barbados,BRB,Pillar 4,12,NA,commitment L,37.8235294117647,NA,NA,Goal 3,0,100,./countries/Barbados,./pillars/Pillar4,./goals/Goal3
+Barbados,BRB,Pillar 5,13,NA,commitment M,42.8235294117647,NA,NA,Goal 3,0,100,./countries/Barbados,./pillars/Pillar5,./goals/Goal3
+Barbados,BRB,Pillar 5,14,NA,commitment N,31.8235294117647,NA,NA,Goal 5,0,100,./countries/Barbados,./pillars/Pillar5,./goals/Goal5
+Barbados,BRB,Pillar 5,15,NA,commitment O,35.8235294117647,NA,NA,Goal 4,0,100,./countries/Barbados,./pillars/Pillar5,./goals/Goal4
+Belarus,BLR,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,Goal 1,0,1,./countries/Belarus,./pillars/Pillar1,./goals/Goal1
+Belarus,BLR,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,Goal 1,0,1,./countries/Belarus,./pillars/Pillar1,./goals/Goal1
+Belarus,BLR,Pillar 1,3,NA,commitment C,18.8235294117647,NA,NA,Goal 1,0,1,./countries/Belarus,./pillars/Pillar1,./goals/Goal1
+Belarus,BLR,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,Goal 2,10,0,./countries/Belarus,./pillars/Pillar2,./goals/Goal2
+Belarus,BLR,Pillar 2,5,NA,commitment E,17.823529411764696,NA,NA,Goal 1,10,0,./countries/Belarus,./pillars/Pillar2,./goals/Goal1
+Belarus,BLR,Pillar 2,6,NA,commitment F,43.823529411764696,NA,NA,Goal 2,10,0,./countries/Belarus,./pillars/Pillar2,./goals/Goal2
+Belarus,BLR,Pillar 3,7,NA,commitment G,25.8235294117647,NA,NA,Goal 2,0,100,./countries/Belarus,./pillars/Pillar3,./goals/Goal2
+Belarus,BLR,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,Goal 5,0,100,./countries/Belarus,./pillars/Pillar3,./goals/Goal5
+Belarus,BLR,Pillar 3,9,NA,commitment I,31.8235294117647,NA,NA,Goal 1,0,100,./countries/Belarus,./pillars/Pillar3,./goals/Goal1
+Belarus,BLR,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,Goal 2,0,100,./countries/Belarus,./pillars/Pillar4,./goals/Goal2
+Belarus,BLR,Pillar 4,11,NA,commitment K,15.823529411764701,NA,NA,Goal 3,0,100,./countries/Belarus,./pillars/Pillar4,./goals/Goal3
+Belarus,BLR,Pillar 4,12,NA,commitment L,33.8235294117647,NA,NA,Goal 4,0,100,./countries/Belarus,./pillars/Pillar4,./goals/Goal4
+Belarus,BLR,Pillar 5,13,NA,commitment M,15.823529411764701,NA,NA,Goal 2,0,100,./countries/Belarus,./pillars/Pillar5,./goals/Goal2
+Belarus,BLR,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,Goal 5,0,100,./countries/Belarus,./pillars/Pillar5,./goals/Goal5
+Belarus,BLR,Pillar 5,15,NA,commitment O,18.8235294117647,NA,NA,Goal 3,0,100,./countries/Belarus,./pillars/Pillar5,./goals/Goal3
+Belgium,BEL,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,Goal 5,0,1,./countries/Belgium,./pillars/Pillar1,./goals/Goal5
+Belgium,BEL,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,Goal 1,0,1,./countries/Belgium,./pillars/Pillar1,./goals/Goal1
+Belgium,BEL,Pillar 1,3,NA,commitment C,31.8235294117647,NA,NA,Goal 5,0,1,./countries/Belgium,./pillars/Pillar1,./goals/Goal5
+Belgium,BEL,Pillar 2,4,NA,commitment D,39.82352941176471,NA,NA,Goal 3,10,0,./countries/Belgium,./pillars/Pillar2,./goals/Goal3
+Belgium,BEL,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,Goal 1,10,0,./countries/Belgium,./pillars/Pillar2,./goals/Goal1
+Belgium,BEL,Pillar 2,6,NA,commitment F,21.823529411764696,NA,NA,Goal 5,10,0,./countries/Belgium,./pillars/Pillar2,./goals/Goal5
+Belgium,BEL,Pillar 3,7,NA,commitment G,24.8235294117647,NA,NA,Goal 1,0,100,./countries/Belgium,./pillars/Pillar3,./goals/Goal1
+Belgium,BEL,Pillar 3,8,NA,commitment H,35.8235294117647,NA,NA,Goal 3,0,100,./countries/Belgium,./pillars/Pillar3,./goals/Goal3
+Belgium,BEL,Pillar 3,9,NA,commitment I,32.8235294117647,NA,NA,Goal 3,0,100,./countries/Belgium,./pillars/Pillar3,./goals/Goal3
+Belgium,BEL,Pillar 4,10,NA,commitment J,23.8235294117647,NA,NA,Goal 5,0,100,./countries/Belgium,./pillars/Pillar4,./goals/Goal5
+Belgium,BEL,Pillar 4,11,NA,commitment K,25.8235294117647,NA,NA,Goal 3,0,100,./countries/Belgium,./pillars/Pillar4,./goals/Goal3
+Belgium,BEL,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,Goal 2,0,100,./countries/Belgium,./pillars/Pillar4,./goals/Goal2
+Belgium,BEL,Pillar 5,13,NA,commitment M,22.8235294117647,NA,NA,Goal 2,0,100,./countries/Belgium,./pillars/Pillar5,./goals/Goal2
+Belgium,BEL,Pillar 5,14,NA,commitment N,35.8235294117647,NA,NA,Goal 5,0,100,./countries/Belgium,./pillars/Pillar5,./goals/Goal5
+Belgium,BEL,Pillar 5,15,NA,commitment O,31.8235294117647,NA,NA,Goal 3,0,100,./countries/Belgium,./pillars/Pillar5,./goals/Goal3
+Belize,BLZ,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,Goal 4,0,1,./countries/Belize,./pillars/Pillar1,./goals/Goal4
+Belize,BLZ,Pillar 1,2,NA,commitment B,41.8235294117647,NA,NA,Goal 2,0,1,./countries/Belize,./pillars/Pillar1,./goals/Goal2
+Belize,BLZ,Pillar 1,3,NA,commitment C,37.8235294117647,NA,NA,Goal 4,0,1,./countries/Belize,./pillars/Pillar1,./goals/Goal4
+Belize,BLZ,Pillar 2,4,NA,commitment D,46.823529411764696,NA,NA,Goal 4,10,0,./countries/Belize,./pillars/Pillar2,./goals/Goal4
+Belize,BLZ,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,Goal 5,10,0,./countries/Belize,./pillars/Pillar2,./goals/Goal5
+Belize,BLZ,Pillar 2,6,NA,commitment F,40.82352941176471,NA,NA,Goal 3,10,0,./countries/Belize,./pillars/Pillar2,./goals/Goal3
+Belize,BLZ,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,Goal 4,0,100,./countries/Belize,./pillars/Pillar3,./goals/Goal4
+Belize,BLZ,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,Goal 4,0,100,./countries/Belize,./pillars/Pillar3,./goals/Goal4
+Belize,BLZ,Pillar 3,9,NA,commitment I,43.8235294117647,NA,NA,Goal 5,0,100,./countries/Belize,./pillars/Pillar3,./goals/Goal5
+Belize,BLZ,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,Goal 1,0,100,./countries/Belize,./pillars/Pillar4,./goals/Goal1
+Belize,BLZ,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,Goal 1,0,100,./countries/Belize,./pillars/Pillar4,./goals/Goal1
+Belize,BLZ,Pillar 4,12,NA,commitment L,25.8235294117647,NA,NA,Goal 1,0,100,./countries/Belize,./pillars/Pillar4,./goals/Goal1
+Belize,BLZ,Pillar 5,13,NA,commitment M,26.8235294117647,NA,NA,Goal 2,0,100,./countries/Belize,./pillars/Pillar5,./goals/Goal2
+Belize,BLZ,Pillar 5,14,NA,commitment N,20.8235294117647,NA,NA,Goal 3,0,100,./countries/Belize,./pillars/Pillar5,./goals/Goal3
+Belize,BLZ,Pillar 5,15,NA,commitment O,20.8235294117647,NA,NA,Goal 1,0,100,./countries/Belize,./pillars/Pillar5,./goals/Goal1
+Benin,BEN,Pillar 1,1,NA,commitment A,17.8235294117647,NA,NA,Goal 3,0,1,./countries/Benin,./pillars/Pillar1,./goals/Goal3
+Benin,BEN,Pillar 1,2,NA,commitment B,18.8235294117647,NA,NA,Goal 5,0,1,./countries/Benin,./pillars/Pillar1,./goals/Goal5
+Benin,BEN,Pillar 1,3,NA,commitment C,35.8235294117647,NA,NA,Goal 3,0,1,./countries/Benin,./pillars/Pillar1,./goals/Goal3
+Benin,BEN,Pillar 2,4,NA,commitment D,40.82352941176471,NA,NA,Goal 1,10,0,./countries/Benin,./pillars/Pillar2,./goals/Goal1
+Benin,BEN,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,Goal 1,10,0,./countries/Benin,./pillars/Pillar2,./goals/Goal1
+Benin,BEN,Pillar 2,6,NA,commitment F,41.823529411764696,NA,NA,Goal 1,10,0,./countries/Benin,./pillars/Pillar2,./goals/Goal1
+Benin,BEN,Pillar 3,7,NA,commitment G,50.8235294117647,NA,NA,Goal 3,0,100,./countries/Benin,./pillars/Pillar3,./goals/Goal3
+Benin,BEN,Pillar 3,8,NA,commitment H,28.8235294117647,NA,NA,Goal 4,0,100,./countries/Benin,./pillars/Pillar3,./goals/Goal4
+Benin,BEN,Pillar 3,9,NA,commitment I,11.823529411764701,NA,NA,Goal 5,0,100,./countries/Benin,./pillars/Pillar3,./goals/Goal5
+Benin,BEN,Pillar 4,10,NA,commitment J,41.8235294117647,NA,NA,Goal 4,0,100,./countries/Benin,./pillars/Pillar4,./goals/Goal4
+Benin,BEN,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,Goal 3,0,100,./countries/Benin,./pillars/Pillar4,./goals/Goal3
+Benin,BEN,Pillar 4,12,NA,commitment L,47.8235294117647,NA,NA,Goal 2,0,100,./countries/Benin,./pillars/Pillar4,./goals/Goal2
+Benin,BEN,Pillar 5,13,NA,commitment M,34.8235294117647,NA,NA,Goal 4,0,100,./countries/Benin,./pillars/Pillar5,./goals/Goal4
+Benin,BEN,Pillar 5,14,NA,commitment N,29.8235294117647,NA,NA,Goal 5,0,100,./countries/Benin,./pillars/Pillar5,./goals/Goal5
+Benin,BEN,Pillar 5,15,NA,commitment O,19.8235294117647,NA,NA,Goal 3,0,100,./countries/Benin,./pillars/Pillar5,./goals/Goal3
+Bermuda,BMU,Pillar 1,1,NA,commitment A,13.823529411764698,NA,NA,Goal 1,0,1,./countries/Bermuda,./pillars/Pillar1,./goals/Goal1
+Bermuda,BMU,Pillar 1,2,NA,commitment B,30.8235294117647,NA,NA,Goal 1,0,1,./countries/Bermuda,./pillars/Pillar1,./goals/Goal1
+Bermuda,BMU,Pillar 1,3,NA,commitment C,23.8235294117647,NA,NA,Goal 4,0,1,./countries/Bermuda,./pillars/Pillar1,./goals/Goal4
+Bermuda,BMU,Pillar 2,4,NA,commitment D,34.82352941176471,NA,NA,Goal 3,10,0,./countries/Bermuda,./pillars/Pillar2,./goals/Goal3
+Bermuda,BMU,Pillar 2,5,NA,commitment E,22.823529411764696,NA,NA,Goal 5,10,0,./countries/Bermuda,./pillars/Pillar2,./goals/Goal5
+Bermuda,BMU,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,Goal 5,10,0,./countries/Bermuda,./pillars/Pillar2,./goals/Goal5
+Bermuda,BMU,Pillar 3,7,NA,commitment G,29.8235294117647,NA,NA,Goal 2,0,100,./countries/Bermuda,./pillars/Pillar3,./goals/Goal2
+Bermuda,BMU,Pillar 3,8,NA,commitment H,30.8235294117647,NA,NA,Goal 5,0,100,./countries/Bermuda,./pillars/Pillar3,./goals/Goal5
+Bermuda,BMU,Pillar 3,9,NA,commitment I,19.8235294117647,NA,NA,Goal 2,0,100,./countries/Bermuda,./pillars/Pillar3,./goals/Goal2
+Bermuda,BMU,Pillar 4,10,NA,commitment J,30.8235294117647,NA,NA,Goal 4,0,100,./countries/Bermuda,./pillars/Pillar4,./goals/Goal4
+Bermuda,BMU,Pillar 4,11,NA,commitment K,31.8235294117647,NA,NA,Goal 4,0,100,./countries/Bermuda,./pillars/Pillar4,./goals/Goal4
+Bermuda,BMU,Pillar 4,12,NA,commitment L,31.8235294117647,NA,NA,Goal 4,0,100,./countries/Bermuda,./pillars/Pillar4,./goals/Goal4
+Bermuda,BMU,Pillar 5,13,NA,commitment M,13.823529411764701,NA,NA,Goal 4,0,100,./countries/Bermuda,./pillars/Pillar5,./goals/Goal4
+Bermuda,BMU,Pillar 5,14,NA,commitment N,38.8235294117647,NA,NA,Goal 1,0,100,./countries/Bermuda,./pillars/Pillar5,./goals/Goal1
+Bermuda,BMU,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,Goal 1,0,100,./countries/Bermuda,./pillars/Pillar5,./goals/Goal1
+Bhutan,BTN,Pillar 1,1,NA,commitment A,41.8235294117647,NA,NA,Goal 2,0,1,./countries/Bhutan,./pillars/Pillar1,./goals/Goal2
+Bhutan,BTN,Pillar 1,2,NA,commitment B,16.8235294117647,NA,NA,Goal 5,0,1,./countries/Bhutan,./pillars/Pillar1,./goals/Goal5
+Bhutan,BTN,Pillar 1,3,NA,commitment C,26.823529411764703,NA,NA,Goal 5,0,1,./countries/Bhutan,./pillars/Pillar1,./goals/Goal5
+Bhutan,BTN,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,Goal 3,10,0,./countries/Bhutan,./pillars/Pillar2,./goals/Goal3
+Bhutan,BTN,Pillar 2,5,NA,commitment E,26.823529411764696,NA,NA,Goal 1,10,0,./countries/Bhutan,./pillars/Pillar2,./goals/Goal1
+Bhutan,BTN,Pillar 2,6,NA,commitment F,34.82352941176471,NA,NA,Goal 5,10,0,./countries/Bhutan,./pillars/Pillar2,./goals/Goal5
+Bhutan,BTN,Pillar 3,7,NA,commitment G,19.8235294117647,NA,NA,Goal 1,0,100,./countries/Bhutan,./pillars/Pillar3,./goals/Goal1
+Bhutan,BTN,Pillar 3,8,NA,commitment H,40.8235294117647,NA,NA,Goal 3,0,100,./countries/Bhutan,./pillars/Pillar3,./goals/Goal3
+Bhutan,BTN,Pillar 3,9,NA,commitment I,14.823529411764701,NA,NA,Goal 3,0,100,./countries/Bhutan,./pillars/Pillar3,./goals/Goal3
+Bhutan,BTN,Pillar 4,10,NA,commitment J,31.8235294117647,NA,NA,Goal 5,0,100,./countries/Bhutan,./pillars/Pillar4,./goals/Goal5
+Bhutan,BTN,Pillar 4,11,NA,commitment K,10.823529411764701,NA,NA,Goal 1,0,100,./countries/Bhutan,./pillars/Pillar4,./goals/Goal1
+Bhutan,BTN,Pillar 4,12,NA,commitment L,34.8235294117647,NA,NA,Goal 3,0,100,./countries/Bhutan,./pillars/Pillar4,./goals/Goal3
+Bhutan,BTN,Pillar 5,13,NA,commitment M,21.8235294117647,NA,NA,Goal 1,0,100,./countries/Bhutan,./pillars/Pillar5,./goals/Goal1
+Bhutan,BTN,Pillar 5,14,NA,commitment N,32.8235294117647,NA,NA,Goal 3,0,100,./countries/Bhutan,./pillars/Pillar5,./goals/Goal3
+Bhutan,BTN,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,Goal 5,0,100,./countries/Bhutan,./pillars/Pillar5,./goals/Goal5
+Bolivia,BOL,Pillar 1,1,NA,commitment A,36.8235294117647,NA,NA,Goal 2,0,1,./countries/Bolivia,./pillars/Pillar1,./goals/Goal2
+Bolivia,BOL,Pillar 1,2,NA,commitment B,51.8235294117647,NA,NA,Goal 1,0,1,./countries/Bolivia,./pillars/Pillar1,./goals/Goal1
+Bolivia,BOL,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,Goal 2,0,1,./countries/Bolivia,./pillars/Pillar1,./goals/Goal2
+Bolivia,BOL,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,Goal 1,10,0,./countries/Bolivia,./pillars/Pillar2,./goals/Goal1
+Bolivia,BOL,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,Goal 4,10,0,./countries/Bolivia,./pillars/Pillar2,./goals/Goal4
+Bolivia,BOL,Pillar 2,6,NA,commitment F,34.82352941176471,NA,NA,Goal 4,10,0,./countries/Bolivia,./pillars/Pillar2,./goals/Goal4
+Bolivia,BOL,Pillar 3,7,NA,commitment G,14.823529411764701,NA,NA,Goal 1,0,100,./countries/Bolivia,./pillars/Pillar3,./goals/Goal1
+Bolivia,BOL,Pillar 3,8,NA,commitment H,12.823529411764701,NA,NA,Goal 4,0,100,./countries/Bolivia,./pillars/Pillar3,./goals/Goal4
+Bolivia,BOL,Pillar 3,9,NA,commitment I,20.8235294117647,NA,NA,Goal 3,0,100,./countries/Bolivia,./pillars/Pillar3,./goals/Goal3
+Bolivia,BOL,Pillar 4,10,NA,commitment J,14.823529411764701,NA,NA,Goal 4,0,100,./countries/Bolivia,./pillars/Pillar4,./goals/Goal4
+Bolivia,BOL,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,Goal 1,0,100,./countries/Bolivia,./pillars/Pillar4,./goals/Goal1
+Bolivia,BOL,Pillar 4,12,NA,commitment L,22.8235294117647,NA,NA,Goal 3,0,100,./countries/Bolivia,./pillars/Pillar4,./goals/Goal3
+Bolivia,BOL,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,Goal 5,0,100,./countries/Bolivia,./pillars/Pillar5,./goals/Goal5
+Bolivia,BOL,Pillar 5,14,NA,commitment N,28.8235294117647,NA,NA,Goal 1,0,100,./countries/Bolivia,./pillars/Pillar5,./goals/Goal1
+Bolivia,BOL,Pillar 5,15,NA,commitment O,18.8235294117647,NA,NA,Goal 5,0,100,./countries/Bolivia,./pillars/Pillar5,./goals/Goal5
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 1,1,NA,commitment A,34.8235294117647,NA,NA,Goal 2,0,1,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar1,./goals/Goal2
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 1,2,NA,commitment B,35.8235294117647,NA,NA,Goal 2,0,1,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar1,./goals/Goal2
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,Goal 5,0,1,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar1,./goals/Goal5
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 2,4,NA,commitment D,44.82352941176471,NA,NA,Goal 5,10,0,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar2,./goals/Goal5
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 2,5,NA,commitment E,22.823529411764696,NA,NA,Goal 1,10,0,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar2,./goals/Goal1
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 2,6,NA,commitment F,13.823529411764696,NA,NA,Goal 3,10,0,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar2,./goals/Goal3
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 3,7,NA,commitment G,21.8235294117647,NA,NA,Goal 3,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar3,./goals/Goal3
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 3,8,NA,commitment H,31.8235294117647,NA,NA,Goal 3,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar3,./goals/Goal3
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 3,9,NA,commitment I,32.8235294117647,NA,NA,Goal 1,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar3,./goals/Goal1
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 4,10,NA,commitment J,31.8235294117647,NA,NA,Goal 4,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar4,./goals/Goal4
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,Goal 3,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar4,./goals/Goal3
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 4,12,NA,commitment L,35.8235294117647,NA,NA,Goal 3,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar4,./goals/Goal3
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 5,13,NA,commitment M,41.8235294117647,NA,NA,Goal 3,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar5,./goals/Goal3
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 5,14,NA,commitment N,15.823529411764701,NA,NA,Goal 5,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar5,./goals/Goal5
+"Bonaire, Sint Eustatius and Saba",BES,Pillar 5,15,NA,commitment O,40.8235294117647,NA,NA,Goal 1,0,100,"./countries/Bonaire,SintEustatiusandSaba",./pillars/Pillar5,./goals/Goal1
+Bosnia and Herzegovina,BIH,Pillar 1,1,NA,commitment A,46.8235294117647,NA,NA,Goal 1,0,1,./countries/BosniaandHerzegovina,./pillars/Pillar1,./goals/Goal1
+Bosnia and Herzegovina,BIH,Pillar 1,2,NA,commitment B,13.823529411764698,NA,NA,Goal 5,0,1,./countries/BosniaandHerzegovina,./pillars/Pillar1,./goals/Goal5
+Bosnia and Herzegovina,BIH,Pillar 1,3,NA,commitment C,36.8235294117647,NA,NA,Goal 5,0,1,./countries/BosniaandHerzegovina,./pillars/Pillar1,./goals/Goal5
+Bosnia and Herzegovina,BIH,Pillar 2,4,NA,commitment D,31.823529411764696,NA,NA,Goal 2,10,0,./countries/BosniaandHerzegovina,./pillars/Pillar2,./goals/Goal2
+Bosnia and Herzegovina,BIH,Pillar 2,5,NA,commitment E,27.823529411764696,NA,NA,Goal 3,10,0,./countries/BosniaandHerzegovina,./pillars/Pillar2,./goals/Goal3
+Bosnia and Herzegovina,BIH,Pillar 2,6,NA,commitment F,27.823529411764696,NA,NA,Goal 1,10,0,./countries/BosniaandHerzegovina,./pillars/Pillar2,./goals/Goal1
+Bosnia and Herzegovina,BIH,Pillar 3,7,NA,commitment G,32.8235294117647,NA,NA,Goal 3,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar3,./goals/Goal3
+Bosnia and Herzegovina,BIH,Pillar 3,8,NA,commitment H,31.8235294117647,NA,NA,Goal 5,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar3,./goals/Goal5
+Bosnia and Herzegovina,BIH,Pillar 3,9,NA,commitment I,21.8235294117647,NA,NA,Goal 3,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar3,./goals/Goal3
+Bosnia and Herzegovina,BIH,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,Goal 3,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar4,./goals/Goal3
+Bosnia and Herzegovina,BIH,Pillar 4,11,NA,commitment K,7.8235294117647,NA,NA,Goal 4,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar4,./goals/Goal4
+Bosnia and Herzegovina,BIH,Pillar 4,12,NA,commitment L,36.8235294117647,NA,NA,Goal 5,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar4,./goals/Goal5
+Bosnia and Herzegovina,BIH,Pillar 5,13,NA,commitment M,16.8235294117647,NA,NA,Goal 3,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar5,./goals/Goal3
+Bosnia and Herzegovina,BIH,Pillar 5,14,NA,commitment N,35.8235294117647,NA,NA,Goal 5,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar5,./goals/Goal5
+Bosnia and Herzegovina,BIH,Pillar 5,15,NA,commitment O,23.8235294117647,NA,NA,Goal 5,0,100,./countries/BosniaandHerzegovina,./pillars/Pillar5,./goals/Goal5
+Botswana,BWA,Pillar 1,1,NA,commitment A,23.8235294117647,NA,NA,Goal 5,0,1,./countries/Botswana,./pillars/Pillar1,./goals/Goal5
+Botswana,BWA,Pillar 1,2,NA,commitment B,33.8235294117647,NA,NA,Goal 5,0,1,./countries/Botswana,./pillars/Pillar1,./goals/Goal5
+Botswana,BWA,Pillar 1,3,NA,commitment C,15.8235294117647,NA,NA,Goal 4,0,1,./countries/Botswana,./pillars/Pillar1,./goals/Goal4
+Botswana,BWA,Pillar 2,4,NA,commitment D,33.823529411764696,NA,NA,Goal 3,10,0,./countries/Botswana,./pillars/Pillar2,./goals/Goal3
+Botswana,BWA,Pillar 2,5,NA,commitment E,39.82352941176471,NA,NA,Goal 2,10,0,./countries/Botswana,./pillars/Pillar2,./goals/Goal2
+Botswana,BWA,Pillar 2,6,NA,commitment F,41.823529411764696,NA,NA,Goal 2,10,0,./countries/Botswana,./pillars/Pillar2,./goals/Goal2
+Botswana,BWA,Pillar 3,7,NA,commitment G,33.8235294117647,NA,NA,Goal 2,0,100,./countries/Botswana,./pillars/Pillar3,./goals/Goal2
+Botswana,BWA,Pillar 3,8,NA,commitment H,24.8235294117647,NA,NA,Goal 4,0,100,./countries/Botswana,./pillars/Pillar3,./goals/Goal4
+Botswana,BWA,Pillar 3,9,NA,commitment I,19.8235294117647,NA,NA,Goal 4,0,100,./countries/Botswana,./pillars/Pillar3,./goals/Goal4
+Botswana,BWA,Pillar 4,10,NA,commitment J,40.8235294117647,NA,NA,Goal 1,0,100,./countries/Botswana,./pillars/Pillar4,./goals/Goal1
+Botswana,BWA,Pillar 4,11,NA,commitment K,36.8235294117647,NA,NA,Goal 5,0,100,./countries/Botswana,./pillars/Pillar4,./goals/Goal5
+Botswana,BWA,Pillar 4,12,NA,commitment L,21.8235294117647,NA,NA,Goal 3,0,100,./countries/Botswana,./pillars/Pillar4,./goals/Goal3
+Botswana,BWA,Pillar 5,13,NA,commitment M,26.8235294117647,NA,NA,Goal 2,0,100,./countries/Botswana,./pillars/Pillar5,./goals/Goal2
+Botswana,BWA,Pillar 5,14,NA,commitment N,13.823529411764701,NA,NA,Goal 4,0,100,./countries/Botswana,./pillars/Pillar5,./goals/Goal4
+Botswana,BWA,Pillar 5,15,NA,commitment O,6.8235294117647,NA,NA,Goal 3,0,100,./countries/Botswana,./pillars/Pillar5,./goals/Goal3
+Bouvet Island,BVT,Pillar 1,1,NA,commitment A,35.8235294117647,NA,NA,Goal 1,0,1,./countries/BouvetIsland,./pillars/Pillar1,./goals/Goal1
+Bouvet Island,BVT,Pillar 1,2,NA,commitment B,23.8235294117647,NA,NA,Goal 3,0,1,./countries/BouvetIsland,./pillars/Pillar1,./goals/Goal3
+Bouvet Island,BVT,Pillar 1,3,NA,commitment C,35.8235294117647,NA,NA,Goal 3,0,1,./countries/BouvetIsland,./pillars/Pillar1,./goals/Goal3
+Bouvet Island,BVT,Pillar 2,4,NA,commitment D,26.823529411764696,NA,NA,Goal 4,10,0,./countries/BouvetIsland,./pillars/Pillar2,./goals/Goal4
+Bouvet Island,BVT,Pillar 2,5,NA,commitment E,31.823529411764696,NA,NA,Goal 3,10,0,./countries/BouvetIsland,./pillars/Pillar2,./goals/Goal3
+Bouvet Island,BVT,Pillar 2,6,NA,commitment F,14.82352941176471,NA,NA,Goal 3,10,0,./countries/BouvetIsland,./pillars/Pillar2,./goals/Goal3
+Bouvet Island,BVT,Pillar 3,7,NA,commitment G,34.8235294117647,NA,NA,Goal 1,0,100,./countries/BouvetIsland,./pillars/Pillar3,./goals/Goal1
+Bouvet Island,BVT,Pillar 3,8,NA,commitment H,6.8235294117647,NA,NA,Goal 5,0,100,./countries/BouvetIsland,./pillars/Pillar3,./goals/Goal5
+Bouvet Island,BVT,Pillar 3,9,NA,commitment I,23.8235294117647,NA,NA,Goal 3,0,100,./countries/BouvetIsland,./pillars/Pillar3,./goals/Goal3
+Bouvet Island,BVT,Pillar 4,10,NA,commitment J,26.8235294117647,NA,NA,Goal 4,0,100,./countries/BouvetIsland,./pillars/Pillar4,./goals/Goal4
+Bouvet Island,BVT,Pillar 4,11,NA,commitment K,16.8235294117647,NA,NA,Goal 3,0,100,./countries/BouvetIsland,./pillars/Pillar4,./goals/Goal3
+Bouvet Island,BVT,Pillar 4,12,NA,commitment L,13.823529411764701,NA,NA,Goal 1,0,100,./countries/BouvetIsland,./pillars/Pillar4,./goals/Goal1
+Bouvet Island,BVT,Pillar 5,13,NA,commitment M,28.8235294117647,NA,NA,Goal 2,0,100,./countries/BouvetIsland,./pillars/Pillar5,./goals/Goal2
+Bouvet Island,BVT,Pillar 5,14,NA,commitment N,43.8235294117647,NA,NA,Goal 3,0,100,./countries/BouvetIsland,./pillars/Pillar5,./goals/Goal3
+Bouvet Island,BVT,Pillar 5,15,NA,commitment O,29.8235294117647,NA,NA,Goal 3,0,100,./countries/BouvetIsland,./pillars/Pillar5,./goals/Goal3
+Brazil,BRA,Pillar 1,1,NA,commitment A,23.8235294117647,NA,NA,Goal 5,0,1,./countries/Brazil,./pillars/Pillar1,./goals/Goal5
+Brazil,BRA,Pillar 1,2,NA,commitment B,34.8235294117647,NA,NA,Goal 1,0,1,./countries/Brazil,./pillars/Pillar1,./goals/Goal1
+Brazil,BRA,Pillar 1,3,NA,commitment C,34.8235294117647,NA,NA,Goal 2,0,1,./countries/Brazil,./pillars/Pillar1,./goals/Goal2
+Brazil,BRA,Pillar 2,4,NA,commitment D,14.82352941176471,NA,NA,Goal 4,10,0,./countries/Brazil,./pillars/Pillar2,./goals/Goal4
+Brazil,BRA,Pillar 2,5,NA,commitment E,30.82352941176471,NA,NA,Goal 3,10,0,./countries/Brazil,./pillars/Pillar2,./goals/Goal3
+Brazil,BRA,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,Goal 3,10,0,./countries/Brazil,./pillars/Pillar2,./goals/Goal3
+Brazil,BRA,Pillar 3,7,NA,commitment G,40.8235294117647,NA,NA,Goal 1,0,100,./countries/Brazil,./pillars/Pillar3,./goals/Goal1
+Brazil,BRA,Pillar 3,8,NA,commitment H,39.8235294117647,NA,NA,Goal 5,0,100,./countries/Brazil,./pillars/Pillar3,./goals/Goal5
+Brazil,BRA,Pillar 3,9,NA,commitment I,9.8235294117647,NA,NA,Goal 1,0,100,./countries/Brazil,./pillars/Pillar3,./goals/Goal1
+Brazil,BRA,Pillar 4,10,NA,commitment J,54.8235294117647,NA,NA,Goal 2,0,100,./countries/Brazil,./pillars/Pillar4,./goals/Goal2
+Brazil,BRA,Pillar 4,11,NA,commitment K,48.8235294117647,NA,NA,Goal 1,0,100,./countries/Brazil,./pillars/Pillar4,./goals/Goal1
+Brazil,BRA,Pillar 4,12,NA,commitment L,38.8235294117647,NA,NA,Goal 1,0,100,./countries/Brazil,./pillars/Pillar4,./goals/Goal1
+Brazil,BRA,Pillar 5,13,NA,commitment M,14.823529411764701,NA,NA,Goal 4,0,100,./countries/Brazil,./pillars/Pillar5,./goals/Goal4
+Brazil,BRA,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,Goal 1,0,100,./countries/Brazil,./pillars/Pillar5,./goals/Goal1
+Brazil,BRA,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,Goal 4,0,100,./countries/Brazil,./pillars/Pillar5,./goals/Goal4
+Brunei,BRN,Pillar 1,1,NA,commitment A,17.8235294117647,NA,NA,Goal 4,0,1,./countries/Brunei,./pillars/Pillar1,./goals/Goal4
+Brunei,BRN,Pillar 1,2,NA,commitment B,34.8235294117647,NA,NA,Goal 1,0,1,./countries/Brunei,./pillars/Pillar1,./goals/Goal1
+Brunei,BRN,Pillar 1,3,NA,commitment C,23.8235294117647,NA,NA,Goal 1,0,1,./countries/Brunei,./pillars/Pillar1,./goals/Goal1
+Brunei,BRN,Pillar 2,4,NA,commitment D,15.82352941176471,NA,NA,Goal 1,10,0,./countries/Brunei,./pillars/Pillar2,./goals/Goal1
+Brunei,BRN,Pillar 2,5,NA,commitment E,36.823529411764696,NA,NA,Goal 4,10,0,./countries/Brunei,./pillars/Pillar2,./goals/Goal4
+Brunei,BRN,Pillar 2,6,NA,commitment F,35.82352941176471,NA,NA,Goal 4,10,0,./countries/Brunei,./pillars/Pillar2,./goals/Goal4
+Brunei,BRN,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,Goal 4,0,100,./countries/Brunei,./pillars/Pillar3,./goals/Goal4
+Brunei,BRN,Pillar 3,8,NA,commitment H,37.8235294117647,NA,NA,Goal 4,0,100,./countries/Brunei,./pillars/Pillar3,./goals/Goal4
+Brunei,BRN,Pillar 3,9,NA,commitment I,41.8235294117647,NA,NA,Goal 4,0,100,./countries/Brunei,./pillars/Pillar3,./goals/Goal4
+Brunei,BRN,Pillar 4,10,NA,commitment J,20.8235294117647,NA,NA,Goal 2,0,100,./countries/Brunei,./pillars/Pillar4,./goals/Goal2
+Brunei,BRN,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,Goal 4,0,100,./countries/Brunei,./pillars/Pillar4,./goals/Goal4
+Brunei,BRN,Pillar 4,12,NA,commitment L,28.8235294117647,NA,NA,Goal 4,0,100,./countries/Brunei,./pillars/Pillar4,./goals/Goal4
+Brunei,BRN,Pillar 5,13,NA,commitment M,30.8235294117647,NA,NA,Goal 4,0,100,./countries/Brunei,./pillars/Pillar5,./goals/Goal4
+Brunei,BRN,Pillar 5,14,NA,commitment N,44.8235294117647,NA,NA,Goal 2,0,100,./countries/Brunei,./pillars/Pillar5,./goals/Goal2
+Brunei,BRN,Pillar 5,15,NA,commitment O,23.8235294117647,NA,NA,Goal 3,0,100,./countries/Brunei,./pillars/Pillar5,./goals/Goal3
+Bulgaria,BGR,Pillar 1,1,NA,commitment A,25.8235294117647,NA,NA,Goal 1,0,1,./countries/Bulgaria,./pillars/Pillar1,./goals/Goal1
+Bulgaria,BGR,Pillar 1,2,NA,commitment B,26.823529411764703,NA,NA,Goal 4,0,1,./countries/Bulgaria,./pillars/Pillar1,./goals/Goal4
+Bulgaria,BGR,Pillar 1,3,NA,commitment C,22.8235294117647,NA,NA,Goal 4,0,1,./countries/Bulgaria,./pillars/Pillar1,./goals/Goal4
+Bulgaria,BGR,Pillar 2,4,NA,commitment D,40.82352941176471,NA,NA,Goal 3,10,0,./countries/Bulgaria,./pillars/Pillar2,./goals/Goal3
+Bulgaria,BGR,Pillar 2,5,NA,commitment E,38.823529411764696,NA,NA,Goal 4,10,0,./countries/Bulgaria,./pillars/Pillar2,./goals/Goal4
+Bulgaria,BGR,Pillar 2,6,NA,commitment F,25.82352941176471,NA,NA,Goal 2,10,0,./countries/Bulgaria,./pillars/Pillar2,./goals/Goal2
+Bulgaria,BGR,Pillar 3,7,NA,commitment G,17.8235294117647,NA,NA,Goal 1,0,100,./countries/Bulgaria,./pillars/Pillar3,./goals/Goal1
+Bulgaria,BGR,Pillar 3,8,NA,commitment H,32.8235294117647,NA,NA,Goal 5,0,100,./countries/Bulgaria,./pillars/Pillar3,./goals/Goal5
+Bulgaria,BGR,Pillar 3,9,NA,commitment I,35.8235294117647,NA,NA,Goal 5,0,100,./countries/Bulgaria,./pillars/Pillar3,./goals/Goal5
+Bulgaria,BGR,Pillar 4,10,NA,commitment J,32.8235294117647,NA,NA,Goal 3,0,100,./countries/Bulgaria,./pillars/Pillar4,./goals/Goal3
+Bulgaria,BGR,Pillar 4,11,NA,commitment K,16.8235294117647,NA,NA,Goal 3,0,100,./countries/Bulgaria,./pillars/Pillar4,./goals/Goal3
+Bulgaria,BGR,Pillar 4,12,NA,commitment L,51.8235294117647,NA,NA,Goal 4,0,100,./countries/Bulgaria,./pillars/Pillar4,./goals/Goal4
+Bulgaria,BGR,Pillar 5,13,NA,commitment M,28.8235294117647,NA,NA,Goal 2,0,100,./countries/Bulgaria,./pillars/Pillar5,./goals/Goal2
+Bulgaria,BGR,Pillar 5,14,NA,commitment N,28.8235294117647,NA,NA,Goal 2,0,100,./countries/Bulgaria,./pillars/Pillar5,./goals/Goal2
+Bulgaria,BGR,Pillar 5,15,NA,commitment O,9.8235294117647,NA,NA,Goal 2,0,100,./countries/Bulgaria,./pillars/Pillar5,./goals/Goal2
+Burkina Faso,BFA,Pillar 1,1,NA,commitment A,28.8235294117647,NA,NA,Goal 1,0,1,./countries/BurkinaFaso,./pillars/Pillar1,./goals/Goal1
+Burkina Faso,BFA,Pillar 1,2,NA,commitment B,22.8235294117647,NA,NA,Goal 3,0,1,./countries/BurkinaFaso,./pillars/Pillar1,./goals/Goal3
+Burkina Faso,BFA,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,Goal 2,0,1,./countries/BurkinaFaso,./pillars/Pillar1,./goals/Goal2
+Burkina Faso,BFA,Pillar 2,4,NA,commitment D,57.82352941176471,NA,NA,Goal 3,10,0,./countries/BurkinaFaso,./pillars/Pillar2,./goals/Goal3
+Burkina Faso,BFA,Pillar 2,5,NA,commitment E,29.823529411764696,NA,NA,Goal 1,10,0,./countries/BurkinaFaso,./pillars/Pillar2,./goals/Goal1
+Burkina Faso,BFA,Pillar 2,6,NA,commitment F,27.823529411764696,NA,NA,Goal 2,10,0,./countries/BurkinaFaso,./pillars/Pillar2,./goals/Goal2
+Burkina Faso,BFA,Pillar 3,7,NA,commitment G,17.8235294117647,NA,NA,Goal 3,0,100,./countries/BurkinaFaso,./pillars/Pillar3,./goals/Goal3
+Burkina Faso,BFA,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,Goal 4,0,100,./countries/BurkinaFaso,./pillars/Pillar3,./goals/Goal4
+Burkina Faso,BFA,Pillar 3,9,NA,commitment I,16.8235294117647,NA,NA,Goal 1,0,100,./countries/BurkinaFaso,./pillars/Pillar3,./goals/Goal1
+Burkina Faso,BFA,Pillar 4,10,NA,commitment J,29.8235294117647,NA,NA,Goal 3,0,100,./countries/BurkinaFaso,./pillars/Pillar4,./goals/Goal3
+Burkina Faso,BFA,Pillar 4,11,NA,commitment K,28.8235294117647,NA,NA,Goal 2,0,100,./countries/BurkinaFaso,./pillars/Pillar4,./goals/Goal2
+Burkina Faso,BFA,Pillar 4,12,NA,commitment L,32.8235294117647,NA,NA,Goal 3,0,100,./countries/BurkinaFaso,./pillars/Pillar4,./goals/Goal3
+Burkina Faso,BFA,Pillar 5,13,NA,commitment M,22.8235294117647,NA,NA,Goal 4,0,100,./countries/BurkinaFaso,./pillars/Pillar5,./goals/Goal4
+Burkina Faso,BFA,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,Goal 2,0,100,./countries/BurkinaFaso,./pillars/Pillar5,./goals/Goal2
+Burkina Faso,BFA,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,Goal 3,0,100,./countries/BurkinaFaso,./pillars/Pillar5,./goals/Goal3
+Burundi,BDI,Pillar 1,1,NA,commitment A,29.8235294117647,NA,NA,Goal 4,0,1,./countries/Burundi,./pillars/Pillar1,./goals/Goal4
+Burundi,BDI,Pillar 1,2,NA,commitment B,25.8235294117647,NA,NA,Goal 1,0,1,./countries/Burundi,./pillars/Pillar1,./goals/Goal1
+Burundi,BDI,Pillar 1,3,NA,commitment C,5.8235294117647,NA,NA,Goal 2,0,1,./countries/Burundi,./pillars/Pillar1,./goals/Goal2
+Burundi,BDI,Pillar 2,4,NA,commitment D,19.82352941176471,NA,NA,Goal 1,10,0,./countries/Burundi,./pillars/Pillar2,./goals/Goal1
+Burundi,BDI,Pillar 2,5,NA,commitment E,29.823529411764696,NA,NA,Goal 2,10,0,./countries/Burundi,./pillars/Pillar2,./goals/Goal2
+Burundi,BDI,Pillar 2,6,NA,commitment F,36.823529411764696,NA,NA,Goal 2,10,0,./countries/Burundi,./pillars/Pillar2,./goals/Goal2
+Burundi,BDI,Pillar 3,7,NA,commitment G,8.8235294117647,NA,NA,Goal 4,0,100,./countries/Burundi,./pillars/Pillar3,./goals/Goal4
+Burundi,BDI,Pillar 3,8,NA,commitment H,1.8235294117647,NA,NA,Goal 2,0,100,./countries/Burundi,./pillars/Pillar3,./goals/Goal2
+Burundi,BDI,Pillar 3,9,NA,commitment I,33.8235294117647,NA,NA,Goal 5,0,100,./countries/Burundi,./pillars/Pillar3,./goals/Goal5
+Burundi,BDI,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,Goal 4,0,100,./countries/Burundi,./pillars/Pillar4,./goals/Goal4
+Burundi,BDI,Pillar 4,11,NA,commitment K,31.8235294117647,NA,NA,Goal 3,0,100,./countries/Burundi,./pillars/Pillar4,./goals/Goal3
+Burundi,BDI,Pillar 4,12,NA,commitment L,44.8235294117647,NA,NA,Goal 1,0,100,./countries/Burundi,./pillars/Pillar4,./goals/Goal1
+Burundi,BDI,Pillar 5,13,NA,commitment M,11.823529411764701,NA,NA,Goal 3,0,100,./countries/Burundi,./pillars/Pillar5,./goals/Goal3
+Burundi,BDI,Pillar 5,14,NA,commitment N,22.8235294117647,NA,NA,Goal 4,0,100,./countries/Burundi,./pillars/Pillar5,./goals/Goal4
+Burundi,BDI,Pillar 5,15,NA,commitment O,21.8235294117647,NA,NA,Goal 2,0,100,./countries/Burundi,./pillars/Pillar5,./goals/Goal2
+Cameroon,CMR,Pillar 1,1,NA,commitment A,32.8235294117647,NA,NA,Goal 4,0,1,./countries/Cameroon,./pillars/Pillar1,./goals/Goal4
+Cameroon,CMR,Pillar 1,2,NA,commitment B,18.8235294117647,NA,NA,Goal 3,0,1,./countries/Cameroon,./pillars/Pillar1,./goals/Goal3
+Cameroon,CMR,Pillar 1,3,NA,commitment C,39.8235294117647,NA,NA,Goal 3,0,1,./countries/Cameroon,./pillars/Pillar1,./goals/Goal3
+Cameroon,CMR,Pillar 2,4,NA,commitment D,11.823529411764696,NA,NA,Goal 2,10,0,./countries/Cameroon,./pillars/Pillar2,./goals/Goal2
+Cameroon,CMR,Pillar 2,5,NA,commitment E,35.82352941176471,NA,NA,Goal 2,10,0,./countries/Cameroon,./pillars/Pillar2,./goals/Goal2
+Cameroon,CMR,Pillar 2,6,NA,commitment F,24.823529411764696,NA,NA,Goal 1,10,0,./countries/Cameroon,./pillars/Pillar2,./goals/Goal1
+Cameroon,CMR,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,Goal 3,0,100,./countries/Cameroon,./pillars/Pillar3,./goals/Goal3
+Cameroon,CMR,Pillar 3,8,NA,commitment H,40.8235294117647,NA,NA,Goal 4,0,100,./countries/Cameroon,./pillars/Pillar3,./goals/Goal4
+Cameroon,CMR,Pillar 3,9,NA,commitment I,40.8235294117647,NA,NA,Goal 1,0,100,./countries/Cameroon,./pillars/Pillar3,./goals/Goal1
+Cameroon,CMR,Pillar 4,10,NA,commitment J,46.8235294117647,NA,NA,Goal 4,0,100,./countries/Cameroon,./pillars/Pillar4,./goals/Goal4
+Cameroon,CMR,Pillar 4,11,NA,commitment K,41.8235294117647,NA,NA,Goal 2,0,100,./countries/Cameroon,./pillars/Pillar4,./goals/Goal2
+Cameroon,CMR,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,Goal 4,0,100,./countries/Cameroon,./pillars/Pillar4,./goals/Goal4
+Cameroon,CMR,Pillar 5,13,NA,commitment M,20.8235294117647,NA,NA,Goal 4,0,100,./countries/Cameroon,./pillars/Pillar5,./goals/Goal4
+Cameroon,CMR,Pillar 5,14,NA,commitment N,46.8235294117647,NA,NA,Goal 2,0,100,./countries/Cameroon,./pillars/Pillar5,./goals/Goal2
+Cameroon,CMR,Pillar 5,15,NA,commitment O,23.8235294117647,NA,NA,Goal 1,0,100,./countries/Cameroon,./pillars/Pillar5,./goals/Goal1
+Cape Verde,CPV,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,Goal 4,0,1,./countries/CapeVerde,./pillars/Pillar1,./goals/Goal4
+Cape Verde,CPV,Pillar 1,2,NA,commitment B,21.8235294117647,NA,NA,Goal 3,0,1,./countries/CapeVerde,./pillars/Pillar1,./goals/Goal3
+Cape Verde,CPV,Pillar 1,3,NA,commitment C,30.8235294117647,NA,NA,Goal 3,0,1,./countries/CapeVerde,./pillars/Pillar1,./goals/Goal3
+Cape Verde,CPV,Pillar 2,4,NA,commitment D,30.82352941176471,NA,NA,Goal 3,10,0,./countries/CapeVerde,./pillars/Pillar2,./goals/Goal3
+Cape Verde,CPV,Pillar 2,5,NA,commitment E,62.82352941176471,NA,NA,Goal 2,10,0,./countries/CapeVerde,./pillars/Pillar2,./goals/Goal2
+Cape Verde,CPV,Pillar 2,6,NA,commitment F,32.82352941176471,NA,NA,Goal 4,10,0,./countries/CapeVerde,./pillars/Pillar2,./goals/Goal4
+Cape Verde,CPV,Pillar 3,7,NA,commitment G,28.8235294117647,NA,NA,Goal 5,0,100,./countries/CapeVerde,./pillars/Pillar3,./goals/Goal5
+Cape Verde,CPV,Pillar 3,8,NA,commitment H,22.8235294117647,NA,NA,Goal 4,0,100,./countries/CapeVerde,./pillars/Pillar3,./goals/Goal4
+Cape Verde,CPV,Pillar 3,9,NA,commitment I,23.8235294117647,NA,NA,Goal 3,0,100,./countries/CapeVerde,./pillars/Pillar3,./goals/Goal3
+Cape Verde,CPV,Pillar 4,10,NA,commitment J,24.8235294117647,NA,NA,Goal 4,0,100,./countries/CapeVerde,./pillars/Pillar4,./goals/Goal4
+Cape Verde,CPV,Pillar 4,11,NA,commitment K,26.8235294117647,NA,NA,Goal 4,0,100,./countries/CapeVerde,./pillars/Pillar4,./goals/Goal4
+Cape Verde,CPV,Pillar 4,12,NA,commitment L,23.8235294117647,NA,NA,Goal 4,0,100,./countries/CapeVerde,./pillars/Pillar4,./goals/Goal4
+Cape Verde,CPV,Pillar 5,13,NA,commitment M,20.8235294117647,NA,NA,Goal 5,0,100,./countries/CapeVerde,./pillars/Pillar5,./goals/Goal5
+Cape Verde,CPV,Pillar 5,14,NA,commitment N,23.8235294117647,NA,NA,Goal 5,0,100,./countries/CapeVerde,./pillars/Pillar5,./goals/Goal5
+Cape Verde,CPV,Pillar 5,15,NA,commitment O,33.8235294117647,NA,NA,Goal 5,0,100,./countries/CapeVerde,./pillars/Pillar5,./goals/Goal5
+China,CHN,Pillar 1,1,NA,commitment A,22.8235294117647,NA,NA,Goal 1,0,1,./countries/China,./pillars/Pillar1,./goals/Goal1
+China,CHN,Pillar 1,2,NA,commitment B,33.8235294117647,NA,NA,Goal 5,0,1,./countries/China,./pillars/Pillar1,./goals/Goal5
+China,CHN,Pillar 1,3,NA,commitment C,13.823529411764698,NA,NA,Goal 4,0,1,./countries/China,./pillars/Pillar1,./goals/Goal4
+China,CHN,Pillar 2,4,NA,commitment D,28.823529411764696,NA,NA,Goal 3,10,0,./countries/China,./pillars/Pillar2,./goals/Goal3
+China,CHN,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,Goal 2,10,0,./countries/China,./pillars/Pillar2,./goals/Goal2
+China,CHN,Pillar 2,6,NA,commitment F,40.82352941176471,NA,NA,Goal 5,10,0,./countries/China,./pillars/Pillar2,./goals/Goal5
+China,CHN,Pillar 3,7,NA,commitment G,37.8235294117647,NA,NA,Goal 3,0,100,./countries/China,./pillars/Pillar3,./goals/Goal3
+China,CHN,Pillar 3,8,NA,commitment H,25.8235294117647,NA,NA,Goal 3,0,100,./countries/China,./pillars/Pillar3,./goals/Goal3
+China,CHN,Pillar 3,9,NA,commitment I,34.8235294117647,NA,NA,Goal 4,0,100,./countries/China,./pillars/Pillar3,./goals/Goal4
+China,CHN,Pillar 4,10,NA,commitment J,35.8235294117647,NA,NA,Goal 4,0,100,./countries/China,./pillars/Pillar4,./goals/Goal4
+China,CHN,Pillar 4,11,NA,commitment K,33.8235294117647,NA,NA,Goal 5,0,100,./countries/China,./pillars/Pillar4,./goals/Goal5
+China,CHN,Pillar 4,12,NA,commitment L,17.8235294117647,NA,NA,Goal 2,0,100,./countries/China,./pillars/Pillar4,./goals/Goal2
+China,CHN,Pillar 5,13,NA,commitment M,33.8235294117647,NA,NA,Goal 1,0,100,./countries/China,./pillars/Pillar5,./goals/Goal1
+China,CHN,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,Goal 5,0,100,./countries/China,./pillars/Pillar5,./goals/Goal5
+China,CHN,Pillar 5,15,NA,commitment O,45.8235294117647,NA,NA,Goal 1,0,100,./countries/China,./pillars/Pillar5,./goals/Goal1
+Christmas Island,CXR,Pillar 1,1,NA,commitment A,30.8235294117647,NA,NA,Goal 5,0,1,./countries/ChristmasIsland,./pillars/Pillar1,./goals/Goal5
+Christmas Island,CXR,Pillar 1,2,NA,commitment B,29.8235294117647,NA,NA,Goal 5,0,1,./countries/ChristmasIsland,./pillars/Pillar1,./goals/Goal5
+Christmas Island,CXR,Pillar 1,3,NA,commitment C,33.8235294117647,NA,NA,Goal 2,0,1,./countries/ChristmasIsland,./pillars/Pillar1,./goals/Goal2
+Christmas Island,CXR,Pillar 2,4,NA,commitment D,39.82352941176471,NA,NA,Goal 4,10,0,./countries/ChristmasIsland,./pillars/Pillar2,./goals/Goal4
+Christmas Island,CXR,Pillar 2,5,NA,commitment E,9.82352941176471,NA,NA,Goal 4,10,0,./countries/ChristmasIsland,./pillars/Pillar2,./goals/Goal4
+Christmas Island,CXR,Pillar 2,6,NA,commitment F,22.823529411764696,NA,NA,Goal 4,10,0,./countries/ChristmasIsland,./pillars/Pillar2,./goals/Goal4
+Christmas Island,CXR,Pillar 3,7,NA,commitment G,36.8235294117647,NA,NA,Goal 2,0,100,./countries/ChristmasIsland,./pillars/Pillar3,./goals/Goal2
+Christmas Island,CXR,Pillar 3,8,NA,commitment H,20.8235294117647,NA,NA,Goal 4,0,100,./countries/ChristmasIsland,./pillars/Pillar3,./goals/Goal4
+Christmas Island,CXR,Pillar 3,9,NA,commitment I,30.8235294117647,NA,NA,Goal 3,0,100,./countries/ChristmasIsland,./pillars/Pillar3,./goals/Goal3
+Christmas Island,CXR,Pillar 4,10,NA,commitment J,27.8235294117647,NA,NA,Goal 1,0,100,./countries/ChristmasIsland,./pillars/Pillar4,./goals/Goal1
+Christmas Island,CXR,Pillar 4,11,NA,commitment K,33.8235294117647,NA,NA,Goal 4,0,100,./countries/ChristmasIsland,./pillars/Pillar4,./goals/Goal4
+Christmas Island,CXR,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,Goal 2,0,100,./countries/ChristmasIsland,./pillars/Pillar4,./goals/Goal2
+Christmas Island,CXR,Pillar 5,13,NA,commitment M,37.8235294117647,NA,NA,Goal 3,0,100,./countries/ChristmasIsland,./pillars/Pillar5,./goals/Goal3
+Christmas Island,CXR,Pillar 5,14,NA,commitment N,21.8235294117647,NA,NA,Goal 1,0,100,./countries/ChristmasIsland,./pillars/Pillar5,./goals/Goal1
+Christmas Island,CXR,Pillar 5,15,NA,commitment O,35.8235294117647,NA,NA,Goal 1,0,100,./countries/ChristmasIsland,./pillars/Pillar5,./goals/Goal1
+Clipperton Island,CPT,Pillar 1,1,NA,commitment A,36.8235294117647,NA,NA,Goal 1,0,1,./countries/ClippertonIsland,./pillars/Pillar1,./goals/Goal1
+Clipperton Island,CPT,Pillar 1,2,NA,commitment B,46.8235294117647,NA,NA,Goal 4,0,1,./countries/ClippertonIsland,./pillars/Pillar1,./goals/Goal4
+Clipperton Island,CPT,Pillar 1,3,NA,commitment C,41.8235294117647,NA,NA,Goal 1,0,1,./countries/ClippertonIsland,./pillars/Pillar1,./goals/Goal1
+Clipperton Island,CPT,Pillar 2,4,NA,commitment D,17.823529411764696,NA,NA,Goal 2,10,0,./countries/ClippertonIsland,./pillars/Pillar2,./goals/Goal2
+Clipperton Island,CPT,Pillar 2,5,NA,commitment E,44.82352941176471,NA,NA,Goal 4,10,0,./countries/ClippertonIsland,./pillars/Pillar2,./goals/Goal4
+Clipperton Island,CPT,Pillar 2,6,NA,commitment F,38.823529411764696,NA,NA,Goal 3,10,0,./countries/ClippertonIsland,./pillars/Pillar2,./goals/Goal3
+Clipperton Island,CPT,Pillar 3,7,NA,commitment G,34.8235294117647,NA,NA,Goal 4,0,100,./countries/ClippertonIsland,./pillars/Pillar3,./goals/Goal4
+Clipperton Island,CPT,Pillar 3,8,NA,commitment H,53.8235294117647,NA,NA,Goal 3,0,100,./countries/ClippertonIsland,./pillars/Pillar3,./goals/Goal3
+Clipperton Island,CPT,Pillar 3,9,NA,commitment I,40.8235294117647,NA,NA,Goal 4,0,100,./countries/ClippertonIsland,./pillars/Pillar3,./goals/Goal4
+Clipperton Island,CPT,Pillar 4,10,NA,commitment J,8.8235294117647,NA,NA,Goal 2,0,100,./countries/ClippertonIsland,./pillars/Pillar4,./goals/Goal2
+Clipperton Island,CPT,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,Goal 4,0,100,./countries/ClippertonIsland,./pillars/Pillar4,./goals/Goal4
+Clipperton Island,CPT,Pillar 4,12,NA,commitment L,42.8235294117647,NA,NA,Goal 1,0,100,./countries/ClippertonIsland,./pillars/Pillar4,./goals/Goal1
+Clipperton Island,CPT,Pillar 5,13,NA,commitment M,38.8235294117647,NA,NA,Goal 1,0,100,./countries/ClippertonIsland,./pillars/Pillar5,./goals/Goal1
+Clipperton Island,CPT,Pillar 5,14,NA,commitment N,35.8235294117647,NA,NA,Goal 1,0,100,./countries/ClippertonIsland,./pillars/Pillar5,./goals/Goal1
+Clipperton Island,CPT,Pillar 5,15,NA,commitment O,47.8235294117647,NA,NA,Goal 1,0,100,./countries/ClippertonIsland,./pillars/Pillar5,./goals/Goal1
+Colombia,COL,Pillar 1,1,NA,commitment A,19.8235294117647,NA,NA,Goal 1,0,1,./countries/Colombia,./pillars/Pillar1,./goals/Goal1
+Colombia,COL,Pillar 1,2,NA,commitment B,26.823529411764703,NA,NA,Goal 5,0,1,./countries/Colombia,./pillars/Pillar1,./goals/Goal5
+Colombia,COL,Pillar 1,3,NA,commitment C,38.8235294117647,NA,NA,Goal 3,0,1,./countries/Colombia,./pillars/Pillar1,./goals/Goal3
+Colombia,COL,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,Goal 5,10,0,./countries/Colombia,./pillars/Pillar2,./goals/Goal5
+Colombia,COL,Pillar 2,5,NA,commitment E,24.823529411764696,NA,NA,Goal 4,10,0,./countries/Colombia,./pillars/Pillar2,./goals/Goal4
+Colombia,COL,Pillar 2,6,NA,commitment F,48.8235294117647,NA,NA,Goal 1,10,0,./countries/Colombia,./pillars/Pillar2,./goals/Goal1
+Colombia,COL,Pillar 3,7,NA,commitment G,45.8235294117647,NA,NA,Goal 5,0,100,./countries/Colombia,./pillars/Pillar3,./goals/Goal5
+Colombia,COL,Pillar 3,8,NA,commitment H,17.8235294117647,NA,NA,Goal 3,0,100,./countries/Colombia,./pillars/Pillar3,./goals/Goal3
+Colombia,COL,Pillar 3,9,NA,commitment I,17.8235294117647,NA,NA,Goal 1,0,100,./countries/Colombia,./pillars/Pillar3,./goals/Goal1
+Colombia,COL,Pillar 4,10,NA,commitment J,22.8235294117647,NA,NA,Goal 1,0,100,./countries/Colombia,./pillars/Pillar4,./goals/Goal1
+Colombia,COL,Pillar 4,11,NA,commitment K,11.823529411764701,NA,NA,Goal 2,0,100,./countries/Colombia,./pillars/Pillar4,./goals/Goal2
+Colombia,COL,Pillar 4,12,NA,commitment L,17.8235294117647,NA,NA,Goal 2,0,100,./countries/Colombia,./pillars/Pillar4,./goals/Goal2
+Colombia,COL,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,Goal 2,0,100,./countries/Colombia,./pillars/Pillar5,./goals/Goal2
+Colombia,COL,Pillar 5,14,NA,commitment N,19.8235294117647,NA,NA,Goal 1,0,100,./countries/Colombia,./pillars/Pillar5,./goals/Goal1
+Colombia,COL,Pillar 5,15,NA,commitment O,40.8235294117647,NA,NA,Goal 1,0,100,./countries/Colombia,./pillars/Pillar5,./goals/Goal1
+Costa Rica,CRI,Pillar 1,1,NA,commitment A,30.8235294117647,NA,NA,Goal 4,0,1,./countries/CostaRica,./pillars/Pillar1,./goals/Goal4
+Costa Rica,CRI,Pillar 1,2,NA,commitment B,27.823529411764696,NA,NA,Goal 3,0,1,./countries/CostaRica,./pillars/Pillar1,./goals/Goal3
+Costa Rica,CRI,Pillar 1,3,NA,commitment C,19.8235294117647,NA,NA,Goal 3,0,1,./countries/CostaRica,./pillars/Pillar1,./goals/Goal3
+Costa Rica,CRI,Pillar 2,4,NA,commitment D,31.823529411764696,NA,NA,Goal 3,10,0,./countries/CostaRica,./pillars/Pillar2,./goals/Goal3
+Costa Rica,CRI,Pillar 2,5,NA,commitment E,25.82352941176471,NA,NA,Goal 1,10,0,./countries/CostaRica,./pillars/Pillar2,./goals/Goal1
+Costa Rica,CRI,Pillar 2,6,NA,commitment F,53.8235294117647,NA,NA,Goal 2,10,0,./countries/CostaRica,./pillars/Pillar2,./goals/Goal2
+Costa Rica,CRI,Pillar 3,7,NA,commitment G,17.8235294117647,NA,NA,Goal 3,0,100,./countries/CostaRica,./pillars/Pillar3,./goals/Goal3
+Costa Rica,CRI,Pillar 3,8,NA,commitment H,23.8235294117647,NA,NA,Goal 3,0,100,./countries/CostaRica,./pillars/Pillar3,./goals/Goal3
+Costa Rica,CRI,Pillar 3,9,NA,commitment I,19.8235294117647,NA,NA,Goal 1,0,100,./countries/CostaRica,./pillars/Pillar3,./goals/Goal1
+Costa Rica,CRI,Pillar 4,10,NA,commitment J,40.8235294117647,NA,NA,Goal 1,0,100,./countries/CostaRica,./pillars/Pillar4,./goals/Goal1
+Costa Rica,CRI,Pillar 4,11,NA,commitment K,32.8235294117647,NA,NA,Goal 5,0,100,./countries/CostaRica,./pillars/Pillar4,./goals/Goal5
+Costa Rica,CRI,Pillar 4,12,NA,commitment L,24.8235294117647,NA,NA,Goal 3,0,100,./countries/CostaRica,./pillars/Pillar4,./goals/Goal3
+Costa Rica,CRI,Pillar 5,13,NA,commitment M,16.8235294117647,NA,NA,Goal 5,0,100,./countries/CostaRica,./pillars/Pillar5,./goals/Goal5
+Costa Rica,CRI,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,Goal 4,0,100,./countries/CostaRica,./pillars/Pillar5,./goals/Goal4
+Costa Rica,CRI,Pillar 5,15,NA,commitment O,14.823529411764701,NA,NA,Goal 1,0,100,./countries/CostaRica,./pillars/Pillar5,./goals/Goal1
+Cuba,CUB,Pillar 1,1,NA,commitment A,31.8235294117647,NA,NA,Goal 3,0,1,./countries/Cuba,./pillars/Pillar1,./goals/Goal3
+Cuba,CUB,Pillar 1,2,NA,commitment B,18.8235294117647,NA,NA,Goal 1,0,1,./countries/Cuba,./pillars/Pillar1,./goals/Goal1
+Cuba,CUB,Pillar 1,3,NA,commitment C,27.823529411764696,NA,NA,Goal 3,0,1,./countries/Cuba,./pillars/Pillar1,./goals/Goal3
+Cuba,CUB,Pillar 2,4,NA,commitment D,19.82352941176471,NA,NA,Goal 1,10,0,./countries/Cuba,./pillars/Pillar2,./goals/Goal1
+Cuba,CUB,Pillar 2,5,NA,commitment E,46.823529411764696,NA,NA,Goal 1,10,0,./countries/Cuba,./pillars/Pillar2,./goals/Goal1
+Cuba,CUB,Pillar 2,6,NA,commitment F,28.823529411764696,NA,NA,Goal 1,10,0,./countries/Cuba,./pillars/Pillar2,./goals/Goal1
+Cuba,CUB,Pillar 3,7,NA,commitment G,12.823529411764701,NA,NA,Goal 4,0,100,./countries/Cuba,./pillars/Pillar3,./goals/Goal4
+Cuba,CUB,Pillar 3,8,NA,commitment H,39.8235294117647,NA,NA,Goal 5,0,100,./countries/Cuba,./pillars/Pillar3,./goals/Goal5
+Cuba,CUB,Pillar 3,9,NA,commitment I,33.8235294117647,NA,NA,Goal 2,0,100,./countries/Cuba,./pillars/Pillar3,./goals/Goal2
+Cuba,CUB,Pillar 4,10,NA,commitment J,16.8235294117647,NA,NA,Goal 4,0,100,./countries/Cuba,./pillars/Pillar4,./goals/Goal4
+Cuba,CUB,Pillar 4,11,NA,commitment K,27.8235294117647,NA,NA,Goal 2,0,100,./countries/Cuba,./pillars/Pillar4,./goals/Goal2
+Cuba,CUB,Pillar 4,12,NA,commitment L,0.823529411764706,NA,NA,Goal 3,0,100,./countries/Cuba,./pillars/Pillar4,./goals/Goal3
+Cuba,CUB,Pillar 5,13,NA,commitment M,17.8235294117647,NA,NA,Goal 4,0,100,./countries/Cuba,./pillars/Pillar5,./goals/Goal4
+Cuba,CUB,Pillar 5,14,NA,commitment N,28.8235294117647,NA,NA,Goal 3,0,100,./countries/Cuba,./pillars/Pillar5,./goals/Goal3
+Cuba,CUB,Pillar 5,15,NA,commitment O,24.8235294117647,NA,NA,Goal 5,0,100,./countries/Cuba,./pillars/Pillar5,./goals/Goal5
+Curaçao,CUW,Pillar 1,1,NA,commitment A,27.823529411764696,NA,NA,Goal 3,0,1,./countries/Curacao,./pillars/Pillar1,./goals/Goal3
+Curaçao,CUW,Pillar 1,2,NA,commitment B,20.8235294117647,NA,NA,Goal 3,0,1,./countries/Curacao,./pillars/Pillar1,./goals/Goal3
+Curaçao,CUW,Pillar 1,3,NA,commitment C,18.8235294117647,NA,NA,Goal 5,0,1,./countries/Curacao,./pillars/Pillar1,./goals/Goal5
+Curaçao,CUW,Pillar 2,4,NA,commitment D,35.82352941176471,NA,NA,Goal 1,10,0,./countries/Curacao,./pillars/Pillar2,./goals/Goal1
+Curaçao,CUW,Pillar 2,5,NA,commitment E,34.82352941176471,NA,NA,Goal 1,10,0,./countries/Curacao,./pillars/Pillar2,./goals/Goal1
+Curaçao,CUW,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,Goal 4,10,0,./countries/Curacao,./pillars/Pillar2,./goals/Goal4
+Curaçao,CUW,Pillar 3,7,NA,commitment G,20.8235294117647,NA,NA,Goal 5,0,100,./countries/Curacao,./pillars/Pillar3,./goals/Goal5
+Curaçao,CUW,Pillar 3,8,NA,commitment H,41.8235294117647,NA,NA,Goal 1,0,100,./countries/Curacao,./pillars/Pillar3,./goals/Goal1
+Curaçao,CUW,Pillar 3,9,NA,commitment I,34.8235294117647,NA,NA,Goal 5,0,100,./countries/Curacao,./pillars/Pillar3,./goals/Goal5
+Curaçao,CUW,Pillar 4,10,NA,commitment J,17.8235294117647,NA,NA,Goal 2,0,100,./countries/Curacao,./pillars/Pillar4,./goals/Goal2
+Curaçao,CUW,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,Goal 5,0,100,./countries/Curacao,./pillars/Pillar4,./goals/Goal5
+Curaçao,CUW,Pillar 4,12,NA,commitment L,36.8235294117647,NA,NA,Goal 2,0,100,./countries/Curacao,./pillars/Pillar4,./goals/Goal2
+Curaçao,CUW,Pillar 5,13,NA,commitment M,25.8235294117647,NA,NA,Goal 1,0,100,./countries/Curacao,./pillars/Pillar5,./goals/Goal1
+Curaçao,CUW,Pillar 5,14,NA,commitment N,20.8235294117647,NA,NA,Goal 2,0,100,./countries/Curacao,./pillars/Pillar5,./goals/Goal2
+Curaçao,CUW,Pillar 5,15,NA,commitment O,30.8235294117647,NA,NA,Goal 3,0,100,./countries/Curacao,./pillars/Pillar5,./goals/Goal3
+Cyprus,CYP,Pillar 1,1,NA,commitment A,18.8235294117647,NA,NA,Goal 4,0,1,./countries/Cyprus,./pillars/Pillar1,./goals/Goal4
+Cyprus,CYP,Pillar 1,2,NA,commitment B,33.8235294117647,NA,NA,Goal 4,0,1,./countries/Cyprus,./pillars/Pillar1,./goals/Goal4
+Cyprus,CYP,Pillar 1,3,NA,commitment C,36.8235294117647,NA,NA,Goal 3,0,1,./countries/Cyprus,./pillars/Pillar1,./goals/Goal3
+Cyprus,CYP,Pillar 2,4,NA,commitment D,30.82352941176471,NA,NA,Goal 4,10,0,./countries/Cyprus,./pillars/Pillar2,./goals/Goal4
+Cyprus,CYP,Pillar 2,5,NA,commitment E,28.823529411764696,NA,NA,Goal 5,10,0,./countries/Cyprus,./pillars/Pillar2,./goals/Goal5
+Cyprus,CYP,Pillar 2,6,NA,commitment F,22.823529411764696,NA,NA,Goal 1,10,0,./countries/Cyprus,./pillars/Pillar2,./goals/Goal1
+Cyprus,CYP,Pillar 3,7,NA,commitment G,35.8235294117647,NA,NA,Goal 5,0,100,./countries/Cyprus,./pillars/Pillar3,./goals/Goal5
+Cyprus,CYP,Pillar 3,8,NA,commitment H,44.8235294117647,NA,NA,Goal 5,0,100,./countries/Cyprus,./pillars/Pillar3,./goals/Goal5
+Cyprus,CYP,Pillar 3,9,NA,commitment I,12.823529411764701,NA,NA,Goal 2,0,100,./countries/Cyprus,./pillars/Pillar3,./goals/Goal2
+Cyprus,CYP,Pillar 4,10,NA,commitment J,38.8235294117647,NA,NA,Goal 1,0,100,./countries/Cyprus,./pillars/Pillar4,./goals/Goal1
+Cyprus,CYP,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,Goal 5,0,100,./countries/Cyprus,./pillars/Pillar4,./goals/Goal5
+Cyprus,CYP,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,Goal 3,0,100,./countries/Cyprus,./pillars/Pillar4,./goals/Goal3
+Cyprus,CYP,Pillar 5,13,NA,commitment M,30.8235294117647,NA,NA,Goal 5,0,100,./countries/Cyprus,./pillars/Pillar5,./goals/Goal5
+Cyprus,CYP,Pillar 5,14,NA,commitment N,33.8235294117647,NA,NA,Goal 2,0,100,./countries/Cyprus,./pillars/Pillar5,./goals/Goal2
+Cyprus,CYP,Pillar 5,15,NA,commitment O,36.8235294117647,NA,NA,Goal 1,0,100,./countries/Cyprus,./pillars/Pillar5,./goals/Goal1
+Czechia,CZE,Pillar 1,1,NA,commitment A,32.8235294117647,NA,NA,Goal 5,0,1,./countries/Czechia,./pillars/Pillar1,./goals/Goal5
+Czechia,CZE,Pillar 1,2,NA,commitment B,39.8235294117647,NA,NA,Goal 5,0,1,./countries/Czechia,./pillars/Pillar1,./goals/Goal5
+Czechia,CZE,Pillar 1,3,NA,commitment C,33.8235294117647,NA,NA,Goal 1,0,1,./countries/Czechia,./pillars/Pillar1,./goals/Goal1
+Czechia,CZE,Pillar 2,4,NA,commitment D,19.82352941176471,NA,NA,Goal 5,10,0,./countries/Czechia,./pillars/Pillar2,./goals/Goal5
+Czechia,CZE,Pillar 2,5,NA,commitment E,13.823529411764696,NA,NA,Goal 5,10,0,./countries/Czechia,./pillars/Pillar2,./goals/Goal5
+Czechia,CZE,Pillar 2,6,NA,commitment F,0.8235294117647101,NA,NA,Goal 1,10,0,./countries/Czechia,./pillars/Pillar2,./goals/Goal1
+Czechia,CZE,Pillar 3,7,NA,commitment G,22.8235294117647,NA,NA,Goal 1,0,100,./countries/Czechia,./pillars/Pillar3,./goals/Goal1
+Czechia,CZE,Pillar 3,8,NA,commitment H,23.8235294117647,NA,NA,Goal 4,0,100,./countries/Czechia,./pillars/Pillar3,./goals/Goal4
+Czechia,CZE,Pillar 3,9,NA,commitment I,37.8235294117647,NA,NA,Goal 4,0,100,./countries/Czechia,./pillars/Pillar3,./goals/Goal4
+Czechia,CZE,Pillar 4,10,NA,commitment J,33.8235294117647,NA,NA,Goal 2,0,100,./countries/Czechia,./pillars/Pillar4,./goals/Goal2
+Czechia,CZE,Pillar 4,11,NA,commitment K,34.8235294117647,NA,NA,Goal 4,0,100,./countries/Czechia,./pillars/Pillar4,./goals/Goal4
+Czechia,CZE,Pillar 4,12,NA,commitment L,13.823529411764701,NA,NA,Goal 5,0,100,./countries/Czechia,./pillars/Pillar4,./goals/Goal5
+Czechia,CZE,Pillar 5,13,NA,commitment M,23.8235294117647,NA,NA,Goal 4,0,100,./countries/Czechia,./pillars/Pillar5,./goals/Goal4
+Czechia,CZE,Pillar 5,14,NA,commitment N,30.8235294117647,NA,NA,Goal 3,0,100,./countries/Czechia,./pillars/Pillar5,./goals/Goal3
+Czechia,CZE,Pillar 5,15,NA,commitment O,47.8235294117647,NA,NA,Goal 3,0,100,./countries/Czechia,./pillars/Pillar5,./goals/Goal3
+Gambia,GMB,Pillar 1,1,NA,commitment A,23.8235294117647,NA,NA,Goal 5,0,1,./countries/Gambia,./pillars/Pillar1,./goals/Goal5
+Gambia,GMB,Pillar 1,2,NA,commitment B,35.8235294117647,NA,NA,Goal 1,0,1,./countries/Gambia,./pillars/Pillar1,./goals/Goal1
+Gambia,GMB,Pillar 1,3,NA,commitment C,46.8235294117647,NA,NA,Goal 1,0,1,./countries/Gambia,./pillars/Pillar1,./goals/Goal1
+Gambia,GMB,Pillar 2,4,NA,commitment D,26.823529411764696,NA,NA,Goal 4,10,0,./countries/Gambia,./pillars/Pillar2,./goals/Goal4
+Gambia,GMB,Pillar 2,5,NA,commitment E,26.823529411764696,NA,NA,Goal 4,10,0,./countries/Gambia,./pillars/Pillar2,./goals/Goal4
+Gambia,GMB,Pillar 2,6,NA,commitment F,30.82352941176471,NA,NA,Goal 5,10,0,./countries/Gambia,./pillars/Pillar2,./goals/Goal5
+Gambia,GMB,Pillar 3,7,NA,commitment G,35.8235294117647,NA,NA,Goal 3,0,100,./countries/Gambia,./pillars/Pillar3,./goals/Goal3
+Gambia,GMB,Pillar 3,8,NA,commitment H,34.8235294117647,NA,NA,Goal 5,0,100,./countries/Gambia,./pillars/Pillar3,./goals/Goal5
+Gambia,GMB,Pillar 3,9,NA,commitment I,12.823529411764701,NA,NA,Goal 2,0,100,./countries/Gambia,./pillars/Pillar3,./goals/Goal2
+Gambia,GMB,Pillar 4,10,NA,commitment J,36.8235294117647,NA,NA,Goal 1,0,100,./countries/Gambia,./pillars/Pillar4,./goals/Goal1
+Gambia,GMB,Pillar 4,11,NA,commitment K,38.8235294117647,NA,NA,Goal 4,0,100,./countries/Gambia,./pillars/Pillar4,./goals/Goal4
+Gambia,GMB,Pillar 4,12,NA,commitment L,31.8235294117647,NA,NA,Goal 2,0,100,./countries/Gambia,./pillars/Pillar4,./goals/Goal2
+Gambia,GMB,Pillar 5,13,NA,commitment M,38.8235294117647,NA,NA,Goal 3,0,100,./countries/Gambia,./pillars/Pillar5,./goals/Goal3
+Gambia,GMB,Pillar 5,14,NA,commitment N,29.8235294117647,NA,NA,Goal 3,0,100,./countries/Gambia,./pillars/Pillar5,./goals/Goal3
+Gambia,GMB,Pillar 5,15,NA,commitment O,39.8235294117647,NA,NA,Goal 1,0,100,./countries/Gambia,./pillars/Pillar5,./goals/Goal1
+Greenland,GRL,Pillar 1,1,NA,commitment A,44.8235294117647,NA,NA,Goal 5,0,1,./countries/Greenland,./pillars/Pillar1,./goals/Goal5
+Greenland,GRL,Pillar 1,2,NA,commitment B,24.8235294117647,NA,NA,Goal 1,0,1,./countries/Greenland,./pillars/Pillar1,./goals/Goal1
+Greenland,GRL,Pillar 1,3,NA,commitment C,27.823529411764696,NA,NA,Goal 4,0,1,./countries/Greenland,./pillars/Pillar1,./goals/Goal4
+Greenland,GRL,Pillar 2,4,NA,commitment D,24.823529411764696,NA,NA,Goal 3,10,0,./countries/Greenland,./pillars/Pillar2,./goals/Goal3
+Greenland,GRL,Pillar 2,5,NA,commitment E,31.823529411764696,NA,NA,Goal 5,10,0,./countries/Greenland,./pillars/Pillar2,./goals/Goal5
+Greenland,GRL,Pillar 2,6,NA,commitment F,16.823529411764696,NA,NA,Goal 2,10,0,./countries/Greenland,./pillars/Pillar2,./goals/Goal2
+Greenland,GRL,Pillar 3,7,NA,commitment G,26.8235294117647,NA,NA,Goal 5,0,100,./countries/Greenland,./pillars/Pillar3,./goals/Goal5
+Greenland,GRL,Pillar 3,8,NA,commitment H,26.8235294117647,NA,NA,Goal 3,0,100,./countries/Greenland,./pillars/Pillar3,./goals/Goal3
+Greenland,GRL,Pillar 3,9,NA,commitment I,21.8235294117647,NA,NA,Goal 3,0,100,./countries/Greenland,./pillars/Pillar3,./goals/Goal3
+Greenland,GRL,Pillar 4,10,NA,commitment J,38.8235294117647,NA,NA,Goal 4,0,100,./countries/Greenland,./pillars/Pillar4,./goals/Goal4
+Greenland,GRL,Pillar 4,11,NA,commitment K,41.8235294117647,NA,NA,Goal 1,0,100,./countries/Greenland,./pillars/Pillar4,./goals/Goal1
+Greenland,GRL,Pillar 4,12,NA,commitment L,27.8235294117647,NA,NA,Goal 5,0,100,./countries/Greenland,./pillars/Pillar4,./goals/Goal5
+Greenland,GRL,Pillar 5,13,NA,commitment M,32.8235294117647,NA,NA,Goal 5,0,100,./countries/Greenland,./pillars/Pillar5,./goals/Goal5
+Greenland,GRL,Pillar 5,14,NA,commitment N,16.8235294117647,NA,NA,Goal 3,0,100,./countries/Greenland,./pillars/Pillar5,./goals/Goal3
+Greenland,GRL,Pillar 5,15,NA,commitment O,26.8235294117647,NA,NA,Goal 4,0,100,./countries/Greenland,./pillars/Pillar5,./goals/Goal4
+Guinea,GIN,Pillar 1,1,NA,commitment A,37.8235294117647,NA,NA,Goal 1,0,1,./countries/Guinea,./pillars/Pillar1,./goals/Goal1
+Guinea,GIN,Pillar 1,2,NA,commitment B,37.8235294117647,NA,NA,Goal 4,0,1,./countries/Guinea,./pillars/Pillar1,./goals/Goal4
+Guinea,GIN,Pillar 1,3,NA,commitment C,13.823529411764698,NA,NA,Goal 2,0,1,./countries/Guinea,./pillars/Pillar1,./goals/Goal2
+Guinea,GIN,Pillar 2,4,NA,commitment D,16.823529411764696,NA,NA,Goal 1,10,0,./countries/Guinea,./pillars/Pillar2,./goals/Goal1
+Guinea,GIN,Pillar 2,5,NA,commitment E,7.823529411764696,NA,NA,Goal 4,10,0,./countries/Guinea,./pillars/Pillar2,./goals/Goal4
+Guinea,GIN,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,Goal 3,10,0,./countries/Guinea,./pillars/Pillar2,./goals/Goal3
+Guinea,GIN,Pillar 3,7,NA,commitment G,30.8235294117647,NA,NA,Goal 3,0,100,./countries/Guinea,./pillars/Pillar3,./goals/Goal3
+Guinea,GIN,Pillar 3,8,NA,commitment H,27.8235294117647,NA,NA,Goal 4,0,100,./countries/Guinea,./pillars/Pillar3,./goals/Goal4
+Guinea,GIN,Pillar 3,9,NA,commitment I,36.8235294117647,NA,NA,Goal 2,0,100,./countries/Guinea,./pillars/Pillar3,./goals/Goal2
+Guinea,GIN,Pillar 4,10,NA,commitment J,29.8235294117647,NA,NA,Goal 5,0,100,./countries/Guinea,./pillars/Pillar4,./goals/Goal5
+Guinea,GIN,Pillar 4,11,NA,commitment K,31.8235294117647,NA,NA,Goal 4,0,100,./countries/Guinea,./pillars/Pillar4,./goals/Goal4
+Guinea,GIN,Pillar 4,12,NA,commitment L,47.8235294117647,NA,NA,Goal 3,0,100,./countries/Guinea,./pillars/Pillar4,./goals/Goal3
+Guinea,GIN,Pillar 5,13,NA,commitment M,27.8235294117647,NA,NA,Goal 1,0,100,./countries/Guinea,./pillars/Pillar5,./goals/Goal1
+Guinea,GIN,Pillar 5,14,NA,commitment N,50.8235294117647,NA,NA,Goal 3,0,100,./countries/Guinea,./pillars/Pillar5,./goals/Goal3
+Guinea,GIN,Pillar 5,15,NA,commitment O,12.823529411764701,NA,NA,Goal 5,0,100,./countries/Guinea,./pillars/Pillar5,./goals/Goal5
+Saint Barthélemy,BLM,Pillar 1,1,NA,commitment A,19.8235294117647,NA,NA,Goal 4,0,1,./countries/SaintBarthelemy,./pillars/Pillar1,./goals/Goal4
+Saint Barthélemy,BLM,Pillar 1,2,NA,commitment B,24.8235294117647,NA,NA,Goal 3,0,1,./countries/SaintBarthelemy,./pillars/Pillar1,./goals/Goal3
+Saint Barthélemy,BLM,Pillar 1,3,NA,commitment C,20.8235294117647,NA,NA,Goal 1,0,1,./countries/SaintBarthelemy,./pillars/Pillar1,./goals/Goal1
+Saint Barthélemy,BLM,Pillar 2,4,NA,commitment D,27.823529411764696,NA,NA,Goal 5,10,0,./countries/SaintBarthelemy,./pillars/Pillar2,./goals/Goal5
+Saint Barthélemy,BLM,Pillar 2,5,NA,commitment E,41.823529411764696,NA,NA,Goal 2,10,0,./countries/SaintBarthelemy,./pillars/Pillar2,./goals/Goal2
+Saint Barthélemy,BLM,Pillar 2,6,NA,commitment F,29.823529411764696,NA,NA,Goal 5,10,0,./countries/SaintBarthelemy,./pillars/Pillar2,./goals/Goal5
+Saint Barthélemy,BLM,Pillar 3,7,NA,commitment G,39.8235294117647,NA,NA,Goal 3,0,100,./countries/SaintBarthelemy,./pillars/Pillar3,./goals/Goal3
+Saint Barthélemy,BLM,Pillar 3,8,NA,commitment H,18.8235294117647,NA,NA,Goal 1,0,100,./countries/SaintBarthelemy,./pillars/Pillar3,./goals/Goal1
+Saint Barthélemy,BLM,Pillar 3,9,NA,commitment I,15.823529411764701,NA,NA,Goal 2,0,100,./countries/SaintBarthelemy,./pillars/Pillar3,./goals/Goal2
+Saint Barthélemy,BLM,Pillar 4,10,NA,commitment J,33.8235294117647,NA,NA,Goal 2,0,100,./countries/SaintBarthelemy,./pillars/Pillar4,./goals/Goal2
+Saint Barthélemy,BLM,Pillar 4,11,NA,commitment K,29.8235294117647,NA,NA,Goal 3,0,100,./countries/SaintBarthelemy,./pillars/Pillar4,./goals/Goal3
+Saint Barthélemy,BLM,Pillar 4,12,NA,commitment L,29.8235294117647,NA,NA,Goal 3,0,100,./countries/SaintBarthelemy,./pillars/Pillar4,./goals/Goal3
+Saint Barthélemy,BLM,Pillar 5,13,NA,commitment M,36.8235294117647,NA,NA,Goal 2,0,100,./countries/SaintBarthelemy,./pillars/Pillar5,./goals/Goal2
+Saint Barthélemy,BLM,Pillar 5,14,NA,commitment N,39.8235294117647,NA,NA,Goal 1,0,100,./countries/SaintBarthelemy,./pillars/Pillar5,./goals/Goal1
+Saint Barthélemy,BLM,Pillar 5,15,NA,commitment O,42.8235294117647,NA,NA,Goal 2,0,100,./countries/SaintBarthelemy,./pillars/Pillar5,./goals/Goal2
+Sudan,ATA,Pillar 1,1,NA,commitment A,40.8235294117647,NA,NA,Goal 4,0,1,./countries/Sudan,./pillars/Pillar1,./goals/Goal4
+Sudan,ATA,Pillar 1,2,NA,commitment B,41.8235294117647,NA,NA,Goal 1,0,1,./countries/Sudan,./pillars/Pillar1,./goals/Goal1
+Sudan,ATA,Pillar 1,3,NA,commitment C,45.8235294117647,NA,NA,Goal 3,0,1,./countries/Sudan,./pillars/Pillar1,./goals/Goal3
+Sudan,ATA,Pillar 2,4,NA,commitment D,45.82352941176471,NA,NA,Goal 5,10,0,./countries/Sudan,./pillars/Pillar2,./goals/Goal5
+Sudan,ATA,Pillar 2,5,NA,commitment E,22.823529411764696,NA,NA,Goal 5,10,0,./countries/Sudan,./pillars/Pillar2,./goals/Goal5
+Sudan,ATA,Pillar 2,6,NA,commitment F,19.82352941176471,NA,NA,Goal 3,10,0,./countries/Sudan,./pillars/Pillar2,./goals/Goal3
+Sudan,ATA,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,Goal 4,0,100,./countries/Sudan,./pillars/Pillar3,./goals/Goal4
+Sudan,ATA,Pillar 3,8,NA,commitment H,28.8235294117647,NA,NA,Goal 2,0,100,./countries/Sudan,./pillars/Pillar3,./goals/Goal2
+Sudan,ATA,Pillar 3,9,NA,commitment I,14.823529411764701,NA,NA,Goal 3,0,100,./countries/Sudan,./pillars/Pillar3,./goals/Goal3
+Sudan,ATA,Pillar 4,10,NA,commitment J,8.8235294117647,NA,NA,Goal 1,0,100,./countries/Sudan,./pillars/Pillar4,./goals/Goal1
+Sudan,ATA,Pillar 4,11,NA,commitment K,30.8235294117647,NA,NA,Goal 3,0,100,./countries/Sudan,./pillars/Pillar4,./goals/Goal3
+Sudan,ATA,Pillar 4,12,NA,commitment L,30.8235294117647,NA,NA,Goal 3,0,100,./countries/Sudan,./pillars/Pillar4,./goals/Goal3
+Sudan,ATA,Pillar 5,13,NA,commitment M,15.823529411764701,NA,NA,Goal 1,0,100,./countries/Sudan,./pillars/Pillar5,./goals/Goal1
+Sudan,ATA,Pillar 5,14,NA,commitment N,50.8235294117647,NA,NA,Goal 3,0,100,./countries/Sudan,./pillars/Pillar5,./goals/Goal3
+Sudan,ATA,Pillar 5,15,NA,commitment O,33.8235294117647,NA,NA,Goal 4,0,100,./countries/Sudan,./pillars/Pillar5,./goals/Goal4
+United Arab Emirates,ARE,Pillar 1,1,NA,commitment A,20.8235294117647,NA,NA,Goal 5,0,1,./countries/UnitedArabEmirates,./pillars/Pillar1,./goals/Goal5
+United Arab Emirates,ARE,Pillar 1,2,NA,commitment B,43.8235294117647,NA,NA,Goal 4,0,1,./countries/UnitedArabEmirates,./pillars/Pillar1,./goals/Goal4
+United Arab Emirates,ARE,Pillar 1,3,NA,commitment C,39.8235294117647,NA,NA,Goal 5,0,1,./countries/UnitedArabEmirates,./pillars/Pillar1,./goals/Goal5
+United Arab Emirates,ARE,Pillar 2,4,NA,commitment D,21.823529411764696,NA,NA,Goal 1,10,0,./countries/UnitedArabEmirates,./pillars/Pillar2,./goals/Goal1
+United Arab Emirates,ARE,Pillar 2,5,NA,commitment E,32.82352941176471,NA,NA,Goal 2,10,0,./countries/UnitedArabEmirates,./pillars/Pillar2,./goals/Goal2
+United Arab Emirates,ARE,Pillar 2,6,NA,commitment F,40.82352941176471,NA,NA,Goal 2,10,0,./countries/UnitedArabEmirates,./pillars/Pillar2,./goals/Goal2
+United Arab Emirates,ARE,Pillar 3,7,NA,commitment G,31.8235294117647,NA,NA,Goal 2,0,100,./countries/UnitedArabEmirates,./pillars/Pillar3,./goals/Goal2
+United Arab Emirates,ARE,Pillar 3,8,NA,commitment H,23.8235294117647,NA,NA,Goal 5,0,100,./countries/UnitedArabEmirates,./pillars/Pillar3,./goals/Goal5
+United Arab Emirates,ARE,Pillar 3,9,NA,commitment I,11.823529411764701,NA,NA,Goal 4,0,100,./countries/UnitedArabEmirates,./pillars/Pillar3,./goals/Goal4
+United Arab Emirates,ARE,Pillar 4,10,NA,commitment J,25.8235294117647,NA,NA,Goal 2,0,100,./countries/UnitedArabEmirates,./pillars/Pillar4,./goals/Goal2
+United Arab Emirates,ARE,Pillar 4,11,NA,commitment K,36.8235294117647,NA,NA,Goal 5,0,100,./countries/UnitedArabEmirates,./pillars/Pillar4,./goals/Goal5
+United Arab Emirates,ARE,Pillar 4,12,NA,commitment L,5.8235294117647,NA,NA,Goal 3,0,100,./countries/UnitedArabEmirates,./pillars/Pillar4,./goals/Goal3
+United Arab Emirates,ARE,Pillar 5,13,NA,commitment M,33.8235294117647,NA,NA,Goal 5,0,100,./countries/UnitedArabEmirates,./pillars/Pillar5,./goals/Goal5
+United Arab Emirates,ARE,Pillar 5,14,NA,commitment N,25.8235294117647,NA,NA,Goal 5,0,100,./countries/UnitedArabEmirates,./pillars/Pillar5,./goals/Goal5
+United Arab Emirates,ARE,Pillar 5,15,NA,commitment O,27.8235294117647,NA,NA,Goal 5,0,100,./countries/UnitedArabEmirates,./pillars/Pillar5,./goals/Goal5

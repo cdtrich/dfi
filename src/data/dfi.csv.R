@@ -7,13 +7,19 @@ dataAll_url <- "https://docs.google.com/spreadsheets/d/1pFIy0yURWQ2PqKYWVWR2w2Oh
 
 dfi <- googlesheets4::read_sheet(dataAll_url)
 
+# replacement characters
+replacements <- c("é" = "e", "ê" = "e", "à" = "a")
+
 dfi_ed <- dfi %>%
     # sanitize country name
     mutate(countryClean = str_remove_all(NAME_ENGL, "[^[:alnum:]]")) %>%
+    mutate(countryClean = str_remove_all(NAME_ENGL, ",")) %>%
+    mutate(countryClean = str_replace_all(NAME_ENGL, replacements)) %>%
     mutate(countryClean = iconv(countryClean, from = "UTF-8", to = "ASCII//TRANSLIT")) %>%
     # generate urls
     mutate(country_url = paste0("./countries/", str_remove_all(countryClean, " "))) %>%
     mutate(pillar_url = paste0("./pillars/", str_remove_all(pillar, " "))) %>%
+    mutate(goal_url = paste0("./goals/", str_remove_all(goal, " "))) %>%
     dplyr::select(-countryClean) %>%
     # normalize
     group_by(commitment_txt) %>%
