@@ -1,6 +1,8 @@
-# DFI2
+# DFI Tracker
 
-This is an [Observable Framework](https://observablehq.com/framework) project. To start the local preview server, run:
+This is an [Observable Framework](https://observablehq.com/framework) project.
+
+To start the local preview server, run:
 
 ```
 npm run dev
@@ -12,18 +14,18 @@ For more, see <https://observablehq.com/framework/getting-started>.
 
 ## Project structure
 
-A typical Framework project looks like this:
-
 ```ini
 .
 ├─ src
 │  ├─ components
-│  │  └─ timeline.js           # an importable module
+│  │  └─ plot.js               # all chart types, and some other js helpers
 │  ├─ data
-│  │  ├─ launches.csv.js       # a data loader
-│  │  └─ events.json           # a static data file
-│  ├─ example-dashboard.md     # a page
-│  ├─ example-report.md        # another page
+│  │  ├─ data.csv.r            # R data loaders
+│  │  └─ data.csv              # mock data. the data loader parses from google drive or github
+│  ├─ countries
+│  │  ├─ template.md           # the markdown template for the subpages
+│  │  ├─ generatePage.r        # R script that loops through all subpages, drawing on the .md for structure
+│  │  └─ subpage.md            # generated subpages
 │  └─ index.md                 # the home page
 ├─ .gitignore
 ├─ observablehq.config.js      # the project config file
@@ -43,11 +45,11 @@ A typical Framework project looks like this:
 
 ## Command reference
 
-| Command           | Description                                              |
-| ----------------- | -------------------------------------------------------- |
-| `npm install`            | Install or reinstall dependencies                        |
-| `npm run dev`        | Start local preview server                               |
-| `npm run build`      | Build your static site, generating `./dist`              |
-| `npm run deploy`     | Deploy your project to Observable                        |
-| `npm run clean`      | Clear the local data loader cache                        |
-| `npm run observable` | Run commands like `observable help`                      |
+| Command              | Description                                 |
+| -------------------- | ------------------------------------------- |
+| `npm install`        | Install or reinstall dependencies           |
+| `npm run dev`        | Start local preview server                  |
+| `npm run build`      | Build your static site, generating `./dist` |
+| `npm run deploy`     | Deploy your project to Observable           |
+| `npm run clean`      | Clear the local data loader cache           |
+| `npm run observable` | Run commands like `observable help`         |
