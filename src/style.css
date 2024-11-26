@@ -175,7 +175,7 @@ tspan {
 
 /* focus on active DOT on hover and lower opacity of the rest */
 
-[aria-label="dot"]:hover cricle:not(:hover) {
+/* [aria-label="dot"]:hover cricle:not(:hover) {
   opacity: 1;
   stroke-opacity: 1;
   transition: opacity 0.05s;
@@ -194,7 +194,7 @@ g:hover circle {
   stroke-opacity: 0.2;
   transition: opacity 0.05s;
   transition-timing-function: ease;
-}
+} */
 
 /* focus on active COUNTRY on hover and lower opacity of the rest */
 [aria-label="geo"]:hover path:not(:hover) {

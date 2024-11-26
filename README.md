@@ -24,7 +24,7 @@ For more, see <https://observablehq.com/framework/getting-started>.
 │  │  └─ data.csv              # mock data. the data loader parses from google drive or github
 │  ├─ countries
 │  │  ├─ template.md           # the markdown template for the subpages
-│  │  ├─ generatePage.r        # R script that loops through all subpages, drawing on the .md for structure
+│  │  ├─ generatePage.r        # R script looping through subpages, drawing on template.md
 │  │  └─ subpage.md            # generated subpages
 │  └─ index.md                 # the home page
 ├─ .gitignore

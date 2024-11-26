@@ -5,15 +5,18 @@ export function straightPlotGoal(dfi, goals, goal, { width, height } = {}) {
   // get related commitments for goal
   const data = dfi.filter((d) => d.goal === goal);
 
-  // manual facet labels
-  const n = 1; // number of facet columns
-  const keys = Array.from(d3.union(data.map((d) => d.commitment_txt)));
-  const index = new Map(keys.map((key, i) => [key, i]));
-  const fx = (key) => index.get(key) % n;
-  const fy = (key) => Math.floor(index.get(key) / n);
-  // console.log(data);
+  // Get the extent (min and max) of the `value` property
+  const [min, max] = d3.extent(data, (d) => d.value);
+  const fact = 0.05; // factor to subtract/add to range
+
+  // Round down the min and round up the max
+  const roundedMinMax = [
+    Math.floor(min) - min * fact,
+    Math.ceil(max) + max * fact,
+  ];
 
   // window height
+  const vw = window.innerWidth;
   const vh = window.innerHeight;
   const factor = data.length;
 
@@ -21,14 +24,14 @@ export function straightPlotGoal(dfi, goals, goal, { width, height } = {}) {
     width: width,
     height: height,
     axis: null,
-    x: { label: null },
+    x: { label: null, domain: roundedMinMax },
     y: { label: null, text: null, axis: "left", ticks: [], tickSize: 0 },
     marginRight: 4,
     color: {
       legend: false,
       range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
     },
-    ticks: false,
+    r: { range: [vw / 200, vw / 100] },
     facet: {
       label: null,
     },
@@ -36,16 +39,17 @@ export function straightPlotGoal(dfi, goals, goal, { width, height } = {}) {
       // all dots
       Plot.dot(
         data,
-        Plot.dodgeY("middle", {
+        Plot.dodgeY("top", {
           x: "value",
           y: 0,
-          fy: 0,
+          // fy: 0,
           href: (d) => "." + d.country_url,
-          stroke: "pillar",
           fill: "pillar",
-          r: vh / 100,
+          r: (d) => d.value,
+          padding: vh / 200,
           stroke: "#3c4099",
           strokeWidth: vh / 200,
+          sort: "NAME_ENGL",
           tip: true,
           channels: { commitment_txt: "commitment_txt" }, // Assign `commitment_txt` as a data attribute for the dots
           title: (d) =>

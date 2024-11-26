@@ -20,22 +20,6 @@ export function polarPlotMultiple(
   const fx = (key) => index.get(key) % n;
   const fy = (key) => Math.floor(index.get(key) / n);
 
-  // Get filtered data based on selectCountry
-  // const filteredData =
-  //   selectCountry && selectCountry.length > 0
-  //     ? data.filter((item) => selectCountry.includes(item.NAME_ENGL))
-  //     : data; // If no input or array is empty, use all data
-
-  // console.log(selectCountry);
-  // console.log(filteredData);
-  // console.log(data);
-
-  // var countries = data.map((d) => d.NAME_ENGL);
-  // var countryUnique = countries.filter(onlyUnique);
-
-  // var commitment = data.map((d) => d.commitment_txt);
-  // var commitmentUnique = commitment.filter(onlyUnique);
-
   const longitude = d3
     .scalePoint(new Set(Plot.valueof(data, "commitment_txt")), [180, -180])
     .padding(0.5)
@@ -207,10 +191,6 @@ export function polarPlotMultiple(
       }),
     ],
   });
-
-  // Remove elements with aria-label for tick labels
-  // d3.selectAll('g[aria-label="fy-axis tick label"]').attr("opacity", 0);
-  // d3.selectAll('g[aria-label="fx-axis tick label"]').attr("opacity", 0);
 
   return plot;
 }

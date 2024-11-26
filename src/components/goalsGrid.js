@@ -73,6 +73,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
         .attr("y2", commitmentY)
         .attr("stroke", "#ccc")
         .attr("opacity", ".2")
+        .attr("pointer-events", "none")
         .attr("stroke-width", 2);
 
       // Draw line from commitment to pillar
@@ -85,6 +86,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
         .attr("y2", pillarY)
         .attr("stroke", "#ccc")
         .attr("opacity", ".2")
+        .attr("pointer-events", "none")
         .attr("stroke-width", 2);
     });
   };

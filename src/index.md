@@ -236,7 +236,7 @@ const dfiGrid = FileAttachment("./data/dfi_grid.csv").csv({
 </div> -->
 
 <div class="card">
-  ${resize((width) => polarPlotMultiple(dfi,  {width}))}
+  ${resize((width) => polarPlotMultiple(dfi, {width}))}
 </div>
 
 ## Goals
@@ -249,14 +249,12 @@ const goals = FileAttachment("./data/goals.csv").csv({ typed: true });
 // display(goals);
 ```
 
-  <div class="grid grid-cols-1">
+  <div class="grid grid-cols-2">
 The Declaration on the Future of the Internet (DFI) sets out key goals aimed at promoting a free, open, and secure internet globally. Its objectives include safeguarding human rights online, ensuring that digital spaces remain accessible and inclusive, and fostering innovation while maintaining privacy and security. The DFI focuses on upholding democratic values by preventing the misuse of technology for censorship, surveillance, or the suppression of free speech. By setting a global standard for the governance and development of the internet, the DFI encourages collaboration between nations to create an equitable, safe, and resilient digital environment for all.
 </div>
 
-  <div class="grid grid-cols-1">
-    <div class="card" id="goalsGrid">
-      ${resize((width) => goalsGrid(goals, dfi, "#goalsGrid", {width}))}
-    </div> 
+  <div class="card" id="goalsGrid">
+    ${resize((width) => goalsGrid(goals, dfi, "#goalsGrid", {width}))}
   </div>
 
 ```js

@@ -102,8 +102,8 @@ export function gridPlotMultiple(data, selectCountry, { width, height } = {}) {
   });
 
   // Remove elements with aria-label for tick labels
-  d3.selectAll('g[aria-label="fy-axis tick label"]').attr("opacity", 0);
-  d3.selectAll('g[aria-label="fx-axis tick label"]').attr("opacity", 0);
+  // d3.selectAll('g[aria-label="fy-axis tick label"]').attr("opacity", 0);
+  // d3.selectAll('g[aria-label="fx-axis tick label"]').attr("opacity", 0);
 
   return plot;
 }
