@@ -42,7 +42,18 @@ export function straightPlot(data, country, { width, height } = {}) {
   const fx = (key) => index.get(key) % n;
   const fy = (key) => Math.floor(index.get(key) / n);
 
+  // Get the extent (min and max) of the `value` property
+  const [min, max] = d3.extent(data, (d) => d.value);
+  const fact = 0.05; // factor to subtract/add to range
+
+  // Round down the min and round up the max
+  const roundedMinMax = [
+    Math.floor(min) - min * fact,
+    Math.ceil(max) + max * fact,
+  ];
+
   // window height
+  const vw = window.innerWidth;
   const vh = window.innerHeight;
 
   return Plot.plot({
@@ -66,6 +77,13 @@ export function straightPlot(data, country, { width, height } = {}) {
       // anchor: "top",
     },
     marks: [
+      // icons
+      Plot.image(data, {
+        x: min,
+        y: 0,
+        width: 100,
+        src: "https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/icons/1.png?token=GHSAT0AAAAAAC3B5JVUVG6UVIJD6UA4F35WZ2GEGTA",
+      }),
       // manual facet labels
       Plot.text(keys, { fx, fy, frameAnchor: "top-left", dx: -100, dy: 6 }),
       // line highlight
