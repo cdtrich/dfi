@@ -29,6 +29,8 @@ import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
 import { countryPageLink } from "./components/countryPageLink.js";
 import { dendro } from "./components/dendro.js";
 import { worldMap } from "./components/worldMap.js";
+import { worldMap2 } from "./components/worldMap2.js";
+import { worldMapLegend } from "./components/worldMapLegend.js";
 import { pillars } from "./components/pillars.js";
 import { goalsGrid } from "./components/goalsGrid.js";
 ```
@@ -36,6 +38,7 @@ import { goalsGrid } from "./components/goalsGrid.js";
 <div class="hero">
   <h1>DFI Tracker</h1>
   <h2>Navigating your way through the state of the internet</h2>
+  <div id="hero-image"></div>
 <p style="margin-top: 4em;">The Declaration on the Freedom of the Internet is a formal statement advocating for the protection and promotion of an open, accessible, and free internet. It recognizes the internet as a fundamental tool for expression, communication, and innovation, essential to the advancement of democratic principles and human rights. The declaration emphasizes that everyone should have the right to access information online without censorship, surveillance, or discrimination. It calls on governments, organizations, and individuals to commit to upholding these freedoms and to resist efforts that would undermine the internet’s open nature or restrict users’ rights.
 </p>
 </div>
@@ -50,6 +53,15 @@ import { goalsGrid } from "./components/goalsGrid.js";
 
 ```js
 const dfi = FileAttachment("./data/dfi.csv").csv({ typed: true });
+const commitmentsIcons = FileAttachment("./data/commitments.csv").csv({
+  typed: true,
+});
+```
+
+```js
+// global color palette
+const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
+// console.log(dfi);
 ```
 
 <!-- ## General TO DO
@@ -96,7 +108,7 @@ const dfi = FileAttachment("./data/dfi.csv").csv({ typed: true });
 ## Commitments
 
 ```js
-console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
+// console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
 // display(dfi);
 ```
 
@@ -106,7 +118,12 @@ console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
   </div>
 </div> -->
 
+<div class="grid grid-cols-2">
 The commitments of internet freedom outline the concrete actions and responsibilities that governments, organizations, and individuals should undertake to preserve and promote an open and free internet. These commitments include actively protecting the rights of users to access and share information without censorship or undue restrictions. Stakeholders are also committed to ensuring the privacy and security of online communications by adopting robust data protection measures and resisting mass surveillance. Furthermore, there is a commitment to fostering inclusivity by bridging the digital divide, ensuring that all people, regardless of their socioeconomic status or location, can benefit from internet access. Additionally, these commitments involve promoting transparency in internet governance and policy-making processes, encouraging the participation of a broad range of voices to shape the future of the internet. Ultimately, these commitments seek to maintain the internet as a global public resource, free from undue control and open to innovation and expression.
+<!-- <div class="img-container"> -->
+  <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/commitments.png" alt="Example Image"></img>
+<!-- </div> -->
+</div>
 
 ```js
 const selectCountryRadial = view(
@@ -144,7 +161,7 @@ Go to other country page of [${selectCountryRadial}](${urlSelectCountryRadial}) 
 
   <div class="grid grid-cols-1">
   <div class="card">
-      ${resize((width) => polarPlot(dfi, commitmentUnique, selectCountryRadial, {width}))}
+      ${resize((width) => polarPlot(dfi, selectCountryRadial, {width}))}
     </div>
   </div>
 
@@ -166,10 +183,16 @@ const pillarsCards = [
 ];
 ```
 
+```js
+// console.log("pillarcards", pillarsCards.pillar);
+```
+
 <!-- plot -->
-<div class="grid grid-cols-1">
+<div class="grid grid-cols-2">
   The pillars of internet freedom serve as the foundational principles that guide the protection and promotion of an open and free internet. These pillars typically include access to information, freedom of expression, privacy, and security. Access to information ensures that all individuals can seek, receive, and impart information freely over the internet. Freedom of expression safeguards the right to express opinions and ideas without censorship. Privacy guarantees that individuals can use the internet without unwarranted surveillance or the violation of their personal data. Security ensures that the internet remains a safe space for users to interact, free from threats like cyber-attacks or malicious activities.
-<!-- <div class="card"> -->
+<!-- <div class="card"> -->  
+<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/pillars_2.png" alt="Example Image"></img>
+
 </div>
 <div class="grid grid-cols-1">
   <div class="card">
@@ -219,6 +242,8 @@ countryUnique
 <!-- plot -->
 <div class="grid grid-cols-2">
     Countries play a pivotal role in the Declaration on the Freedom of the Internet (DFI) by implementing and upholding its principles within their borders. They are responsible for creating laws and policies that ensure unrestricted internet access, protect freedom of expression, and safeguard user privacy. Countries must resist censorship, combat control over information flow, and work to reduce the digital divide to ensure equitable internet access. Additionally, they are expected to collaborate internationally to support global internet governance that aligns with the DFI’s goals, ensuring a free, open, and secure internet for all.
+      <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/countries.png" alt="Example Image"></img>
+
   </div>
 
 ```js
@@ -251,6 +276,8 @@ const goals = FileAttachment("./data/goals.csv").csv({ typed: true });
 
   <div class="grid grid-cols-2">
 The Declaration on the Future of the Internet (DFI) sets out key goals aimed at promoting a free, open, and secure internet globally. Its objectives include safeguarding human rights online, ensuring that digital spaces remain accessible and inclusive, and fostering innovation while maintaining privacy and security. The DFI focuses on upholding democratic values by preventing the misuse of technology for censorship, surveillance, or the suppression of free speech. By setting a global standard for the governance and development of the internet, the DFI encourages collaboration between nations to create an equitable, safe, and resilient digital environment for all.
+  <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/goals.png" alt="Example Image"></img>
+
 </div>
 
   <div class="card" id="goalsGrid">
@@ -276,25 +303,22 @@ var commitmentUnique = commitments.filter(onlyUnique);
 // );
 ```
 
+  <div class="grid grid-cols-2">
+  <div>
 This world map highlights exemplary practices by countries in upholding the principles of the Declaration on the Freedom of the Internet (DFI). Each country showcased here has made significant strides in promoting and protecting internet freedom, setting a global standard for digital rights and access.
 
 This map serves as a resource for understanding how different countries contribute to the global effort of maintaining a secure, accessible, and open internet for all.
 
+  </div>
+
+<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/implementation.png" alt="Example Image"></img>
+
+</div>
 <!-- dropdown -->
 
 ```js
 var pillarsAll = goodpractice.map((d) => d.pillar);
 var pillarUnique = pillarsAll.filter(onlyUnique).sort();
-var pillar = view(
-  Inputs.select(pillarUnique, {
-    value: "Select a pillar",
-    // label: "Type",
-  })
-);
-```
-
-```js
-// var goodpracticeType = goodpractice.filter((d) => d.pillar === pillar);
 ```
 
 <!-- world map and data -->
@@ -315,70 +339,34 @@ const goodpractice = FileAttachment("./data/goodpractice.csv").csv({
 <!-- join -->
 
 ```js
-// Step 1: Create a lookup object based on both ISO3_CODE and pillar
-const goodpracticeLookup = goodpractice.reduce((acc, item) => {
-  const key = `${item.ISO3_CODE}_${item.pillar}`; // Combine ISO3_CODE and pillar as the key
-  acc[key] = item;
-  return acc;
-}, {});
-
-// Step 2: Filter, merge, and keep unique features
-const uniqueFeatures = new Set(); // A set to store unique feature keys
-
-const filteredWorld = world
-  .filter((feature) => {
-    const isoCode = feature.properties.ISO3_CODE;
-    // Check if there's at least one goodpractice entry for the ISO3_CODE
-    return goodpractice.some((gp) => gp.ISO3_CODE === isoCode);
-  })
-  .flatMap((feature) => {
-    const isoCode = feature.properties.ISO3_CODE;
-
-    // Find all matching goodpractice entries for this ISO3_CODE
-    const matchingItems = goodpractice.filter((gp) => gp.ISO3_CODE === isoCode);
-
-    // Create a new feature for each matching pillar
-    return matchingItems
-      .map((additionalInfo) => {
-        const pillar = additionalInfo.pillar;
-
-        // Create a unique key for this combination of ISO3_CODE and pillar
-        const uniqueKey = `${isoCode}_${pillar}`;
-
-        // Only return this feature if it hasn't been added before
-        if (!uniqueFeatures.has(uniqueKey)) {
-          uniqueFeatures.add(uniqueKey); // Mark this combination as seen
-
-          // Create a new feature for this combination of ISO3_CODE and pillar
-          return {
-            ...feature, // Copy the original feature
-            properties: {
-              ...feature.properties, // Keep existing properties
-              ...additionalInfo, // Merge with additional properties from goodpractice
-            },
-            group: uniqueKey, // Optionally add a group key if needed
-          };
-        }
-        return null; // Return null if it's a duplicate
-      })
-      .filter((f) => f !== null); // Filter out null values (duplicates)
-  });
-
-// display(filteredWorld);
+// console.log("world", world);
+// console.log("filteredCountry", filteredCountry);
 ```
 
+<!-- clickable legend -->
+
+<div id="legend-container"></div>
+
 ```js
-// filter based on pillar selection
-const filteredCountry = filteredWorld.filter(
-  (d) => d.properties.pillar === pillar
-);
+worldMapLegend("legend-container", colors, pillarUnique);
 ```
 
 <div class="grid grid-cols-1">
   <div class="card">
-    ${resize((width) => worldMap(world, filteredCountry, {width}))}
-  </div> 
+    <div id="map-container"></div>
+  </div>
 </div>
+
+```js
+worldMap2(world, goodpractice, "map-container", colors, { width });
+```
+
+<!--
+<div class="grid grid-cols-1">
+  <div class="card">
+    ${resize((width) => worldMap2(world, filteredCountry, {width}))}
+  </div>
+</div> -->
 
 <!-- ### to do
 

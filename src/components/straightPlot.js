@@ -1,7 +1,12 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
 
-export function straightPlot(data, country, { width, height } = {}) {
+export function straightPlot(
+  data,
+  country,
+  // commitmentIcons,
+  { width, height } = {}
+) {
   // calculate mean
   const mean = d3.flatRollup(
     data,
@@ -38,9 +43,9 @@ export function straightPlot(data, country, { width, height } = {}) {
   // manual facet labels
   const n = 1; // number of facet columns
   const keys = Array.from(d3.union(data.map((d) => d.commitment_txt)));
-  const index = new Map(keys.map((key, i) => [key, i]));
-  const fx = (key) => index.get(key) % n;
-  const fy = (key) => Math.floor(index.get(key) / n);
+  // const index = new Map(keys.map((key, i) => [key, i]));
+  // const fx = (key) => index.get(key) % n;
+  // const fy = (key) => Math.floor(index.get(key) / n);
 
   // Get the extent (min and max) of the `value` property
   const [min, max] = d3.extent(data, (d) => d.value);
@@ -52,13 +57,25 @@ export function straightPlot(data, country, { width, height } = {}) {
     Math.ceil(max) + max * fact,
   ];
 
+  // Use a Set to track unique commitment_num values
+  const uniqueCommitments = new Set();
+  const filteredData = data.filter((item) => {
+    if (!uniqueCommitments.has(item.commitment_num)) {
+      uniqueCommitments.add(item.commitment_num);
+      return true;
+    }
+    return false;
+  });
+
+  // console.log(filteredData);
+
   // window height
   const vw = window.innerWidth;
   const vh = window.innerHeight;
 
   return Plot.plot({
     width: width,
-    height: vh,
+    height: vh * 1.5,
     // title: "The state of the internet",
     // subtitle: "As expressed in thousands of dots",
     axis: null,
@@ -76,25 +93,68 @@ export function straightPlot(data, country, { width, height } = {}) {
       label: null,
       // anchor: "top",
     },
+    // fy: { frameAnchor: "top-left", textAnchor: "start" },
+    fy: { padding: 1 },
     marks: [
+      Plot.axisX({
+        anchor: "top",
+        dy: -40,
+        stroke: "#ccc",
+        strokeOpacity: 0.2,
+        strokeWidth: 0.5,
+      }),
+      Plot.ruleX([0], { stroke: "#fff" }),
+      // mean
+      Plot.dot(
+        meanObject,
+        Plot.dodgeY("middle", {
+          x: "value",
+          // z: "value",
+          y: 0,
+          dy: 6,
+          fy: "commitment_txt",
+          // stroke: "#000",
+          // strokeWidth: 1,
+          fill: "#fff",
+          opacity: 0.1,
+          r: 18,
+          // title: "comparison",
+          // tip: true,
+        })
+      ),
       // icons
-      Plot.image(data, {
-        x: min,
+      Plot.image(filteredData, {
+        x: 0,
+        dx: -30,
         y: 0,
-        width: 100,
-        src: "https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/icons/1.png?token=GHSAT0AAAAAAC3B5JVUVG6UVIJD6UA4F35WZ2GEGTA",
+        dy: -20,
+        fy: "commitment_txt",
+        width: 40,
+        src: "icon_url",
       }),
       // manual facet labels
-      Plot.text(keys, { fx, fy, frameAnchor: "top-left", dx: -100, dy: 6 }),
+      Plot.text(filteredData, {
+        x: min,
+        // dx: -30,
+        y: 0,
+        dy: -25,
+        fy: "commitment_txt",
+        text: "commitment_txt",
+        frameAnchor: "top-left",
+        textAnchor: "start",
+        fontSize: "1.5em",
+        // dy: 6,
+      }),
       // line highlight
       Plot.link(
         distance,
         Plot.pointer({
           x1: "x1",
           x2: "value",
-          y1: 1.2,
-          y2: 1.2,
-          fy: (d) => fy(d.commitment_txt),
+          y1: 0,
+          y2: 0,
+          dy: 7,
+          fy: "commitment_txt",
           stroke: "#fff",
           strokeWidth: 2,
           title: "comparison",
@@ -104,11 +164,11 @@ export function straightPlot(data, country, { width, height } = {}) {
       // all dots with current country highlighted
       Plot.dot(
         data,
-        Plot.dodgeY("middle", {
+        Plot.dodgeY("top", {
           x: "value",
           y: 0,
           // y: "commitment_txt",
-          fy: (d) => fy(d.commitment_txt),
+          fy: "commitment_txt",
           // fy: d => fy(d.commitment_txt),
           href: (d) => "../" + d.country_url,
           stroke: "pillar",
@@ -121,35 +181,6 @@ export function straightPlot(data, country, { width, height } = {}) {
           strokeOpacity: (d) => (d.NAME_ENGL === country ? 0 : 0.33),
         })
       ),
-      // mean
-      Plot.tickX(
-        meanObject,
-        Plot.dodgeY("middle", {
-          x: "value",
-          // z: "value",
-          y: 0,
-          fy: (d) => fy(d.commitment_txt),
-          stroke: "#fff",
-          strokeWidth: 2,
-          opacity: 0.66,
-          // title: "comparison",
-          // tip: true,
-        })
-      ),
-      // average label
-      // Plot.text(
-      //   meanObject[0],
-      //   Plot.dodgeY("middle", {
-      //     x: "value",
-      //     y: 0,
-      //     fy: (d) => fy(d.commitment_txt),
-      //     text: ["Commitment average"],
-      //     // dy: 0,
-      //     opacity: 1,
-      //   })
-      // ),
-      Plot.axisX({ facetAnchor: "top", anchor: "top" }),
-      // Plot.axisY({ textAnchor: "start", tickSize: 0, fill: null, dx: 14 }),
     ],
   });
 }

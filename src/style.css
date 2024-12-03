@@ -25,6 +25,21 @@ html {
   text-align: center;
 }
 
+/* hero image */
+#hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/hero.png");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
+  opacity: 0.15; /* Adjust opacity for the background image */
+  z-index: -1;
+}
+
 .hero h1 {
   margin: 2rem 0;
   max-width: none;
@@ -37,7 +52,7 @@ html {
 }
 
 h2 {
-  padding-top: 1em;
+  padding-top: 5em;
   font-weight: normal;
 }
 
@@ -229,6 +244,19 @@ g:hover circle {
   transition-timing-function: ease;
 }
 
+/* focus on active IMPLEMENTATION LEGEND on hover and lower opacity of the rest */
+#legend-container path:not(:hover) {
+  opacity: 0.2;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
+#legend-container path:hover {
+  opacity: 1;
+  transition: opacity 0.05s;
+  transition-timing-function: ease;
+}
+
 /* g:hover path {
   opacity: 0.2;
   transition: opacity 0.05s;
@@ -272,6 +300,18 @@ g[aria-label="fx-axis tick label"] > g > text {
   display: none;
 }
 
+/* .img-container {
+  background-color: purple;
+} */
+
+.img-col {
+  /* background-color: purple; */
+  /* filter: grayscale(100%); */
+  /* opacity: 0.5; */
+  width: 100%;
+  background-color: inherit;
+  mix-blend-mode: multiply;
+}
 /* circle:hover::after {
     content: attr(title);
     position: absolute;

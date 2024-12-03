@@ -4,7 +4,7 @@ import * as Plot from "npm:@observablehq/plot";
 // https://observablehq.com/@observablehq/plot-radar-chart
 
 export function pillars(data, { width, height } = {}) {
-  return Plot.plot({
+  const plot = Plot.plot({
     width: width,
     // height: width / 5 * 2,
     marginLeft: 0,
@@ -23,7 +23,7 @@ export function pillars(data, { width, height } = {}) {
         x: "x",
         y: "y",
         fill: "pillar",
-        fillOpacity: 0.9,
+        fillOpacity: 1,
         href: "url",
       }),
       // text
@@ -31,10 +31,11 @@ export function pillars(data, { width, height } = {}) {
         x: "x",
         y: "y",
         // color: "pillar",
-        fill: "#643291  ",
+        fill: "#643291",
         fontWeight: 900,
         text: (d) => d.pillar.split(" ").join("\n"),
         // text: "pillar",
+        PointerEvents: "none",
         fontSize: "3em",
         href: "url",
       }),
@@ -47,4 +48,14 @@ export function pillars(data, { width, height } = {}) {
       //   `
     ],
   });
+
+  // Select all <text> elements inside the <g> element
+  const textElements = plot.querySelectorAll('g[aria-label="text"] text');
+
+  // Loop through each <text> element and set pointer-events to none
+  textElements.forEach((textElement) => {
+    textElement.style.pointerEvents = "none";
+  });
+
+  return plot;
 }

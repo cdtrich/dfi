@@ -1,12 +1,7 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
 
-export function polarPlot(
-  data,
-  commitments,
-  selectedCountry,
-  { width, height } = {}
-) {
+export function polarPlot(data, selectedCountry, { width, height } = {}) {
   // params
   const vh = window.innerHeight;
 
@@ -16,16 +11,16 @@ export function polarPlot(
 
   // dot position
   const longitude = d3
-    .scalePoint(new Set(Plot.valueof(data, "commitment_txt")), [205, -155])
+    .scalePoint(new Set(Plot.valueof(data, "commitment_num")), [205, -155])
     .padding(0.5)
     .align(1);
 
-  const dotSize = window.innerWidth * 0.005;
+  const dotSize = window.innerWidth * 0.006;
 
   // dodging with force simulation
   const simulation = d3
     .forceSimulation(data)
-    .force("x", d3.forceX((d) => longitude(d.commitment_txt)).strength(0.05))
+    .force("x", d3.forceX((d) => longitude(d.commitment_num)).strength(0.05))
     // .force("y", d3.forceY((d) => 90 - d.value).strength(0.00001))
     .force("collide", d3.forceCollide(dotSize)) // Prevent overlap by setting the radius
     .stop(); // Stop the simulation
@@ -76,6 +71,69 @@ export function polarPlot(
     },
   ];
 
+  // Use a Set to track unique commitment_num values
+  const commitments = new Set();
+  const uniqueCommitments = data.filter((item) => {
+    if (!commitments.has(item.commitment_num)) {
+      commitments.add(item.commitment_num);
+      return true;
+    }
+    return false;
+  });
+  // console.log(uniqueCommitments);
+
+  // Group data by pillar_txt
+  const groupedData = Object.values(
+    data.reduce((acc, curr) => {
+      const {
+        pillar_txt,
+        pillar_num,
+        commitment_num,
+        commitment_txt,
+        pillar_url,
+      } = curr;
+
+      if (!acc[pillar_txt]) {
+        acc[pillar_txt] = {
+          pillar_txt,
+          pillar_num,
+          x1: commitment_num,
+          x2: commitment_num,
+          x: commitment_num,
+          commitment_txt: commitment_txt,
+          pillar_url: pillar_url,
+        };
+      } else {
+        acc[pillar_txt].x1 = Math.min(acc[pillar_txt].x1, commitment_num);
+        acc[pillar_txt].x2 = Math.max(acc[pillar_txt].x2, commitment_num);
+        acc[pillar_txt].x = (acc[pillar_txt].x1 + acc[pillar_txt].x2) / 2;
+        // acc[pillar_txt].commitment_txt_min = Math.min(
+        //   acc[pillar_txt].x1,
+        //   commitment_num
+        // );
+        // acc[pillar_txt].commitment_txt_max = Math.max(
+        //   acc[pillar_txt].x2,
+        //   commitment_num
+        // );
+      }
+
+      return acc;
+    }, {})
+  );
+
+  // Calculate the final average and clean up
+  const uniquePillars = groupedData.map((group) => ({
+    pillar_txt: group.pillar_txt,
+    pillar_num: group.pillar_num,
+    commitment_txt: group.commitment_txt,
+    x1: group.x1,
+    x2: group.x2,
+    x: (group.x1 + group.x2) / 2, // Calculate average
+    pillar_url: group.pillar_url,
+  }));
+
+  // console.log(uniquePillars);
+
   let plot = Plot.plot({
     width: width,
     height: vh * 0.85,
@@ -84,51 +142,85 @@ export function polarPlot(
     projection: {
       type: "azimuthal-equidistant",
       rotate: [0, -90],
-      domain: d3.geoCircle().center([0, 90]).radius(10000.625)(),
+      domain: d3.geoCircle().center([0, 90]).radius(99990)(), // before: 10000.625
     },
-    r: { range: [dotSize, dotSize] },
+    r: { range: [dotSize / 3, dotSize] },
     color: {
       legend: false,
       range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
     },
     marks: [
       // PILLARS
-      Plot.link(pillars, {
+      Plot.link(uniquePillars, {
         x1: (d) => longitude(d.x1),
         x2: (d) => longitude(d.x2),
-        y1: 12,
-        y2: 12,
-        stroke: (d) => d.pillar,
+        y1: -2,
+        y2: -2,
+        stroke: (d) => d.pillar_num,
+        // strokeOpacity: 1,
         strokeWidth: 2,
+        ariaLabel: (d) => `link-${d.pillar_txt}`, // Add an accessible label for targeting
         // href: "url",
       }),
-      Plot.text(pillars, {
-        x: (d) => longitude(d.x),
-        y: (d, i) => ((i === 2) | (i === 3) ? 6.5 : 11.5),
-        rotate: (d, i) => ((i === 2) | (i === 3) ? 72 * i + 180 : 72 * i),
-        fill: "pillar",
-        // fill: "#ffffff",
-        text: (d, i) => [d.pillar, ""].join("\n"), // shift baseline
-        fontSize: "2em",
-        textAnchor: "center",
-        href: "url",
+      // Plot.text(uniquePillars, {
+      //   x: (d) => longitude(Math.round(d.x)),
+      //   y: (d, i) => ((i === 2) | (i === 3) ? -3 : -1),
+      //   // y: 5,
+      //   rotate: (d, i) => ((i === 2) | (i === 3) ? 72 * i + 180 : 72 * i),
+      //   fill: (d) => d.pillar_num,
+      //   // fill: "#ffffff",
+      //   text: "pillar_txt",
+      //   // text: (d, i) => [d.pillar_txt, ""].join("\n"), // shift baseline
+      //   // fontSize: "2em",
+      //   textAnchor: "middle",
+      //   // href: "url",
+      // }),
+      // ICONS
+      Plot.image(uniqueCommitments, {
+        x: (d) => longitude(d.commitment_num),
+        y: 5,
+        width: 50,
+        src: "icon_url",
+        stroke: "#fff",
+        tip: true,
+        title: "commitment_txt",
       }),
       // DOTS
-      Plot.text(commitments, {
-        x: (d, i) => longitude(commitments[i]),
-        y: 20,
-        fontFace: "bold",
-        text: (d, i) => `${commitments[i]}`.replace(/ /g, "\n"),
-        // text: (d, i) => `${commitments[i]}`,
-      }),
+      // Plot.text(commitments, {
+      //   x: (d, i) => longitude(commitments[i]),
+      //   y: 15,
+      //   fontFace: "bold",
+      //   lineWidth: 16,
+      //   text: (d, i) => `${commitments[i]}`,
+      // }),
+      // FALSE DOTS for ohq plot tooltip
       Plot.dot(data, {
-        x: (d) => longitude(d.commitment_txt), // Use the new x position calculated by the force simulation
-        y: (d) => 90 - d.value, // Use the new y position
-        stroke: (d) => d.pillar,
+        x: (d) => longitude(d.commitment_num), // Use the new x position calculated by the force simulation
+        y: (d) => 100 - d.value, // Use the new y position
+        r: (d) => d.value,
+        opacity: 0,
+        strokeOpacity: 0,
+        title: (d) =>
+          `${d.NAME_ENGL}: ${Math.round(d.value)}\n\nCommitment: ${
+            d.commitment_txt
+          }`,
+        // title: "NAME_ENGL",
+        tip: true, // Disable automatic tooltips
+      }),
+      // ACTUAL DOTS
+      Plot.dot(data, {
+        x: (d) => longitude(d.commitment_num), // Use the new x position calculated by the force simulation
+        y: (d) => 100 - d.value, // Use the new y position
+        stroke: (d) => d.pillar_num,
         r: (d) => d.value,
         opacity: selected ? 0.1 : 0.2,
+        // strokewidth: 0,
         href: "country_url",
-        title: (d) => d.NAME_ENGL,
+        // title: (d) =>
+        //   `${d.NAME_ENGL}: ${Math.round(d.value)}\n\nCommitment: ${
+        //     d.commitment_txt
+        //   }`,
+        title: "NAME_ENGL",
         tip: false, // Disable automatic tooltips
       }),
       // Plot.dot(data, {
@@ -144,7 +236,7 @@ export function polarPlot(
       Plot.dot(
         data.filter((d) => d.NAME_ENGL == selectedCountry),
         {
-          x: (d) => longitude(d.commitment_txt), // Use the new x position calculated by the force simulation
+          x: (d) => longitude(d.commitment_num), // Use the new x position calculated by the force simulation
           y: (d) => 90 - d.value, // Use the new y position
           // stroke: (d) => d.pillar,
           fill: (d) => d.pillar,
@@ -175,7 +267,9 @@ export function polarPlot(
   });
 
   const plotElement = document.body.appendChild(plot);
+  const svg = d3.select(plotElement).select("svg"); // Access the rendered SVG
 
+  // TOOLTIPS AND HIGHLIGHTED CIRCLES
   const circles = plotElement.querySelectorAll("circle");
 
   // Create tooltip element
@@ -188,24 +282,24 @@ export function polarPlot(
   tooltip.style.borderRadius = "5px";
   tooltip.style.fontSize = "12px";
   tooltip.style.visibility = "hidden";
-  document.body.appendChild(tooltip);
+  // document.body.appendChild(tooltip);
 
   // Create a path element that will contain the area
-  const svg = d3.select(plotElement).select("svg");
+  // const svg = d3.select(plotElement).select("svg");
 
-  const areaPath = svg
-    .append("path")
-    .attr("fill", "none")
-    .attr("stroke", "black")
-    .attr("stroke-width", 1.5)
-    .attr("visibility", "hidden");
+  // const areaPath = svg
+  //   .append("path")
+  //   .attr("fill", "none")
+  //   .attr("stroke", "black")
+  //   .attr("stroke-width", 1.5)
+  //   .attr("visibility", "hidden");
 
-  const linkPath = svg
-    .append("path") // ???
-    .attr("fill", "none")
-    .attr("stroke", "black")
-    .attr("stroke-width", 1.5)
-    .attr("visibility", "hidden");
+  // const linkPath = svg
+  //   .append("path") // ???
+  //   .attr("fill", "none")
+  //   .attr("stroke", "black")
+  //   .attr("stroke-width", 1.5)
+  //   .attr("visibility", "hidden");
 
   // Add hover effect
   plotElement.addEventListener("mouseover", function (event) {
@@ -281,8 +375,40 @@ export function polarPlot(
       circle.style.opacity = 0.2; // Reset to original opacity
       circle.style.fill = null;
     });
-    linkPath.attr("visibility", "hidden"); // Hide the area
+    // linkPath.attr("visibility", "hidden"); // Hide the area
   });
+
+  // PILLAR LABELS
+  // https://chatgpt.com/g/g-fAgI6VGij-frontend-developer/c/6746ddf4-2b40-8008-bbf3-c0c197e3c130
+  // Select paths created by Plot.link() and add textPath
+  svg
+    .selectAll('path[aria-label^="link"]') // Select all paths with aria-label starting with "link"
+    .each(function (d, i) {
+      const path = d3.select(this); // Select the current path
+      const pillar = uniquePillars[i]; // Match the corresponding pillar data
+
+      // Add a <text> element with a <textPath> to follow this path
+      svg
+        .append("text")
+        .append("textPath")
+        .attr("href", `#${path.attr("id") || `path-${i}`}`) // Use existing path ID or generate one
+        .attr("startOffset", "50%") // Center the text along the path
+        .attr("text-anchor", "middle")
+        .style("fill", pillar.pillar_num) // Match text color to the pillar color
+        .style("font-size", "14px")
+        .text(pillar.pillar_txt); // Add the pillar text
+    });
+
+  // OR WITH THIS???
+  // const svgElement = document.querySelector("svg.plot-d6a7b5");
+  // const newTextElement = document.createElementNS(
+  //   "http://www.w3.org/2000/svg",
+  //   "text"
+  // );
+  // newTextElement.textContent = "New Text";
+  // newTextElement.setAttribute("x", "10"); // Set the x-coordinate
+  // newTextElement.setAttribute("y", "20"); // Set the y-coordinate
+  // svgElement.appendChild(newTextElement);
 
   return plotElement; // Return the plot element
 }

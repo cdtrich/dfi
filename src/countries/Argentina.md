@@ -36,6 +36,9 @@ const country = "Argentina";
 const dfi = FileAttachment("../data/dfi.csv").csv({
   typed: true,
 });
+// const commitmentIcons = FileAttachment("./data/commitments.csv").csv({
+//   typed: true,
+// });
 const goodpracticeParse = FileAttachment("../data/goodpractice.csv").csv({
   typed: true,
 });
