@@ -21,7 +21,7 @@ export function polarPlotMultiple(
   const fy = (key) => Math.floor(index.get(key) / n);
 
   const longitude = d3
-    .scalePoint(new Set(Plot.valueof(data, "commitment_txt")), [180, -180])
+    .scalePoint(new Set(Plot.valueof(data, "commitment_num")), [180, -180])
     .padding(0.5)
     .align(1);
 
@@ -66,7 +66,7 @@ export function polarPlotMultiple(
       domain: d3.geoCircle().center([0, 90]).radius(10000.625)(),
     },
     // strokeWidth: { range: [0.1, 1] },
-    r: { range: [0.2, 5] },
+    r: { range: [1, 5] },
     x: { ticks: 0, label: null }, // Disable x-axis ticks and label
     y: { ticks: 0, label: null }, // Disable y-axis ticks and label
     fx: { padding: 0, ticks: 0, label: null }, // No fx facet ticks or labels
@@ -81,14 +81,14 @@ export function polarPlotMultiple(
     marks: [
       // lines
       Plot.link(data, {
-        x1: (d) => longitude(d.commitment_txt),
-        x2: (d) => longitude(d.commitment_txt),
+        x1: (d) => longitude(d.commitment_num),
+        x2: (d) => longitude(d.commitment_num),
         y1: (d) => 90,
         y2: (d) => 90 - d.value,
         fx: (d) => fx(d.NAME_ENGL),
         fy: (d) => fy(d.NAME_ENGL),
-        stroke: (d) => d.pillar,
-        strokeWidth: 1,
+        stroke: (d) => d.pillar_num,
+        strokeWidth: 2,
         // strokeWidth: (d) => d.value,
         strokeLinejoin: "round",
         strokeLinecap: "round",
@@ -103,8 +103,8 @@ export function polarPlotMultiple(
       //   y: (d) => 90 - d.value,
       //   fx: (d) => fx(d.NAME_ENGL),
       //   fy: (d) => fy(d.NAME_ENGL),
-      //   stroke: (d) => d.pillar,
-      //   // fill: (d) => d.pillar,
+      //   stroke: (d) => d.pillar_num,
+      //   // fill: (d) => d.pillar_num,
       //   strokeWidth: 2,
       //   strokeLinejoin: "round",
       //   strokeLinecap: "round",
@@ -118,17 +118,17 @@ export function polarPlotMultiple(
       //   y: (d) => 90 - d.value,
       //   fx: (d) => fx(d.NAME_ENGL),
       //   fy: (d) => fy(d.NAME_ENGL),
-      //   fill: (d) => d.pillar,
+      //   fill: (d) => d.pillar_num,
       //   r: (d) => d.value,
       //   opacity: 0.05,
       // }),
       Plot.dot(data, {
-        x: (d) => longitude(d.commitment_txt),
+        x: (d) => longitude(d.commitment_num),
         y: (d) => 90 - d.value,
         fx: (d) => fx(d.NAME_ENGL),
         fy: (d) => fy(d.NAME_ENGL),
         // fill: "#3C4099",
-        fill: (d) => d.pillar,
+        fill: (d) => d.pillar_num,
         r: (d) => d.value,
         opacity: 1,
         href: "country_url",
@@ -136,25 +136,25 @@ export function polarPlotMultiple(
       Plot.dot(
         data,
         Plot.pointer({
-          x: (d) => longitude(d.commitment_txt),
+          x: (d) => longitude(d.commitment_num),
           y: (d) => 90 - d.value,
           fx: (d) => fx(d.NAME_ENGL),
           fy: (d) => fy(d.NAME_ENGL),
-          stroke: (d) => d.pillar,
+          stroke: (d) => d.pillar_num,
           strokeWidth: 3,
           r: (d) => d.value,
           opacity: 1,
           // href: "country_url",
           // tip: true,
-          // title: (d) => `${d.commitment_txt}: ${Math.round(d.value)}`,
+          // title: (d) => `${d.commitment_num}: ${Math.round(d.value)}`,
         })
       ),
       // Plot.axisX(data, { label: null, lineWidth: 0 }),
       // Plot.axisY(data, { label: null, lineWidth: 0 }),
       // invisible large lines that make whole graph clickable
       Plot.link(data, {
-        x1: (d) => longitude(d.commitment_txt),
-        x2: (d) => longitude(d.commitment_txt),
+        x1: (d) => longitude(d.commitment_num),
+        x2: (d) => longitude(d.commitment_num),
         y1: (d) => 90,
         y2: (d) => 90 - d.value,
         fx: (d) => fx(d.NAME_ENGL),
@@ -168,7 +168,7 @@ export function polarPlotMultiple(
       // clickable country name
       // OUTLINE
       Plot.text(countryNames, {
-        x: (d) => longitude(d.commitment_txt),
+        x: (d) => longitude(d.commitment_num),
         y: (d) => 90,
         fx: (d) => fx(d.NAME_ENGL),
         fy: (d) => fy(d.NAME_ENGL),
@@ -184,7 +184,7 @@ export function polarPlotMultiple(
       }),
       // NAME
       Plot.text(countryNames, {
-        x: (d) => longitude(d.commitment_txt),
+        x: (d) => longitude(d.commitment_num),
         y: (d) => 90,
         fx: (d) => fx(d.NAME_ENGL),
         fy: (d) => fy(d.NAME_ENGL),
@@ -199,7 +199,7 @@ export function polarPlotMultiple(
       Plot.text(
         countryNames,
         Plot.pointer({
-          x: (d) => longitude(d.commitment_txt),
+          x: (d) => longitude(d.commitment_num),
           y: (d) => 90,
           fx: (d) => fx(d.NAME_ENGL),
           fy: (d) => fy(d.NAME_ENGL),

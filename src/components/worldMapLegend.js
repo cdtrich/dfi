@@ -22,6 +22,10 @@ export function worldMapLegend(containerId, colors, labels) {
     tile.style.cursor = "pointer";
     tile.style.opacity = "1"; // Default opacity
 
+    // Add ARIA label for accessibility
+    tile.setAttribute("role", "button"); // Role makes it clear this is interactive
+    tile.setAttribute("aria-label", `Filter by ${label}`); // Descriptive ARIA label
+
     // Add click event to update selected state and emit event
     tile.addEventListener("click", () => {
       // Update the opacity of all tiles

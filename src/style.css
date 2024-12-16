@@ -244,19 +244,6 @@ g:hover circle {
   transition-timing-function: ease;
 }
 
-/* focus on active IMPLEMENTATION LEGEND on hover and lower opacity of the rest */
-#legend-container path:not(:hover) {
-  opacity: 0.2;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
-#legend-container path:hover {
-  opacity: 1;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
 /* g:hover path {
   opacity: 0.2;
   transition: opacity 0.05s;

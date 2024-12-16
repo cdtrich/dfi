@@ -28,7 +28,7 @@ import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
 // import { gridPlotMultiple } from "./components/gridPlotMultiple.js";
 import { countryPageLink } from "./components/countryPageLink.js";
 import { dendro } from "./components/dendro.js";
-import { worldMap } from "./components/worldMap.js";
+// import { worldMap } from "./components/worldMap.js";
 import { worldMap2 } from "./components/worldMap2.js";
 import { worldMapLegend } from "./components/worldMapLegend.js";
 import { pillars } from "./components/pillars.js";
@@ -36,8 +36,8 @@ import { goalsGrid } from "./components/goalsGrid.js";
 ```
 
 <div class="hero">
-  <h1>DFI Tracker</h1>
-  <h2>Navigating your way through the state of the internet</h2>
+  <h1>Internet Accountability Tracker</h1>
+  <!-- <h2>Navigating your way through the state of the internet</h2> -->
   <div id="hero-image"></div>
 <p style="margin-top: 4em;">The Declaration on the Freedom of the Internet is a formal statement advocating for the protection and promotion of an open, accessible, and free internet. It recognizes the internet as a fundamental tool for expression, communication, and innovation, essential to the advancement of democratic principles and human rights. The declaration emphasizes that everyone should have the right to access information online without censorship, surveillance, or discrimination. It calls on governments, organizations, and individuals to commit to upholding these freedoms and to resist efforts that would undermine the internet’s open nature or restrict users’ rights.
 </p>
@@ -82,11 +82,11 @@ const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
 
 -->
 
-## Key figures
+<!-- ## Key figures -->
 
 <!-- summary cards -->
 
-<div class="grid grid-cols-4">
+<!-- <div class="grid grid-cols-4">
   <div class="card key">
     <h2>Entries<span class="muted"> / datapoints</span></h2>
     <span class="big">${dfi.length.toLocaleString("en-US")}</span>
@@ -103,13 +103,14 @@ const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
     <h2>Groups<span class="muted"> / columns</span></h2>
     <span class="big">5</span>
   </div>
-</div>
+</div> -->
 
 ## Commitments
 
 ```js
 // console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
-// display(dfi);
+console.log(dfi);
+display(dfi);
 ```
 
 <!-- <div class="grid grid-cols-1">
@@ -175,11 +176,29 @@ Go to other country page of [${selectCountryRadial}](${urlSelectCountryRadial}) 
 
 ```js
 const pillarsCards = [
-  { pillar: "Pillar 1", x: 10, y: 50, url: "./pillars/Pillar1" },
-  { pillar: "Pillar 2", x: 30, y: 50, url: "./pillars/Pillar2" },
-  { pillar: "Pillar 3", x: 50, y: 50, url: "./pillars/Pillar3" },
-  { pillar: "Pillar 4", x: 70, y: 50, url: "./pillars/Pillar4" },
-  { pillar: "Pillar 5", x: 90, y: 50, url: "./pillars/Pillar5" },
+  {
+    pillar: "Pillar 1",
+    x: 10,
+    y: 50,
+    txt: "Human Rights",
+    url: "./pillars/pillar1",
+  },
+  {
+    pillar: "Pillar 2",
+    x: 30,
+    y: 50,
+    txt: "Global Internet",
+    url: "./pillars/pillar2",
+  },
+  { pillar: "Pillar 3", x: 50, y: 50, txt: "Access", url: "./pillars/pillar3" },
+  { pillar: "Pillar 4", x: 70, y: 50, txt: "Trust", url: "./pillars/pillar4" },
+  {
+    pillar: "Pillar 5",
+    x: 90,
+    y: 50,
+    txt: "Multi-stakeholder",
+    url: "./pillars/pillar5",
+  },
 ];
 ```
 
@@ -345,7 +364,7 @@ const goodpractice = FileAttachment("./data/goodpractice.csv").csv({
 
 <!-- clickable legend -->
 
-<div id="legend-container"></div>
+<div id="legend-container" class="world-map-legend"></div>
 
 ```js
 worldMapLegend("legend-container", colors, pillarUnique);

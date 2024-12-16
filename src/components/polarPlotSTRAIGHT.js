@@ -136,7 +136,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
 
   let plot = Plot.plot({
     width: width,
-    height: vh * 0.75,
+    height: vh * 3,
     marginLeft: 0,
     // title: "The state of the internet",
     // subtitle: "As expressed in thousands of dots",
@@ -146,7 +146,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
     //   domain: d3.geoCircle().center([0, 90]).radius(99990)(), // before: 10000.625
     // },
     // r: { range: [dotSize / 3, dotSize] },
-    y: { label: null, domain: [23, 1] },
+    y: { label: null },
     r: { range: [dotSize / 5, dotSize] },
     color: {
       // legend: false,
@@ -203,19 +203,19 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
       //   tip: true,
       //   title: "commitment_txt",
       // }),
-      // Plot.axisX({
-      //   anchor: "top",
-      //   ticks: [],
-      //   label: "commitments",
-      //   tickSize: 0,
-      // }),
-      Plot.axisY({ tickPadding: 100, tickSize: 0 }),
+      Plot.axisX({
+        anchor: "top",
+        ticks: [],
+        label: "commitments",
+        tickSize: 0,
+      }),
+      Plot.axisY({ anchor: "right", tickPadding: 10, tickSize: 0 }),
       Plot.ruleX({}),
       // // DOTS
       // // FALSE DOTS for ohq plot tooltip
       Plot.dot(data, {
-        x: "value", // Use the new y position
-        y: "commitment_num", // Use the new x position calculated by the force simulation
+        x: "commitment_num", // Use the new y position
+        y: "NAME_ENGL", // Use the new x position calculated by the force simulation
         stroke: (d) => d.pillar_num,
         r: "value",
         opacity: 0,
@@ -229,13 +229,12 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
       }),
       // ACTUAL DOTS
       Plot.dot(data, {
-        x: "value", // Use the new y position
-        y: "commitment_num", // Use the new x position calculated by the force simulation
+        x: "commitment_num", // Use the new y position
+        y: "NAME_ENGL", // Use the new x position calculated by the force simulation
         stroke: (d) => d.pillar_num,
         r: "value",
-        opacity: 0.2,
-        strokeWidth: 3,
-        // opacity: selected ? 0.2 : 0.2,
+        opacity: 0.4,
+        // opacity: selected ? 0.2 : 0.4,
         href: "country_url",
         title: "NAME_ENGL",
         tip: false, // Disable automatic tooltips
@@ -243,16 +242,16 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
       // highlighted dots
       Plot.dot(
         data.filter((d) => d.NAME_ENGL == selectedCountry),
-        {
-          x: "value", // Use the new y position
-          y: "commitment_num", // Use the new x position calculated by the force simulation
+        Plot.dodgeY("middle", {
+          x: "commitment_num", // Use the new y position
+          y: "NAME_ENGL", // Use the new x position calculated by the force simulation
           fill: (d) => d.pillar_num,
           r: "value",
           opacity: 1,
           href: "country_url",
           title: (d) => d.NAME_ENGL,
           tip: false, // Disable automatic tooltips
-        }
+        })
       ),
     ],
   });
@@ -327,7 +326,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
                 positions.push({ x, y });
               }
             } else {
-              circle.style.opacity = 0.2;
+              circle.style.opacity = 0.4;
               circle.style.fill = null;
             }
           }
@@ -363,7 +362,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
   plotElement.addEventListener("mouseout", function () {
     tooltip.style.visibility = "hidden";
     circles.forEach((circle) => {
-      circle.style.opacity = 0.2; // Reset to original opacity
+      circle.style.opacity = 0.4; // Reset to original opacity
       circle.style.fill = null;
     });
     // linkPath.attr("visibility", "hidden"); // Hide the area

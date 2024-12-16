@@ -11,22 +11,22 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
 
   // dot position
   const longitude = d3
-    .scalePoint(new Set(Plot.valueof(data, "commitment_num")), [205, -155]) // circle angle offset
+    .scalePoint(new Set(Plot.valueof(data, "commitment_num")), [205, -155])
     .padding(0.5)
     .align(1);
 
   const dotSize = window.innerWidth * 0.006;
 
   // dodging with force simulation
-  // const simulation = d3
-  //   .forceSimulation(data)
-  //   .force("x", d3.forceX((d) => longitude(d.commitment_num)).strength(0.05))
-  //   // .force("y", d3.forceY((d) => 90 - d.value).strength(0.00001))
-  //   .force("collide", d3.forceCollide(dotSize)) // Prevent overlap by setting the radius
-  //   .stop(); // Stop the simulation
+  const simulation = d3
+    .forceSimulation(data)
+    .force("x", d3.forceX((d) => longitude(d.commitment_num)).strength(0.05))
+    // .force("y", d3.forceY((d) => 90 - d.value).strength(0.00001))
+    .force("collide", d3.forceCollide(dotSize)) // Prevent overlap by setting the radius
+    .stop(); // Stop the simulation
 
   // Run the simulation for a few iterations to stabilize
-  // for (let i = 0; i < 120; ++i) simulation.tick();
+  for (let i = 0; i < 120; ++i) simulation.tick();
 
   const pillars = [
     {
@@ -136,88 +136,76 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
 
   let plot = Plot.plot({
     width: width,
-    height: vh * 0.75,
-    marginLeft: 0,
+    height: vh * 0.85,
     // title: "The state of the internet",
     // subtitle: "As expressed in thousands of dots",
-    // projection: {
-    //   type: "azimuthal-equidistant",
-    //   rotate: [0, -90],
-    //   domain: d3.geoCircle().center([0, 90]).radius(99990)(), // before: 10000.625
-    // },
-    // r: { range: [dotSize / 3, dotSize] },
-    y: { label: null, domain: [23, 1] },
-    r: { range: [dotSize / 5, dotSize] },
+    projection: {
+      type: "azimuthal-equidistant",
+      rotate: [0, -90],
+      domain: d3.geoCircle().center([0, 90]).radius(99990)(), // before: 10000.625
+    },
+    r: { range: [dotSize / 3, dotSize] },
     color: {
-      // legend: false,
+      legend: false,
       range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
     },
     marks: [
       // PILLARS
-      // Plot.link(uniquePillars, {
-      //   x1: (d) => longitude(d.x1),
-      //   x2: (d) => longitude(d.x2),
-      //   y1: 0,
-      //   y2: 0,
-      //   stroke: (d) => d.pillar_num,
-      //   strokeOpacity: 0.25,
-      //   strokeWidth: 5,
-      //   ariaLabel: (d) => `link-${d.pillar_txt}`, // Add an accessible label for targeting
-      //   // href: "url",
-      // }),
-      // Plot.text(uniquePillars, {
-      //   x: (d) => (longitude(d.x1) + longitude(d.x2)) / 2, // mean
-      //   y: (d, i) =>
-      //     i === 0
-      //       ? 10
-      //       : i === 1
-      //       ? 10
-      //       : i === 2
-      //       ? 10
-      //       : i === 3
-      //       ? 10
-      //       : i === 4
-      //       ? 10
-      //       : 0,
-      //   // y: 5,
-      //   rotate: (d, i) =>
-      //     i === 1 ? 65 : i === 2 ? -60 : i === 3 ? 35 : i === 4 ? -50 : 0,
-      //   fill: (d) => d.pillar_num,
-      //   lineWidth: 17,
-      //   // fill: "#ffffff",
-      //   text: "pillar_txt",
-      //   // text: (d, i) => [d.pillar_txt, ""].join("\n"), // shift baseline
-      //   fontSize: "1.2em",
-      //   textAnchor: "middle",
-      //   lineAnchor: "middle",
-      //   frameAnchor: "middle",
-      //   // href: "url",
-      // }),
-      // // ICONS
-      // Plot.image(uniqueCommitments, {
-      //   x: (d) => longitude(d.commitment_num),
-      //   y: 0,
-      //   width: 50,
-      //   src: "icon_url",
-      //   stroke: "#fff",
-      //   tip: true,
-      //   title: "commitment_txt",
-      // }),
-      // Plot.axisX({
-      //   anchor: "top",
-      //   ticks: [],
-      //   label: "commitments",
-      //   tickSize: 0,
-      // }),
-      Plot.axisY({ tickPadding: 100, tickSize: 0 }),
-      Plot.ruleX({}),
-      // // DOTS
-      // // FALSE DOTS for ohq plot tooltip
-      Plot.dot(data, {
-        x: "value", // Use the new y position
-        y: "commitment_num", // Use the new x position calculated by the force simulation
+      Plot.link(uniquePillars, {
+        x1: (d) => longitude(d.x1),
+        x2: (d) => longitude(d.x2),
+        y1: 0,
+        y2: 0,
         stroke: (d) => d.pillar_num,
-        r: "value",
+        strokeOpacity: 0.25,
+        strokeWidth: 5,
+        ariaLabel: (d) => `link-${d.pillar_txt}`, // Add an accessible label for targeting
+        // href: "url",
+      }),
+      Plot.text(uniquePillars, {
+        x: (d) => (longitude(d.x1) + longitude(d.x2)) / 2, // mean
+        y: (d, i) =>
+          i === 0
+            ? 10
+            : i === 1
+            ? 10
+            : i === 2
+            ? 10
+            : i === 3
+            ? 10
+            : i === 4
+            ? 10
+            : 0,
+        // y: 5,
+        rotate: (d, i) =>
+          i === 1 ? 65 : i === 2 ? -60 : i === 3 ? 35 : i === 4 ? -50 : 0,
+        fill: (d) => d.pillar_num,
+        lineWidth: 17,
+        // fill: "#ffffff",
+        text: "pillar_txt",
+        // text: (d, i) => [d.pillar_txt, ""].join("\n"), // shift baseline
+        fontSize: "1.2em",
+        textAnchor: "middle",
+        lineAnchor: "middle",
+        frameAnchor: "middle",
+        // href: "url",
+      }),
+      // ICONS
+      Plot.image(uniqueCommitments, {
+        x: (d) => longitude(d.commitment_num),
+        y: 0,
+        width: 50,
+        src: "icon_url",
+        stroke: "#fff",
+        tip: true,
+        title: "commitment_txt",
+      }),
+      // DOTS
+      // FALSE DOTS for ohq plot tooltip
+      Plot.dot(data, {
+        x: (d) => longitude(d.commitment_num), // Use the new x position calculated by the force simulation
+        y: (d) => 105 - d.value, // Use the new y position
+        r: (d) => d.value,
         opacity: 0,
         strokeOpacity: 0,
         title: (d) =>
@@ -229,13 +217,11 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
       }),
       // ACTUAL DOTS
       Plot.dot(data, {
-        x: "value", // Use the new y position
-        y: "commitment_num", // Use the new x position calculated by the force simulation
+        x: (d) => longitude(d.commitment_num), // Use the new x position calculated by the force simulation
+        y: (d) => 105 - d.value, // Use the new y position
         stroke: (d) => d.pillar_num,
-        r: "value",
-        opacity: 0.2,
-        strokeWidth: 3,
-        // opacity: selected ? 0.2 : 0.2,
+        r: (d) => d.value,
+        opacity: selected ? 0.1 : 0.2,
         href: "country_url",
         title: "NAME_ENGL",
         tip: false, // Disable automatic tooltips
@@ -244,10 +230,11 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
       Plot.dot(
         data.filter((d) => d.NAME_ENGL == selectedCountry),
         {
-          x: "value", // Use the new y position
-          y: "commitment_num", // Use the new x position calculated by the force simulation
-          fill: (d) => d.pillar_num,
-          r: "value",
+          x: (d) => longitude(d.commitment_num), // Use the new x position calculated by the force simulation
+          y: (d) => 105 - d.value, // Use the new y position
+          // stroke: (d) => d.pillar,
+          fill: (d) => d.pillar,
+          r: (d) => d.value,
           opacity: 1,
           href: "country_url",
           title: (d) => d.NAME_ENGL,

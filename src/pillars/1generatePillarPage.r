@@ -8,7 +8,7 @@ library(foreach)
 # library(googlesheets4)
 
 # generatePillarPages
-getwd()
+# getwd()
 # go up one folder
 # setwd("..")
 
@@ -16,11 +16,14 @@ data <- read_csv("src/.observablehq/cache/data/dfi.csv") %>%
     print()
 
 pillar <- data %>%
-    distinct(pillar) %>%
+    distinct(pillar_txt) %>%
     pull()
 
-pillar_url <- pillar %>%
-    str_remove_all(" ")
+pillar_num <- data %>%
+    distinct(pillar_num) %>%
+    pull()
+
+pillar_url <- paste0("pillar", pillar_num)
 
 # read md template
 breakFun <- function(x) {
@@ -36,11 +39,12 @@ storeLines <- readLines("src/pillars/1pillarPageTemplate.md")
 
 foreach(i = 1:length(pillar)) %do% {
     cleanLines <- storeLines %>%
-        str_replace_all("plr", pillar[i])
+        str_replace_all("plrtxt", pillar[i])
 
     pillarLines <- cleanLines %>%
         # paste0(lapply(storeLines, FUN = function(x) breakFun(x)), collapse = "") %>%
-        str_replace_all("plr", pillar[i])
+        str_replace_all("plrnum", as.character(pillar_num[i])) %>%
+        str_replace_all("plrtxt", pillar[i])
 
     write_lines(
         pillarLines,

@@ -1,7 +1,13 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
 
-export function worldMap2(world, goodpractice, containerId, colors) {
+export function worldMap2(
+  world,
+  goodpractice,
+  containerId,
+  colors,
+  { width, height }
+) {
   const mapContainer = document.getElementById(containerId);
 
   // Step 1: Create a lookup object based on both ISO3_CODE and pillar
@@ -53,7 +59,7 @@ export function worldMap2(world, goodpractice, containerId, colors) {
     // Clear the existing map
     mapContainer.innerHTML = "";
 
-    console.log(filteredWorld);
+    // console.log(filteredWorld);
 
     // Filter data if a pillar is selected
     const filteredData = selectedPillar
@@ -65,8 +71,8 @@ export function worldMap2(world, goodpractice, containerId, colors) {
     // Render the map
     const map = Plot.plot({
       projection: "equal-earth",
-      width: 800,
-      height: 600,
+      width: width,
+      // height: 600,
       marks: [
         // World outline
         Plot.geo(world, {

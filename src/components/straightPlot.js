@@ -11,22 +11,22 @@ export function straightPlot(
   const mean = d3.flatRollup(
     data,
     (v) => d3.mean(v, (d) => d.value),
-    (d) => d.commitment_txt
+    (d) => d.commitment_num
   );
 
   // turn mean map into object
-  const meanObject = mean.map(([commitment_txt, value]) => ({
-    commitment_txt,
+  const meanObject = mean.map(([commitment_num, value]) => ({
+    commitment_num,
     value,
   }));
 
   // calculate distance from mean
   const filterData = data.filter((d) => d.NAME_ENGL === country);
-  const indexMean = d3.index(meanObject, (d) => d.commitment_txt);
-  const distance = filterData.map(({ commitment_txt, value: x1 }) => ({
-    commitment_txt,
+  const indexMean = d3.index(meanObject, (d) => d.commitment_num);
+  const distance = filterData.map(({ commitment_num, value: x1 }) => ({
+    commitment_num,
     x1,
-    ...indexMean.get(commitment_txt),
+    ...indexMean.get(commitment_num),
   }));
 
   distance.forEach((item) => {
@@ -42,7 +42,7 @@ export function straightPlot(
 
   // manual facet labels
   const n = 1; // number of facet columns
-  const keys = Array.from(d3.union(data.map((d) => d.commitment_txt)));
+  const keys = Array.from(d3.union(data.map((d) => d.commitment_num)));
   // const index = new Map(keys.map((key, i) => [key, i]));
   // const fx = (key) => index.get(key) % n;
   // const fy = (key) => Math.floor(index.get(key) / n);
@@ -112,7 +112,7 @@ export function straightPlot(
           // z: "value",
           y: 0,
           dy: 6,
-          fy: "commitment_txt",
+          fy: "commitment_num",
           // stroke: "#000",
           // strokeWidth: 1,
           fill: "#fff",
@@ -128,7 +128,7 @@ export function straightPlot(
         dx: -30,
         y: 0,
         dy: -20,
-        fy: "commitment_txt",
+        fy: "commitment_num",
         width: 40,
         src: "icon_url",
       }),
@@ -138,7 +138,7 @@ export function straightPlot(
         // dx: -30,
         y: 0,
         dy: -25,
-        fy: "commitment_txt",
+        fy: "commitment_num",
         text: "commitment_txt",
         frameAnchor: "top-left",
         textAnchor: "start",
@@ -154,7 +154,7 @@ export function straightPlot(
           y1: 0,
           y2: 0,
           dy: 7,
-          fy: "commitment_txt",
+          fy: "commitment_num",
           stroke: "#fff",
           strokeWidth: 2,
           title: "comparison",
@@ -168,11 +168,11 @@ export function straightPlot(
           x: "value",
           y: 0,
           // y: "commitment_txt",
-          fy: "commitment_txt",
+          fy: "commitment_num",
           // fy: d => fy(d.commitment_txt),
           href: (d) => "../" + d.country_url,
-          stroke: "pillar",
-          fill: "pillar",
+          stroke: "pillar_num",
+          fill: "pillar_num",
           r: (d) => (d.NAME_ENGL === country ? 6 : 1),
           // tip: true,
           // title: "NAME_ENGL",

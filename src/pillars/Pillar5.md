@@ -8,6 +8,11 @@ theme: [ocean-floor, alt]
 
 <head>
 <link rel="stylesheet" href="../style.css">
+<style>
+  html {
+  background: rgb(60, 64, 153)
+  };
+</style>
 </head>
 
 <!-- back to root button -->
@@ -37,17 +42,23 @@ cards.forEach((card) => {
 });
 ```
 
-<!-- load countries -->
+<!-- load data -->
 
 ```js
-const pillar = "Pillar 5";
 const dfi = FileAttachment("../data/dfi.csv").csv({
   typed: true,
 });
 ```
 
+<!-- params -->
+
+```js
+const pillar_txt = "Multi-stakeholder Internet Governance";
+const pillar_num = 5;
+```
+
 <div class="hero">
-  <h1>${pillar}</h1>
+  <h1>${pillar_txt}</h1>
 </div>
 
 <p>
@@ -55,5 +66,5 @@ The pillars of internet freedom serve as the foundational principles that guide 
 </p>
   
   <div class="card">
-      ${resize((width, height) => straightPlotPillar(dfi, pillar, {width}))}
+      ${resize((width, height) => straightPlotPillar(dfi, pillar_num, {width}))}
   </div>

@@ -33,10 +33,10 @@ export function pillars(data, { width, height } = {}) {
         // color: "pillar",
         fill: "#643291",
         fontWeight: 900,
-        text: (d) => d.pillar.split(" ").join("\n"),
+        text: (d) => d.txt.split(/[\s-]+/).join("\n"),
         // text: "pillar",
         PointerEvents: "none",
-        fontSize: "3em",
+        fontSize: "2em",
         href: "url",
       }),
       // interactive opacity on the areas
