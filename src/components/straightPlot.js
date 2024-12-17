@@ -19,6 +19,7 @@ export function straightPlot(
     commitment_num,
     value,
   }));
+  console.log(meanObject);
 
   // calculate distance from mean
   const filterData = data.filter((d) => d.NAME_ENGL === country);
@@ -33,9 +34,9 @@ export function straightPlot(
     const difference = (item.x1 - item.value).toFixed(1); // Calculate and round the difference to one decimal
     const comparison =
       item.x1 > item.value
-        ? "above"
+        ? "points above"
         : item.x1 < item.value
-        ? "below"
+        ? "points below"
         : "equal to";
     item.comparison = `${Math.abs(difference)} ${comparison} average`;
   });
@@ -69,20 +70,58 @@ export function straightPlot(
 
   // console.log(filteredData);
 
+  // CALCULATE COUNT PER VALUE
+  // Summarize and group data
+  const summarized = data.reduce((acc, d) => {
+    // Define the group key for summarization based on selected properties
+    const key = `${d.commitment_num}-${d.pillar_num}-${d.value}`;
+
+    // If the group doesn't exist, initialize it with relevant properties
+    if (!acc[key]) {
+      acc[key] = {
+        ...d, // Copy all properties initially
+        n: 0, // Initialize count
+        uniqueNames: new Set(), // Track unique NAME_ENGL values
+      };
+    }
+
+    // Increment count
+    acc[key].n += 1;
+
+    // Track NAME_ENGL for this group
+    acc[key].uniqueNames.add(d.NAME_ENGL);
+
+    return acc;
+  }, {});
+
+  // Finalize and clean up results
+  const groupedCounts = Object.values(summarized).map((item) => {
+    // Replace NAME_ENGL with a dynamic string if there are multiple unique values
+    if (item.uniqueNames.size > 1) {
+      item.NAME_ENGL = `${item.n} countries`;
+      item.country_url = "";
+    }
+
+    // Remove the helper Set property
+    delete item.uniqueNames;
+
+    return item;
+  });
+
   // window height
   const vw = window.innerWidth;
   const vh = window.innerHeight;
 
   return Plot.plot({
     width: width,
-    height: vh * 1.5,
+    height: (vh / 8) * mean.length,
+    marginRight: 4,
     // title: "The state of the internet",
     // subtitle: "As expressed in thousands of dots",
-    axis: null,
-    x: { label: null },
-    y: { label: null, text: null, axis: "left", ticks: [], tickSize: 0 },
-    marginRight: 4,
-    aspectRatio: 0.66,
+    // axis: null,
+    // x: { label: null, domain: [-10, 110], ticks: [0, 25, 50, 75, 100] },
+    y: { label: null, axis: null, tickSize: 0 },
+    // aspectRatio: 0.66,
     color: {
       legend: false,
       range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
@@ -96,91 +135,139 @@ export function straightPlot(
     // fy: { frameAnchor: "top-left", textAnchor: "start" },
     fy: { padding: 1 },
     marks: [
+      // TOP AXIS
       Plot.axisX({
         anchor: "top",
         dy: -40,
         stroke: "#ccc",
         strokeOpacity: 0.2,
         strokeWidth: 0.5,
+        domain: [-10, 110],
+        ticks: [0, 25, 50, 75, 100],
+        label: "Score",
+        // tickLength: 5,
       }),
-      Plot.ruleX([0], { stroke: "#fff" }),
-      // mean
+      // MEAN MARKER
+      Plot.dot(meanObject, {
+        x: "value",
+        fy: "commitment_num",
+        stroke: "#fff",
+        strokeOpacity: 1,
+        strokeWidth: 1,
+        r: 5,
+      }),
+      // label
+      Plot.text(
+        meanObject.filter((d) => d.commitment_num === 1),
+        {
+          x: "value",
+          y: 0,
+          dy: 20,
+          fy: "commitment_num",
+          text: (d) => "Mean value",
+          textAnchor: "middle",
+          // fontWeight: 700,
+          FontFace: "italic",
+        }
+      ),
+      // DISTANCE FROM MEAN
+      Plot.link(distance, {
+        x1: "x1",
+        x2: "value",
+        y1: 0,
+        y2: 0,
+        // dy: 7,
+        fy: "commitment_num",
+        stroke: "#fff",
+        strokeWidth: 1,
+        strokeOpacity: 0.5,
+        title: "comparison",
+        tip: true,
+      }),
+      // ALL DOTS
       Plot.dot(
-        meanObject,
+        groupedCounts,
         Plot.dodgeY("middle", {
           x: "value",
-          // z: "value",
           y: 0,
-          dy: 6,
           fy: "commitment_num",
-          // stroke: "#000",
-          // strokeWidth: 1,
-          fill: "#fff",
-          opacity: 0.1,
-          r: 18,
-          // title: "comparison",
-          // tip: true,
+          // stroke: "pillar_num",
+          fill: "pillar_num",
+          r: "n",
+          fillOpacity: 0.5,
+          // strokeOpacity: 0.33,
+          href: (d) => "../" + d.country_url,
         })
       ),
-      // icons
+      // pointer
+      Plot.dot(
+        groupedCounts,
+        Plot.pointer(
+          Plot.dodgeY("middle", {
+            x: "value",
+            y: 0,
+            fy: "commitment_num",
+            fill: "pillar_num",
+            r: "n",
+            fillOpacity: 1,
+            strokeOpacity: 0.5,
+            tip: true,
+            title: "NAME_ENGL",
+          })
+        )
+      ),
+      // HIGHLIGHTED COUNTRY
+      Plot.dot(filterData, {
+        x: "value",
+        y: 0,
+        fy: "commitment_num",
+        href: (d) => "../" + d.country_url,
+        stroke: "#fff",
+        fill: "pillar_num",
+        r: 10,
+        fillOpacity: 0,
+        strokeOpacity: 5,
+      }),
+      // label
+      Plot.text(
+        filterData.filter((d) => d.commitment_num === 1),
+        {
+          x: "value",
+          y: 0,
+          dy: -20,
+          fy: "commitment_num",
+          text: "NAME_ENGL",
+          textAnchor: "middle",
+          fontWeight: 700,
+        }
+      ),
+      // ICONS
       Plot.image(filteredData, {
         x: 0,
         dx: -30,
         y: 0,
-        dy: -20,
+        // dy: -20,
         fy: "commitment_num",
         width: 40,
         src: "icon_url",
       }),
-      // manual facet labels
+      // FACET LABELS
       Plot.text(filteredData, {
         x: min,
         // dx: -30,
         y: 0,
-        dy: -25,
+        dy: -40,
         fy: "commitment_num",
         text: "commitment_txt",
         frameAnchor: "top-left",
         textAnchor: "start",
         fontSize: "1.5em",
+        fill: "#fff",
+        stroke: "#000",
+        strokeOpacity: 0.1,
+        strokeWidth: 5,
         // dy: 6,
       }),
-      // line highlight
-      Plot.link(
-        distance,
-        Plot.pointer({
-          x1: "x1",
-          x2: "value",
-          y1: 0,
-          y2: 0,
-          dy: 7,
-          fy: "commitment_num",
-          stroke: "#fff",
-          strokeWidth: 2,
-          title: "comparison",
-          tip: true,
-        })
-      ),
-      // all dots with current country highlighted
-      Plot.dot(
-        data,
-        Plot.dodgeY("top", {
-          x: "value",
-          y: 0,
-          // y: "commitment_txt",
-          fy: "commitment_num",
-          // fy: d => fy(d.commitment_txt),
-          href: (d) => "../" + d.country_url,
-          stroke: "pillar_num",
-          fill: "pillar_num",
-          r: (d) => (d.NAME_ENGL === country ? 6 : 1),
-          // tip: true,
-          // title: "NAME_ENGL",
-          // opacity: (d) => (d.NAME_ENGL === country ? 1 : 0.33),
-          fillOpacity: (d) => (d.NAME_ENGL === country ? 1 : 0),
-          strokeOpacity: (d) => (d.NAME_ENGL === country ? 0 : 0.33),
-        })
-      ),
     ],
   });
 }

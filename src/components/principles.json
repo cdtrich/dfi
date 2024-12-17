@@ -1,0 +1,24 @@
+{
+  "principles": [
+    {
+      "title": "Protection of Human Rights and Fundamental Freedoms",
+      "description": "The Internet must respect and protect human rights. This principle ensures that rights enjoyed offline—like freedom of expression, privacy, education, and access to information—are safeguarded online. Digital technologies should enable these freedoms, not diminish them."
+    },
+    {
+      "title": "A Global Internet",
+      "description": "The Internet thrives as a single, open, and interoperable network. By promoting a multistakeholder approach to governance, this principle encourages confidence in both infrastructure and services, fostering human development and democracy."
+    },
+    {
+      "title": "Inclusive and Affordable Access to the Internet",
+      "description": "Access to the Internet shouldn’t depend on where you live. Despite years of investment, millions remain unconnected due to gaps in infrastructure, affordability, and digital skills. This principle supports efforts to achieve universal connectivity as a foundation for sustainable development."
+    },
+    {
+      "title": "Trust in the Digital Ecosystem",
+      "description": "A safe and trustworthy Internet requires international cooperation to combat cybercrime, protect privacy, and ensure digital security. From preventing online scams to safeguarding electoral processes, this principle envisions an ethical, reliable, and rules-based digital economy."
+    },
+    {
+      "title": "Multistakeholder Internet Governance",
+      "description": "The Internet is built by many hands—civil society, academia, technical experts, businesses, and governments. This principle highlights the importance of inclusive, transparent, and accountable governance to ensure all stakeholders have a voice in shaping the Internet’s future."
+    }
+  ]
+}

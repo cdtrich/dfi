@@ -72,7 +72,7 @@ dfi_pillars <- dfi %>%
 # CLEAN COUNTRY NAMES ---------------------------------------
 
 # replacement characters
-replacements <- c("é" = "e", "ê" = "e", "à" = "a")
+replacements <- c("é" = "e", "ê" = "e", "à" = "a", "/" = "-")
 
 dfi_rename <- dfi_pillars %>%
     # rename var names
@@ -86,6 +86,7 @@ dfi_clean <- dfi_rename %>%
     # drop all missing values
     filter(!is.na(value)) %>%
     # sanitize country name
+    # mutate(countryClean = ifelse(str_detect(NAME_ENGL, "Myanm"), "MyanmarBurma", NAME_ENGL)) %>%
     mutate(countryClean = str_remove_all(NAME_ENGL, "[^[:alnum:]]")) %>%
     mutate(countryClean = str_remove_all(NAME_ENGL, ",")) %>%
     mutate(countryClean = str_replace_all(NAME_ENGL, replacements)) %>%
@@ -96,7 +97,7 @@ dfi_clean <- dfi_rename %>%
     mutate(icon_url = paste0("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/icons/icon_", commitment_num, ".svg")) %>%
     # mutate(goal_url = paste0("./goals/", str_remove_all(goal, " "))) %>%
     # mutate(icon_url = paste0("https://raw.githubusercontent.com/cdtrich/dfi/31dd713cd80fedd810e802e95bc4e0c84cae88e3/icons/icon_", commitment_num, ".svg")) %>%
-    dplyr::select(-countryClean) %>%
+    # dplyr::select(-countryClean) %>%
     # normalize
     group_by(commitment_txt) %>%
     mutate(

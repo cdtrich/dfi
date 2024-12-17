@@ -5,20 +5,21 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
   const margin = { top: 0, right: 0, bottom: 0, left: 0 };
   const tileSize = width / 15; // Adjust as per your grid layout
 
+  // console.log(data);
+  console.log(dfi);
+
   // Get unique values for goal, commitment_txt, and pillar
-  const goals = [...new Set(data.map((d) => d.goal))].sort();
-  const commitments = [...new Set(data.map((d) => d.commitment_txt))].sort();
-  const pillars = [...new Set(data.map((d) => d.pillar))].sort();
+  const goals = [...new Set(data.map((d) => d.goal_num))].sort();
+  const commitments = [...new Set(data.map((d) => d.commitment_num))].sort();
+  const pillars = [...new Set(data.map((d) => d.pillar_num))].sort();
+  // console.log(goals);
 
   // Find the goal_url for each goal from the dfi array
   const getGoalUrl = (goal) => {
-    const matchedGoal = dfi.find((d) => d.goal === goal); // Find the matching goal in dfi
+    const matchedGoal = dfi.find((d) => d.goal_num === goal_num); // Find the matching goal in dfi
     return matchedGoal ? matchedGoal.goal_url : null; // Return the goal_url if found, otherwise null
   };
 
-  // console.log(goals);
-  // console.log(dfi);
-  // console.log(getGoalUrl(goals[0]));
   // Calculate dimensions
   const height = 6 * tileSize + margin.top + margin.bottom; // 3 rows (goals, commitments, pillars)
 
@@ -49,11 +50,11 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     svg.selectAll(".connection-line").remove();
 
     related.forEach((rel) => {
-      const goalTile = svg.select(`rect[data-goal='${rel.goal}']`);
+      const goalTile = svg.select(`rect[data-goal='${rel.goal_num}']`);
       const commitmentTile = svg.select(
         `rect[data-commitment='${rel.commitment_txt}']`
       );
-      const pillarTile = svg.select(`rect[data-pillar='${rel.pillar}']`);
+      const pillarTile = svg.select(`rect[data-pillar='${rel.pillar_num}']`);
 
       // Get the center positions of the goal, commitment, and pillar tiles
       const goalX = +goalTile.attr("x") + (tileSize * offsetGoals) / 2;
@@ -100,11 +101,13 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
       svg.selectAll("rect").attr("opacity", 0.2); // Dim all tiles
       drawLines(related); // Draw lines between related tiles
       related.forEach((rel) => {
-        svg.selectAll(`rect[data-goal='${rel.goal}']`).attr("opacity", 1);
+        svg.selectAll(`rect[data-goal='${rel.goal_num}']`).attr("opacity", 1);
         svg
-          .selectAll(`rect[data-commitment='${rel.commitment_txt}']`)
+          .selectAll(`rect[data-commitment='${rel.commitment_num}']`)
           .attr("opacity", 1);
-        svg.selectAll(`rect[data-pillar='${rel.pillar}']`).attr("opacity", 1);
+        svg
+          .selectAll(`rect[data-pillar='${rel.pillar_num}']`)
+          .attr("opacity", 1);
       });
     }
   };
@@ -112,11 +115,11 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
   // Helper function to return related tiles based on hovered data
   const getRelatedTiles = (hovered, type) => {
     if (type === "goal") {
-      return data.filter((d) => d.goal === hovered);
+      return data.filter((d) => d.goal_num === hovered);
     } else if (type === "commitment") {
-      return data.filter((d) => d.commitment_txt === hovered);
+      return data.filter((d) => d.commitment_num === hovered);
     } else if (type === "pillar") {
-      return data.filter((d) => d.pillar === hovered);
+      return data.filter((d) => d.pillar_num === hovered);
     }
   };
 

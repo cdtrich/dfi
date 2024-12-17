@@ -32,6 +32,7 @@ import { dendro } from "./components/dendro.js";
 import { worldMap2 } from "./components/worldMap2.js";
 import { worldMapLegend } from "./components/worldMapLegend.js";
 import { pillars } from "./components/pillars.js";
+import { goalsGridOLD } from "./components/goalsGridOLD.js";
 import { goalsGrid } from "./components/goalsGrid.js";
 ```
 
@@ -39,15 +40,14 @@ import { goalsGrid } from "./components/goalsGrid.js";
   <h1>Internet Accountability Tracker</h1>
   <!-- <h2>Navigating your way through the state of the internet</h2> -->
   <div id="hero-image"></div>
-<p style="margin-top: 4em;">The Declaration on the Freedom of the Internet is a formal statement advocating for the protection and promotion of an open, accessible, and free internet. It recognizes the internet as a fundamental tool for expression, communication, and innovation, essential to the advancement of democratic principles and human rights. The declaration emphasizes that everyone should have the right to access information online without censorship, surveillance, or discrimination. It calls on governments, organizations, and individuals to commit to upholding these freedoms and to resist efforts that would undermine the internet’s open nature or restrict users’ rights.
+<p style="margin-top: 4em;">Over the years, governments worldwide have agreed on key principles to promote a global, open, free, safe, and secure Internet. These principles are captured in major declarations, including the Declaration on the Future of the Internet (DFI) and the Global Digital Compact.
 </p>
+<p>
+To bridge the gap between promises and progress, the Internet Accountability Tracker (IAT) was created. This interactive platform helps governments, stakeholders, and communities track implementation, identify challenges, and explore solutions.
+</p>
+<p>
+The Internet Accountability Tracker is your guide to understanding global commitments, measuring progress, and learning from successes. Navigate through the platform to see how different countries perform across pillars, principles, and commitments. Discover policies, best practices, and areas for improvement.</p>
 </div>
-
-<!-- parameters -->
-
-```js
-
-```
 
 <!-- import data -->
 
@@ -84,95 +84,36 @@ const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
 
 <!-- ## Key figures -->
 
+```js
+// Extract unique NAME_ENGL values
+const uniqueCountries = new Set(dfi.map((d) => d.NAME_ENGL));
+
+// Get the count of unique values
+const uniqueCountriesCount = uniqueCountries.size;
+```
+
 <!-- summary cards -->
 
-<!-- <div class="grid grid-cols-4">
+<div class="grid grid-cols-4">
   <div class="card key">
-    <h2>Entries<span class="muted"> / datapoints</span></h2>
+    <h2>Data points<span class="muted"></span></h2>
     <span class="big">${dfi.length.toLocaleString("en-US")}</span>
   </div>
   <div class="card key">
-    <h2>Countries<span class="muted"> / territories</span></h2>
-    <span class="big">${dfi.filter((d) => d.commitment_num === 1).length.toLocaleString("en-US")}</span>
+    <h2>Countries<span class="muted"></span></h2>
+    <span class="big">${uniqueCountriesCount}</span>
   </div>
   <div class="card key">
-    <h2>Commitments<span class="muted"> / principles</span></h2>
-    <span class="big">15</span>
+    <h2>Commitments<span class="muted"></span></h2>
+    <span class="big">23</span>
   </div>
   <div class="card key">
-    <h2>Groups<span class="muted"> / columns</span></h2>
+    <h2>Principles<span class="muted"></span></h2>
     <span class="big">5</span>
   </div>
-</div> -->
-
-## Commitments
-
-```js
-// console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
-console.log(dfi);
-display(dfi);
-```
-
-<!-- <div class="grid grid-cols-1">
-  <div class="card">
-    ${resize((width) => straightPlot(dfi, {width}))}
-  </div>
-</div> -->
-
-<div class="grid grid-cols-2">
-The commitments of internet freedom outline the concrete actions and responsibilities that governments, organizations, and individuals should undertake to preserve and promote an open and free internet. These commitments include actively protecting the rights of users to access and share information without censorship or undue restrictions. Stakeholders are also committed to ensuring the privacy and security of online communications by adopting robust data protection measures and resisting mass surveillance. Furthermore, there is a commitment to fostering inclusivity by bridging the digital divide, ensuring that all people, regardless of their socioeconomic status or location, can benefit from internet access. Additionally, these commitments involve promoting transparency in internet governance and policy-making processes, encouraging the participation of a broad range of voices to shape the future of the internet. Ultimately, these commitments seek to maintain the internet as a global public resource, free from undue control and open to innovation and expression.
-<!-- <div class="img-container"> -->
-  <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/commitments.png" alt="Example Image"></img>
-<!-- </div> -->
 </div>
 
-```js
-const selectCountryRadial = view(
-  Inputs.search(countryUnique, {
-    datalist: countryUnique,
-    placeholder: "Search countries",
-  })
-);
-// display(dfi);
-```
-
-```js
-// // Construct the markdown text with the country name as a link
-// const findSelectCountryRadial = dfi.find(
-//   (d) => d.NAME_ENGL === selectCountryRadial
-// );
-
-// const urlSelectCountryRadial = findSelectCountryRadial
-//   ? findSelectCountryRadial.country_url
-//   : "#"; // Default to '#' if not found
-
-// console.log(urlSelectCountryRadial);
-
-// // Generate markdown as a string
-// const countryMarkdown = `Got to country page of [${selectCountryRadial}](${urlSelectCountryRadial})`;
-
-// // Display the markdown in the div as a link
-// document.getElementById("country-link").innerHTML = marked(countryMarkdown); // Use a markdown parser like marked.js if available
-```
-
-<!-- <p>Go to country page of <a href=`${urlSelectCountryRadial}`>${selectCountryRadial}</a></p>
-<p>test</p>
-
-Go to other country page of [${selectCountryRadial}](${urlSelectCountryRadial}) -->
-
-  <div class="grid grid-cols-1">
-  <div class="card">
-      ${resize((width) => polarPlot(dfi, selectCountryRadial, {width}))}
-    </div>
-  </div>
-
-<!-- ### to do
-
-&#x2611; add connecting line
-
-- country page: dot above avg = filled, below = stroke only -->
-
-## Pillars
+## What Does the IAT Track?
 
 ```js
 const pillarsCards = [
@@ -208,8 +149,25 @@ const pillarsCards = [
 
 <!-- plot -->
 <div class="grid grid-cols-2">
-  The pillars of internet freedom serve as the foundational principles that guide the protection and promotion of an open and free internet. These pillars typically include access to information, freedom of expression, privacy, and security. Access to information ensures that all individuals can seek, receive, and impart information freely over the internet. Freedom of expression safeguards the right to express opinions and ideas without censorship. Privacy guarantees that individuals can use the internet without unwarranted surveillance or the violation of their personal data. Security ensures that the internet remains a safe space for users to interact, free from threats like cyber-attacks or malicious activities.
-<!-- <div class="card"> -->  
+
+<div>
+The IAT focuses on five key areas that define a global, free, secure, sustainable and inclusive Internet:
+
+- Protection of Human Rights and Fundamental Freedoms
+
+- A Global Internet
+
+- Inclusive and Affordable Internet Access
+
+- Trust in the Digital Ecosystem
+
+- Multistakeholder Internet Governance
+
+Each principle comes with specific commitments and performance indicators that you can explore.
+
+</div>
+<!-- <div class="card"> -->
+
 <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/pillars_2.png" alt="Example Image"></img>
 
 </div>
@@ -219,11 +177,38 @@ const pillarsCards = [
   </div>
 </div>
 
-<!-- ### to do
+## Turning Vision into Action
 
-- remove faceting numeric labels -->
+```js
+// console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
+// console.log(dfi);
+// display(dfi);
+```
 
-## Countries
+<div class="grid grid-cols-2">
+To make general principles a reality, governments have made 23 specific commitments—from promoting digital literacy and skills acquisition, promoting online safety and free data flows, refraining from activities that damage the Internet to preventing Internet shutdowns.
+<!-- <div class="img-container"> -->
+  <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/commitments.png" alt="Example Image"></img>
+<!-- </div> -->
+</div>
+
+```js
+const selectCountryRadial = view(
+  Inputs.search(countryUnique, {
+    datalist: countryUnique,
+    placeholder: "Search countries",
+  })
+);
+// display(dfi);
+```
+
+  <div class="grid grid-cols-1">
+  <div class="card">
+      ${resize((width) => polarPlot(dfi, selectCountryRadial, {width}))}
+    </div>
+  </div>
+
+## How Countries Are Performing
 
 <!-- country names and filtering -->
 
@@ -243,25 +228,20 @@ countryUnique
 // display(countryUnique);
 ```
 
-```js
-// DROPDOWN
-// var country = view(
-//   Inputs.select(countryUnique, { value: "Select a country", label: "Country" })
-// );
-// var dfiCountry = dfi.filter((d) => d.NAME_ENGL === country);
-```
-
-```js
-// Remove spaces from the country name
-// var sanitizedCountry = country.replace(/\s+/g, ""); // This removes all spaces
-// var countryPage = "./countries/" + sanitizedCountry;
-// console.log(countryPage);
-```
-
 <!-- plot -->
 <div class="grid grid-cols-2">
-    Countries play a pivotal role in the Declaration on the Freedom of the Internet (DFI) by implementing and upholding its principles within their borders. They are responsible for creating laws and policies that ensure unrestricted internet access, protect freedom of expression, and safeguard user privacy. Countries must resist censorship, combat control over information flow, and work to reduce the digital divide to ensure equitable internet access. Additionally, they are expected to collaborate internationally to support global internet governance that aligns with the DFI’s goals, ensuring a free, open, and secure internet for all.
-      <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/countries.png" alt="Example Image"></img>
+<div>
+The IAT brings together data from nearly all UN member states, including the 70+ signatories of the Declaration on the Future of the Internet. While not all data is available for every country, the interactive tool provides valuable insights into:
+
+- Performance across principles and commitments
+- Case studies and implementation examples
+- Sources of data for transparency and learning
+
+Click on a country to explore progress, challenges, and good practices!
+
+</div>
+
+<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/countries.png" alt="Example Image"></img>
 
   </div>
 
@@ -283,9 +263,10 @@ const dfiGrid = FileAttachment("./data/dfi_grid.csv").csv({
   ${resize((width) => polarPlotMultiple(dfi, {width}))}
 </div>
 
-## Goals
+## Connecting Actions to Goals
 
 ```js
+const goalsOLD = FileAttachment("./data/goalsOLD.csv").csv({ typed: true });
 const goals = FileAttachment("./data/goals.csv").csv({ typed: true });
 ```
 
@@ -294,13 +275,27 @@ const goals = FileAttachment("./data/goals.csv").csv({ typed: true });
 ```
 
   <div class="grid grid-cols-2">
-The Declaration on the Future of the Internet (DFI) sets out key goals aimed at promoting a free, open, and secure internet globally. Its objectives include safeguarding human rights online, ensuring that digital spaces remain accessible and inclusive, and fostering innovation while maintaining privacy and security. The DFI focuses on upholding democratic values by preventing the misuse of technology for censorship, surveillance, or the suppression of free speech. By setting a global standard for the governance and development of the internet, the DFI encourages collaboration between nations to create an equitable, safe, and resilient digital environment for all.
-  <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/goals.png" alt="Example Image"></img>
+
+  <div>
+The commitments under each principle align with six overarching goals to build a sustainable, rights-respecting digital society:
+
+- **Human Rights:** Protect and promote fundamental freedoms and individual well-being.
+- **Connectivity:** Ensure affordable, inclusive, and universal Internet access.
+- **Trust:** Build confidence in the safety, privacy, and security of digital technologies.
+- **Growth:** Enable fair competition and innovation for businesses of all sizes.
+- **Infrastructure:** Foster secure, reliable, and sustainable digital infrastructure.
+- **Technology:** Use technology to promote freedom of expression, inclusivity, and sustainability while addressing climate change.
+
+Learn how these goals translate into real-world actions and commitments.
+
+</div>
+
+<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/goals.png" alt="Example Image"></img>
 
 </div>
 
   <div class="card" id="goalsGrid">
-    ${resize((width) => goalsGrid(goals, dfi, "#goalsGrid", {width}))}
+    ${resize((width) => goalsGridOLD(goalsOLD, dfi, "#goalsGrid", {width}))}
   </div>
 
 ```js
@@ -308,7 +303,9 @@ The Declaration on the Future of the Internet (DFI) sets out key goals aimed at 
 // console.log(goals); // Log to verify the data structure
 ```
 
-## DFI implementation
+## Country Practices
+
+### Lessons and Success Stories
 
 ```js
 // DROPDOWN
@@ -324,9 +321,10 @@ var commitmentUnique = commitments.filter(onlyUnique);
 
   <div class="grid grid-cols-2">
   <div>
-This world map highlights exemplary practices by countries in upholding the principles of the Declaration on the Freedom of the Internet (DFI). Each country showcased here has made significant strides in promoting and protecting internet freedom, setting a global standard for digital rights and access.
+  
+Sharing knowledge is key to progress. The IAT highlights good practices, case studies, and lessons learned from countries advancing toward an open, free, and secure Internet.
 
-This map serves as a resource for understanding how different countries contribute to the global effort of maintaining a secure, accessible, and open internet for all.
+Discover inspiring examples of policies, programs, and frameworks that are making a difference.
 
   </div>
 
@@ -390,3 +388,13 @@ worldMap2(world, goodpractice, "map-container", colors, { width });
 <!-- ### to do
 
 &#x2611; remove antartica -->
+
+## How did we do it?
+
+  <div class="grid grid-cols-2">
+  <div>
+
+Developed by the Global Initiative on the Future of the Internet (GIFI) at the European University Institute, the IAT monitors how well national policies align with the commitments made by over 70 countries under the Declaration on the Future of the Internet. The process for selection of specific indicators is described in the methodology paper.
+
+  </div>
+  </div>

@@ -20,14 +20,11 @@ theme: [ocean-floor, alt]
 <a href="../" class="back-to-root">
   <span class="arrow"></span>
 </a>
-<!-- <span class="muted">go back</span> -->
 
 <!-- import components -->
 
 ```js
-// import * as Plot from "npm:@observablehq/plot";
 import { straightPlotPillar } from "../components/straightPlotPillar.js";
-// import { onlyUnique } from "../components/onlyUnique.js";
 ```
 
 <!-- set height -->
@@ -55,15 +52,15 @@ const dfi = FileAttachment("../data/dfi.csv").csv({
 ```js
 const pillar_txt = "A Global Internet";
 const pillar_num = 2;
+const principles = FileAttachment("../components/principles.json").json();
 ```
 
 <div class="hero">
-  <h1>${pillar_txt}</h1>
+  <h1>${principles.principles[pillar_num - 1].title}</h1>
 </div>
 
 <p>
-The pillars of internet freedom serve as the foundational principles that guide the protection and promotion of an open and free internet. These pillars typically include access to information, freedom of expression, privacy, and security. Access to information ensures that all individuals can seek, receive, and impart information freely over the internet. Freedom of expression safeguards the right to express opinions and ideas without censorship. Privacy guarantees that individuals can use the internet without unwarranted surveillance or the violation of their personal data. Security ensures that the internet remains a safe space for users to interact, free from threats like cyber-attacks or malicious activities.
-</p>
+${principles.principles[pillar_num - 1].description}</p>
   
   <div class="card">
       ${resize((width, height) => straightPlotPillar(dfi, pillar_num, {width}))}

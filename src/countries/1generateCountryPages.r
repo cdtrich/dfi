@@ -18,9 +18,10 @@ data <- read_csv("src/.observablehq/cache/data/dfi.csv") %>%
 country <- data %>%
     distinct(NAME_ENGL) %>%
     pull()
+# country[119]
 
 country_url <- data %>%
-    distinct(NAME_ENGL, .keep_all = TRUE) %>%
+    distinct(countryClean, .keep_all = TRUE) %>%
     pull(country_url)
 
 country_url_source <- country_url %>%
