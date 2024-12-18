@@ -8,6 +8,7 @@ theme: [ocean-floor, alt]
 
 <head>
 <link rel="stylesheet" href="../style.css">
+<title>Saint Vincent and The Grenadines</title>
 </head>
 
 <!-- back to root button -->

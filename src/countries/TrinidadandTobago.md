@@ -8,6 +8,7 @@ theme: [ocean-floor, alt]
 
 <head>
 <link rel="stylesheet" href="../style.css">
+<title>Trinidad and Tobago</title>
 </head>
 
 <!-- back to root button -->

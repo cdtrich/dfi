@@ -99,7 +99,7 @@ export function straightPlot(
     // Replace NAME_ENGL with a dynamic string if there are multiple unique values
     if (item.uniqueNames.size > 1) {
       item.NAME_ENGL = `${item.n} countries`;
-      item.country_url = "";
+      item.country_url = null;
     }
 
     // Remove the helper Set property
@@ -181,8 +181,6 @@ export function straightPlot(
         stroke: "#fff",
         strokeWidth: 1,
         strokeOpacity: 0.5,
-        title: "comparison",
-        tip: true,
       }),
       // ALL DOTS
       Plot.dot(
@@ -196,7 +194,7 @@ export function straightPlot(
           r: "n",
           fillOpacity: 0.5,
           // strokeOpacity: 0.33,
-          href: (d) => "../" + d.country_url,
+          href: (d) => (d.country_url === null ? null : `../${d.country_url}`),
         })
       ),
       // pointer
@@ -211,8 +209,8 @@ export function straightPlot(
             r: "n",
             fillOpacity: 1,
             strokeOpacity: 0.5,
-            tip: true,
-            title: "NAME_ENGL",
+            // tip: true,
+            // title: "NAME_ENGL",
           })
         )
       ),
@@ -221,7 +219,6 @@ export function straightPlot(
         x: "value",
         y: 0,
         fy: "commitment_num",
-        href: (d) => "../" + d.country_url,
         stroke: "#fff",
         fill: "pillar_num",
         r: 10,
@@ -230,8 +227,8 @@ export function straightPlot(
       }),
       // label
       Plot.text(
-        filterData.filter((d) => d.commitment_num === 1),
-        {
+        filterData,
+        Plot.selectFirst({
           x: "value",
           y: 0,
           dy: -20,
@@ -239,7 +236,7 @@ export function straightPlot(
           text: "NAME_ENGL",
           textAnchor: "middle",
           fontWeight: 700,
-        }
+        })
       ),
       // ICONS
       Plot.image(filteredData, {
@@ -264,10 +261,40 @@ export function straightPlot(
         fontSize: "1.5em",
         fill: "#fff",
         stroke: "#000",
-        strokeOpacity: 0.1,
+        strokeOpacity: 0.2,
         strokeWidth: 5,
         // dy: 6,
       }),
+      // tip for DISTANCE FROM MEAN
+      Plot.tip(
+        distance,
+        Plot.pointer({
+          x: (d) => (d.x1 + d.value) / 2,
+          y: 0,
+          dy: 5,
+          fy: "commitment_num",
+          stroke: "#fff",
+          anchor: "top",
+          title: "comparison",
+          tip: true,
+        })
+      ),
+      // tip for ALL DOTS
+      Plot.tip(
+        groupedCounts,
+        Plot.pointer(
+          Plot.dodgeY("middle", {
+            x: "value",
+            y: 0,
+            dy: -5,
+            fy: "commitment_num",
+            stroke: "#fff",
+            anchor: "bottom",
+            tip: true,
+            title: "NAME_ENGL",
+          })
+        )
+      ),
     ],
   });
 }

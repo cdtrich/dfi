@@ -8,6 +8,11 @@ theme: [ocean-floor, alt]
 
 <head>
 <link rel="stylesheet" href="../style.css">
+<style>
+  html {
+  background: rgb(60, 64, 153)
+  };
+</style>
 </head>
 
 <!-- back to root button -->
@@ -15,14 +20,11 @@ theme: [ocean-floor, alt]
 <a href="../" class="back-to-root">
   <span class="arrow"></span>
 </a>
-<!-- <span class="muted">go back</span> -->
 
 <!-- import components -->
 
 ```js
-// import * as Plot from "npm:@observablehq/plot";
 import { straightPlotGoal } from "../components/straightPlotGoal.js";
-// import { onlyUnique } from "../components/onlyUnique.js";
 ```
 
 <!-- set height -->
@@ -40,7 +42,11 @@ cards.forEach((card) => {
 <!-- load countries -->
 
 ```js
-const goal = "gl";
+const goal_txt = "gltxt";
+const goal_num = glnum;
+```
+
+```js
 const dfi = FileAttachment("../data/dfi.csv").csv({
   typed: true,
 });
@@ -48,13 +54,9 @@ const goals = FileAttachment("../data/goals.csv").csv({ typed: true });
 ```
 
 <div class="hero">
-  <h1>${goal}</h1>
+  <h1>${goal_txt}</h1>
 </div>
 
-<p>
-The goals of internet freedom serve as the foundational principles that guide the protection and promotion of an open and free internet. These goals typically include access to information, freedom of expression, privacy, and security. Access to information ensures that all individuals can seek, receive, and impart information freely over the internet. Freedom of expression safeguards the right to express opinions and ideas without censorship. Privacy guarantees that individuals can use the internet without unwarranted surveillance or the violation of their personal data. Security ensures that the internet remains a safe space for users to interact, free from threats like cyber-attacks or malicious activities.
-</p>
-  
   <div class="card">
-      ${resize((width, height) => straightPlotGoal(dfi, goals, goal, {width}))}
+      ${resize((width, height) => straightPlotGoal(dfi, goals, goal_num, {width}))}
   </div>

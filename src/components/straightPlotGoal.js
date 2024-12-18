@@ -1,12 +1,60 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
 
-export function straightPlotGoal(dfi, goals, goal, { width, height } = {}) {
-  // get related commitments for goal
-  const data = dfi.filter((d) => d.goal === goal);
+export function straightPlotGoal(dfi, goals, goal_num, { width, height } = {}) {
+  // get commitment numbers covered by the goal
+  const uniqueCommitmentNums = [
+    ...new Set(
+      goals
+        .filter((d) => d.goal_num === goal_num) // Filter by goal_num
+        .map((d) => d.commitment_num) // Extract commitment_num
+    ),
+  ];
+  const data = dfi.filter((d) =>
+    uniqueCommitmentNums.includes(d.commitment_num)
+  );
+  // console.log(data);
+
+  // CALCULATE COUNT PER VALUE
+  // Summarize and group data
+  const summarized = data.reduce((acc, d) => {
+    // Define the group key for summarization based on selected properties
+    const key = `${d.commitment_num}-${d.pillar_num}-${d.value}`;
+
+    // If the group doesn't exist, initialize it with relevant properties
+    if (!acc[key]) {
+      acc[key] = {
+        ...d, // Copy all properties initially
+        n: 0, // Initialize count
+        uniqueNames: new Set(), // Track unique NAME_ENGL values
+      };
+    }
+
+    // Increment count
+    acc[key].n += 1;
+
+    // Track NAME_ENGL for this group
+    acc[key].uniqueNames.add(d.NAME_ENGL);
+
+    return acc;
+  }, {});
+
+  // Finalize and clean up results
+  const groupedCounts = Object.values(summarized).map((item) => {
+    // Replace NAME_ENGL with a dynamic string if there are multiple unique values
+    if (item.uniqueNames.size > 1) {
+      item.NAME_ENGL = `${item.n} countries`;
+      item.country_url = null;
+    }
+
+    // Remove the helper Set property
+    delete item.uniqueNames;
+
+    return item;
+  });
 
   // Get the extent (min and max) of the `value` property
-  const [min, max] = d3.extent(data, (d) => d.value);
+  const [min, max] = d3.extent(groupedCounts, (d) => d.value);
   const fact = 0.05; // factor to subtract/add to range
 
   // Round down the min and round up the max
@@ -15,54 +63,81 @@ export function straightPlotGoal(dfi, goals, goal, { width, height } = {}) {
     Math.ceil(max) + max * fact,
   ];
 
+  // unique commitments for icons and facet labels
+  const uniqueCommitments = [];
+  const seenCommitments = new Set();
+
+  // Iterate through the data and keep the first object for each commitment_num
+  groupedCounts.forEach((d) => {
+    if (!seenCommitments.has(d.commitment_num)) {
+      seenCommitments.add(d.commitment_num);
+      uniqueCommitments.push(d);
+    }
+  });
+
   // window height
   const vw = window.innerWidth;
   const vh = window.innerHeight;
-  const factor = data.length;
+  const factor = groupedCounts.length;
+  const dotSize = window.innerWidth * 0.04;
+
+  var colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
 
   const plot = Plot.plot({
     width: width,
-    height: height,
-    axis: null,
-    x: { label: null, domain: roundedMinMax },
-    y: { label: null, text: null, axis: "left", ticks: [], tickSize: 0 },
-    marginRight: 4,
+    height: width,
+    marginLeft: dotSize,
+    marginRight: dotSize,
+    y: { axis: null, tickSize: 0 },
     color: {
-      legend: false,
+      legend: true,
       range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
     },
-    r: { range: [vw / 200, vw / 100] },
+    r: { range: [1, dotSize] },
     facet: {
       label: null,
     },
     marks: [
+      Plot.axisX({
+        anchor: "top",
+        domain: [-50, 150],
+        stroke: "#ccc",
+        strokeOpacity: 0.2,
+        strokeWidth: 0.5,
+        ticks: [0, 25, 50, 75, 100],
+        label: "Score",
+      }),
       // all dots
       Plot.dot(
-        data,
+        groupedCounts,
+        Plot.dodgeY(
+          "top",
+          Plot.pointer({
+            x: "value",
+            // fy: "commitment_txt",
+            fill: "pillar_txt",
+            r: "n",
+            opacity: 1,
+            // opacity: (d) => (d.pillar === pillar ? 1 : 0.05),
+          })
+        )
+      ),
+      // all dots
+      Plot.dot(
+        groupedCounts,
         Plot.dodgeY("top", {
           x: "value",
-          y: 0,
-          // fy: 0,
-          href: (d) => "." + d.country_url,
-          fill: "pillar",
-          r: (d) => d.value,
-          padding: vh / 200,
-          stroke: "#3c4099",
-          strokeWidth: vh / 200,
-          sort: "NAME_ENGL",
+          stroke: "pillar_txt",
+          fill: "pillar_txt",
+          fillOpacity: 0,
+          r: "n",
+          title: (d) => `${d.NAME_ENGL}` + `  ` + `${Math.round(d.value)}`,
           tip: true,
-          channels: { commitment_txt: "commitment_txt" }, // Assign `commitment_txt` as a data attribute for the dots
-          title: (d) =>
-            [
-              [
-                [[d.NAME_ENGL, d.commitment_txt].join("\n\n")],
-                Math.round(d.value),
-              ].join(": "),
-              d.pillar,
-            ].join("\n"),
+          opacity: 0.66,
+          href: (d) => (d.country_url === null ? null : `../${d.country_url}`),
+          // opacity: (d) => (d.pillar === pillar ? 1 : 0.05),
         })
       ),
-      Plot.axisX({ facetAnchor: "top", anchor: "top" }),
     ],
   });
 

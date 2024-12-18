@@ -8,6 +8,7 @@ theme: [ocean-floor, alt]
 
 <head>
 <link rel="stylesheet" href="../style.css">
+<title>Russian Federation</title>
 </head>
 
 <!-- back to root button -->

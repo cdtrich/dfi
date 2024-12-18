@@ -11,6 +11,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
 
   const dotSize = window.innerWidth * 0.006;
 
+  console.log(data.filter((d) => d.commitment_num === 19));
   // Use a Set to track unique commitment_num values
   // const commitments = new Set();
   // const uniqueCommitments = data.filter((item) => {
@@ -107,7 +108,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
     // Replace NAME_ENGL with a dynamic string if there are multiple unique values
     if (item.uniqueNames.size > 1) {
       item.NAME_ENGL = `${item.n} countries`;
-      item.country_url = "";
+      item.country_url = null;
     }
 
     // Remove the helper Set property
@@ -187,7 +188,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
         opacity: 0.5,
         // strokeOpacity: 0.5,
         r: "n",
-        href: "country_url",
+        href: (d) => (d.country_url === null ? null : `../${d.country_url}`),
         frameAnchor: "bottom-right",
       }),
       // dots
@@ -203,7 +204,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
           // strokeOpacity: 1,
           r: "n",
           // opacity: selected ? 0.2 : 0.2,
-          href: "country_url",
+          href: (d) => (d.country_url === null ? null : `../${d.country_url}`),
           title: "NAME_ENGL",
           tip: false, // Disable automatic tooltips
         })
@@ -218,7 +219,7 @@ export function polarPlot(data, selectedCountry, { width, height } = {}) {
           opacity: 1,
           r: dotSize,
           strokeWidth: 1,
-          href: "country_url",
+          href: (d) => (d.country_url === null ? null : `../${d.country_url}`),
           title: (d) => d.NAME_ENGL,
           tip: false, // Disable automatic tooltips
         }

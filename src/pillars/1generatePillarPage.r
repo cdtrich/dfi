@@ -23,7 +23,7 @@ pillar_num <- data %>%
     distinct(pillar_num) %>%
     pull()
 
-pillar_url <- paste0("pillar", pillar_num)
+pillar_url <- paste0("Pillar", pillar_num)
 
 # read md template
 breakFun <- function(x) {

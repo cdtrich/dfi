@@ -19,7 +19,7 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
     commitment_num,
     value,
   }));
-  console.log(meanObject);
+  // console.log(meanObject);
 
   // calculate distance from mean
   const indexMean = d3.index(meanObject, (d) => d.commitment_num);
@@ -62,7 +62,7 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
     // Replace NAME_ENGL with a dynamic string if there are multiple unique values
     if (item.uniqueNames.size > 1) {
       item.NAME_ENGL = `${item.n} countries`;
-      item.country_url = "";
+      item.country_url = null;
     }
 
     // Remove the helper Set property
@@ -97,7 +97,7 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
 
   return Plot.plot({
     width: width,
-    height: (vh / 8) * mean.length,
+    height: (vh / 6) * mean.length,
     marginRight: 4,
     // marginLeft: 0,
     // title: "The state of the internet",
@@ -105,7 +105,7 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
     // x: { label: null, domain: [-10, 110], ticks: [0, 25, 50, 75, 100] },
     y: { label: null, axis: null, tickSize: 0 },
     color: {
-      legend: false,
+      legend: true,
       // range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
     },
     ticks: false,
@@ -124,6 +124,7 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
         strokeWidth: 0.5,
         domain: [-10, 110],
         ticks: [0, 25, 50, 75, 100],
+        label: "Score",
         // tickLength: 5,
       }),
       // icons
@@ -135,19 +136,6 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
         fy: "commitment_num",
         width: 40,
         src: "icon_url",
-      }),
-      // // manual facet labels
-      Plot.text(uniqueCommitments, {
-        x: -10,
-        // dx: -30,
-        y: 0,
-        dy: -50,
-        fy: "commitment_num",
-        text: "commitment_txt",
-        frameAnchor: "top-left",
-        textAnchor: "start",
-        fontSize: "1.5em",
-        // dy: 6,
       }),
       // all dots
       Plot.dot(
@@ -179,7 +167,7 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
           title: (d) => `${d.NAME_ENGL}` + `  ` + `${Math.round(d.value)}`,
           tip: true,
           opacity: 0.66,
-          href: (d) => `../${d.country_url}`,
+          href: (d) => (d.country_url === null ? null : `../${d.country_url}`),
           // opacity: (d) => (d.pillar === pillar ? 1 : 0.05),
         })
       ),
@@ -206,6 +194,24 @@ export function straightPlotPillar(data, pillar, { width, height } = {}) {
         stroke: "#000",
         strokeOpacity: 0.1,
         strokeWidth: 5,
+      }),
+      // // manual facet labels
+      Plot.text(uniqueCommitments, {
+        x: -10,
+        // dx: -30,
+        y: 0,
+        dy: -50,
+        fy: "commitment_num",
+        text: "commitment_txt",
+        frameAnchor: "top-left",
+        textAnchor: "start",
+        fontSize: "1.5em",
+        fill: "#fff",
+        fillOpacity: 1,
+        stroke: "#000",
+        strokeOpacity: 0.2,
+        strokeWidth: 5,
+        // dy: 6,
       }),
       // Plot.axisY({ textAnchor: "start", strokeWidth: 0, fill: null, dx: 14 }),
       // Plot.axisY({ textAnchor: "start", tickSize: 0, fill: null, dx: 14 }),

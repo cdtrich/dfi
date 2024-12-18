@@ -5,23 +5,24 @@ library(dplyr)
 library(readr)
 library(stringr)
 library(foreach)
-# library(googlesheets4)
 
 # generateGoalsPages
-getwd()
+# getwd()
 # go up one folder
 # setwd("..")
 
-data <- read_csv("src/.observablehq/cache/data/dfi.csv") %>%
+data <- read_csv("src/.observablehq/cache/data/goals.csv") %>%
     print()
 
 goal <- data %>%
-    distinct(goal) %>%
-    arrange(goal) %>%
+    distinct(goal_txt_short) %>%
     pull()
 
-goal_url <- goal %>%
-    str_remove_all(" ")
+goal_num <- data %>%
+    distinct(goal_num) %>%
+    pull()
+
+goal_url <- paste0("g", goal_num)
 
 # read md template
 breakFun <- function(x) {
@@ -37,11 +38,13 @@ storeLines <- readLines("src/goals/1goalPageTemplate.md")
 
 foreach(i = 1:length(goal)) %do% {
     cleanLines <- storeLines %>%
-        str_replace_all("gl", goal[i])
+        str_replace_all("glnum", as.character(goal_num[i])) %>%
+        str_replace_all("gltxt", goal[i])
 
     goalLines <- cleanLines %>%
         # paste0(lapply(storeLines, FUN = function(x) breakFun(x)), collapse = "") %>%
-        str_replace_all("gl", goal[i])
+        str_replace_all("glnum", as.character(goal_num[i])) %>%
+        str_replace_all("gltxt", goal[i])
 
     write_lines(
         goalLines,

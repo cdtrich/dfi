@@ -8,6 +8,7 @@ theme: [ocean-floor, alt]
 
 <head>
 <link rel="stylesheet" href="../style.css">
+<title>United Republic of Tanzania</title>
 </head>
 
 <!-- back to root button -->

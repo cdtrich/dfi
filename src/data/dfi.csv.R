@@ -13,10 +13,6 @@ file_list <- list.files(path = "data", pattern = "\\.xlsx$", full.names = TRUE)
 # Filter files with the specific pattern (e.g., "X-Y.xlsx" or "X-YY.xlsx")
 filtered_files <- file_list[grepl("^data/[0-9]-[0-9]{1,2}\\.xlsx$", file_list)]
 
-# ONLY THOSE CURRENTLY WORKING
-# filtered_files <- filtered_files[c(1:17, 19:23)]
-filtered_files <- filtered_files[c(1:17, 19:23)]
-
 # Function to process each file
 process_file <- function(file_path) {
     # Read the file

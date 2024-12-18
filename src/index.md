@@ -23,17 +23,17 @@ import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 import { straightPlot } from "./components/straightPlot.js";
 import { onlyUnique } from "./components/onlyUnique.js";
 import { polarPlot } from "./components/polarPlot.js";
-import { polarPlotLines } from "./components/polarPlotLines.js";
+// import { polarPlotLines } from "./components/polarPlotLines.js";
 import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
 // import { gridPlotMultiple } from "./components/gridPlotMultiple.js";
 import { countryPageLink } from "./components/countryPageLink.js";
-import { dendro } from "./components/dendro.js";
+// import { dendro } from "./components/dendro.js";
 // import { worldMap } from "./components/worldMap.js";
 import { worldMap2 } from "./components/worldMap2.js";
 import { worldMapLegend } from "./components/worldMapLegend.js";
 import { pillars } from "./components/pillars.js";
-import { goalsGridOLD } from "./components/goalsGridOLD.js";
 import { goalsGrid } from "./components/goalsGrid.js";
+// import { plotGoals } from "./components/goalsPlot.js";
 ```
 
 <div class="hero">
@@ -122,23 +122,23 @@ const pillarsCards = [
     x: 10,
     y: 50,
     txt: "Human Rights",
-    url: "./pillars/pillar1",
+    url: "./pillars/Pillar1",
   },
   {
     pillar: "Pillar 2",
     x: 30,
     y: 50,
     txt: "Global Internet",
-    url: "./pillars/pillar2",
+    url: "./pillars/Pillar2",
   },
-  { pillar: "Pillar 3", x: 50, y: 50, txt: "Access", url: "./pillars/pillar3" },
-  { pillar: "Pillar 4", x: 70, y: 50, txt: "Trust", url: "./pillars/pillar4" },
+  { pillar: "Pillar 3", x: 50, y: 50, txt: "Access", url: "./pillars/Pillar3" },
+  { pillar: "Pillar 4", x: 70, y: 50, txt: "Trust", url: "./pillars/Pillar4" },
   {
     pillar: "Pillar 5",
     x: 90,
     y: 50,
     txt: "Multi-stakeholder",
-    url: "./pillars/pillar5",
+    url: "./pillars/Pillar5",
   },
 ];
 ```
@@ -266,12 +266,7 @@ const dfiGrid = FileAttachment("./data/dfi_grid.csv").csv({
 ## Connecting Actions to Goals
 
 ```js
-const goalsOLD = FileAttachment("./data/goalsOLD.csv").csv({ typed: true });
 const goals = FileAttachment("./data/goals.csv").csv({ typed: true });
-```
-
-```js
-// display(goals);
 ```
 
   <div class="grid grid-cols-2">
@@ -295,7 +290,7 @@ Learn how these goals translate into real-world actions and commitments.
 </div>
 
   <div class="card" id="goalsGrid">
-    ${resize((width) => goalsGridOLD(goalsOLD, dfi, "#goalsGrid", {width}))}
+    ${resize((width) => goalsGrid(goals, dfi, "#goalsGrid", {width}))}
   </div>
 
 ```js

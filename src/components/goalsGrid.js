@@ -3,22 +3,47 @@ import * as d3 from "npm:d3";
 export function goalsGrid(data, dfi, containerSelector, { width }) {
   // Define margins and tile size
   const margin = { top: 0, right: 0, bottom: 0, left: 0 };
-  const tileSize = width / 15; // Adjust as per your grid layout
+  const tileSize = width / 23; // Adjust as per your grid layout
 
+  // console.log(dfi);
   // console.log(data);
-  console.log(dfi);
 
   // Get unique values for goal, commitment_txt, and pillar
-  const goals = [...new Set(data.map((d) => d.goal_num))].sort();
-  const commitments = [...new Set(data.map((d) => d.commitment_num))].sort();
-  const pillars = [...new Set(data.map((d) => d.pillar_num))].sort();
+  const goals = [
+    ...new Map(
+      data.map((d) => [
+        d.goal_num,
+        {
+          goal_num: d.goal_num,
+          goal_txt_short: d.goal_txt_short,
+          goal_txt: d.goal_txt,
+        },
+      ])
+    ).values(),
+  ];
+  const commitments = [
+    ...new Map(
+      data.map((d) => [
+        d.commitment_num,
+        { commitment_num: d.commitment_num, commitment_txt: d.commitment_txt },
+      ])
+    ).values(),
+  ];
+  const pillars = [
+    ...new Map(
+      data.map((d) => [
+        d.pillar_num,
+        {
+          pillar_num: d.pillar_num,
+          pillar_txt_short: d.pillar_txt_short,
+          pillar_txt: d.pillar_txt,
+        },
+      ])
+    ).values(),
+  ];
   // console.log(goals);
-
-  // Find the goal_url for each goal from the dfi array
-  const getGoalUrl = (goal) => {
-    const matchedGoal = dfi.find((d) => d.goal_num === goal_num); // Find the matching goal in dfi
-    return matchedGoal ? matchedGoal.goal_url : null; // Return the goal_url if found, otherwise null
-  };
+  // console.log(commitments);
+  // console.log(pillars);
 
   // Calculate dimensions
   const height = 6 * tileSize + margin.top + margin.bottom; // 3 rows (goals, commitments, pillars)
@@ -52,7 +77,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     related.forEach((rel) => {
       const goalTile = svg.select(`rect[data-goal='${rel.goal_num}']`);
       const commitmentTile = svg.select(
-        `rect[data-commitment='${rel.commitment_txt}']`
+        `rect[data-commitment='${rel.commitment_num}']`
       );
       const pillarTile = svg.select(`rect[data-pillar='${rel.pillar_num}']`);
 
@@ -140,7 +165,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
   // };
 
   // Helper function to extract the last word from a string after the last space
-  const getLastWord = (str) => str.split(" ").pop();
+  // const getLastWord = (str) => str.split(" ").pop();
 
   var offsetGoals = commitments.length / goals.length;
   // console.log(offsetGoals);
@@ -151,7 +176,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     .data(goals)
     .enter()
     .append("a") // Append an <a> element to wrap the rect
-    .attr("xlink:href", (d) => getGoalUrl(d)) // Set the href to the goal_url from dfi
+    .attr("xlink:href", (d, i) => `goals/g${i + 1}`) // old: getGoalUrl; Set the href to the goal_url from dfi
     // .attr("target", "_blank") // Optional: Open the link in a new tab
     .append("rect") // Append the rect inside the <a>
     .attr("class", "goal-tile")
@@ -164,9 +189,9 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     .attr("stroke", "#3c4099")
     .attr("stroke-width", "2px")
     .attr("opacity", 1)
-    .attr("data-goal", (d) => d)
+    .attr("data-goal", (d) => d.goal_num)
     .on("mouseover", function (event, d) {
-      const related = getRelatedTiles(d, "goal");
+      const related = getRelatedTiles(d.goal_num, "goal");
       updateOpacity(related);
     })
     .on("mouseout", function () {
@@ -184,14 +209,13 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     .attr("y", tileSize * 2.5) // Second row (y = tileSize + 30)
     .attr("width", tileSize)
     .attr("height", tileSize)
-    // .attr("fill", "#fff200")
     .attr("fill", "#ffffff00")
     .attr("stroke", "#fff")
     .attr("stroke-width", "3px")
     .attr("opacity", 1)
-    .attr("data-commitment", (d) => d)
+    .attr("data-commitment", (d) => d.commitment_num)
     .on("mouseover", function (event, d) {
-      const related = getRelatedTiles(d, "commitment");
+      const related = getRelatedTiles(d.commitment_num, "commitment");
       updateOpacity(related);
     })
     .on("mouseout", function () {
@@ -214,9 +238,9 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     .attr("stroke", "#fff")
     .attr("stroke-width", "3px")
     .attr("opacity", 1)
-    .attr("data-pillar", (d) => d)
+    .attr("data-pillar", (d) => d.pillar_num)
     .on("mouseover", function (event, d) {
-      const related = getRelatedTiles(d, "pillar");
+      const related = getRelatedTiles(d.pillar_num, "pillar");
       updateOpacity(related);
     })
     .on("mouseout", function () {
@@ -227,7 +251,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
   svg
     .append("text")
     .attr("x", 0)
-    .attr("y", tileSize * 0.25)
+    .attr("y", tileSize * 0.35)
     .attr("class", "header-label")
     .text("Goals")
     .attr("fill", "#fff")
@@ -237,7 +261,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
   svg
     .append("text")
     .attr("x", 0)
-    .attr("y", tileSize * 2.25) // Position above second row
+    .attr("y", tileSize * 2.35) // Position above second row
     .attr("class", "header-label")
     .text("Commitments")
     .attr("fill", "#fff")
@@ -247,7 +271,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
   svg
     .append("text")
     .attr("x", 0)
-    .attr("y", tileSize * 4.25) // Position above third row
+    .attr("y", tileSize * 4.35) // Position above third row
     .attr("class", "header-label")
     .text("Pillars")
     .attr("fill", "#fff")
@@ -270,7 +294,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     .attr("class", "goal-label")
     .attr("text-anchor", "middle")
     .attr("pointer-events", "none")
-    .text((d) => getLastWord(d));
+    .text((d) => d.goal_txt_short);
 
   svg
     .selectAll(".commitment-label")
@@ -285,7 +309,7 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     .attr("class", "commitment-label")
     .attr("text-anchor", "middle")
     .attr("pointer-events", "none")
-    .text((d) => getLastWord(d));
+    .text((d) => d.commitment_num);
 
   svg
     .selectAll(".pillar-label")
@@ -303,5 +327,5 @@ export function goalsGrid(data, dfi, containerSelector, { width }) {
     .attr("class", "pillar-label")
     .attr("text-anchor", "middle")
     .attr("pointer-events", "none")
-    .text((d) => getLastWord(d));
+    .text((d) => d.pillar_txt_short);
 }

@@ -9,7 +9,7 @@ export function polarPlotMultiple(data, { width, height } = {}) {
   const vw = window.innerWidth;
   const dotSize = window.innerWidth * 0.006;
 
-  const n = vw > 760 ? 6 : 2; // number of facet columns
+  const n = vw > 760 ? 9 : 2; // number of facet columns
   const keys = Array.from(d3.union(data.map((d) => d.NAME_ENGL)));
   const index = new Map(keys.map((key, i) => [key, i]));
   const fx = (key) => index.get(key) % n;

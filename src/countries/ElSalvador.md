@@ -8,6 +8,7 @@ theme: [ocean-floor, alt]
 
 <head>
 <link rel="stylesheet" href="../style.css">
+<title>El Salvador</title>
 </head>
 
 <!-- back to root button -->
