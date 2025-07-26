@@ -1,395 +1,180 @@
----
-toc: true
-sidebar: false
-pager: null
-footer: false
-theme: [ocean-floor, alt]
----
-
 <!-- import externals -->
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<!-- sidebar -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sidebar.css" />
 </head>
 
 <!-- import components -->
 
 ```js
-// libraries
-import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-// conmponents
-import { straightPlot } from "./components/straightPlot.js";
+import { colorScales } from "./components/scales.js";
 import { onlyUnique } from "./components/onlyUnique.js";
-import { polarPlot } from "./components/polarPlot.js";
-// import { polarPlotLines } from "./components/polarPlotLines.js";
-import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
-// import { gridPlotMultiple } from "./components/gridPlotMultiple.js";
-import { countryPageLink } from "./components/countryPageLink.js";
-// import { dendro } from "./components/dendro.js";
-// import { worldMap } from "./components/worldMap.js";
-import { worldMap2 } from "./components/worldMap2.js";
-import { worldMapLegend } from "./components/worldMapLegend.js";
-import { pillars } from "./components/pillars.js";
-import { goalsGrid } from "./components/goalsGrid.js";
-// import { plotGoals } from "./components/goalsPlot.js";
+// import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
+import { mapPillar } from "./components/mapPillar.js";
+// import { mapTotal } from "./components/mapTotal.js";
+import { mapTotalScorecard } from "./components/mapTotalScorecard.js";
+import { mapTotalCatGIFIquant5 } from "./components/mapTotalCatGIFIquant5.js";
+import { mapPillarCommitment } from "./components/mapPillarCommitment.js";
+import { sidebar } from "./components/sidebar.js";
 ```
+
+<!-- hero -->
 
 <div class="hero">
-  <h1>Internet Accountability Tracker</h1>
-  <!-- <h2>Navigating your way through the state of the internet</h2> -->
+  <h1>Internet Accountability Compass</h1>
+  <h2>Monitoring progress. Guiding policy. Strengthening accountability.</h2>
   <div id="hero-image"></div>
-<p style="margin-top: 4em;">Over the years, governments worldwide have agreed on key principles to promote a global, open, free, safe, and secure Internet. These principles are captured in major declarations, including the Declaration on the Future of the Internet (DFI) and the Global Digital Compact.
-</p>
-<p>
-To bridge the gap between promises and progress, the Internet Accountability Tracker (IAT) was created. This interactive platform helps governments, stakeholders, and communities track implementation, identify challenges, and explore solutions.
-</p>
-<p>
-The Internet Accountability Tracker is your guide to understanding global commitments, measuring progress, and learning from successes. Navigate through the platform to see how different countries perform across pillars, principles, and commitments. Discover policies, best practices, and areas for improvement.</p>
+
+The Internet is a cornerstone of modern life—shaping how states govern, businesses operate, organisations function, and individuals connect. Recognising its transformative power, the international community has rallied around shared principles to foster a global, open, free, secure, and trustworthy Internet. These principles are enshrined in key political declarations, including the Global Digital Compact and the Declaration on the Future of the Internet.
+
+Yet, despite widespread consensus on these goals, progress toward their realisation remains uneven and often untracked.
+
+The Internet Accountability Compass is designed to fill this gap. It serves as a reference point to assess how countries are advancing from high-level commitments to tangible implementation. By charting national performance across four cardinal dimensions—Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience—the Compass contributed to bringing clarity to the state of Internet governance worldwide.
+
+Through rigorous, country-specific data and comparative indicators, the Internet Accountability Compass promotes greater transparency, strengthens public accountability, and empowers policymakers, businesses, and civil society to align action with aspiration.
+
+<p style="font-weight: 700; text-align: center !important;"><a href="./countries.html">Go to country overview →</a></p>
 </div>
 
-<!-- import data -->
+<!-- data -->
 
 ```js
-const dfi = FileAttachment("./data/dfi.csv").csv({ typed: true });
-const commitmentsIcons = FileAttachment("./data/commitments.csv").csv({
+const dfiFullParse = FileAttachment("./data/dfiFull.csv").csv({ typed: true });
+const dfiCardinalParse = FileAttachment("./data/dfiCardinal.csv").csv({
   typed: true,
 });
-```
-
-```js
 // global color palette
-const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
-// console.log(dfi);
-```
-
-<!-- ## General TO DO
-
-- style with [custom theme](https://observablehq.com/framework/themes) and esp [custom style sheet](https://observablehq.com/framework/config#style)
-
-- media queries for chart heights/types
-
-#### data
-
-&#x2611; add normalization to data loader
-
-#### goals
-
-&#x2611; load goals data
-
-- [Parameterized routes](https://observablehq.com/framework/params) for countries, pillars, goals
-
--->
-
-<!-- ## Key figures -->
-
-```js
-// Extract unique NAME_ENGL values
-const uniqueCountries = new Set(dfi.map((d) => d.NAME_ENGL));
-
-// Get the count of unique values
-const uniqueCountriesCount = uniqueCountries.size;
-```
-
-<!-- summary cards -->
-
-<div class="grid grid-cols-4">
-  <div class="card key">
-    <h2>Data points<span class="muted"></span></h2>
-    <span class="big">${dfi.length.toLocaleString("en-US")}</span>
-  </div>
-  <div class="card key">
-    <h2>Countries<span class="muted"></span></h2>
-    <span class="big">${uniqueCountriesCount}</span>
-  </div>
-  <div class="card key">
-    <h2>Commitments<span class="muted"></span></h2>
-    <span class="big">23</span>
-  </div>
-  <div class="card key">
-    <h2>Principles<span class="muted"></span></h2>
-    <span class="big">5</span>
-  </div>
-</div>
-
-## What Does the IAT Track?
-
-```js
-const pillarsCards = [
-  {
-    pillar: "Pillar 1",
-    x: 10,
-    y: 50,
-    txt: "Human Rights",
-    url: "./pillars/Pillar1",
+// const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
+// const colors = ["#32baa7", "#63d8a2", "#b9f27b", "#fff200"];
+const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
+// lookup
+const lookup = {
+  3: {
+    pillar_txt: "Rights and freedoms",
+    commitments: {
+      7: { commitment_txt: "Freedom on the Net" },
+      8: { commitment_txt: "Global index on Responsible Al" },
+      9: { commitment_txt: "Global Cyberlaw Tracker" },
+    },
   },
-  {
-    pillar: "Pillar 2",
-    x: 30,
-    y: 50,
-    txt: "Global Internet",
-    url: "./pillars/Pillar2",
+  2: {
+    pillar_txt: "Stability and resilience",
+    commitments: {
+      4: { commitment_txt: "Global Internet Shutdowns" },
+      5: { commitment_txt: "Global E-Waste Monitor" },
+      6: { commitment_txt: "Overall Resilience" },
+    },
   },
-  { pillar: "Pillar 3", x: 50, y: 50, txt: "Access", url: "./pillars/Pillar3" },
-  { pillar: "Pillar 4", x: 70, y: 50, txt: "Trust", url: "./pillars/Pillar4" },
-  {
-    pillar: "Pillar 5",
-    x: 90,
-    y: 50,
-    txt: "Multi-stakeholder",
-    url: "./pillars/Pillar5",
+  4: {
+    pillar_txt: "Connectivity and infrastructure",
+    commitments: {
+      10: { commitment_txt: "Rule of Law Index" },
+      11: { commitment_txt: "Freedom of Expression Index" },
+      12: { commitment_txt: "Accountability Index" },
+    },
   },
-];
+  1: {
+    pillar_txt: "Responsibility and sustainability",
+    commitments: {
+      1: { commitment_txt: "ICT Development Index" },
+      2: { commitment_txt: "Global Cybersecurity Index" },
+      3: { commitment_txt: "Network Readiness Index" },
+    },
+  },
+};
 ```
 
 ```js
-// console.log("pillarcards", pillarsCards.pillar);
-```
+console.log("dfiCardinalParse", dfiCardinalParse);
+console.log("dfiFullParse", dfiFullParse);
+const dfiFull = dfiFullParse.map((item) => {
+  const pillar = lookup[item.pillar_num];
+  const commitment = pillar?.commitments[item.commitment_num];
 
-<!-- plot -->
-<div class="grid grid-cols-2">
+  return {
+    ...item,
+    pillar_txt: pillar?.pillar_txt || item.pillar_txt,
+    commitment_txt: commitment?.commitment_txt || item.commitment_txt,
+  };
+});
+const dfiCardinal = dfiCardinalParse.map((item) => {
+  const pillar = lookup[item.pillar_num];
+  // const commitment = pillar?.commitments[item.commitment_num];
 
-<div>
-The IAT focuses on five key areas that define a global, free, secure, sustainable and inclusive Internet:
-
-- Protection of Human Rights and Fundamental Freedoms
-
-- A Global Internet
-
-- Inclusive and Affordable Internet Access
-
-- Trust in the Digital Ecosystem
-
-- Multistakeholder Internet Governance
-
-Each principle comes with specific commitments and performance indicators that you can explore.
-
-</div>
-<!-- <div class="card"> -->
-
-<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/pillars_2.png" alt="Example Image"></img>
-
-</div>
-<div class="grid grid-cols-1">
-  <div class="card">
-    ${resize((width) => pillars(pillarsCards, {width}))}
-  </div>
-</div>
-
-## Turning Vision into Action
-
-```js
-// console.log(dfi.filter((d) => d.NAME_ENGL === "Saint Barthélemy"));
-// console.log(dfi);
-// display(dfi);
-```
-
-<div class="grid grid-cols-2">
-To make general principles a reality, governments have made 23 specific commitments—from promoting digital literacy and skills acquisition, promoting online safety and free data flows, refraining from activities that damage the Internet to preventing Internet shutdowns.
-<!-- <div class="img-container"> -->
-  <img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/commitments.png" alt="Example Image"></img>
-<!-- </div> -->
-</div>
-
-```js
-const selectCountryRadial = view(
-  Inputs.search(countryUnique, {
-    datalist: countryUnique,
-    placeholder: "Search countries",
-  })
-);
-// display(dfi);
-```
-
-  <div class="grid grid-cols-1">
-  <div class="card">
-      ${resize((width) => polarPlot(dfi, selectCountryRadial, {width}))}
-    </div>
-  </div>
-
-## How Countries Are Performing
-
-<!-- country names and filtering -->
-
-```js
-var countries = dfi.map((d) => d.NAME_ENGL);
-var countryUnique = countries.filter(onlyUnique);
-```
-
-<!-- // Generating clickable links for each country -->
-
-<!-- ### Available Countries: -->
-
-```js
-countryUnique
-  .map((country) => html`<a href="/country/${country}">${country}</a>`)
-  .join(", ");
-// display(countryUnique);
-```
-
-<!-- plot -->
-<div class="grid grid-cols-2">
-<div>
-The IAT brings together data from nearly all UN member states, including the 70+ signatories of the Declaration on the Future of the Internet. While not all data is available for every country, the interactive tool provides valuable insights into:
-
-- Performance across principles and commitments
-- Case studies and implementation examples
-- Sources of data for transparency and learning
-
-Click on a country to explore progress, challenges, and good practices!
-
-</div>
-
-<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/countries.png" alt="Example Image"></img>
-
-  </div>
-
-```js
-const dfiGrid = FileAttachment("./data/dfi_grid.csv").csv({
-  typed: true,
+  return {
+    ...item,
+    pillar_txt: pillar?.pillar_txt || item.pillar_txt,
+    // commitment_txt: commitment?.commitment_txt || item.commitment_txt,
+  };
 });
 ```
 
 ```js
-// display(dfiGrid);
-```
-
-<!-- <div class="card">
-  ${resize((width) => gridPlotMultiple(dfiGrid,  selectCountry, {width}))}
-</div> -->
-
-<div class="card">
-  ${resize((width) => polarPlotMultiple(dfi, {width}))}
-</div>
-
-## Connecting Actions to Goals
-
-```js
-const goals = FileAttachment("./data/goals.csv").csv({ typed: true });
-```
-
-  <div class="grid grid-cols-2">
-
-  <div>
-The commitments under each principle align with six overarching goals to build a sustainable, rights-respecting digital society:
-
-- **Human Rights:** Protect and promote fundamental freedoms and individual well-being.
-- **Connectivity:** Ensure affordable, inclusive, and universal Internet access.
-- **Trust:** Build confidence in the safety, privacy, and security of digital technologies.
-- **Growth:** Enable fair competition and innovation for businesses of all sizes.
-- **Infrastructure:** Foster secure, reliable, and sustainable digital infrastructure.
-- **Technology:** Use technology to promote freedom of expression, inclusivity, and sustainability while addressing climate change.
-
-Learn how these goals translate into real-world actions and commitments.
-
-</div>
-
-<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/goals.png" alt="Example Image"></img>
-
-</div>
-
-  <div class="card" id="goalsGrid">
-    ${resize((width) => goalsGrid(goals, dfi, "#goalsGrid", {width}))}
-  </div>
-
-```js
-// display(goals);
-// console.log(goals); // Log to verify the data structure
-```
-
-## Country Practices
-
-### Lessons and Success Stories
-
-```js
-// DROPDOWN
-var commitments = dfi.map((d) => d.commitment_txt);
-var commitmentUnique = commitments.filter(onlyUnique);
-// var commitment = view(
-//   Inputs.select(commitmentUnique, {
-//     value: "Select a commitment",
-//     label: "Commitment",
-//   })
-// );
-```
-
-  <div class="grid grid-cols-2">
-  <div>
-  
-Sharing knowledge is key to progress. The IAT highlights good practices, case studies, and lessons learned from countries advancing toward an open, free, and secure Internet.
-
-Discover inspiring examples of policies, programs, and frameworks that are making a difference.
-
-  </div>
-
-<img class="img-col" src="https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/implementation.png" alt="Example Image"></img>
-
-</div>
-<!-- dropdown -->
-
-```js
-var pillarsAll = goodpractice.map((d) => d.pillar);
-var pillarUnique = pillarsAll.filter(onlyUnique).sort();
+// console.log("dfiFull", dfiFull);
+console.log("dfiCardinal", dfiCardinal);
 ```
 
 <!-- world map and data -->
 
+<!-- 0. data -->
+
 ```js
-var worldLoad = FileAttachment("./data/map.json").json();
+var worldLoad = FileAttachment("./data/CNTR_RG_60M_2024_4326.json").json();
+var coastLoad = FileAttachment("./data/COAS_RG_60M_2016_4326.json").json();
 ```
 
 ```js
 var world = topojson
-  .feature(worldLoad, worldLoad.objects.CNTR_RG_60M_2020_4326)
-  .features.filter((d) => d.properties.NAME_ENGL !== "Antarctica"); // drop Antarctica directly
-const goodpractice = FileAttachment("./data/goodpractice.csv").csv({
-  typed: true,
-});
+  .feature(worldLoad, worldLoad.objects.CNTR_RG_60M_2024_4326)
+  .features.filter((d) => d.properties.NAME_ENGL !== "Antarctica") // drop Antarctica directly
+  .filter((d) => d.properties.SVRG_UN === "UN Member State") // only UN member states
+  .map((d) => {
+    // only keep these properties
+    d.properties = {
+      CNTR_ID: d.properties.CNTR_ID,
+      ISO3_CODE: d.properties.ISO3_CODE,
+      NAME_ENGL: d.properties.NAME_ENGL,
+    };
+    return d;
+  });
+var coast = topojson.feature(
+  coastLoad,
+  coastLoad.objects.COAS_RG_60M_2016_4326
+);
+
+// console.log("world (in index", world);
 ```
 
-<!-- join -->
+  <!-- 1. input data -->
 
 ```js
-// console.log("world", world);
-// console.log("filteredCountry", filteredCountry);
+const uniqueCommitments = [
+  ...new Set(dfiFull.map((item) => item.commitment_txt)),
+];
+const uniquePillars = [...new Set(dfiCardinal.map((item) => item.pillar_txt))];
+// console.log("uniqueCommitments:", uniqueCommitments);
+// console.log("uniquePillars", uniquePillars);
+// console.log("dfiCardinal", dfiCardinal);
 ```
 
-<!-- clickable legend -->
+  <!-- 2. input  -->
 
-<div id="legend-container" class="world-map-legend"></div>
+<!-- # Total score -->
 
-```js
-worldMapLegend("legend-container", colors, pillarUnique);
-```
-
-<div class="grid grid-cols-1">
-  <div class="card">
-    <div id="map-container"></div>
-  </div>
+<div class="card">
+    ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
 </div>
 
-```js
-worldMap2(world, goodpractice, "map-container", colors, { width });
-```
+<!-- sidebar -->
 
-<!--
-<div class="grid grid-cols-1">
-  <div class="card">
-    ${resize((width) => worldMap2(world, filteredCountry, {width}))}
-  </div>
-</div> -->
-
-<!-- ### to do
-
-&#x2611; remove antartica -->
-
-## How did we do it?
-
-  <div class="grid grid-cols-2">
-  <div>
-
-Developed by the Global Initiative on the Future of the Internet (GIFI) at the European University Institute, the IAT monitors how well national policies align with the commitments made by over 70 countries under the Declaration on the Future of the Internet. The process for selection of specific indicators is described in the methodology paper.
-
-  </div>
-  </div>
+<div>
+    ${sidebar()}
+</div>

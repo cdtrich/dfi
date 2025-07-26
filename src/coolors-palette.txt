@@ -1,0 +1,35 @@
+/* Coolors Exported Palette - https://coolors.co/0e4876-643291-962c8c-bfbdc1-deb841 */
+
+- Tailwind
+
+{ 'indigo_dye': { DEFAULT: '#0e4876', 100: '#030e18', 200: '#061d2f', 300: '#082b47', 400: '#0b395f', 500: '#0e4876', 600: '#1670ba', 700: '#3497e7', 800: '#78b9ef', 900: '#bbdcf7' }, 'rebecca_purple': { DEFAULT: '#643291', 100: '#140a1d', 200: '#28143a', 300: '#3c1e57', 400: '#502874', 500: '#643291', 600: '#8543be', 700: '#a372cf', 800: '#c2a1df', 900: '#e0d0ef' }, 'plum': { DEFAULT: '#962c8c', 100: '#1e091c', 200: '#3c1138', 300: '#5a1a54', 400: '#782370', 500: '#962c8c', 600: '#c63bb8', 700: '#d46cca', 800: '#e39ddc', 900: '#f1ceed' }, 'french_gray': { DEFAULT: '#bfbdc1', 100: '#262527', 200: '#4d4a4f', 300: '#736f76', 400: '#99969c', 500: '#bfbdc1', 600: '#cccace', 700: '#d9d8da', 800: '#e6e5e6', 900: '#f2f2f3' }, 'gold_(metallic)': { DEFAULT: '#deb841', 100: '#312709', 200: '#614d11', 300: '#92741a', 400: '#c29a22', 500: '#deb841', 600: '#e4c566', 700: '#ebd38d', 800: '#f2e2b3', 900: '#f8f0d9' } }
+
+- CSV
+
+0e4876,643291,962c8c,bfbdc1,deb841
+
+- With #
+
+#0e4876, #643291, #962c8c, #bfbdc1, #deb841
+
+- Array
+
+["0e4876","643291","962c8c","bfbdc1","deb841"]
+
+- Object
+
+{"Indigo dye":"0e4876","Rebecca purple":"643291","Plum":"962c8c","French gray":"bfbdc1","Gold (metallic)":"deb841"}
+
+- Extended Array
+
+[{"name":"Indigo dye","hex":"0e4876","rgb":[14,72,118],"cmyk":[88,39,0,54],"hsb":[207,88,46],"hsl":[207,79,26],"lab":[30,0,-31]},{"name":"Rebecca purple","hex":"643291","rgb":[100,50,145],"cmyk":[31,66,0,43],"hsb":[272,66,57],"hsl":[272,49,38],"lab":[32,41,-44]},{"name":"Plum","hex":"962c8c","rgb":[150,44,140],"cmyk":[0,71,7,41],"hsb":[306,71,59],"hsl":[306,55,38],"lab":[38,55,-30]},{"name":"French gray","hex":"bfbdc1","rgb":[191,189,193],"cmyk":[1,2,0,24],"hsb":[270,2,76],"hsl":[270,3,75],"lab":[77,1,-2]},{"name":"Gold (metallic)","hex":"deb841","rgb":[222,184,65],"cmyk":[0,17,71,13],"hsb":[45,71,87],"hsl":[45,70,56],"lab":[76,1,63]}]
+
+- XML
+
+<palette>
+  <color name="Indigo dye" hex="0e4876" r="14" g="72" b="118" />
+  <color name="Rebecca purple" hex="643291" r="100" g="50" b="145" />
+  <color name="Plum" hex="962c8c" r="150" g="44" b="140" />
+  <color name="French gray" hex="bfbdc1" r="191" g="189" b="193" />
+  <color name="Gold (metallic)" hex="deb841" r="222" g="184" b="65" />
+</palette>

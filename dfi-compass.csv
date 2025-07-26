@@ -1,0 +1,777 @@
+NAME_ENGL,ISO3_CODE,total,pillar_txt,value,note_total,note,country_url
+Belarus,BLR,38.337617432428665,Positive Obligations,75.01362502441793,NA,NA,countries/blr
+Belarus,BLR,38.337617432428665,Negative Obligations,47.16820246517104,NA,NA,countries/blr
+Belarus,BLR,38.337617432428665,Human Rights,12.03,NA,NA,countries/blr
+Belarus,BLR,38.337617432428665,Enabling Environment,22.59477229331255,NA,NA,countries/blr
+Myanmar/Burma,MMR,37.10137076227301,Positive Obligations,68.69075251645168,NA,NA,countries/mmr
+Myanmar/Burma,MMR,37.10137076227301,Negative Obligations,53.34308256317692,NA,NA,countries/mmr
+Myanmar/Burma,MMR,37.10137076227301,Human Rights,16.984722222222224,NA,NA,countries/mmr
+Myanmar/Burma,MMR,37.10137076227301,Enabling Environment,19.91671966530076,NA,NA,countries/mmr
+Eritrea,ERI,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/eri
+Eritrea,ERI,NA,Negative Obligations,73.07347142447658,Not enough data,NA,countries/eri
+Eritrea,ERI,NA,Human Rights,19.03,Not enough data,NA,countries/eri
+Eritrea,ERI,NA,Enabling Environment,5.15,Not enough data,NA,countries/eri
+Azerbaijan,AZE,45.029522919768844,Positive Obligations,73.46670232566301,NA,NA,countries/aze
+Azerbaijan,AZE,45.029522919768844,Negative Obligations,51.845040740233124,NA,NA,countries/aze
+Azerbaijan,AZE,45.029522919768844,Human Rights,19.93,NA,NA,countries/aze
+Azerbaijan,AZE,45.029522919768844,Enabling Environment,17.25,NA,NA,countries/aze
+South Korea,KOR,34.94082272615328,Positive Obligations,NA,NA,Not enough data,countries/kor
+South Korea,KOR,34.94082272615328,Negative Obligations,56.340263501670336,NA,NA,countries/kor
+South Korea,KOR,34.94082272615328,Human Rights,20.964166666666664,NA,NA,countries/kor
+South Korea,KOR,34.94082272615328,Enabling Environment,17.1,NA,NA,countries/kor
+Solomon Islands,SLB,44.654368622345686,Positive Obligations,33.04299213388893,NA,NA,countries/slb
+Solomon Islands,SLB,44.654368622345686,Negative Obligations,76.33333333333333,NA,NA,countries/slb
+Solomon Islands,SLB,44.654368622345686,Human Rights,21.214166666666664,NA,NA,countries/slb
+Solomon Islands,SLB,44.654368622345686,Enabling Environment,32.1875,NA,NA,countries/slb
+Bolivia,BOL,50.92170563802698,Positive Obligations,50.26721593374947,NA,NA,countries/bol
+Bolivia,BOL,50.92170563802698,Negative Obligations,70.38149556400508,NA,NA,countries/bol
+Bolivia,BOL,50.92170563802698,Human Rights,22.75625,NA,NA,countries/bol
+Bolivia,BOL,50.92170563802698,Enabling Environment,50.87921094350311,NA,NA,countries/bol
+China,CHN,46.991539431364295,Positive Obligations,82.07575551230792,NA,NA,countries/chn
+China,CHN,46.991539431364295,Negative Obligations,57.05979958793054,NA,NA,countries/chn
+China,CHN,46.991539431364295,Human Rights,23.933333333333334,NA,NA,countries/chn
+China,CHN,46.991539431364295,Enabling Environment,24.897269291885397,NA,NA,countries/chn
+Ethiopia,ETH,39.1956866895868,Positive Obligations,48.63439423769743,NA,NA,countries/eth
+Ethiopia,ETH,39.1956866895868,Negative Obligations,50.081513230089605,NA,NA,countries/eth
+Ethiopia,ETH,39.1956866895868,Human Rights,24.297222222222228,NA,NA,countries/eth
+Ethiopia,ETH,39.1956866895868,Enabling Environment,33.76961706833791,NA,NA,countries/eth
+Burundi,BDI,33.61549991445265,Positive Obligations,20.61938128215888,NA,NA,countries/bdi
+Burundi,BDI,33.61549991445265,Negative Obligations,58.630618432683264,NA,NA,countries/bdi
+Burundi,BDI,33.61549991445265,Human Rights,25.6675,NA,NA,countries/bdi
+Burundi,BDI,33.61549991445265,Enabling Environment,23.535,NA,NA,countries/bdi
+Libya,LBY,48.04790208047966,Positive Obligations,78.0971815050599,NA,NA,countries/lby
+Libya,LBY,48.04790208047966,Negative Obligations,60.80988593155894,NA,NA,countries/lby
+Libya,LBY,48.04790208047966,Human Rights,26.051666666666666,NA,NA,countries/lby
+Libya,LBY,48.04790208047966,Enabling Environment,31.85,NA,NA,countries/lby
+Haiti,HTI,46.91398604286834,Positive Obligations,NA,NA,Not enough data,countries/hti
+Haiti,HTI,46.91398604286834,Negative Obligations,78.23954372623574,NA,NA,countries/hti
+Haiti,HTI,46.91398604286834,Human Rights,26.70916666666667,NA,NA,countries/hti
+Haiti,HTI,46.91398604286834,Enabling Environment,36.60271293891657,NA,NA,countries/hti
+Guinea,GIN,42.97833288633212,Positive Obligations,NA,NA,Not enough data,countries/gin
+Guinea,GIN,42.97833288633212,Negative Obligations,53.56617204585181,NA,NA,countries/gin
+Guinea,GIN,42.97833288633212,Human Rights,26.81333333333333,NA,NA,countries/gin
+Guinea,GIN,42.97833288633212,Enabling Environment,38.64331498077974,NA,NA,countries/gin
+Lebanon,LBN,48.05573186132079,Positive Obligations,NA,NA,Not enough data,countries/lbn
+Lebanon,LBN,48.05573186132079,Negative Obligations,66.40557667934094,NA,NA,countries/lbn
+Lebanon,LBN,48.05573186132079,Human Rights,26.845,NA,NA,countries/lbn
+Lebanon,LBN,48.05573186132079,Enabling Environment,49.07024765253408,NA,NA,countries/lbn
+Central African Republic,CAF,41.39544636384211,Positive Obligations,NA,NA,Not enough data,countries/caf
+Central African Republic,CAF,41.39544636384211,Negative Obligations,74.2065906210393,NA,NA,countries/caf
+Central African Republic,CAF,41.39544636384211,Human Rights,27.107916666666664,NA,NA,countries/caf
+Central African Republic,CAF,41.39544636384211,Enabling Environment,24.785,NA,NA,countries/caf
+Congo,COG,39.010318772391386,Positive Obligations,29.151271964790077,NA,NA,countries/cog
+Congo,COG,39.010318772391386,Negative Obligations,59.597930614281374,NA,NA,countries/cog
+Congo,COG,39.010318772391386,Human Rights,27.38125,NA,NA,countries/cog
+Congo,COG,39.010318772391386,Enabling Environment,32.748117317163214,NA,NA,countries/cog
+Egypt,EGY,46.71014006152961,Positive Obligations,73.74160227278264,NA,NA,countries/egy
+Egypt,EGY,46.71014006152961,Negative Obligations,55.40281088458075,NA,NA,countries/egy
+Egypt,EGY,46.71014006152961,Human Rights,27.89527777777778,NA,NA,countries/egy
+Egypt,EGY,46.71014006152961,Enabling Environment,29.800869310977248,NA,NA,countries/egy
+Nepal,NPL,59.430132302618105,Positive Obligations,52.86092188429588,NA,NA,countries/npl
+Nepal,NPL,59.430132302618105,Negative Obligations,80.52598225602027,NA,NA,countries/npl
+Nepal,NPL,59.430132302618105,Human Rights,28.0775,NA,NA,countries/npl
+Nepal,NPL,59.430132302618105,Enabling Environment,63.615510829842854,NA,NA,countries/npl
+Mozambique,MOZ,44.93289692955721,Positive Obligations,41.56528736846431,NA,NA,countries/moz
+Mozambique,MOZ,44.93289692955721,Negative Obligations,58.87726109825715,NA,NA,countries/moz
+Mozambique,MOZ,44.93289692955721,Human Rights,28.6475,NA,NA,countries/moz
+Mozambique,MOZ,44.93289692955721,Enabling Environment,45.21307360832163,NA,NA,countries/moz
+Laos,LAO,46.13534205594953,Positive Obligations,45.133775378724856,NA,NA,countries/lao
+Laos,LAO,46.13534205594953,Negative Obligations,76.07097591888466,NA,NA,countries/lao
+Laos,LAO,46.13534205594953,Human Rights,29.319583333333334,NA,NA,countries/lao
+Laos,LAO,46.13534205594953,Enabling Environment,19.55,NA,NA,countries/lao
+Uzbekistan,UZB,53.485149818696435,Positive Obligations,72.99050811171313,NA,NA,countries/uzb
+Uzbekistan,UZB,53.485149818696435,Negative Obligations,79.27756653992395,NA,NA,countries/uzb
+Uzbekistan,UZB,53.485149818696435,Human Rights,29.388611111111107,NA,NA,countries/uzb
+Uzbekistan,UZB,53.485149818696435,Enabling Environment,32.283913512037536,NA,NA,countries/uzb
+Chad,TCD,35.58201241356873,Positive Obligations,30.731356780407868,NA,NA,countries/tcd
+Chad,TCD,35.58201241356873,Negative Obligations,51.02396237593234,NA,NA,countries/tcd
+Chad,TCD,35.58201241356873,Human Rights,29.40208333333333,NA,NA,countries/tcd
+Chad,TCD,35.58201241356873,Enabling Environment,25.875,NA,NA,countries/tcd
+Lesotho,LSO,54.18782853504134,Positive Obligations,35.67837014849015,NA,NA,countries/lso
+Lesotho,LSO,54.18782853504134,Negative Obligations,77.65272496831432,NA,NA,countries/lso
+Lesotho,LSO,54.18782853504134,Human Rights,29.642500000000002,NA,NA,countries/lso
+Lesotho,LSO,54.18782853504134,Enabling Environment,71.3,NA,NA,countries/lso
+Algeria,DZA,47.07572982976134,Positive Obligations,62.05531488106006,NA,NA,countries/dza
+Algeria,DZA,47.07572982976134,Negative Obligations,49.097615154979486,NA,NA,countries/dza
+Algeria,DZA,47.07572982976134,Human Rights,30.444583333333327,NA,NA,countries/dza
+Algeria,DZA,47.07572982976134,Enabling Environment,41.161690450863084,NA,NA,countries/dza
+Pakistan,PAK,47.53408981029208,Positive Obligations,64.57674611322093,NA,NA,countries/pak
+Pakistan,PAK,47.53408981029208,Negative Obligations,51.68223629625092,NA,NA,countries/pak
+Pakistan,PAK,47.53408981029208,Human Rights,31.03555555555555,NA,NA,countries/pak
+Pakistan,PAK,47.53408981029208,Enabling Environment,42.841821276140905,NA,NA,countries/pak
+Liberia,LBR,48.90286503633959,Positive Obligations,29.222492505533367,NA,NA,countries/lbr
+Liberia,LBR,48.90286503633959,Negative Obligations,60.9639517660166,NA,NA,countries/lbr
+Liberia,LBR,48.90286503633959,Human Rights,31.68916666666667,NA,NA,countries/lbr
+Liberia,LBR,48.90286503633959,Enabling Environment,61.437825573648695,NA,NA,countries/lbr
+Guyana,GUY,57.4531437631787,Positive Obligations,NA,NA,Not enough data,countries/guy
+Guyana,GUY,57.4531437631787,Negative Obligations,71.36755386565272,NA,NA,countries/guy
+Guyana,GUY,57.4531437631787,Human Rights,31.82458333333333,NA,NA,countries/guy
+Guyana,GUY,57.4531437631787,Enabling Environment,63.98218628991481,NA,NA,countries/guy
+Türkiye,TUV,43.54812459475764,Positive Obligations,56.67763080938702,NA,NA,countries/tuv
+Türkiye,TUV,43.54812459475764,Negative Obligations,54.39234213357046,NA,NA,countries/tuv
+Türkiye,TUV,43.54812459475764,Human Rights,31.875416666666663,NA,NA,countries/tuv
+Türkiye,TUV,43.54812459475764,Enabling Environment,25.825,NA,NA,countries/tuv
+Kazakhstan,KAZ,50.443752870018024,Positive Obligations,78.22304821289356,NA,NA,countries/kaz
+Kazakhstan,KAZ,50.443752870018024,Negative Obligations,49.999165054558716,NA,NA,countries/kaz
+Kazakhstan,KAZ,50.443752870018024,Human Rights,32.06722222222222,NA,NA,countries/kaz
+Kazakhstan,KAZ,50.443752870018024,Enabling Environment,41.4855759903976,NA,NA,countries/kaz
+Seychelles,SYC,48.3865613796553,Positive Obligations,38.11848233130525,NA,NA,countries/syc
+Seychelles,SYC,48.3865613796553,Negative Obligations,60.69356557886465,NA,NA,countries/syc
+Seychelles,SYC,48.3865613796553,Human Rights,32.598333333333336,NA,NA,countries/syc
+Seychelles,SYC,48.3865613796553,Enabling Environment,56.873121593010616,NA,NA,countries/syc
+Gabon,GAB,45.12860422065579,Positive Obligations,57.27453547123116,NA,NA,countries/gab
+Gabon,GAB,45.12860422065579,Negative Obligations,51.926958842115674,NA,NA,countries/gab
+Gabon,GAB,45.12860422065579,Human Rights,32.65291666666667,NA,NA,countries/gab
+Gabon,GAB,45.12860422065579,Enabling Environment,38.550087134805075,NA,NA,countries/gab
+Cameroon,CMR,44.51849236658329,Positive Obligations,48.10740334815103,NA,NA,countries/cmr
+Cameroon,CMR,44.51849236658329,Negative Obligations,60.23435040621626,NA,NA,countries/cmr
+Cameroon,CMR,44.51849236658329,Human Rights,32.85333333333334,NA,NA,countries/cmr
+Cameroon,CMR,44.51849236658329,Enabling Environment,32.99049603421586,NA,NA,countries/cmr
+United Republic of Tanzania,TZA,52.783585945225745,Positive Obligations,60.09900029138808,NA,NA,countries/tza
+United Republic of Tanzania,TZA,52.783585945225745,Negative Obligations,61.02557905561115,NA,NA,countries/tza
+United Republic of Tanzania,TZA,52.783585945225745,Human Rights,33.35458333333334,NA,NA,countries/tza
+United Republic of Tanzania,TZA,52.783585945225745,Enabling Environment,50.17884689660627,NA,NA,countries/tza
+Burkina Faso,BFA,45.57180199175151,Positive Obligations,42.13366224964471,NA,NA,countries/bfa
+Burkina Faso,BFA,45.57180199175151,Negative Obligations,60.68993550926145,NA,NA,countries/bfa
+Burkina Faso,BFA,45.57180199175151,Human Rights,33.46375,NA,NA,countries/bfa
+Burkina Faso,BFA,45.57180199175151,Enabling Environment,41.96384287751602,NA,NA,countries/bfa
+Tajikistan,TJK,36.483008846658734,Positive Obligations,NA,NA,Not enough data,countries/tjk
+Tajikistan,TJK,36.483008846658734,Negative Obligations,56.07336187962875,NA,NA,countries/tjk
+Tajikistan,TJK,36.483008846658734,Human Rights,33.82958333333333,NA,NA,countries/tjk
+Tajikistan,TJK,36.483008846658734,Enabling Environment,15.31,NA,NA,countries/tjk
+Guatemala,GTM,52.416048930402624,Positive Obligations,42.73339837078772,NA,NA,countries/gtm
+Guatemala,GTM,52.416048930402624,Negative Obligations,74.04309252217998,NA,NA,countries/gtm
+Guatemala,GTM,52.416048930402624,Human Rights,34.61625,NA,NA,countries/gtm
+Guatemala,GTM,52.416048930402624,Enabling Environment,52.338188518508595,NA,NA,countries/gtm
+Mali,MLI,42.75754456774417,Positive Obligations,33.56266746134682,NA,NA,countries/mli
+Mali,MLI,42.75754456774417,Negative Obligations,60.49076538811554,NA,NA,countries/mli
+Mali,MLI,42.75754456774417,Human Rights,35.24583333333334,NA,NA,countries/mli
+Mali,MLI,42.75754456774417,Enabling Environment,39.22700834337734,NA,NA,countries/mli
+Cambodia,KHM,47.625453550649105,Positive Obligations,48.444529980321555,NA,NA,countries/khm
+Cambodia,KHM,47.625453550649105,Negative Obligations,78.0659062103929,NA,NA,countries/khm
+Cambodia,KHM,47.625453550649105,Human Rights,35.37833333333334,NA,NA,countries/khm
+Cambodia,KHM,47.625453550649105,Enabling Environment,28.613044678548647,NA,NA,countries/khm
+Kuwait,KWT,56.87583863495228,Positive Obligations,70.01119017368715,NA,NA,countries/kwt
+Kuwait,KWT,56.87583863495228,Negative Obligations,62.80101394169835,NA,NA,countries/kwt
+Kuwait,KWT,56.87583863495228,Human Rights,35.54458333333333,NA,NA,countries/kwt
+Kuwait,KWT,56.87583863495228,Enabling Environment,52.036148657217304,NA,NA,countries/kwt
+São Tomé and Príncipe,STP,52.925047725559175,Positive Obligations,84.81585412341701,NA,NA,countries/stp
+São Tomé and Príncipe,STP,52.925047725559175,Negative Obligations,63.96070975918884,NA,NA,countries/stp
+São Tomé and Príncipe,STP,52.925047725559175,Human Rights,35.86527777777778,NA,NA,countries/stp
+São Tomé and Príncipe,STP,52.925047725559175,Enabling Environment,14.125,NA,NA,countries/stp
+Zimbabwe,ZWE,43.39007961966549,Positive Obligations,39.29750644947201,NA,NA,countries/zwe
+Zimbabwe,ZWE,43.39007961966549,Negative Obligations,59.32091569277717,NA,NA,countries/zwe
+Zimbabwe,ZWE,43.39007961966549,Human Rights,36.08416666666667,NA,NA,countries/zwe
+Zimbabwe,ZWE,43.39007961966549,Enabling Environment,38.857729669746114,NA,NA,countries/zwe
+Venezuela,VEN,39.92611506853525,Positive Obligations,48.34490368978814,NA,NA,countries/ven
+Venezuela,VEN,39.92611506853525,Negative Obligations,47.586425574707484,NA,NA,countries/ven
+Venezuela,VEN,39.92611506853525,Human Rights,36.19791666666667,NA,NA,countries/ven
+Venezuela,VEN,39.92611506853525,Enabling Environment,19.5356647792662,NA,NA,countries/ven
+Botswana,BWA,61.051534042884036,Positive Obligations,63.99719937704435,NA,NA,countries/bwa
+Botswana,BWA,61.051534042884036,Negative Obligations,67.60709759188848,NA,NA,countries/bwa
+Botswana,BWA,61.051534042884036,Human Rights,36.23708333333334,NA,NA,countries/bwa
+Botswana,BWA,61.051534042884036,Enabling Environment,68.09327229941974,NA,NA,countries/bwa
+Paraguay,PRY,60.167133313691195,Positive Obligations,63.76506836665906,NA,NA,countries/pry
+Paraguay,PRY,60.167133313691195,Negative Obligations,72.65399239543726,NA,NA,countries/pry
+Paraguay,PRY,60.167133313691195,Human Rights,36.498333333333335,NA,NA,countries/pry
+Paraguay,PRY,60.167133313691195,Enabling Environment,59.861539165882526,NA,NA,countries/pry
+Togo,TGO,53.12585573861107,Positive Obligations,68.12873939739015,NA,NA,countries/tgo
+Togo,TGO,53.12585573861107,Negative Obligations,59.34506792336754,NA,NA,countries/tgo
+Togo,TGO,53.12585573861107,Human Rights,36.63875,NA,NA,countries/tgo
+Togo,TGO,53.12585573861107,Enabling Environment,47.89612494040927,NA,NA,countries/tgo
+Russian Federation,RUS,48.00164512139133,Positive Obligations,79.48790315862058,NA,NA,countries/rus
+Russian Federation,RUS,48.00164512139133,Negative Obligations,43.15966965702679,NA,NA,countries/rus
+Russian Federation,RUS,48.00164512139133,Human Rights,37.03125,NA,NA,countries/rus
+Russian Federation,RUS,48.00164512139133,Enabling Environment,28.670959296120827,NA,NA,countries/rus
+Bahrain,BHR,53.738862869598215,Positive Obligations,82.97787530428518,NA,NA,countries/bhr
+Bahrain,BHR,53.738862869598215,Negative Obligations,62.07351077313054,NA,NA,countries/bhr
+Bahrain,BHR,53.738862869598215,Human Rights,37.09777777777777,NA,NA,countries/bhr
+Bahrain,BHR,53.738862869598215,Enabling Environment,22.34,NA,NA,countries/bhr
+United Arab Emirates,ARE,57.298936671442355,Positive Obligations,86.76180759669286,NA,NA,countries/are
+United Arab Emirates,ARE,57.298936671442355,Negative Obligations,60.34600760456274,NA,NA,countries/are
+United Arab Emirates,ARE,57.298936671442355,Human Rights,37.33,NA,NA,countries/are
+United Arab Emirates,ARE,57.298936671442355,Enabling Environment,38.10161926069974,NA,NA,countries/are
+Mauritius,MUS,62.54215399103802,Positive Obligations,78.45522647995209,NA,NA,countries/mus
+Mauritius,MUS,62.54215399103802,Negative Obligations,53.38853985220164,NA,NA,countries/mus
+Mauritius,MUS,62.54215399103802,Human Rights,37.98875,NA,NA,countries/mus
+Mauritius,MUS,62.54215399103802,Enabling Environment,72.15163163498565,NA,NA,countries/mus
+Vietnam,VNM,53.690469172305086,Positive Obligations,79.90147213034514,NA,NA,countries/vnm
+Vietnam,VNM,53.690469172305086,Negative Obligations,60.32733827726842,NA,NA,countries/vnm
+Vietnam,VNM,53.690469172305086,Human Rights,38.2425,NA,NA,countries/vnm
+Vietnam,VNM,53.690469172305086,Enabling Environment,36.2905662816068,NA,NA,countries/vnm
+Sri Lanka,LKA,38.200393794074685,Positive Obligations,NA,NA,Not enough data,countries/lka
+Sri Lanka,LKA,38.200393794074685,Negative Obligations,48.19219380847031,NA,NA,countries/lka
+Sri Lanka,LKA,38.200393794074685,Human Rights,38.270833333333336,NA,NA,countries/lka
+Sri Lanka,LKA,38.200393794074685,Enabling Environment,24.835057294818785,NA,NA,countries/lka
+Indonesia,IDN,57.893731522574136,Positive Obligations,78.87991798982416,NA,NA,countries/idn
+Indonesia,IDN,57.893731522574136,Negative Obligations,54.751992782580764,NA,NA,countries/idn
+Indonesia,IDN,57.893731522574136,Human Rights,38.35388888888889,NA,NA,countries/idn
+Indonesia,IDN,57.893731522574136,Enabling Environment,59.58912642900274,NA,NA,countries/idn
+Namibia,NAM,57.8858201884661,Positive Obligations,46.40774917560642,NA,NA,countries/nam
+Namibia,NAM,57.8858201884661,Negative Obligations,70.68187579214195,NA,NA,countries/nam
+Namibia,NAM,57.8858201884661,Human Rights,38.545,NA,NA,countries/nam
+Namibia,NAM,57.8858201884661,Enabling Environment,69.46171572329399,NA,NA,countries/nam
+Barbados,BRB,62.45773901148406,Positive Obligations,57.05276042123252,NA,NA,countries/brb
+Barbados,BRB,62.45773901148406,Negative Obligations,63.00253485424588,NA,NA,countries/brb
+Barbados,BRB,62.45773901148406,Human Rights,38.61625,NA,NA,countries/brb
+Barbados,BRB,62.45773901148406,Enabling Environment,81.41058823654593,NA,NA,countries/brb
+Armenia,ARM,61.58949327051003,Positive Obligations,63.300528899165265,NA,NA,countries/arm
+Armenia,ARM,61.58949327051003,Negative Obligations,73.74778200253485,NA,NA,countries/arm
+Armenia,ARM,61.58949327051003,Human Rights,38.65,NA,NA,countries/arm
+Armenia,ARM,61.58949327051003,Enabling Environment,63.725,NA,NA,countries/arm
+Niger,NER,48.37436794013423,Positive Obligations,NA,NA,Not enough data,countries/ner
+Niger,NER,48.37436794013423,Negative Obligations,58.08137196654143,NA,NA,countries/ner
+Niger,NER,48.37436794013423,Human Rights,38.785833333333336,NA,NA,countries/ner
+Niger,NER,48.37436794013423,Enabling Environment,47.22986795874101,NA,NA,countries/ner
+Belize,BLZ,58.226472797924814,Positive Obligations,NA,NA,Not enough data,countries/blz
+Belize,BLZ,58.226472797924814,Negative Obligations,72.30164765525983,NA,NA,countries/blz
+Belize,BLZ,58.226472797924814,Human Rights,39.526666666666664,NA,NA,countries/blz
+Belize,BLZ,58.226472797924814,Enabling Environment,68.75155267145732,NA,NA,countries/blz
+Malawi,MWI,53.32621937557809,Positive Obligations,48.42405597242702,NA,NA,countries/mwi
+Malawi,MWI,53.32621937557809,Negative Obligations,61.09069447831064,NA,NA,countries/mwi
+Malawi,MWI,53.32621937557809,Human Rights,39.68194444444444,NA,NA,countries/mwi
+Malawi,MWI,53.32621937557809,Enabling Environment,64.10818260713027,NA,NA,countries/mwi
+Gambia,GMB,58.80174309797667,Positive Obligations,NA,NA,Not enough data,countries/gmb
+Gambia,GMB,58.80174309797667,Negative Obligations,76.52598225602027,NA,NA,countries/gmb
+Gambia,GMB,58.80174309797667,Human Rights,39.90277777777778,NA,NA,countries/gmb
+Gambia,GMB,58.80174309797667,Enabling Environment,58.99953668671774,NA,NA,countries/gmb
+Kyrgyzstan,KGZ,57.01287431279155,Positive Obligations,66.01947719515437,NA,NA,countries/kgz
+Kyrgyzstan,KGZ,57.01287431279155,Negative Obligations,79.84537389100127,NA,NA,countries/kgz
+Kyrgyzstan,KGZ,57.01287431279155,Human Rights,40.168055555555554,NA,NA,countries/kgz
+Kyrgyzstan,KGZ,57.01287431279155,Enabling Environment,42.018590609455,NA,NA,countries/kgz
+Côte D’Ivoire,CIV,67.41203841946763,Positive Obligations,76.61348027490207,NA,NA,countries/civ
+Côte D’Ivoire,CIV,67.41203841946763,Negative Obligations,68.77693282636248,NA,NA,countries/civ
+Côte D’Ivoire,CIV,67.41203841946763,Human Rights,40.33166666666666,NA,NA,countries/civ
+Côte D’Ivoire,CIV,67.41203841946763,Enabling Environment,74.89928332567233,NA,NA,countries/civ
+Nigeria,NGA,55.88675616124065,Positive Obligations,54.72438181860678,NA,NA,countries/nga
+Nigeria,NGA,55.88675616124065,Negative Obligations,77.05196451204056,NA,NA,countries/nga
+Nigeria,NGA,55.88675616124065,Human Rights,40.611666666666665,NA,NA,countries/nga
+Nigeria,NGA,55.88675616124065,Enabling Environment,51.15901164764866,NA,NA,countries/nga
+Rwanda,RWA,56.227137880350284,Positive Obligations,62.679804925075985,NA,NA,countries/rwa
+Rwanda,RWA,56.227137880350284,Negative Obligations,79.74651457541192,NA,NA,countries/rwa
+Rwanda,RWA,56.227137880350284,Human Rights,40.73833333333334,NA,NA,countries/rwa
+Rwanda,RWA,56.227137880350284,Enabling Environment,41.74389868757992,NA,NA,countries/rwa
+El Salvador,SLV,52.44789082855854,Positive Obligations,47.584872653771946,NA,NA,countries/slv
+El Salvador,SLV,52.44789082855854,Negative Obligations,70.8555133079848,NA,NA,countries/slv
+El Salvador,SLV,52.44789082855854,Human Rights,41.0375,NA,NA,countries/slv
+El Salvador,SLV,52.44789082855854,Enabling Environment,46.51021374295792,NA,NA,countries/slv
+Kenya,KEN,57.679622142968554,Positive Obligations,68.04917835849614,NA,NA,countries/ken
+Kenya,KEN,57.679622142968554,Negative Obligations,63.88621450155159,NA,NA,countries/ken
+Kenya,KEN,57.679622142968554,Human Rights,41.555,NA,NA,countries/ken
+Kenya,KEN,57.679622142968554,Enabling Environment,57.22809571182646,NA,NA,countries/ken
+Honduras,HND,54.50248893848681,Positive Obligations,41.788984087412416,NA,NA,countries/hnd
+Honduras,HND,54.50248893848681,Negative Obligations,76.1977186311787,NA,NA,countries/hnd
+Honduras,HND,54.50248893848681,Human Rights,41.78125,NA,NA,countries/hnd
+Honduras,HND,54.50248893848681,Enabling Environment,54.001590055860504,NA,NA,countries/hnd
+Tunisia,TUN,57.77837348379011,Positive Obligations,66.90008657348197,NA,NA,countries/tun
+Tunisia,TUN,57.77837348379011,Negative Obligations,70.22179974651458,NA,NA,countries/tun
+Tunisia,TUN,57.77837348379011,Human Rights,42.48888888888889,NA,NA,countries/tun
+Tunisia,TUN,57.77837348379011,Enabling Environment,51.502718726275,NA,NA,countries/tun
+Czechia,CZE,60.47654149833539,Positive Obligations,62.26075216993646,NA,NA,countries/cze
+Czechia,CZE,60.47654149833539,Negative Obligations,79.39923954372624,NA,NA,countries/cze
+Czechia,CZE,60.47654149833539,Human Rights,42.86375,NA,NA,countries/cze
+Czechia,CZE,60.47654149833539,Enabling Environment,47.02896992118292,NA,NA,countries/cze
+Panama,PAN,62.482477294570636,Positive Obligations,63.24988454216907,NA,NA,countries/pan
+Panama,PAN,62.482477294570636,Negative Obligations,65.2509505703422,NA,NA,countries/pan
+Panama,PAN,62.482477294570636,Human Rights,43.0075,NA,NA,countries/pan
+Panama,PAN,62.482477294570636,Enabling Environment,71.92991496758107,NA,NA,countries/pan
+Oman,OMN,58.59400339050361,Positive Obligations,80.73934801481772,NA,NA,countries/omn
+Oman,OMN,58.59400339050361,Negative Obligations,63.06844106463878,NA,NA,countries/omn
+Oman,OMN,58.59400339050361,Human Rights,43.233333333333334,NA,NA,countries/omn
+Oman,OMN,58.59400339050361,Enabling Environment,34.025,NA,NA,countries/omn
+Saint Lucia,LCA,60.22971701254025,Positive Obligations,50.0386674526891,NA,NA,countries/lca
+Saint Lucia,LCA,60.22971701254025,Negative Obligations,67.51837769328263,NA,NA,countries/lca
+Saint Lucia,LCA,60.22971701254025,Human Rights,43.38875,NA,NA,countries/lca
+Saint Lucia,LCA,60.22971701254025,Enabling Environment,76.32874256381805,NA,NA,countries/lca
+Trinidad and Tobago,TTO,60.85258918877203,Positive Obligations,57.167221123266295,NA,NA,countries/tto
+Trinidad and Tobago,TTO,60.85258918877203,Negative Obligations,64.44866920152091,NA,NA,countries/tto
+Trinidad and Tobago,TTO,60.85258918877203,Human Rights,43.78333333333333,NA,NA,countries/tto
+Trinidad and Tobago,TTO,60.85258918877203,Enabling Environment,72.32138114515475,NA,NA,countries/tto
+Saudi Arabia,SAU,57.68599789115586,Positive Obligations,58.58127243939117,NA,NA,countries/sau
+Saudi Arabia,SAU,57.68599789115586,Negative Obligations,57.083120859989215,NA,NA,countries/sau
+Saudi Arabia,SAU,57.68599789115586,Human Rights,43.857083333333335,NA,NA,countries/sau
+Saudi Arabia,SAU,57.68599789115586,Enabling Environment,66.61287674596886,NA,NA,countries/sau
+Zambia,ZMB,55.62299248022028,Positive Obligations,60.717494703580144,NA,NA,countries/zmb
+Zambia,ZMB,55.62299248022028,Negative Obligations,60.9591473443194,NA,NA,countries/zmb
+Zambia,ZMB,55.62299248022028,Human Rights,43.90333333333333,NA,NA,countries/zmb
+Zambia,ZMB,55.62299248022028,Enabling Environment,56.91199453964827,NA,NA,countries/zmb
+Uganda,UGA,50.09887940289903,Positive Obligations,52.13566131568219,NA,NA,countries/uga
+Uganda,UGA,50.09887940289903,Negative Obligations,62.146223734384364,NA,NA,countries/uga
+Uganda,UGA,50.09887940289903,Human Rights,44.805555555555564,NA,NA,countries/uga
+Uganda,UGA,50.09887940289903,Enabling Environment,41.30807700597402,NA,NA,countries/uga
+Thailand,THA,61.9267267269752,Positive Obligations,82.09547939549259,NA,NA,countries/tha
+Thailand,THA,61.9267267269752,Negative Obligations,72.32572877059569,NA,NA,countries/tha
+Thailand,THA,61.9267267269752,Human Rights,45.088611111111106,NA,NA,countries/tha
+Thailand,THA,61.9267267269752,Enabling Environment,48.197087630701354,NA,NA,countries/tha
+India,IND,54.82792351152656,Positive Obligations,76.06162431329773,NA,NA,countries/ind
+India,IND,54.82792351152656,Negative Obligations,47.306002030185745,NA,NA,countries/ind
+India,IND,54.82792351152656,Human Rights,45.19777777777778,NA,NA,countries/ind
+India,IND,54.82792351152656,Enabling Environment,57.824190192102016,NA,NA,countries/ind
+Senegal,SEN,63.596395912480176,Positive Obligations,79.47607509016167,NA,NA,countries/sen
+Senegal,SEN,63.596395912480176,Negative Obligations,70.56527249683143,NA,NA,countries/sen
+Senegal,SEN,63.596395912480176,Human Rights,45.62,NA,NA,countries/sen
+Senegal,SEN,63.596395912480176,Enabling Environment,52.732104092100876,NA,NA,countries/sen
+Jamaica,JAM,64.24466192074681,Positive Obligations,59.144021255853296,NA,NA,countries/jam
+Jamaica,JAM,64.24466192074681,Negative Obligations,71.25475285171102,NA,NA,countries/jam
+Jamaica,JAM,64.24466192074681,Human Rights,45.88,NA,NA,countries/jam
+Jamaica,JAM,64.24466192074681,Enabling Environment,74.57831960184062,NA,NA,countries/jam
+Ecuador,ECU,58.977287851696836,Positive Obligations,67.29045173021832,NA,NA,countries/ecu
+Ecuador,ECU,58.977287851696836,Negative Obligations,60.44197031507375,NA,NA,countries/ecu
+Ecuador,ECU,58.977287851696836,Human Rights,46.044999999999995,NA,NA,countries/ecu
+Ecuador,ECU,58.977287851696836,Enabling Environment,62.131729361495225,NA,NA,countries/ecu
+Morocco,MAR,61.66776472279861,Positive Obligations,76.74215840778255,NA,NA,countries/mar
+Morocco,MAR,61.66776472279861,Negative Obligations,75.21673003802282,NA,NA,countries/mar
+Morocco,MAR,61.66776472279861,Human Rights,46.49666666666667,NA,NA,countries/mar
+Morocco,MAR,61.66776472279861,Enabling Environment,48.21550377872243,NA,NA,countries/mar
+Jordan,JOR,57.182646683757326,Positive Obligations,76.8443012039473,NA,NA,countries/jor
+Jordan,JOR,57.182646683757326,Negative Obligations,53.16032634171185,NA,NA,countries/jor
+Jordan,JOR,57.182646683757326,Human Rights,48.41527777777778,NA,NA,countries/jor
+Jordan,JOR,57.182646683757326,Enabling Environment,50.31068141159236,NA,NA,countries/jor
+Ukraine,UKR,64.1605451704535,Positive Obligations,73.41858437506289,NA,NA,countries/ukr
+Ukraine,UKR,64.1605451704535,Negative Obligations,75.35361216730037,NA,NA,countries/ukr
+Ukraine,UKR,64.1605451704535,Human Rights,48.565,NA,NA,countries/ukr
+Ukraine,UKR,64.1605451704535,Enabling Environment,54.10646908263292,NA,NA,countries/ukr
+Benin,BEN,56.85807665766663,Positive Obligations,57.519581453531295,NA,NA,countries/ben
+Benin,BEN,56.85807665766663,Negative Obligations,61.42491583211279,NA,NA,countries/ben
+Benin,BEN,56.85807665766663,Human Rights,48.636250000000004,NA,NA,countries/ben
+Benin,BEN,56.85807665766663,Enabling Environment,57.11095045913354,NA,NA,countries/ben
+Ghana,GHA,66.71432722685871,Positive Obligations,69.80739509220881,NA,NA,countries/gha
+Ghana,GHA,66.71432722685871,Negative Obligations,76.51204055766793,NA,NA,countries/gha
+Ghana,GHA,66.71432722685871,Human Rights,49.13527777777778,NA,NA,countries/gha
+Ghana,GHA,66.71432722685871,Enabling Environment,71.40259547978029,NA,NA,countries/gha
+Peru,PER,66.08642369961072,Positive Obligations,68.25151055358629,NA,NA,countries/per
+Peru,PER,66.08642369961072,Negative Obligations,76.06210392902408,NA,NA,countries/per
+Peru,PER,66.08642369961072,Human Rights,49.65833333333333,NA,NA,countries/per
+Peru,PER,66.08642369961072,Enabling Environment,64.89771686040676,NA,NA,countries/per
+Argentina,ARG,64.93970869567728,Positive Obligations,61.30578634087393,NA,NA,countries/arg
+Argentina,ARG,64.93970869567728,Negative Obligations,72.1850443599493,NA,NA,countries/arg
+Argentina,ARG,64.93970869567728,Human Rights,51.29583333333333,NA,NA,countries/arg
+Argentina,ARG,64.93970869567728,Enabling Environment,74.9721707485525,NA,NA,countries/arg
+Nicaragua,NIC,46.322718946688866,Positive Obligations,38.555560034048476,NA,NA,countries/nic
+Nicaragua,NIC,46.322718946688866,Negative Obligations,74.49809885931559,NA,NA,countries/nic
+Nicaragua,NIC,46.322718946688866,Human Rights,51.333333333333336,NA,NA,countries/nic
+Nicaragua,NIC,46.322718946688866,Enabling Environment,22.574088355606182,NA,NA,countries/nic
+Croatia,HRV,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/hrv
+Croatia,HRV,NA,Negative Obligations,34.99702593368184,Not enough data,NA,countries/hrv
+Croatia,HRV,NA,Human Rights,52.083333333333336,Not enough data,NA,countries/hrv
+Croatia,HRV,NA,Enabling Environment,16.59,Not enough data,NA,countries/hrv
+Uruguay,URY,72.67085712221564,Positive Obligations,79.33226679035516,NA,NA,countries/ury
+Uruguay,URY,72.67085712221564,Negative Obligations,66.617237008872,NA,NA,countries/ury
+Uruguay,URY,72.67085712221564,Human Rights,52.40958333333333,NA,NA,countries/ury
+Uruguay,URY,72.67085712221564,Enabling Environment,85.57058342667462,NA,NA,countries/ury
+Philippines,PHL,65.1961766272678,Positive Obligations,72.6044248444094,NA,NA,countries/phl
+Philippines,PHL,65.1961766272678,Negative Obligations,78.67680608365019,NA,NA,countries/phl
+Philippines,PHL,65.1961766272678,Human Rights,53.13944444444445,NA,NA,countries/phl
+Philippines,PHL,65.1961766272678,Enabling Environment,56.36403113656716,NA,NA,countries/phl
+Mexico,MEX,62.490633180128214,Positive Obligations,72.26240138218093,NA,NA,countries/mex
+Mexico,MEX,62.490633180128214,Negative Obligations,68.01140684410646,NA,NA,countries/mex
+Mexico,MEX,62.490633180128214,Human Rights,53.68027777777778,NA,NA,countries/mex
+Mexico,MEX,62.490633180128214,Enabling Environment,56.00844671644768,NA,NA,countries/mex
+Malaysia,MYS,66.85743115931412,Positive Obligations,83.90187783043952,NA,NA,countries/mys
+Malaysia,MYS,66.85743115931412,Negative Obligations,70.83776932826363,NA,NA,countries/mys
+Malaysia,MYS,66.85743115931412,Human Rights,54.695,NA,NA,countries/mys
+Malaysia,MYS,66.85743115931412,Enabling Environment,57.99507747855327,NA,NA,countries/mys
+Bulgaria,BGR,68.68004344986092,Positive Obligations,72.13722716913432,NA,NA,countries/bgr
+Bulgaria,BGR,68.68004344986092,Negative Obligations,71.90367553865653,NA,NA,countries/bgr
+Bulgaria,BGR,68.68004344986092,Human Rights,55.06583333333334,NA,NA,countries/bgr
+Bulgaria,BGR,68.68004344986092,Enabling Environment,71.07536771947696,NA,NA,countries/bgr
+Dominican Republic,DOM,64.61405209270535,Positive Obligations,65.49968292926769,NA,NA,countries/dom
+Dominican Republic,DOM,64.61405209270535,Negative Obligations,69.81368821292776,NA,NA,countries/dom
+Dominican Republic,DOM,64.61405209270535,Human Rights,55.54833333333333,NA,NA,countries/dom
+Dominican Republic,DOM,64.61405209270535,Enabling Environment,64.5725976421686,NA,NA,countries/dom
+Brazil,BRA,68.8840717945392,Positive Obligations,77.91622246215171,NA,NA,countries/bra
+Brazil,BRA,68.8840717945392,Negative Obligations,72.1850443599493,NA,NA,countries/bra
+Brazil,BRA,68.8840717945392,Human Rights,55.60527777777778,NA,NA,countries/bra
+Brazil,BRA,68.8840717945392,Enabling Environment,69.82974257827799,NA,NA,countries/bra
+Somalia,SOM,68.65802364192147,Positive Obligations,72.55007161618539,NA,NA,countries/som
+Somalia,SOM,68.65802364192147,Negative Obligations,73.81368821292776,NA,NA,countries/som
+Somalia,SOM,68.65802364192147,Human Rights,55.710277777777776,NA,NA,countries/som
+Somalia,SOM,68.65802364192147,Enabling Environment,72.55805696079493,NA,NA,countries/som
+South Africa,ZAF,71.22990164478377,Positive Obligations,89.74895309218535,NA,NA,countries/zaf
+South Africa,ZAF,71.22990164478377,Negative Obligations,63.61343472750317,NA,NA,countries/zaf
+South Africa,ZAF,71.22990164478377,Human Rights,56.14333333333334,NA,NA,countries/zaf
+South Africa,ZAF,71.22990164478377,Enabling Environment,77.50587731677797,NA,NA,countries/zaf
+Latvia,LVA,73.95296171092589,Positive Obligations,78.20290754390486,NA,NA,countries/lva
+Latvia,LVA,73.95296171092589,Negative Obligations,71.21799746514576,NA,NA,countries/lva
+Latvia,LVA,73.95296171092589,Human Rights,56.44291666666666,NA,NA,countries/lva
+Latvia,LVA,73.95296171092589,Enabling Environment,84.11134348656655,NA,NA,countries/lva
+Colombia,COL,64.95529701294758,Positive Obligations,62.856451283568454,NA,NA,countries/col
+Colombia,COL,64.95529701294758,Negative Obligations,73.79467680608364,NA,NA,countries/col
+Colombia,COL,64.95529701294758,Human Rights,56.83555555555555,NA,NA,countries/col
+Colombia,COL,64.95529701294758,Enabling Environment,66.33450440658264,NA,NA,countries/col
+Georgia,GEO,67.02060358607888,Positive Obligations,76.3906491745578,NA,NA,countries/geo
+Georgia,GEO,67.02060358607888,Negative Obligations,71.68694550063371,NA,NA,countries/geo
+Georgia,GEO,67.02060358607888,Human Rights,57.03361111111111,NA,NA,countries/geo
+Georgia,GEO,67.02060358607888,Enabling Environment,62.97120855801281,NA,NA,countries/geo
+Angola,AGO,51.852740069807034,Positive Obligations,38.262822713507376,NA,NA,countries/ago
+Angola,AGO,51.852740069807034,Negative Obligations,72.31051964512041,NA,NA,countries/ago
+Angola,AGO,51.852740069807034,Human Rights,57.83333333333333,NA,NA,countries/ago
+Angola,AGO,51.852740069807034,Enabling Environment,40.997815675109145,NA,NA,countries/ago
+Greece,GRC,70.02326314406729,Positive Obligations,78.86259701743633,NA,NA,countries/grc
+Greece,GRC,70.02326314406729,Negative Obligations,63.0595690747782,NA,NA,countries/grc
+Greece,GRC,70.02326314406729,Human Rights,58.971666666666664,NA,NA,countries/grc
+Greece,GRC,70.02326314406729,Enabling Environment,75.51535432492102,NA,NA,countries/grc
+Lithuania,LTU,75.69527274426991,Positive Obligations,82.29590438957881,NA,NA,countries/ltu
+Lithuania,LTU,75.69527274426991,Negative Obligations,71.31685678073511,NA,NA,countries/ltu
+Lithuania,LTU,75.69527274426991,Human Rights,59.4525,NA,NA,countries/ltu
+Lithuania,LTU,75.69527274426991,Enabling Environment,84.30157222534244,NA,NA,countries/ltu
+Austria,AUT,73.96232766951735,Positive Obligations,83.16543469040487,NA,NA,countries/aut
+Austria,AUT,73.96232766951735,Negative Obligations,61.1254752851711,NA,NA,countries/aut
+Austria,AUT,73.96232766951735,Human Rights,59.70291666666667,NA,NA,countries/aut
+Austria,AUT,73.96232766951735,Enabling Environment,87.10234703487652,NA,NA,countries/aut
+Hungary,HUN,66.00684028350348,Positive Obligations,77.12602260574756,NA,NA,countries/hun
+Hungary,HUN,66.00684028350348,Negative Obligations,67.50950570342205,NA,NA,countries/hun
+Hungary,HUN,66.00684028350348,Human Rights,60.15972222222223,NA,NA,countries/hun
+Hungary,HUN,66.00684028350348,Enabling Environment,59.23211060262209,NA,NA,countries/hun
+New Zealand,NZL,74.99440206417925,Positive Obligations,79.58189659455458,NA,NA,countries/nzl
+New Zealand,NZL,74.99440206417925,Negative Obligations,63.458808618504435,NA,NA,countries/nzl
+New Zealand,NZL,74.99440206417925,Human Rights,60.331666666666656,NA,NA,countries/nzl
+New Zealand,NZL,74.99440206417925,Enabling Environment,91.71765791115384,NA,NA,countries/nzl
+Singapore,SGP,72.30737927736186,Positive Obligations,78.80808045068326,NA,NA,countries/sgp
+Singapore,SGP,72.30737927736186,Negative Obligations,65.44866920152091,NA,NA,countries/sgp
+Singapore,SGP,72.30737927736186,Human Rights,60.439166666666665,NA,NA,countries/sgp
+Singapore,SGP,72.30737927736186,Enabling Environment,80.57752992034486,NA,NA,countries/sgp
+Belgium,BEL,74.41510504911535,Positive Obligations,84.00153909957099,NA,NA,countries/bel
+Belgium,BEL,74.41510504911535,Negative Obligations,59.4638783269962,NA,NA,countries/bel
+Belgium,BEL,74.41510504911535,Human Rights,60.577083333333334,NA,NA,countries/bel
+Belgium,BEL,74.41510504911535,Enabling Environment,89.00524553130022,NA,NA,countries/bel
+Portugal,PRT,74.6723370417751,Positive Obligations,82.99405925535083,NA,NA,countries/prt
+Portugal,PRT,74.6723370417751,Negative Obligations,66.74017743979721,NA,NA,countries/prt
+Portugal,PRT,74.6723370417751,Human Rights,60.76166666666666,NA,NA,countries/prt
+Portugal,PRT,74.6723370417751,Enabling Environment,83.55655468024958,NA,NA,countries/prt
+Poland,POL,72.78867912062088,Positive Obligations,83.0916600451395,NA,NA,countries/pol
+Poland,POL,72.78867912062088,Negative Obligations,69.19011406844106,NA,NA,countries/pol
+Poland,POL,72.78867912062088,Human Rights,62.146249999999995,NA,NA,countries/pol
+Poland,POL,72.78867912062088,Enabling Environment,73.17921599536265,NA,NA,countries/pol
+Romania,ROU,71.44718099206113,Positive Obligations,77.32833992370387,NA,NA,countries/rou
+Romania,ROU,71.44718099206113,Negative Obligations,70.1571609632446,NA,NA,countries/rou
+Romania,ROU,71.44718099206113,Human Rights,62.357083333333335,NA,NA,countries/rou
+Romania,ROU,71.44718099206113,Enabling Environment,72.91610719505344,NA,NA,countries/rou
+Finland,FIN,79.01845034271666,Positive Obligations,91.2852425185694,NA,NA,countries/fin
+Finland,FIN,79.01845034271666,Negative Obligations,62.637515842839036,NA,NA,countries/fin
+Finland,FIN,79.01845034271666,Human Rights,63.0975,NA,NA,countries/fin
+Finland,FIN,79.01845034271666,Enabling Environment,93.74655956188599,NA,NA,countries/fin
+South Sudan,SSD,74.6899285548398,Positive Obligations,85.79753608730799,NA,NA,countries/ssd
+South Sudan,SSD,74.6899285548398,Negative Obligations,62.1254752851711,NA,NA,countries/ssd
+South Sudan,SSD,74.6899285548398,Human Rights,63.58166666666666,NA,NA,countries/ssd
+South Sudan,SSD,74.6899285548398,Enabling Environment,83.55228221748905,NA,NA,countries/ssd
+Costa Rica,CRI,72.64663745979165,Positive Obligations,71.10607447844082,NA,NA,countries/cri
+Costa Rica,CRI,72.64663745979165,Negative Obligations,69.87072243346007,NA,NA,countries/cri
+Costa Rica,CRI,72.64663745979165,Human Rights,65.47500000000001,NA,NA,countries/cri
+Costa Rica,CRI,72.64663745979165,Enabling Environment,84.1347529272657,NA,NA,countries/cri
+Chile,CHL,72.86885928108681,Positive Obligations,71.77875429908077,NA,NA,countries/chl
+Chile,CHL,72.86885928108681,Negative Obligations,69.1381495564005,NA,NA,countries/chl
+Chile,CHL,72.86885928108681,Human Rights,66.05027777777778,NA,NA,countries/chl
+Chile,CHL,72.86885928108681,Enabling Environment,84.50825549108816,NA,NA,countries/chl
+Sierra Leone,SLE,70.97198788315087,Positive Obligations,91.53076180048335,NA,NA,countries/sle
+Sierra Leone,SLE,70.97198788315087,Negative Obligations,63.238276299112805,NA,NA,countries/sle
+Sierra Leone,SLE,70.97198788315087,Human Rights,68.05527777777777,NA,NA,countries/sle
+Sierra Leone,SLE,70.97198788315087,Enabling Environment,61.06363565522958,NA,NA,countries/sle
+Slovakia,SVK,74.59737410958172,Positive Obligations,82.21756894898247,NA,NA,countries/svk
+Slovakia,SVK,74.59737410958172,Negative Obligations,63.42078580481623,NA,NA,countries/svk
+Slovakia,SVK,74.59737410958172,Human Rights,68.12333333333333,NA,NA,countries/svk
+Slovakia,SVK,74.59737410958172,Enabling Environment,82.46979475911206,NA,NA,countries/svk
+Japan,JPN,75.72896840546883,Positive Obligations,87.24505202405533,NA,NA,countries/jpn
+Japan,JPN,75.72896840546883,Negative Obligations,59.09759188846641,NA,NA,countries/jpn
+Japan,JPN,75.72896840546883,Human Rights,69.44500000000001,NA,NA,countries/jpn
+Japan,JPN,75.72896840546883,Enabling Environment,87.12822970935356,NA,NA,countries/jpn
+Italy,ITA,75.20769214697172,Positive Obligations,83.7657426049398,NA,NA,countries/ita
+Italy,ITA,75.20769214697172,Negative Obligations,62.88593155893536,NA,NA,countries/ita
+Italy,ITA,75.20769214697172,Human Rights,72.09305555555557,NA,NA,countries/ita
+Italy,ITA,75.20769214697172,Enabling Environment,82.08603886845627,NA,NA,countries/ita
+France,FRA,75.29161161314389,Positive Obligations,85.82943817319877,NA,NA,countries/fra
+France,FRA,75.29161161314389,Negative Obligations,58.57667934093789,NA,NA,countries/fra
+France,FRA,75.29161161314389,Human Rights,72.17888888888889,NA,NA,countries/fra
+France,FRA,75.29161161314389,Enabling Environment,84.58144004955001,NA,NA,countries/fra
+Australia,AUS,76.68712853995187,Positive Obligations,86.92329618423639,NA,NA,countries/aus
+Australia,AUS,76.68712853995187,Negative Obligations,56.91001267427123,NA,NA,countries/aus
+Australia,AUS,76.68712853995187,Human Rights,73.48305555555555,NA,NA,countries/aus
+Australia,AUS,76.68712853995187,Enabling Environment,89.43214974574433,NA,NA,countries/aus
+Canada,CAN,77.26370880911895,Positive Obligations,84.51224578232866,NA,NA,countries/can
+Canada,CAN,77.26370880911895,Negative Obligations,61.365019011406844,NA,NA,countries/can
+Canada,CAN,77.26370880911895,Human Rights,74.7063888888889,NA,NA,countries/can
+Canada,CAN,77.26370880911895,Enabling Environment,88.47118155385142,NA,NA,countries/can
+United States,USA,77.59174393631194,Positive Obligations,91.84015265296826,NA,NA,countries/usa
+United States,USA,77.59174393631194,Negative Obligations,59.3041825095057,NA,NA,countries/usa
+United States,USA,77.59174393631194,Human Rights,77.79777777777777,NA,NA,countries/usa
+United States,USA,77.59174393631194,Enabling Environment,81.42486280499598,NA,NA,countries/usa
+Germany,DEU,79.44356781521866,Positive Obligations,86.39930671867326,NA,NA,countries/deu
+Germany,DEU,79.44356781521866,Negative Obligations,60.43092522179975,NA,NA,countries/deu
+Germany,DEU,79.44356781521866,Human Rights,79.5761111111111,NA,NA,countries/deu
+Germany,DEU,79.44356781521866,Enabling Environment,91.36792820929055,NA,NA,countries/deu
+Estonia,EST,81.96255864136347,Positive Obligations,86.92822551030243,NA,NA,countries/est
+Estonia,EST,81.96255864136347,Negative Obligations,69.63624841571611,NA,NA,countries/est
+Estonia,EST,81.96255864136347,Human Rights,80.21722222222223,NA,NA,countries/est
+Estonia,EST,81.96255864136347,Enabling Environment,91.06853841721313,NA,NA,countries/est
+United Kingdom,GBR,73.88828892041846,Positive Obligations,89.05722914619366,NA,NA,countries/gbr
+United Kingdom,GBR,73.88828892041846,Negative Obligations,39.19546671954907,NA,NA,countries/gbr
+United Kingdom,GBR,73.88828892041846,Human Rights,80.6511111111111,NA,NA,countries/gbr
+United Kingdom,GBR,73.88828892041846,Enabling Environment,86.64934870482001,NA,NA,countries/gbr
+Ireland,IRL,78.98555345582838,Positive Obligations,82.5966008675601,NA,NA,countries/irl
+Ireland,IRL,78.98555345582838,Negative Obligations,61.52471482889734,NA,NA,countries/irl
+Ireland,IRL,78.98555345582838,Human Rights,81.08375000000001,NA,NA,countries/irl
+Ireland,IRL,78.98555345582838,Enabling Environment,91.43654697491331,NA,NA,countries/irl
+Netherlands,NLD,80.98004371254929,Positive Obligations,88.55382379284147,NA,NA,countries/nld
+Netherlands,NLD,80.98004371254929,Negative Obligations,60.95690747782002,NA,NA,countries/nld
+Netherlands,NLD,80.98004371254929,Human Rights,83.92138888888888,NA,NA,countries/nld
+Netherlands,NLD,80.98004371254929,Enabling Environment,90.48805469064679,NA,NA,countries/nld
+Afghanistan,AFG,37.34436537997147,Positive Obligations,25.75932341199766,NA,NA,countries/afg
+Afghanistan,AFG,37.34436537997147,Negative Obligations,77.28643852978455,NA,NA,countries/afg
+Afghanistan,AFG,37.34436537997147,Human Rights,NA,NA,Not enough data,countries/afg
+Afghanistan,AFG,37.34436537997147,Enabling Environment,17.383775335464787,NA,NA,countries/afg
+Albania,ALB,62.50091005572542,Positive Obligations,71.95737226699707,NA,NA,countries/alb
+Albania,ALB,62.50091005572542,Negative Obligations,73.11406844106465,NA,NA,countries/alb
+Albania,ALB,62.50091005572542,Human Rights,NA,NA,Not enough data,countries/alb
+Albania,ALB,62.50091005572542,Enabling Environment,61.91159281102301,NA,NA,countries/alb
+Andorra,AND,NA,Positive Obligations,82.6475262920419,Not enough data,NA,countries/and
+Andorra,AND,NA,Negative Obligations,NA,Not enough data,Not enough data,countries/and
+Andorra,AND,NA,Human Rights,NA,Not enough data,Not enough data,countries/and
+Andorra,AND,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/and
+Antigua and Barbuda,ATG,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/atg
+Antigua and Barbuda,ATG,NA,Negative Obligations,64.11026615969581,Not enough data,NA,countries/atg
+Antigua and Barbuda,ATG,NA,Human Rights,NA,Not enough data,Not enough data,countries/atg
+Antigua and Barbuda,ATG,NA,Enabling Environment,73.33408610363293,Not enough data,NA,countries/atg
+Bahamas,BHS,63.76313331973481,Positive Obligations,61.64999959507561,NA,NA,countries/bhs
+Bahamas,BHS,63.76313331973481,Negative Obligations,57.20025348542459,NA,NA,countries/bhs
+Bahamas,BHS,63.76313331973481,Human Rights,NA,NA,Not enough data,countries/bhs
+Bahamas,BHS,63.76313331973481,Enabling Environment,74.47715345572675,NA,NA,countries/bhs
+Bangladesh,BGD,54.316234145873864,Positive Obligations,67.50777136261517,NA,NA,countries/bgd
+Bangladesh,BGD,54.316234145873864,Negative Obligations,57.36604065303445,NA,NA,countries/bgd
+Bangladesh,BGD,54.316234145873864,Human Rights,NA,NA,Not enough data,countries/bgd
+Bangladesh,BGD,54.316234145873864,Enabling Environment,42.84696847059657,NA,NA,countries/bgd
+Bhutan,BTN,65.0965237107878,Positive Obligations,73.33316708649726,NA,NA,countries/btn
+Bhutan,BTN,65.0965237107878,Negative Obligations,77.14195183776933,NA,NA,countries/btn
+Bhutan,BTN,65.0965237107878,Human Rights,NA,NA,Not enough data,countries/btn
+Bhutan,BTN,65.0965237107878,Enabling Environment,70.425,NA,NA,countries/btn
+Bosnia and Herzegovina,BIH,58.93270350339398,Positive Obligations,51.80300440026169,NA,NA,countries/bih
+Bosnia and Herzegovina,BIH,58.93270350339398,Negative Obligations,67.83269961977187,NA,NA,countries/bih
+Bosnia and Herzegovina,BIH,58.93270350339398,Human Rights,NA,NA,Not enough data,countries/bih
+Bosnia and Herzegovina,BIH,58.93270350339398,Enabling Environment,57.162406490148406,NA,NA,countries/bih
+Brunei,BRN,NA,Positive Obligations,83.04889700312711,Not enough data,NA,countries/brn
+Brunei,BRN,NA,Negative Obligations,58.411913814955646,Not enough data,NA,countries/brn
+Brunei,BRN,NA,Human Rights,NA,Not enough data,Not enough data,countries/brn
+Brunei,BRN,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/brn
+Cape Verde,CPV,69.0336785112753,Positive Obligations,53.46345955351487,NA,NA,countries/cpv
+Cape Verde,CPV,69.0336785112753,Negative Obligations,72.24968314321926,NA,NA,countries/cpv
+Cape Verde,CPV,69.0336785112753,Human Rights,NA,NA,Not enough data,countries/cpv
+Cape Verde,CPV,69.0336785112753,Enabling Environment,87.565,NA,NA,countries/cpv
+Comoros,COM,50.99911771348332,Positive Obligations,42.86195611121845,NA,NA,countries/com
+Comoros,COM,50.99911771348332,Negative Obligations,58.118843161809885,NA,NA,countries/com
+Comoros,COM,50.99911771348332,Human Rights,NA,NA,Not enough data,countries/com
+Comoros,COM,50.99911771348332,Enabling Environment,42.55,NA,NA,countries/com
+Cuba,CUB,73.03389552114109,Positive Obligations,81.09692010379972,NA,NA,countries/cub
+Cuba,CUB,73.03389552114109,Negative Obligations,69.1571609632446,NA,NA,countries/cub
+Cuba,CUB,73.03389552114109,Human Rights,NA,NA,Not enough data,countries/cub
+Cuba,CUB,73.03389552114109,Enabling Environment,79.96307067009269,NA,NA,countries/cub
+Cyprus,CYP,78.88830231337917,Positive Obligations,79.79978183612991,NA,NA,countries/cyp
+Cyprus,CYP,78.88830231337917,Negative Obligations,67.721166032953107,NA,NA,countries/cyp
+Cyprus,CYP,78.88830231337917,Human Rights,NA,NA,Not enough data,countries/cyp
+Cyprus,CYP,78.88830231337917,Enabling Environment,86.37755984218086,NA,NA,countries/cyp
+Democratic Republic of The Congo,COD,47.85904718731644,Positive Obligations,36.4152824971294,NA,NA,countries/cod
+Democratic Republic of The Congo,COD,47.85904718731644,Negative Obligations,75.2065906210393,NA,NA,countries/cod
+Democratic Republic of The Congo,COD,47.85904718731644,Human Rights,NA,NA,Not enough data,countries/cod
+Democratic Republic of The Congo,COD,47.85904718731644,Enabling Environment,26.162069332337627,NA,NA,countries/cod
+Denmark,DNK,82.10836908779488,Positive Obligations,89.9325766599265,NA,NA,countries/dnk
+Denmark,DNK,82.10836908779488,Negative Obligations,60.70342205323194,NA,NA,countries/dnk
+Denmark,DNK,82.10836908779488,Human Rights,NA,NA,Not enough data,countries/dnk
+Denmark,DNK,82.10836908779488,Enabling Environment,95.52384269060228,NA,NA,countries/dnk
+Djibouti,DJI,54.23016058938388,Positive Obligations,46.54201117882828,NA,NA,countries/dji
+Djibouti,DJI,54.23016058938388,Negative Obligations,75.81242078580482,NA,NA,countries/dji
+Djibouti,DJI,54.23016058938388,Human Rights,NA,NA,Not enough data,countries/dji
+Djibouti,DJI,54.23016058938388,Enabling Environment,34.16,NA,NA,countries/dji
+Dominica,DMA,NA,Positive Obligations,50.62081142183776,Not enough data,NA,countries/dma
+Dominica,DMA,NA,Negative Obligations,70.68694550063371,Not enough data,NA,countries/dma
+Dominica,DMA,NA,Human Rights,NA,Not enough data,Not enough data,countries/dma
+Dominica,DMA,NA,Enabling Environment,74.82231546977245,Not enough data,NA,countries/dma
+Equatorial Guinea,GNQ,35.482161444712396,Positive Obligations,35.12147145113809,NA,NA,countries/gnq
+Equatorial Guinea,GNQ,35.482161444712396,Negative Obligations,41.342005107363214,NA,NA,countries/gnq
+Equatorial Guinea,GNQ,35.482161444712396,Human Rights,NA,NA,Not enough data,countries/gnq
+Equatorial Guinea,GNQ,35.482161444712396,Enabling Environment,17.814999999999998,NA,NA,countries/gnq
+Eswatini,SWZ,NA,Positive Obligations,74.91465222437887,Not enough data,NA,countries/swz
+Eswatini,SWZ,NA,Negative Obligations,66,Not enough data,NA,countries/swz
+Eswatini,SWZ,NA,Human Rights,NA,Not enough data,Not enough data,countries/swz
+Eswatini,SWZ,NA,Enabling Environment,26.375,Not enough data,NA,countries/swz
+Fiji,FJI,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/fji
+Fiji,FJI,NA,Negative Obligations,72.50823827629911,Not enough data,NA,countries/fji
+Fiji,FJI,NA,Human Rights,NA,Not enough data,Not enough data,countries/fji
+Fiji,FJI,NA,Enabling Environment,68.88499999999999,Not enough data,NA,countries/fji
+Grenada,GRD,NA,Positive Obligations,51.6585643398476,Not enough data,NA,countries/grd
+Grenada,GRD,NA,Negative Obligations,69.1191381495564,Not enough data,NA,countries/grd
+Grenada,GRD,NA,Human Rights,NA,Not enough data,Not enough data,countries/grd
+Grenada,GRD,NA,Enabling Environment,74.56887033408353,Not enough data,NA,countries/grd
+Guinea-Bissau,GNB,53.727260728830046,Positive Obligations,21.665823650427914,NA,NA,countries/gnb
+Guinea-Bissau,GNB,53.727260728830046,Negative Obligations,76.2065906210393,NA,NA,countries/gnb
+Guinea-Bissau,GNB,53.727260728830046,Human Rights,NA,NA,Not enough data,countries/gnb
+Guinea-Bissau,GNB,53.727260728830046,Enabling Environment,54.35,NA,NA,countries/gnb
+Iceland,ISL,79.14666342269399,Positive Obligations,86.52997759381077,NA,NA,countries/isl
+Iceland,ISL,79.14666342269399,Negative Obligations,58.91001267427123,NA,NA,countries/isl
+Iceland,ISL,79.14666342269399,Human Rights,NA,NA,Not enough data,countries/isl
+Iceland,ISL,79.14666342269399,Enabling Environment,91,NA,NA,countries/isl
+Iran,IRN,41.70990814532688,Positive Obligations,64.4094435991705,NA,NA,countries/irn
+Iran,IRN,41.70990814532688,Negative Obligations,40.19760970786883,NA,NA,countries/irn
+Iran,IRN,41.70990814532688,Human Rights,NA,NA,Not enough data,countries/irn
+Iran,IRN,41.70990814532688,Enabling Environment,24.784006693411953,NA,NA,countries/irn
+Iraq,IRQ,49.33902239723691,Positive Obligations,63.48428220746682,NA,NA,countries/irq
+Iraq,IRQ,49.33902239723691,Negative Obligations,45.43120492098722,NA,NA,countries/irq
+Iraq,IRQ,49.33902239723691,Human Rights,NA,NA,Not enough data,countries/irq
+Iraq,IRQ,49.33902239723691,Enabling Environment,45.725,NA,NA,countries/irq
+Israel,ISR,76.31343229569043,Positive Obligations,85.57298675555471,NA,NA,countries/isr
+Israel,ISR,76.31343229569043,Negative Obligations,65.721166032953107,NA,NA,countries/isr
+Israel,ISR,76.31343229569043,Human Rights,NA,NA,Not enough data,countries/isr
+Israel,ISR,76.31343229569043,Enabling Environment,78.3125,NA,NA,countries/isr
+Kiribati,KIR,NA,Positive Obligations,53.86499209209876,Not enough data,NA,countries/kir
+Kiribati,KIR,NA,Negative Obligations,98.47908745247148,Not enough data,NA,countries/kir
+Kiribati,KIR,NA,Human Rights,NA,Not enough data,Not enough data,countries/kir
+Kiribati,KIR,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/kir
+Kosovo,XKX,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/xkx
+Kosovo,XKX,NA,Negative Obligations,NA,Not enough data,Not enough data,countries/xkx
+Kosovo,XKX,NA,Human Rights,NA,Not enough data,Not enough data,countries/xkx
+Kosovo,XKX,NA,Enabling Environment,57.925679149730165,Not enough data,NA,countries/xkx
+Liechtenstein,LIE,NA,Positive Obligations,72.13766654813992,Not enough data,NA,countries/lie
+Liechtenstein,LIE,NA,Negative Obligations,80,Not enough data,NA,countries/lie
+Liechtenstein,LIE,NA,Human Rights,NA,Not enough data,Not enough data,countries/lie
+Liechtenstein,LIE,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/lie
+Luxembourg,LUX,79.62523686424831,Positive Obligations,85.58746555304727,NA,NA,countries/lux
+Luxembourg,LUX,79.62523686424831,Negative Obligations,62.81115335868188,NA,NA,countries/lux
+Luxembourg,LUX,79.62523686424831,Human Rights,NA,NA,Not enough data,countries/lux
+Luxembourg,LUX,79.62523686424831,Enabling Environment,90.8382817468763,NA,NA,countries/lux
+Madagascar,MDG,55.14004687336802,Positive Obligations,29.534259477008078,NA,NA,countries/mdg
+Madagascar,MDG,55.14004687336802,Negative Obligations,79.87325728770595,NA,NA,countries/mdg
+Madagascar,MDG,55.14004687336802,Human Rights,NA,NA,Not enough data,countries/mdg
+Madagascar,MDG,55.14004687336802,Enabling Environment,52.830139479846025,NA,NA,countries/mdg
+Maldives,MDV,NA,Positive Obligations,48.15959089645055,Not enough data,NA,countries/mdv
+Maldives,MDV,NA,Negative Obligations,82.36628643852978,Not enough data,NA,countries/mdv
+Maldives,MDV,NA,Human Rights,NA,Not enough data,Not enough data,countries/mdv
+Maldives,MDV,NA,Enabling Environment,58.0375,Not enough data,NA,countries/mdv
+Malta,MLT,77.31005580053797,Positive Obligations,82.22187682730346,NA,NA,countries/mlt
+Malta,MLT,77.31005580053797,Negative Obligations,67.76299112801014,NA,NA,countries/mlt
+Malta,MLT,77.31005580053797,Human Rights,NA,NA,Not enough data,countries/mlt
+Malta,MLT,77.31005580053797,Enabling Environment,78.3403180464796,NA,NA,countries/mlt
+Marshall Islands,MHL,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/mhl
+Marshall Islands,MHL,NA,Negative Obligations,95.24714828897339,Not enough data,NA,countries/mhl
+Marshall Islands,MHL,NA,Human Rights,NA,Not enough data,Not enough data,countries/mhl
+Marshall Islands,MHL,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/mhl
+Mauritania,MRT,47.910679963335014,Positive Obligations,40.662167799966575,NA,NA,countries/mrt
+Mauritania,MRT,47.910679963335014,Negative Obligations,52.93820837447743,NA,NA,countries/mrt
+Mauritania,MRT,47.910679963335014,Human Rights,NA,NA,Not enough data,countries/mrt
+Mauritania,MRT,47.910679963335014,Enabling Environment,44.50466814778378,NA,NA,countries/mrt
+Micronesia,FSM,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/fsm
+Micronesia,FSM,NA,Negative Obligations,75.89226869455007,Not enough data,NA,countries/fsm
+Micronesia,FSM,NA,Human Rights,NA,Not enough data,Not enough data,countries/fsm
+Micronesia,FSM,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/fsm
+Moldova,MDA,62.90282723257508,Positive Obligations,63.88955070430621,NA,NA,countries/mda
+Moldova,MDA,62.90282723257508,Negative Obligations,76.34854245880861,NA,NA,countries/mda
+Moldova,MDA,62.90282723257508,Human Rights,NA,NA,Not enough data,countries/mda
+Moldova,MDA,62.90282723257508,Enabling Environment,65.10799761213546,NA,NA,countries/mda
+Monaco,MCO,NA,Positive Obligations,84.01051797870824,Not enough data,NA,countries/mco
+Monaco,MCO,NA,Negative Obligations,NA,Not enough data,Not enough data,countries/mco
+Monaco,MCO,NA,Human Rights,NA,Not enough data,Not enough data,countries/mco
+Monaco,MCO,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/mco
+Mongolia,MNG,63.38361262447493,Positive Obligations,62.41583533036596,NA,NA,countries/mng
+Mongolia,MNG,63.38361262447493,Negative Obligations,76.82256020278834,NA,NA,countries/mng
+Mongolia,MNG,63.38361262447493,Human Rights,NA,NA,Not enough data,countries/mng
+Mongolia,MNG,63.38361262447493,Enabling Environment,69.00364654842873,NA,NA,countries/mng
+Montenegro,MNE,63.00042612241066,Positive Obligations,70.7699067805432,NA,NA,countries/mne
+Montenegro,MNE,63.00042612241066,Negative Obligations,67.82382762991128,NA,NA,countries/mne
+Montenegro,MNE,63.00042612241066,Human Rights,NA,NA,Not enough data,countries/mne
+Montenegro,MNE,63.00042612241066,Enabling Environment,66.4610193309144,NA,NA,countries/mne
+Nauru,NRU,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/nru
+Nauru,NRU,NA,Negative Obligations,88.97338403041826,Not enough data,NA,countries/nru
+Nauru,NRU,NA,Human Rights,NA,Not enough data,Not enough data,countries/nru
+Nauru,NRU,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/nru
+North Korea,PRK,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/prk
+North Korea,PRK,NA,Negative Obligations,NA,Not enough data,Not enough data,countries/prk
+North Korea,PRK,NA,Human Rights,NA,Not enough data,Not enough data,countries/prk
+North Korea,PRK,NA,Enabling Environment,7.19,Not enough data,NA,countries/prk
+North Macedonia,MKD,60.74767655990383,Positive Obligations,64.60346905253343,NA,NA,countries/mkd
+North Macedonia,MKD,60.74767655990383,Negative Obligations,72.5,NA,NA,countries/mkd
+North Macedonia,MKD,60.74767655990383,Human Rights,NA,NA,Not enough data,countries/mkd
+North Macedonia,MKD,60.74767655990383,Enabling Environment,63.25956062717807,NA,NA,countries/mkd
+Norway,NOR,79.49881187696077,Positive Obligations,86.70503289640533,NA,NA,countries/nor
+Norway,NOR,79.49881187696077,Negative Obligations,56,NA,NA,countries/nor
+Norway,NOR,79.49881187696077,Human Rights,NA,NA,Not enough data,countries/nor
+Norway,NOR,79.49881187696077,Enabling Environment,94.68684002679721,NA,NA,countries/nor
+Palau,PLW,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/plw
+Palau,PLW,NA,Negative Obligations,77.75665399239544,Not enough data,NA,countries/plw
+Palau,PLW,NA,Human Rights,NA,Not enough data,Not enough data,countries/plw
+Palau,PLW,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/plw
+Papua New Guinea,PNG,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/png
+Papua New Guinea,PNG,NA,Negative Obligations,75.65272496831432,Not enough data,NA,countries/png
+Papua New Guinea,PNG,NA,Human Rights,NA,Not enough data,Not enough data,countries/png
+Papua New Guinea,PNG,NA,Enabling Environment,66.4125,Not enough data,NA,countries/png
+Qatar,QAT,58.58410241191124,Positive Obligations,85.03757973256513,NA,NA,countries/qat
+Qatar,QAT,58.58410241191124,Negative Obligations,62.76806083650191,NA,NA,countries/qat
+Qatar,QAT,58.58410241191124,Human Rights,NA,NA,Not enough data,countries/qat
+Qatar,QAT,58.58410241191124,Enabling Environment,27,NA,NA,countries/qat
+Saint Kitts and Nevis,KNA,NA,Positive Obligations,58.25464445650078,Not enough data,NA,countries/kna
+Saint Kitts and Nevis,KNA,NA,Negative Obligations,63.62230671736375,Not enough data,NA,countries/kna
+Saint Kitts and Nevis,KNA,NA,Human Rights,NA,Not enough data,Not enough data,countries/kna
+Saint Kitts and Nevis,KNA,NA,Enabling Environment,76.28456321122941,Not enough data,NA,countries/kna
+Saint Vincent and The Grenadines,VCT,NA,Positive Obligations,48.626610017793034,Not enough data,NA,countries/vct
+Saint Vincent and The Grenadines,VCT,NA,Negative Obligations,69.53231939163499,Not enough data,NA,countries/vct
+Saint Vincent and The Grenadines,VCT,NA,Human Rights,NA,Not enough data,Not enough data,countries/vct
+Saint Vincent and The Grenadines,VCT,NA,Enabling Environment,75.81328395274822,Not enough data,NA,countries/vct
+Samoa,WSM,NA,Positive Obligations,55.51190466245291,Not enough data,NA,countries/wsm
+Samoa,WSM,NA,Negative Obligations,75.37135614702154,Not enough data,NA,countries/wsm
+Samoa,WSM,NA,Human Rights,NA,Not enough data,Not enough data,countries/wsm
+Samoa,WSM,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/wsm
+San Marino,SMR,NA,Positive Obligations,59.29155669668076,Not enough data,NA,countries/smr
+San Marino,SMR,NA,Negative Obligations,52.95690747782002,Not enough data,NA,countries/smr
+San Marino,SMR,NA,Human Rights,NA,Not enough data,Not enough data,countries/smr
+San Marino,SMR,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/smr
+Serbia,SRB,68.43144335306212,Positive Obligations,61.03199376852309,NA,NA,countries/srb
+Serbia,SRB,68.43144335306212,Negative Obligations,65.19011406844106,NA,NA,countries/srb
+Serbia,SRB,68.43144335306212,Human Rights,NA,NA,Not enough data,countries/srb
+Serbia,SRB,68.43144335306212,Enabling Environment,81.2125,NA,NA,countries/srb
+Slovenia,SVN,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/svn
+Slovenia,SVN,NA,Negative Obligations,98.85931558935361,Not enough data,NA,countries/svn
+Slovenia,SVN,NA,Human Rights,NA,Not enough data,Not enough data,countries/svn
+Slovenia,SVN,NA,Enabling Environment,74.5875,Not enough data,NA,countries/svn
+Spain,ESP,54.23031887053751,Positive Obligations,66.81067299381081,NA,NA,countries/esp
+Spain,ESP,54.23031887053751,Negative Obligations,50.83857490734664,NA,NA,countries/esp
+Spain,ESP,54.23031887053751,Human Rights,NA,NA,Not enough data,countries/esp
+Spain,ESP,54.23031887053751,Enabling Environment,59.47848166730089,NA,NA,countries/esp
+Sudan,SDN,65.73907530262304,Positive Obligations,58.64248042193869,NA,NA,countries/sdn
+Sudan,SDN,65.73907530262304,Negative Obligations,66.2319391634981,NA,NA,countries/sdn
+Sudan,SDN,65.73907530262304,Human Rights,NA,NA,Not enough data,countries/sdn
+Sudan,SDN,65.73907530262304,Enabling Environment,70.81391090752298,NA,NA,countries/sdn
+Suriname,SUR,81.6634120305184,Positive Obligations,89.86698558074234,NA,NA,countries/sur
+Suriname,SUR,81.6634120305184,Negative Obligations,61.01774397972116,NA,NA,countries/sur
+Suriname,SUR,81.6634120305184,Human Rights,NA,NA,Not enough data,countries/sur
+Suriname,SUR,81.6634120305184,Enabling Environment,93.4794216523756,NA,NA,countries/sur
+Sweden,SWE,78.20183900942783,Positive Obligations,85.78898514047678,NA,NA,countries/swe
+Sweden,SWE,78.20183900942783,Negative Obligations,58.97591888466413,NA,NA,countries/swe
+Sweden,SWE,78.20183900942783,Human Rights,NA,NA,Not enough data,countries/swe
+Sweden,SWE,78.20183900942783,Enabling Environment,95.66,NA,NA,countries/swe
+Switzerland,CHE,NA,Positive Obligations,55.57523780126034,Not enough data,NA,countries/che
+Switzerland,CHE,NA,Negative Obligations,41.18566523843454,Not enough data,NA,countries/che
+Switzerland,CHE,NA,Human Rights,NA,Not enough data,Not enough data,countries/che
+Switzerland,CHE,NA,Enabling Environment,13.35,Not enough data,NA,countries/che
+Syria,SYR,NA,Positive Obligations,38.17077626313788,Not enough data,NA,countries/syr
+Syria,SYR,NA,Negative Obligations,74.2256020278834,Not enough data,NA,countries/syr
+Syria,SYR,NA,Human Rights,NA,Not enough data,Not enough data,countries/syr
+Syria,SYR,NA,Enabling Environment,80.8625,Not enough data,NA,countries/syr
+Timor-Leste,TLS,NA,Positive Obligations,28.012177720497014,Not enough data,NA,countries/tls
+Timor-Leste,TLS,NA,Negative Obligations,75.27249683143219,Not enough data,NA,countries/tls
+Timor-Leste,TLS,NA,Human Rights,NA,Not enough data,Not enough data,countries/tls
+Timor-Leste,TLS,NA,Enabling Environment,73.775,Not enough data,NA,countries/tls
+Tonga,TON,NA,Positive Obligations,45.995980540286865,Not enough data,NA,countries/ton
+Tonga,TON,NA,Negative Obligations,72.5640050697085,Not enough data,NA,countries/ton
+Tonga,TON,NA,Human Rights,NA,Not enough data,Not enough data,countries/ton
+Tonga,TON,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/ton
+Turkmenistan,TUR,NA,Positive Obligations,NA,Not enough data,Not enough data,countries/tur
+Turkmenistan,TUR,NA,Negative Obligations,96.38783269961976,Not enough data,NA,countries/tur
+Turkmenistan,TUR,NA,Human Rights,NA,Not enough data,Not enough data,countries/tur
+Turkmenistan,TUR,NA,Enabling Environment,NA,Not enough data,Not enough data,countries/tur
+Tuvalu,TKM,55.89123317713906,Positive Obligations,76.32619755404629,NA,NA,countries/tkm
+Tuvalu,TKM,55.89123317713906,Negative Obligations,46.92154289220565,NA,NA,countries/tkm
+Tuvalu,TKM,55.89123317713906,Human Rights,NA,NA,Not enough data,countries/tkm
+Tuvalu,TKM,55.89123317713906,Enabling Environment,59.53469160318067,NA,NA,countries/tkm
+Vanuatu,VUT,77.91373055712559,Positive Obligations,69.74405404092317,NA,NA,countries/vut
+Vanuatu,VUT,77.91373055712559,Negative Obligations,78.77946768060836,NA,NA,countries/vut
+Vanuatu,VUT,77.91373055712559,Human Rights,NA,NA,Not enough data,countries/vut
+Vanuatu,VUT,77.91373055712559,Enabling Environment,84.2625,NA,NA,countries/vut
+Yemen,YEM,32.24383095078364,Positive Obligations,23.645064996767633,NA,NA,countries/yem
+Yemen,YEM,32.24383095078364,Negative Obligations,47.221817538655394,NA,NA,countries/yem
+Yemen,YEM,32.24383095078364,Human Rights,NA,NA,Not enough data,countries/yem
+Yemen,YEM,32.24383095078364,Enabling Environment,22.675,NA,NA,countries/yem

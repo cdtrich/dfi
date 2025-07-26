@@ -5,6 +5,7 @@
   --keppel: #32baa7ff;
   --hunyadi-yellow: #e6b95eff;
   --plum: #962c8c;
+  --canary: #fffccc;
   --canary: #fff200ff;
   --rebecca-purple: #643291ff;
   --mint-green: #ceeae4ff;
@@ -13,9 +14,20 @@
   --black: #000000ff;
   --lavender-web: #d9d4eaff;
 
+  /* graphics */
+  --graphic-redpantone: #e63946;
+  --graphic-keppel: #32baa87f; /* pos */
+  --graphic-keppel: #32baa7; /* pos */
+  --graphic-eui: #0e4876; /* neg */
+  --graphic-purple: #643291; /* hr */
+  --graphic-plum: #962c8c; /* ee */
+  /* theme  */
+  --cotton: #efeee9; /* background */
+  --cotton: #473d3a; /* text */
   /* additional coolors */
   --taupe: #463f3a;
   --bittersweet: #e87461;
+  --bittersweet: #e8736181;
   --rose-quartz: #ada8b6;
 
   /* CSS RGB */

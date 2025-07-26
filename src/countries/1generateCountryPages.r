@@ -8,11 +8,11 @@ library(foreach)
 # library(googlesheets4)
 
 # generateCountryPages
-getwd()
+# getwd()
 # go up one folder
 # setwd("..")
 
-data <- read_csv("src/.observablehq/cache/data/dfi.csv") %>%
+data <- read_csv("src/.observablehq/cache/data/dfiFull.csv") %>%
     print()
 
 country <- data %>%
@@ -21,11 +21,11 @@ country <- data %>%
 # country[119]
 
 country_url <- data %>%
-    distinct(countryClean, .keep_all = TRUE) %>%
+    distinct(ISO3_CODE, .keep_all = TRUE) %>%
     pull(country_url)
 
-country_url_source <- country_url %>%
-    str_remove(".")
+# country_url_source <- country_url %>%
+#     str_remove(".")
 
 # read md template
 breakFun <- function(x) {
@@ -49,6 +49,6 @@ foreach(i = 1:length(country)) %do% {
 
     write_lines(
         countryLines,
-        paste0("src", country_url_source[i], ".md")
+        paste0("src/", country_url[i], ".md")
     )
 }

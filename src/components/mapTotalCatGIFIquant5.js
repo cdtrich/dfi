@@ -1,0 +1,230 @@
+import * as Plot from "npm:@observablehq/plot";
+import * as d3 from "npm:d3";
+import colorScales from "./scales.js";
+// import { geoArea, geoCentroid } from "d3-geo";
+
+export function mapTotalCatGIFIquant5(
+  world,
+  coast,
+  data,
+  dataCardinal,
+  { width, height }
+) {
+  // console.log("mapTotal data", data);
+  // Filter data if a pillar is selected
+  const filteredData = data.filter(
+    (d) => d.commitment_num === 1
+    // (d) => d.commitment_num === 1 && d.value !== "NA"
+    // select only one pillar
+  );
+
+  // console.log("filteredData", filteredData);
+
+  // Merge the world data with the filtered data
+  // Using a Map for O(1) lookups instead of O(n) with find()
+  const dataMap = new Map(filteredData.map((item) => [item.ISO3_CODE, item]));
+
+  const worldWithData = world
+    .map((feature) => {
+      const matchingData = dataMap.get(feature.properties.ISO3_CODE);
+
+      return matchingData
+        ? { ...feature, properties: { ...feature.properties, ...matchingData } }
+        : feature;
+      // and filter undefined groups
+    })
+    .filter((d) => d.properties.group !== undefined);
+
+  // console.log("worldWithData (in mapTotal)", worldWithData);
+
+  // scorecard objects
+  // simplify dfiCardinal to contain one object per country
+  const simplified = {};
+
+  dataCardinal.forEach((entry) => {
+    const {
+      ISO3_CODE,
+      NAME_ENGL,
+      group,
+      group_value,
+      total,
+      pillar_txt,
+      value,
+    } = entry;
+
+    if (!simplified[ISO3_CODE]) {
+      simplified[ISO3_CODE] = {
+        ISO3_CODE,
+        NAME_ENGL,
+        group,
+        group_value,
+        total,
+      };
+    }
+
+    simplified[ISO3_CODE][pillar_txt] = value;
+  });
+
+  const dataCardinalSimplified = Object.values(simplified);
+  // console.log("dataCardinalSimplified", dataCardinalSimplified);
+  // join to world shape for centroids
+
+  const dataCardinalMap = new Map(
+    dataCardinalSimplified.map((item) => [item.ISO3_CODE, item])
+  );
+  const worldWithCardinal = world.map((feature) => {
+    const matchingDataCardinal = dataCardinalMap.get(
+      feature.properties.ISO3_CODE
+    );
+
+    return matchingDataCardinal
+      ? {
+          ...feature,
+          properties: { ...feature.properties, ...matchingDataCardinal },
+        }
+      : feature;
+    // and filter undefined groups
+  });
+  // .filter((d) => d.properties.group !== undefined);
+
+  // calculate centroids of largest polygon for tooltip
+  function largestPolygonCentroid(feature) {
+    const { type, coordinates } = feature.geometry;
+
+    if (type === "Polygon") {
+      return d3.geoCentroid(feature); // Already a single polygon
+    }
+
+    if (type === "MultiPolygon") {
+      const polygons = coordinates.map((rings) => ({
+        type: "Polygon",
+        coordinates: rings,
+      }));
+
+      const largest = polygons.reduce((a, b) =>
+        d3.geoArea(a) > d3.geoArea(b) ? a : b
+      );
+
+      return d3.geoCentroid({ type: "Feature", geometry: largest });
+    }
+
+    return null;
+  }
+
+  const worldWithCentroids = worldWithCardinal.map((f) => ({
+    ...f,
+    properties: {
+      ...f.properties,
+      centroid: largestPolygonCentroid(f),
+    },
+  }));
+  // console.log("worldWithCardinal", worldWithCardinal);
+
+  //   range
+  const [min, max] = d3.extent(filteredData, (d) => d.total);
+
+  // console.log("worldWithData", worldWithData);
+  const labels = [...new Set(worldWithData.map((d) => d.properties.group))];
+
+  // find undefined groups
+  // const undefinedGroup = worldWithData.filter(
+  //   (d) => d.properties.group === undefined
+  // );
+
+  // console.log("labels", labels);
+  // console.log("worldWithData", worldWithData);
+  // console.log("undefinedGroup", undefinedGroup);
+
+  // Render the map
+  const map = Plot.plot({
+    projection: "equal-earth",
+    width: width,
+    // title: "GIFI colors-derived diverging color scale",
+    // subtitle: "five equally-sized groups",
+    // opacity: {
+    //   legend: true,
+    //   range: [0, 1],
+    //   domain: [min, max],
+    // },
+    color: {
+      legend: true,
+      type: "ordinal",
+      range: [
+        "#e6b95e", // 50% tint
+        "#fffccc",
+        "#91d4c8",
+        "#32baa8",
+      ],
+      // domain: ["<50", "51-61", "62-67", "68-74", ">74"],
+      domain: ["Off course", "Getting on track", "On track", "Leading"],
+      // domain: labels,
+      // interval: 20,
+      // range: [fillScale.getColor("Total", 0), fillScale.getColor("Total", 100)],
+      // domain: [0, 100],
+    },
+    marks: [
+      // coast
+      Plot.geo(world, {
+        fill: null,
+        stroke: "#ccc",
+        strokeWidth: 0.5,
+      }),
+      // colored countries
+      Plot.geo(worldWithData, {
+        fill: (d) => (isNaN(d.properties.value) ? "#fff" : d.properties.group),
+        stroke: "#fff",
+        strokeWidth: 0.5,
+        href: (d) => d.properties.country_url,
+      }),
+      // World outline
+      Plot.geo(worldWithData, {
+        stroke: (d) => (isNaN(d.properties.value) ? "#aaa" : "#fff"),
+        strokeWidth: 0.5,
+      }),
+      // country labels
+      Plot.dot(
+        worldWithData,
+        Plot.centroid({
+          stroke: null,
+          href: (d) => d.properties.country_url,
+        })
+      ),
+      Plot.tip(
+        worldWithCentroids,
+        Plot.pointer({
+          x: (d) => d.properties.centroid[0],
+          y: (d) => d.properties.centroid[1],
+          channels: {
+            "": (d) => d.properties.NAME_ENGL,
+            "Total group": (d) => d.properties.group,
+            "Connectivity and infrastructure": (d) =>
+              Math.round(d.properties["Connectivity and infrastructure"]),
+            "Rights and freedoms": (d) =>
+              Math.round(d.properties["Rights and freedoms"]),
+            "Responsibility and sustainability": (d) =>
+              Math.round(d.properties["Responsibility and sustainability"]),
+            "Trust and resilience": (d) =>
+              Math.round(d.properties["Trust and resilience"]),
+          },
+          stroke: "#fff",
+        })
+      ),
+      // Plot.tip(
+      //   worldWithData,
+      //   Plot.centroid(
+      //     Plot.pointer({
+      //       title: (d) =>
+      //         `${
+      //           isNaN(d.properties.total)
+      //             ? "no data"
+      //             : Math.round(d.properties.total, 1)
+      //         }\n${d.properties.NAME_ENGL}`,
+      //       stroke: "#fff",
+      //     })
+      //   )
+      // ),
+    ],
+  });
+
+  return map;
+}

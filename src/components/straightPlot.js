@@ -1,34 +1,37 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
+import colorScales from "./scales.js";
 
-export function straightPlot(
-  data,
-  country,
-  // commitmentIcons,
-  { width, height } = {}
-) {
+export function straightPlot(data, country, { width, height } = {}) {
+  // filter data for selected country
+  const filterData = data.filter((d) => d.NAME_ENGL === country);
+  // console.log("filterData", filterData);
+
   // calculate mean
   const mean = d3.flatRollup(
     data,
     (v) => d3.mean(v, (d) => d.value),
-    (d) => d.commitment_num
+    (d) => d.commitment_num_cardinal
   );
 
   // turn mean map into object
-  const meanObject = mean.map(([commitment_num, value]) => ({
-    commitment_num,
+  const meanObject = mean.map(([commitment_num_cardinal, value]) => ({
+    commitment_num_cardinal,
     value,
   }));
-  console.log(meanObject);
+  // console.log("meanObject", meanObject);
+  // console.log(meanObject);
 
-  // calculate distance from mean
-  const filterData = data.filter((d) => d.NAME_ENGL === country);
-  const indexMean = d3.index(meanObject, (d) => d.commitment_num);
-  const distance = filterData.map(({ commitment_num, value: x1 }) => ({
-    commitment_num,
-    x1,
-    ...indexMean.get(commitment_num),
-  }));
+  const indexMean = d3.index(meanObject, (d) => d.commitment_num_cardinal);
+  const distance = filterData
+    .map(({ commitment_num_cardinal, value: x1 }) => ({
+      commitment_num_cardinal,
+      x1,
+      ...indexMean.get(commitment_num_cardinal),
+    }))
+    .filter((d) => d.x1 !== "NA");
+  // console.log("distance", distance);
+  // console.log("distance first", distance[0]);
 
   distance.forEach((item) => {
     const difference = (item.x1 - item.value).toFixed(1); // Calculate and round the difference to one decimal
@@ -40,10 +43,11 @@ export function straightPlot(
         : "equal to";
     item.comparison = `${Math.abs(difference)} ${comparison} average`;
   });
+  // console.log("distance", distance);
 
   // manual facet labels
   const n = 1; // number of facet columns
-  const keys = Array.from(d3.union(data.map((d) => d.commitment_num)));
+  const keys = Array.from(d3.union(data.map((d) => d.commitment_txt_cardinal)));
   // const index = new Map(keys.map((key, i) => [key, i]));
   // const fx = (key) => index.get(key) % n;
   // const fy = (key) => Math.floor(index.get(key) / n);
@@ -61,8 +65,8 @@ export function straightPlot(
   // Use a Set to track unique commitment_num values
   const uniqueCommitments = new Set();
   const filteredData = data.filter((item) => {
-    if (!uniqueCommitments.has(item.commitment_num)) {
-      uniqueCommitments.add(item.commitment_num);
+    if (!uniqueCommitments.has(item.commitment_txt_cardinal)) {
+      uniqueCommitments.add(item.commitment_txt_cardinal);
       return true;
     }
     return false;
@@ -74,7 +78,7 @@ export function straightPlot(
   // Summarize and group data
   const summarized = data.reduce((acc, d) => {
     // Define the group key for summarization based on selected properties
-    const key = `${d.commitment_num}-${d.pillar_num}-${d.value}`;
+    const key = `${d.commitment_txt_cardinal}-${d.pillar_num_cardinal}-${d.value}`;
 
     // If the group doesn't exist, initialize it with relevant properties
     if (!acc[key]) {
@@ -107,40 +111,42 @@ export function straightPlot(
 
     return item;
   });
+  // console.log("groupedCounts", groupedCounts);
+
+  // get colorsScales()
+  const fillScale = colorScales();
 
   // window height
   const vw = window.innerWidth;
   const vh = window.innerHeight;
+  const dotSize = window.innerWidth * 0.01;
 
   return Plot.plot({
-    width: width,
-    height: (vh / 8) * mean.length,
+    width: width * 0.8,
+    marginLeft: width * 0.2,
+    height: (vh / 5) * mean.length,
     marginRight: 4,
-    // title: "The state of the internet",
-    // subtitle: "As expressed in thousands of dots",
-    // axis: null,
-    // x: { label: null, domain: [-10, 110], ticks: [0, 25, 50, 75, 100] },
+    marginTop: 100,
+    x: { label: null, domain: [0, 105], ticks: [0, 25, 50, 75, 100] },
     y: { label: null, axis: null, tickSize: 0 },
-    // aspectRatio: 0.66,
+    r: { range: [2, dotSize] },
     color: {
-      legend: false,
-      range: ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"],
+      legend: true,
     },
     ticks: false,
     facet: {
-      // facetAnchor: "top-empty",
+      // data: groupedCounts,
+      // y: "commitment_num_cardinal",
       label: null,
-      // anchor: "top",
     },
-    // fy: { frameAnchor: "top-left", textAnchor: "start" },
-    fy: { padding: 1 },
+    fy: { padding: 0.8 },
     marks: [
       // TOP AXIS
       Plot.axisX({
         anchor: "top",
-        dy: -40,
+        dy: -60,
         stroke: "#ccc",
-        strokeOpacity: 0.2,
+        // strokeOpacity: 0.2,
         strokeWidth: 0.5,
         domain: [-10, 110],
         ticks: [0, 25, 50, 75, 100],
@@ -148,39 +154,41 @@ export function straightPlot(
         // tickLength: 5,
       }),
       // MEAN MARKER
-      Plot.dot(meanObject, {
-        x: "value",
-        fy: "commitment_num",
-        stroke: "#fff",
-        strokeOpacity: 1,
-        strokeWidth: 1,
-        r: 5,
-      }),
+      // Plot.dot(meanObject, {
+      //   x: "value",
+      //   fy: "commitment_num_cardinal",
+      //   stroke: "#473d3a",
+      //   strokeOpacity: 1,
+      //   strokeWidth: 1,
+      //   r: 5,
+      // }),
       // label
-      Plot.text(
-        meanObject.filter((d) => d.commitment_num === 1),
-        {
-          x: "value",
-          y: 0,
-          dy: 20,
-          fy: "commitment_num",
-          text: (d) => "Mean value",
-          textAnchor: "middle",
-          // fontWeight: 700,
-          FontFace: "italic",
-        }
-      ),
+      // Plot.text(
+      //   meanObject.filter((d) => d.commitment_num === 1),
+      //   {
+      //     x: "value",
+      //     y: 0,
+      //     dy: 20,
+      //     fy: "commitment_num_cardinal",
+      //     text: (d) => "Mean value",
+      //     textAnchor: "middle",
+      //     // fontWeight: 700,
+      //     fontFace: "italic",
+      //     fontSize: 14,
+      //   }
+      // ),
       // DISTANCE FROM MEAN
-      Plot.link(distance, {
+      Plot.arrow(distance, {
         x1: "x1",
         x2: "value",
         y1: 0,
         y2: 0,
         // dy: 7,
-        fy: "commitment_num",
-        stroke: "#fff",
-        strokeWidth: 1,
-        strokeOpacity: 0.5,
+        fy: "commitment_num_cardinal",
+        stroke: "#000",
+        strokeWidth: 1.5,
+        strokeOpacity: 1,
+        bend: 45 / 2,
       }),
       // ALL DOTS
       Plot.dot(
@@ -188,12 +196,15 @@ export function straightPlot(
         Plot.dodgeY("middle", {
           x: "value",
           y: 0,
-          fy: "commitment_num",
-          // stroke: "pillar_num",
-          fill: "pillar_num",
+          fy: "commitment_num_cardinal",
+          fill: (d) => fillScale.getColor(d.pillar_txt),
+          stroke: (d) => fillScale.getColor(d.pillar_txt),
+          fillOpacity: 0.2,
+          strokeOpacity: 1,
+          // fillOpacity: (d) => (d.NAME_ENGL === country ? 1 : 0),
+          // strokeOpacity: (d) => (d.NAME_ENGL === country ? 1 : 0.5),
           r: "n",
-          fillOpacity: 0.5,
-          // strokeOpacity: 0.33,
+          strokeWidth: 1,
           href: (d) => (d.country_url === null ? null : `../${d.country_url}`),
         })
       ),
@@ -204,66 +215,96 @@ export function straightPlot(
           Plot.dodgeY("middle", {
             x: "value",
             y: 0,
-            fy: "commitment_num",
-            fill: "pillar_num",
+            fy: "commitment_num_cardinal",
+            fill: (d) => fillScale.getColor(d.pillar_txt, d.value),
+            stroke: (d) => fillScale.getColor(d.pillar_txt),
             r: "n",
             fillOpacity: 1,
-            strokeOpacity: 0.5,
-            // tip: true,
-            // title: "NAME_ENGL",
+            strokeOpacity: 1,
+            strokeWidth: 5,
+            href: (d) =>
+              d.country_url === null ? null : `../${d.country_url}`,
           })
         )
       ),
       // HIGHLIGHTED COUNTRY
-      Plot.dot(filterData, {
+      Plot.ruleY({
         x: "value",
-        y: 0,
-        fy: "commitment_num",
-        stroke: "#fff",
-        fill: "pillar_num",
-        r: 10,
-        fillOpacity: 0,
-        strokeOpacity: 5,
+        fy: "commitment_num_cardinal",
+        stroke: "#000",
+        strokeWidth: 2,
       }),
-      // label
+      // white transparent area behind marker
+      // Plot.tickX(filterData, {
+      //   x: "value",
+      //   y1: 0.15,
+      //   y2: -0.15,
+      //   fy: "commitment_num_cardinal",
+      //   stroke: "#fff",
+      //   strokeWidth: 15,
+      //   strokeOpacity: 0.6,
+      // }),
+      Plot.tickX(filterData, {
+        x: "value",
+        y1: 0.15,
+        y2: -0.15,
+        fy: "commitment_num_cardinal",
+        stroke: (d) => fillScale.getColor(d.pillar_txt),
+        strokeWidth: 4,
+        strokeOpacity: 1,
+      }),
+      // country label
       Plot.text(
         filterData,
         Plot.selectFirst({
           x: "value",
           y: 0,
-          dy: -20,
-          fy: "commitment_num",
+          dy: 20,
+          fill: (d) => fillScale.getColor(d.pillar_txt),
+          fy: "commitment_num_cardinal",
           text: "NAME_ENGL",
           textAnchor: "middle",
           fontWeight: 700,
+          stroke: "#fff",
+          strokeWidth: 4,
+          fontSize: 14,
         })
       ),
-      // ICONS
-      Plot.image(filteredData, {
-        x: 0,
-        dx: -30,
-        y: 0,
-        // dy: -20,
-        fy: "commitment_num",
-        width: 40,
-        src: "icon_url",
-      }),
+      // average label
+      Plot.text(
+        distance,
+        // {
+        Plot.selectFirst({
+          x: (d) => (d.x1 + d.value) / 2,
+          // y: (d) => (d.value - d.x1 < 0 ? -1 : 1),
+          y: 0,
+          dy: 30,
+          lineWidth: 8,
+          lineAnchor: "top",
+          fy: (d) => distance[0].commitment_num_cardinal,
+          text: (d) => d.comparison,
+          fill: "#000",
+          stroke: "#fff",
+          strokeWidth: 5,
+          // fontSize: 14,
+          // }
+        })
+      ),
       // FACET LABELS
-      Plot.text(filteredData, {
-        x: min,
+      Plot.text(data, {
+        x: 0,
         // dx: -30,
         y: 0,
-        dy: -40,
-        fy: "commitment_num",
-        text: "commitment_txt",
+        dy: -50,
+        fy: "commitment_num_cardinal",
+        text: "commitment_txt_cardinal",
         frameAnchor: "top-left",
         textAnchor: "start",
         fontSize: "1.5em",
-        fill: "#fff",
-        stroke: "#000",
-        strokeOpacity: 0.2,
+        fill: (d) => fillScale.getColor(d.pillar_txt),
+        stroke: "#fff",
         strokeWidth: 5,
-        // dy: 6,
+        fontSize: "18px",
       }),
       // tip for DISTANCE FROM MEAN
       Plot.tip(
@@ -272,7 +313,7 @@ export function straightPlot(
           x: (d) => (d.x1 + d.value) / 2,
           y: 0,
           dy: 5,
-          fy: "commitment_num",
+          fy: "commitment_num_cardinal",
           stroke: "#fff",
           anchor: "top",
           title: "comparison",
@@ -287,11 +328,13 @@ export function straightPlot(
             x: "value",
             y: 0,
             dy: -5,
-            fy: "commitment_num",
+            fy: "commitment_num_cardinal",
             stroke: "#fff",
             anchor: "bottom",
             tip: true,
             title: "NAME_ENGL",
+            href: (d) =>
+              d.country_url === null ? null : `../${d.country_url}`,
           })
         )
       ),

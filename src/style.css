@@ -1,42 +1,76 @@
-/* background */
-html {
-  /* background: rgb(60, 64, 153); */
-  background: linear-gradient(
-    /* to bottom, */ 180deg,
-    rgb(100, 50, 145) 10%,
-    rgb(60, 64, 153) 90%
-  );
-  min-height: 100vh; /* Ensure the body always covers the full viewport height */
-  background-repeat: no-repeat;
-  /* the following is too much - original header from factsheet */
-  /* background: -moz-linear-gradient(90deg, rgb(60, 64, 153) 20%, rgb(150, 44, 140) 70%, rgb(100, 50, 145) 100%);
-  background: -webkit-linear-gradient(90deg, rgb(60, 64, 153) 20%, rgb(150, 44, 140) 70%, rgb(100, 50, 145) 100%);
-  background: linear-gradient(90deg, rgb(60, 64, 153) 20%, rgb(150, 44, 140) 70%, rgb(100, 50, 145) 100%); */
-  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c7489",endColorstr="#040404",GradientType=1); */
+/* Define color palette as CSS variables */
+:root {
+  --color-one: #32baa7;
+  --color-two: #63d8a2;
+  --color-three: #b9f27b;
+  --color-four: #fff200;
+  --color-accent: #f61067;
 }
 
+/* global text */
+svg text,
+svg g text,
+svg tspan,
+[class*="plot-"][class*="swatch"],
+[class*="plot-"][class*="swatches"] {
+  font-size: clamp(0.8rem, 0.5vw + 0.05rem, 1rem) !important;
+}
+
+/* [class*="plot-d6a7b5"] text {
+  font-size: clamp(1.5rem, 0.5vw + 0.05rem, 1rem) !important;
+} */
+
+/* background */
+html {
+  min-height: 100vh; /* Ensure the body always covers the full viewport height */
+  /* background-color: #fff; */
+  /* background-repeat: no-repeat; */
+}
+
+/* all text */
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* text in graphics */
+div > * {
+  /* font-size: 18px; */
+  font-size: 0.95em;
+}
+
+div > form > div,
+div > div > form > label,
+div > div > form > #inputs-3a86ea-1 {
+  font-size: 1.1em;
+}
+
+.grid > *,
+.hero > p {
+  /* font-size: 18px; */
+  font-size: 1.05em;
+}
+
+/* landing page hero */
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: var(--sans-serif);
-  margin: 4rem 0 8rem;
-  text-wrap: balance;
+  margin: 4rem 0 4rem;
+  /* text-wrap: balance; */
   text-align: center;
 }
 
-/* hero image */
 #hero-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/hero.png");
+  top: -5vh;
+  /* left: 25vh; */
+  width: 50vh;
+  height: 50vh;
+  /* rotate: -30deg; */
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/compass.svg");
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-position: top; */
-  opacity: 0.15; /* Adjust opacity for the background image */
+  opacity: 0.3; /* Adjust opacity for the background image */
   z-index: -1;
 }
 
@@ -46,13 +80,35 @@ html {
   font-size: 14vw;
   font-weight: 900;
   line-height: 1;
-  color: #d9d4eaff;
+  /* color: #d9d4eaff; */
   /* color: #040404; */
+  color: #222;
   background-clip: text;
 }
 
+/* centered text */
+#pillar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--sans-serif);
+  /* text-wrap: balance; */
+  text-align: center;
+}
+
+heading-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
 h2 {
-  padding-top: 5em;
+  text-align: center;
+  padding-top: 2em;
   font-weight: normal;
 }
 
@@ -63,11 +119,11 @@ h2 {
   font-style: initial;
   font-weight: 500;
   line-height: 1.5;
-  color: #d9d4eaff;
+  color: #222;
 }
 
 a.observablehq-header-anchor {
-  color: white !important;
+  /* color: #222 !important; */
 }
 
 /* toc */
@@ -78,12 +134,63 @@ a.observablehq-header-anchor {
 .observablehq-secondary-link-active a {
   color: #fff !important;
 }
-/* Base styling for the cards */
-.goodpracticecard {
+
+/* country page button */
+#countryButton {
+  width: 100%;
+  height: 1.5em;
   border: 1px solid rgba(255, 255, 255, 0.5); /* Thin white outline */
+  background-color: rgba(255, 255, 255, 0); /* Thin white outline */
   border-radius: 8px; /* Rounded edges */
   font-size: 0.9em;
   color: white; /* White text (including the span text) */
+  padding: 16px; /* Add some padding inside the button */
+  text-align: center; /* Center the text horizontally */
+  display: flex; /* Use flexbox for vertical alignment */
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+/* Ensure the text inside the button (span) is white */
+#countryButton span {
+  color: white; /* Text color inside the button */
+}
+
+/* Remove underline from link text inside the button */
+#countryButton a {
+  text-decoration: none !important; /* No underline by default */
+}
+
+/* Maintain no underline on hover */
+a:hover {
+  text-decoration: none !important; /* Keep text-decoration none on hover */
+}
+
+/* Hover effect */
+#countryButton:hover {
+  background-color: white; /* Fill with white on hover */
+  color: #3c4099; /* Change the general text color on hover */
+}
+
+/* Ensure the span text changes color on hover */
+#countryButton:hover span {
+  color: #3c4099; /* Change span text color to #3c4099 on hover */
+}
+
+/* plot legends */
+/* center-align above plot */
+div[class*="-swatches-"] {
+  display: flex;
+  justify-content: center;
+}
+
+/* country practices cards */
+.goodpracticecard {
+  border: 1px solid #444; /* Thin white outline */
+  border-radius: 8px; /* Rounded edges */
+  font-size: 1em;
+  /* font-size: 0.9em; */
+  color: #222; /* White text (including the span text) */
   padding: 16px; /* Add some padding inside the card */
   text-align: left; /* Center the text */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
@@ -91,7 +198,7 @@ a.observablehq-header-anchor {
 
 /* Ensure the text inside the card (span) is white */
 .goodpracticecard span {
-  color: white; /* Text color inside the card */
+  color: #222; /* Text color inside the card */
 }
 
 /* Remove underline from link text inside the card */
@@ -106,41 +213,25 @@ a:hover {
 
 /* Hover effect */
 .goodpracticecard:hover {
-  background-color: white; /* Fill with white on hover */
-  color: #3c4099; /* Change the general text color on hover */
+  background-color: #32baa8; /* Fill with white on hover */
+  border: 5px solid #32baa8; /* Thin white outline */
+  color: #fff; /* Change the general text color on hover */
 }
 
 /* Ensure the span text changes color on hover */
 .goodpracticecard:hover span {
-  color: #3c4099; /* Change span text color to #3c4099 on hover */
+  color: #fff; /* Change span text color to #3c4099 on hover */
 }
 
-/* #observablehq-sidebar {
-    background-color: "#ffffff";
-    color-scheme: "light";
-  } */
-
+/* what's this??? */
 .card {
   background-color: rgba(0, 0, 0, 0);
+  padding: 0;
   border: 0;
 }
 
 .card .key {
   border: solid 1px var (--theme-foreground-faintest);
-}
-
-/* a[href] {
-  color: #450920 !important;
-} */
-
-/* text */
-* {
-  font-family: "Nunito Sans", sans-serif;
-}
-
-text,
-tspan {
-  /* font-size: 1.5em; */
 }
 
 /* back to root button */
@@ -150,8 +241,10 @@ tspan {
   left: 10px;
   width: 50px;
   height: 50px;
-  background-color: rgb(100, 50, 145);
-  border: 1px solid white;
+  /* background-color: #0d0d0d; */
+  border: 1px solid #222;
+  background-color: #fff;
+  /* background-color: #efeee9; */
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -173,7 +266,7 @@ tspan {
 
 .back-to-root .arrow {
   display: inline-block;
-  border: solid white;
+  border: solid #222;
   border-width: 0px 0px 2px 2px;
   padding: 5px;
   transform: rotate(45deg);
@@ -188,68 +281,6 @@ tspan {
   outline: none;
 }
 
-/* focus on active DOT on hover and lower opacity of the rest */
-
-/* [aria-label="dot"]:hover cricle:not(:hover) {
-  opacity: 1;
-  stroke-opacity: 1;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
-[aria-label="dot"] circle:hover {
-  opacity: 1;
-  stroke-opacity: 1;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
-g:hover circle {
-  opacity: 0.2;
-  stroke-opacity: 0.2;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-} */
-
-/* focus on active COUNTRY on hover and lower opacity of the rest */
-[aria-label="geo"]:hover path:not(:hover) {
-  opacity: 0.2;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
-[aria-label="geo"] path:hover {
-  opacity: 1;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
-/* this also triggers the href lines in polarPlotMultiples.js */
-/* g:hover path {
-  opacity: 0.2;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-} */
-
-/* focus on active PILLAR on hover and lower opacity of the rest */
-[aria-label="voronoi"]:hover path:not(:hover) {
-  opacity: 0.2;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
-[aria-label="voronoi"] path:hover {
-  opacity: 1;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-}
-
-/* g:hover path {
-  opacity: 0.2;
-  transition: opacity 0.05s;
-  transition-timing-function: ease;
-} */
-
 @media (min-width: 640px) {
   .hero h1 {
     font-size: 90px;
@@ -257,50 +288,39 @@ g:hover circle {
 }
 
 /* prevent native tooltip on polarplot */
-/* Hide the default tooltip by overriding it */
-/* circle[title] {
-    pointer-events: none;
-  } */
-
 /* Ensure custom CSS to disable native tooltips */
 circle[title]::after {
   content: none;
 }
 
 /* style tooltip */
-
 /* Target the tooltip fill */
 g[aria-label="tip"] path {
-  fill: #dcdcee; /* Tooltip background color */
+  /* fill: #dcdcee; Tooltip background color */
+  fill: #fff;
 }
 
 /* Target the text color inside the tooltip */
 g[aria-label="tip"] text {
-  fill: #000; /* Tooltip text color */
+  fill: #222; /* Tooltip text color */
 }
-
-/* remove facet numbers on multiple radials */
-g[aria-label="fy-axis tick label"] > g > text {
-  display: none;
-}
-g[aria-label="fx-axis tick label"] > g > text {
-  display: none;
-}
-
-/* .img-container {
-  background-color: purple;
-} */
 
 .img-col {
-  /* background-color: purple; */
-  /* filter: grayscale(100%); */
-  /* opacity: 0.5; */
   width: 100%;
   background-color: inherit;
   mix-blend-mode: multiply;
 }
-/* circle:hover::after {
-    content: attr(title);
-    position: absolute;
-    display: none;
-  } */
+
+/* hide facet labels on polarPlotMultiple */
+/* this one for straight plot */
+g[aria-label="fy-axis tick label"],
+/* these for polarPlotMultiple */
+#polarPlotMultiple g[aria-label="fx-axis tick label"],
+#polarPlotMultiple g[aria-label="fy-axis tick label"] {
+  display: none;
+}
+
+/* disable pointer events on ohq tooltip */
+g[aria-label="tip"] {
+  pointer-events: none;
+}
