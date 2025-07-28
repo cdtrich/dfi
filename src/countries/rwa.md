@@ -27,7 +27,7 @@ theme: air
 ```js
 import { straightPlot } from "../components/straightPlot.js";
 import { polarCountry } from "../components/polarCountry.js";
-import { goodPracticeCards } from "../components/goodPracticeCards.js";
+import { sources } from "../components/sources.js";
 import { onlyUnique } from "../components/onlyUnique.js";
 import { sidebar } from "../components/sidebar.js";
 ```
@@ -36,10 +36,13 @@ import { sidebar } from "../components/sidebar.js";
 
 ```js
 const country = "Rwanda";
-const dfi = FileAttachment("../data/dfiFull.csv").csv({
+const dfiFull = FileAttachment("../data/dfiFull.csv").csv({
   typed: true,
 });
-const goodpracticeParse = FileAttachment("../data/sources.csv").csv({
+const dfiCardinal = FileAttachment("../data/dfiCardinal.csv").csv({
+  typed: true,
+});
+const sourcesParse = FileAttachment("../data/sources.csv").csv({
   typed: true,
 });
 ```
@@ -47,7 +50,8 @@ const goodpracticeParse = FileAttachment("../data/sources.csv").csv({
 <!-- calculate country specific data for intro -->
 
 ```js
-const dfiCountry = dfi.filter((d) => d.NAME_ENGL == country)[0];
+const dfiCountry = dfiFull.filter((d) => d.NAME_ENGL == country)[0];
+const dfiCardinalCountry = dfiCardinal.filter((d) => d.NAME_ENGL == country);
 ```
 
 ```js
@@ -55,10 +59,10 @@ const total = Math.round(dfiCountry.total);
 const group = dfiCountry.group;
 ```
 
+<!-- to add -->
+
 ```js
-const goodpracticeData = goodpracticeParse.filter(
-  (d) => d.NAME_ENGL === country
-);
+const sourcesData = sourcesParse.filter((d) => d.NAME_ENGL === country);
 ```
 
 <div class="hero">
@@ -66,38 +70,43 @@ const goodpracticeData = goodpracticeParse.filter(
 </div>
 
 ```js
-var commitments = dfi.map((d) => d.commitment_txt);
+var commitments = dfiFull.map((d) => d.commitment_txt);
 var commitmentUnique = commitments.filter(onlyUnique);
 ```
 
 <!-- text and polar -->
+<div class="body-text">
+<div class="grid grid-cols-3">
 
-<div class="grid grid-cols-4">
+  <div class="card grid-col-1">
+  <p>${country} scores a total of ${total} points (<i>${group}</i>).</p>
+  <p>Cardinal point breakdown:</p>
+<ul>
+  <li>${dfiCardinalCountry[0].value === "NA" ? dfiCardinalCountry[0].note : `${Math.round(dfiCardinalCountry[0].value)} (${dfiCardinalCountry[0].group_value})`} in <span class="pillar-connectivity" style="font-weight: 700;">${dfiCardinalCountry[0].pillar_txt}</span></li>
+  <li>${dfiCardinalCountry[1].value === "NA" ? dfiCardinalCountry[1].note : `${Math.round(dfiCardinalCountry[1].value)} (${dfiCardinalCountry[1].group_value})`} in <span class="pillar-rights" style="font-weight: 700;">${dfiCardinalCountry[1].pillar_txt}</span></li>
+  <li>${dfiCardinalCountry[2].value === "NA" ? dfiCardinalCountry[2].note : `${Math.round(dfiCardinalCountry[2].value)} (${dfiCardinalCountry[2].group_value})`} in <span class="pillar-responsibility" style="font-weight: 700;">${dfiCardinalCountry[2].pillar_txt}</span></li>
+  <li>${dfiCardinalCountry[3].value === "NA" ? dfiCardinalCountry[3].note : `${Math.round(dfiCardinalCountry[3].value)} (${dfiCardinalCountry[3].group_value})`} in <span class="pillar-trust" style="font-weight: 700;">${dfiCardinalCountry[3].pillar_txt}</span></li>
+</ul>
+    </div>
 
-<div class="card grid-col-1"></div>
-<div class="card grid-col-2">
-${country} scores a total of ${total} points (<i>${group}</i>). 
-  </div>
-  
-<div class="card grid-col-3">
-      ${resize((width) => polarCountry(dfi, country, {width}))}
-  </div>
+  <div class="card grid-col-2">
+        ${resize((width) => polarCountry(dfiFull, country, {width}))}
+    </div>
 
-<div class="card grid-col-4"></div>
-
+</div>
 </div>
 
 <!-- # Scores -->
 
   <div class="card size-full">
-      ${resize((width) => straightPlot(dfi, country, {width}))}
+      ${resize((width) => straightPlot(dfiFull, country, {width}))}
     </div>
 
-  <div id="goodpractice-section">
+  <div id="sources-section">
   </div>
 
 ```js
-goodPracticeCards(goodpracticeData);
+sources(sourcesData);
 ```
 
 <!-- sidebar -->

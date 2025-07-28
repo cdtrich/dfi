@@ -171,41 +171,80 @@ export function mapTotalCatGIFIquant5(
       }),
       // colored countries
       Plot.geo(worldWithData, {
-        fill: (d) => (isNaN(d.properties.value) ? "#fff" : d.properties.group),
+        fill: (d) =>
+          d.properties.group === "Not enough data"
+            ? "#fff"
+            : d.properties.group,
         stroke: "#fff",
         strokeWidth: 0.5,
         href: (d) => d.properties.country_url,
       }),
       // World outline
       Plot.geo(worldWithData, {
-        stroke: (d) => (isNaN(d.properties.value) ? "#aaa" : "#fff"),
+        stroke: (d) =>
+          d.properties.group === "Not enough data" ? "#aaa" : "#fff",
         strokeWidth: 0.5,
       }),
+      // black country outline
+      // Plot.geo(world),
       // country labels
-      Plot.dot(
-        worldWithData,
-        Plot.centroid({
-          stroke: null,
-          href: (d) => d.properties.country_url,
-        })
-      ),
+      // Plot.dot(
+      //   worldWithCentroids,
+      //   Plot.pointer({
+      //     x: (d) => d.properties.centroid[0],
+      //     y: (d) => d.properties.centroid[1],
+      //     // stroke: null,
+      //     href: (d) => d.country_url,
+      //     tip: true,
+      //     title: (d) => d.NAME_ENGL,
+      //   })
+      // ),
       Plot.tip(
         worldWithCentroids,
         Plot.pointer({
           x: (d) => d.properties.centroid[0],
           y: (d) => d.properties.centroid[1],
-          channels: {
-            "": (d) => d.properties.NAME_ENGL,
-            "Total group": (d) => d.properties.group,
-            "Connectivity and infrastructure": (d) =>
-              Math.round(d.properties["Connectivity and infrastructure"]),
-            "Rights and freedoms": (d) =>
-              Math.round(d.properties["Rights and freedoms"]),
-            "Responsibility and sustainability": (d) =>
-              Math.round(d.properties["Responsibility and sustainability"]),
-            "Trust and resilience": (d) =>
-              Math.round(d.properties["Trust and resilience"]),
-          },
+          title: (d) =>
+            [
+              // `━ ${d.properties.NAME_ENGL} ━`,
+              // `Status: ${d.properties.group}`,
+              `${d.properties.NAME_ENGL} ━ ${d.properties.group}`,
+              ``, // empty line
+              `𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝘃𝗶𝘁𝘆 𝗮𝗻𝗱 𝗶𝗻𝗳𝗿𝗮𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲: ${
+                d.properties["Connectivity and infrastructure"] === "NA"
+                  ? "Not enough data"
+                  : Math.round(d.properties["Connectivity and infrastructure"])
+              }`,
+              `𝗥𝗶𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗳𝗿𝗲𝗲𝗱𝗼𝗺𝘀: ${
+                d.properties["Rights and freedoms"] === "NA"
+                  ? "Not enough data"
+                  : Math.round(d.properties["Rights and freedoms"])
+              }`,
+              `𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝗯𝗶𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝘀𝘂𝘀𝘁𝗮𝗶𝗻𝗮𝗯𝗶𝗹𝗶𝘁𝘆: ${
+                d.properties["Responsibility and sustainability"] === "NA"
+                  ? "Not enough data"
+                  : Math.round(
+                      d.properties["Responsibility and sustainability"]
+                    )
+              }`,
+              `𝗧𝗿𝘂𝘀𝘁 𝗮𝗻𝗱 𝗿𝗲𝘀𝗶𝗹𝗶𝗲𝗻𝗰𝗲: ${
+                d.properties["Trust and resilience"] === "NA"
+                  ? "Not enough data"
+                  : Math.round(d.properties["Trust and resilience"])
+              }`,
+            ].join("\n"),
+          // channels: {
+          //   "": (d) => d.properties.NAME_ENGL,
+          //   Status: (d) => d.properties.group,
+          //   "Connectivity and infrastructure": (d) =>
+          //     Math.round(d.properties["Connectivity and infrastructure"]),
+          //   "Rights and freedoms": (d) =>
+          //     Math.round(d.properties["Rights and freedoms"]),
+          //   "Responsibility and sustainability": (d) =>
+          //     Math.round(d.properties["Responsibility and sustainability"]),
+          //   "Trust and resilience": (d) =>
+          //     Math.round(d.properties["Trust and resilience"]),
+          // },
           stroke: "#fff",
         })
       ),

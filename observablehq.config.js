@@ -19,7 +19,7 @@ export default {
   // theme
   theme: "air", // try "light", "dark", "slate", etc.
   // custom stylesheet
-  // style: "style.css",
+  style: "style.css",
 
   // The path to the source root.
   root: "src",

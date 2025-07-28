@@ -80,10 +80,8 @@ export function polar(data, { width, height } = {}) {
         Plot.selectFirst({
           text: "NAME_ENGL",
           frameAnchor: "top",
-          textAnchor: "center",
-          dy: -10,
           fontWeight: "700",
-          fontSize: 14,
+          fontSize: 14 * 2,
           lineWidth: 8,
           href: (d) => d.country_url,
         })

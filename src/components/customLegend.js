@@ -3,7 +3,13 @@ import colorScales from "./scales.js";
 import { renderPillarContent } from "./pillarRenderer.js";
 
 // Create a custom legend component that can be used instead of radio buttons
-export function customLegend(uniqueValues, initialValue, onChange, legendId) {
+export function customLegend(
+  uniqueValues,
+  initialValue,
+  onChange,
+  legendId,
+  fill
+) {
   const fillScale = colorScales();
   const container = document.createElement("div");
   container.className = "custom-legend";
@@ -19,7 +25,11 @@ export function customLegend(uniqueValues, initialValue, onChange, legendId) {
     item.dataset.value = value;
     item.textContent = value;
 
-    const backgroundColor = fillScale.getColor(value, 100);
+    // 👇 Conditional backgroundColor logic
+    const backgroundColor = fill
+      ? fillScale.getColor(fill, 100)
+      : fillScale.getColor(value, 100);
+
     item.style.backgroundColor = backgroundColor;
 
     const rgb = d3.rgb(backgroundColor);
@@ -53,7 +63,7 @@ export function customLegend(uniqueValues, initialValue, onChange, legendId) {
 }
 
 // Also provide a viewof function to make it work with Observable's reactivity
-export function viewofCustomLegend(uniqueValues, initialValue, legendId) {
+export function viewofCustomLegend(uniqueValues, initialValue, legendId, fill) {
   const selectedValue = { value: initialValue || uniqueValues[0] };
 
   const view = customLegend(
@@ -64,8 +74,9 @@ export function viewofCustomLegend(uniqueValues, initialValue, legendId) {
       view.value = value;
       view.dispatchEvent(new Event("input")); // Observable-style reactivity
     },
-    legendId
-  ); // 👈 pass legendId to customLegend
+    legendId,
+    fill // 👈 pass fill parameter to customLegend
+  );
 
   Object.defineProperty(view, "value", {
     get: () => selectedValue.value,

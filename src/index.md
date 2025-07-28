@@ -2,7 +2,7 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
 <link rel="stylesheet" href="style.css">
 <!-- sidebar -->
     <link
@@ -16,7 +16,7 @@
 
 ```js
 import { colorScales } from "./components/scales.js";
-import { onlyUnique } from "./components/onlyUnique.js";
+// import { onlyUnique } from "./components/onlyUnique.js";
 // import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
 import { mapPillar } from "./components/mapPillar.js";
 // import { mapTotal } from "./components/mapTotal.js";
@@ -30,8 +30,11 @@ import { sidebar } from "./components/sidebar.js";
 
 <div class="hero">
   <h1>Internet Accountability Compass</h1>
-  <h2>Monitoring progress. Guiding policy. Strengthening accountability.</h2>
+  <h2 style="text-align: left !important;">Monitoring progress. Guiding policy. Strengthening accountability.</h2>
   <div id="hero-image"></div>
+</div>
+
+<div class="body-text">
 
 The Internet is a cornerstone of modern life—shaping how states govern, businesses operate, organisations function, and individuals connect. Recognising its transformative power, the international community has rallied around shared principles to foster a global, open, free, secure, and trustworthy Internet. These principles are enshrined in key political declarations, including the Global Digital Compact and the Declaration on the Future of the Internet.
 
@@ -41,7 +44,23 @@ The Internet Accountability Compass is designed to fill this gap. It serves as a
 
 Through rigorous, country-specific data and comparative indicators, the Internet Accountability Compass promotes greater transparency, strengthens public accountability, and empowers policymakers, businesses, and civil society to align action with aspiration.
 
-<p style="font-weight: 700; text-align: center !important;"><a href="./countries.html">Go to country overview →</a></p>
+<p style="font-weight: 700;"><a href="./countries.html">Go to country overview →</a></p>
+
+<div class="grid grid-cols-3">
+  <div class="card key">
+    <h2>Datapoints</h2>
+    <span class="big">${dfiFull.length.toLocaleString("en-US")}</span>
+  </div>
+  <div class="card key">
+    <h2>Countries</h2>
+    <span class="big">${dfiFull.filter((d) => d.commitment_num === 1).length.toLocaleString("en-US")}</span>
+  </div>
+  <div class="card key">
+    <h2>Indicators</h2>
+    <span class="big">12</span>
+  </div>
+</div>
+
 </div>
 
 <!-- data -->
@@ -93,8 +112,8 @@ const lookup = {
 ```
 
 ```js
-console.log("dfiCardinalParse", dfiCardinalParse);
-console.log("dfiFullParse", dfiFullParse);
+// console.log("dfiCardinalParse", dfiCardinalParse);
+// console.log("dfiFullParse", dfiFullParse);
 const dfiFull = dfiFullParse.map((item) => {
   const pillar = lookup[item.pillar_num];
   const commitment = pillar?.commitments[item.commitment_num];
@@ -119,7 +138,7 @@ const dfiCardinal = dfiCardinalParse.map((item) => {
 
 ```js
 // console.log("dfiFull", dfiFull);
-console.log("dfiCardinal", dfiCardinal);
+// console.log("dfiCardinal", dfiCardinal);
 ```
 
 <!-- world map and data -->
@@ -168,9 +187,8 @@ const uniquePillars = [...new Set(dfiCardinal.map((item) => item.pillar_txt))];
   <!-- 2. input  -->
 
 <!-- # Total score -->
-
-<div class="card">
-    ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
+<div class="figure-w-full">
+      ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
 </div>
 
 <!-- sidebar -->

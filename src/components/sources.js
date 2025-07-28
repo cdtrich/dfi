@@ -1,14 +1,10 @@
-export function goodPracticeCards(data) {
+export function sources(data) {
   // Get the container for good practices
-  const container = document.getElementById("goodpractice-section");
+  const container = document.getElementById("sources-section");
   // console.log("goodPracticeCards data", data);
 
   // Clear the container first
   container.innerHTML = "";
-  // container.className = "card size-full";
-  // container.style = "position: relative";
-  container.style.marginLeft = "10vw";
-  container.style.marginRight = "10vw";
 
   // Check if data exists and has elements
   if (!data || data.length === 0) {
@@ -19,10 +15,6 @@ export function goodPracticeCards(data) {
   const mainHeading = document.createElement("h1");
   mainHeading.id = "sources";
   mainHeading.tabIndex = -1;
-  // mainHeading.style.width = "60vw";
-  // mainHeading.style.textAlign = "center";
-  // mainHeading.style.marginLeft = "25vw";
-  // mainHeading.style.marginRight = "25vw";
   mainHeading.style.paddingTop = "50px";
 
   const anchor = document.createElement("h1");
@@ -40,13 +32,13 @@ export function goodPracticeCards(data) {
 
   // Create the grid container
   const gridContainer = document.createElement("div");
-  gridContainer.className = "grid grid-cols-2 w-[60vw]";
+  gridContainer.className = "grid grid-cols-3";
   container.appendChild(gridContainer);
 
   // Create cards for each document
   data.forEach((item) => {
     const card = document.createElement("div");
-    card.className = "goodpracticecard";
+    card.className = "sourcecard";
 
     // Apply different styles based on type
     if (item.type === "Source") {
@@ -56,18 +48,35 @@ export function goodPracticeCards(data) {
       card.style.fontWeight = "700";
     }
 
-    // Create a link that wraps the entire card
-    const link = document.createElement("a");
-    link.href = item.url;
-    link.target = "_blank";
-    link.style.display = "block"; // Ensure the link wraps the entire card
-
     // Create the span element for the document text
     const span = document.createElement("span");
     span.textContent = item.title;
-
-    link.appendChild(card);
     card.appendChild(span);
-    gridContainer.appendChild(link);
+
+    // Check if URL exists and is not "NA"
+    if (item.url && item.url.trim() !== "NA") {
+      // Create a clickable link
+      const link = document.createElement("a");
+      link.href = item.url;
+      link.target = "_blank";
+      link.style.display = "block";
+      link.style.textDecoration = "none";
+      link.style.color = "inherit";
+
+      link.appendChild(card);
+      gridContainer.appendChild(link);
+    } else {
+      // Create a non-clickable wrapper (still an <a> but no href)
+      const wrapper = document.createElement("a");
+      wrapper.style.display = "block";
+      wrapper.style.textDecoration = "none";
+      wrapper.style.color = "inherit";
+      wrapper.style.cursor = "default";
+
+      card.style.opacity = "0.5"; // Visual indicator
+
+      wrapper.appendChild(card);
+      gridContainer.appendChild(wrapper);
+    }
   });
 }

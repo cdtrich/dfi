@@ -1,8 +1,8 @@
 .custom-legend {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin-left: 10%;
+  justify-content: center; /* Center align the items */
+  width: 100%; /* Take full width of container */
   gap: 10px;
   margin-bottom: 20px;
 }

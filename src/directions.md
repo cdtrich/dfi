@@ -2,7 +2,7 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
 <link rel="stylesheet" href="style.css">
 <!-- sidebar -->
 <link
@@ -42,25 +42,25 @@ import { renderPillarContent } from "./components/pillarRenderer.js";
   <h1>Directions</h1>
   <h2>Helping countries stay on course.</h2>
   <div id="hero-image"></div>
-<p style="margin-top: 4em;">The Internet Accountability Compass offers more than a snapshot—it provides a sense of direction. Designed for governments and the wider multistakeholder community, the Compass supports accountability by increasing transparency around national policies and actions that shape the digital space. It is both a tool for assessment and a catalyst for progress.
-</p>
-<p>By illuminating where countries stand and how far they have come, the Compass seeks to inspire ambition, encourage peer learning, and foster collective progress toward a digital future that is open, inclusive, secure, and rights-respecting. The Compass is not prescriptive—it does not claim to be the only path forward. Instead, it offers one possible constellation of indicators and data points that reflect shared aspirations.
-</p>
-<p>Rather than claiming to be definitive, the Compass presents one of many possible constellations of indicators and data points. Its purpose is to spark dialogue—about what matters, how progress should be measured, and how countries can hold themselves and each other accountable across four core dimensions: Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience.
-</p>
-<div style="text-align: left !important;">
-  <p>To interpret this progress, the Compass uses four categories to describe each country’s current trajectory:
-  </p>
-    <ol>
-      <li><b>Off Course:</b> The country’s current efforts diverge from international principles and commitments. A strategic shift is needed to align with shared goals.</li>
-      <li><b>Getting on Track:</b> The country has taken steps to align with global objectives; foundations are forming, but progress is still limited or uneven.
-      </li>
-      <li><b>On Track:</b> The country’s policies and actions are aligned with global objectives, showing steady and measurable advancement.
-      </li>
-      <li><b>Leading:</b> The country is not only on track but is setting a positive example—showing innovation, good practices, or leadership that others can learn from.
-      </li>
-    </ol>
 </div>
+<div class="body-text">
+  <p>The Internet Accountability Compass offers more than a snapshot—it provides a sense of direction. Designed for governments and the wider multistakeholder community, the Compass supports accountability by increasing transparency around national policies and actions that shape the digital space. It is both a tool for assessment and a catalyst for progress.
+  </p>
+  <p>By illuminating where countries stand and how far they have come, the Compass seeks to inspire ambition, encourage peer learning, and foster collective progress toward a digital future that is open, inclusive, secure, and rights-respecting. The Compass is not prescriptive—it does not claim to be the only path forward. Instead, it offers one possible constellation of indicators and data points that reflect shared aspirations.
+  </p>
+  <p>Rather than claiming to be definitive, the Compass presents one of many possible constellations of indicators and data points. Its purpose is to spark dialogue—about what matters, how progress should be measured, and how countries can hold themselves and each other accountable across four core dimensions: Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience.
+  </p>
+    <p>To interpret this progress, the Compass uses four categories to describe each country’s current trajectory:
+    </p>
+      <ol>
+        <li><b>Off Course:</b> The country’s current efforts diverge from international principles and commitments. A strategic shift is needed to align with shared goals.</li>
+        <li><b>Getting on Track:</b> The country has taken steps to align with global objectives; foundations are forming, but progress is still limited or uneven.
+        </li>
+        <li><b>On Track:</b> The country’s policies and actions are aligned with global objectives, showing steady and measurable advancement.
+        </li>
+        <li><b>Leading:</b> The country is not only on track but is setting a positive example—showing innovation, good practices, or leadership that others can learn from.
+        </li>
+      </ol>
 </div>
 
 <!-- data -->
@@ -146,8 +146,7 @@ const commitments = [
 ];
 ```
 
-<div class="grid grid-cols-1">
-  <div class="card">
+<div class="figure-w-full">
     ${resize((width) =>
       mapPillar(
         world,
@@ -158,7 +157,6 @@ const commitments = [
         { width }
       )
     )}
-  </div>
 </div>
 
 <!-- CONDITIONAL BODY TEXT PER PILLAR -->
@@ -172,14 +170,15 @@ renderPillarContent(selectedPillar);
 <!-- CONDITIONAL COMMITMENT MAPS PER PILLAR -->
 
 ```js
+// pass selected pillar for coloring
 const commitmentLegend = view(
-  viewofCustomLegend(commitments, commitments[0], "commitment")
+  viewofCustomLegend(commitments, commitments[0], "commitment", selectedPillar)
 );
 // console.log("commitments", commitments);
 // console.log("dfiFullFiltered", dfiFullFiltered);
 ```
 
-<div class="grid grid-cols-1">
+<div class="figure-w-full">
     ${resize((width) =>
       mapPillarCommitment(
         world,

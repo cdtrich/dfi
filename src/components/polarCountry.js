@@ -46,7 +46,7 @@ export function polarCountry(data, country) {
         fillScale.getColor(legend[2]),
         fillScale.getColor(legend[3]),
       ],
-      legend: true,
+      legend: false,
     },
     r: {
       range: [1, dotSize / 2],
@@ -142,19 +142,20 @@ export function polarCountry(data, country) {
       // }),
 
       // interactive labels
-      // Plot.tip(
-      //   data,
-      //   Plot.pointer({
-      //     x: ({ commitment_num_cardinal }) =>
-      //       longitude(commitment_num_cardinal),
-      //     y: ({ value }) => 90 - value / 100,
-      //     title: (d) => `${d.commitment_txt_cardinal}`,
-      //     dx: 4,
-      //     stroke: "white",
-      //     anchor: "bottom",
-      //     fontSize: 100,
-      //   })
-      // ),
+      Plot.tip(
+        dataFiltered,
+        Plot.pointer({
+          x: ({ commitment_num_cardinal }) =>
+            longitude(commitment_num_cardinal),
+          y: ({ value }) => 90 - value / 100,
+          title: (d) =>
+            `${Math.round(d.value)}` + "\n" + `${d.commitment_txt_cardinal}`,
+          dx: 4,
+          stroke: "white",
+          anchor: "bottom",
+          fontSize: 100,
+        })
+      ),
     ],
   });
   return plot;

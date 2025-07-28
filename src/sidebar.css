@@ -1,20 +1,24 @@
 :root {
   --sidebar-width: 100px;
   --sidebar-width-collapsed: 50px;
-  --sidebar-height: 800px;
+  --sidebar-height: 500px;
   --transition-speed: 0.3s;
   --primary-color: #2c3e5022;
   --secondary-color: #3498db;
-  --text-color: #444;
+  --text-color: #999;
+  --sans-serif: "Nunito Sans", -apple-system, BlinkMacSystemFont, "avenir next",
+    avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
   /* --text-color: #ecf0f1; */
-  --hover-color: #32baa7;
+  --hover-color: #000;
+  /* --hover-color: #32baa7; */
   /* --hover-color: #2980b9; */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: var(--sans-serif);
 }
 
 .sidebar {
@@ -40,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 20px 0;
+  padding: 0px 0;
   width: 100%;
 }
 
@@ -64,17 +68,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly; /* This will distribute items evenly */
   list-style-type: none;
   padding: 0;
   margin: 30px 0 0 0;
   width: 100%;
+  height: calc(100% - 50px); /* Take full height minus toggle button area */
   overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 .sidebar-menu li {
-  margin: 15px 0;
+  /* Remove fixed margin since flexbox will handle spacing */
   width: 100%;
   text-align: center;
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
 
 .sidebar-menu a {

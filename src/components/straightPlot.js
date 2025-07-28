@@ -122,8 +122,8 @@ export function straightPlot(data, country, { width, height } = {}) {
   const dotSize = window.innerWidth * 0.01;
 
   return Plot.plot({
-    width: width * 0.8,
-    marginLeft: width * 0.2,
+    width: width,
+    // marginLeft: width * 0.2,
     height: (vh / 5) * mean.length,
     marginRight: 4,
     marginTop: 100,
