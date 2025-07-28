@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Total score | Internet Accountability Compass</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/components/scales.bcdc1154.js">
+<link rel="modulepreload" href="../_import/components/onlyUnique.413399e1.js">
+<link rel="modulepreload" href="../_import/components/heatmap.60919e4a.js">
+<link rel="modulepreload" href="../_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="../_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="../_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="../_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="../_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+import {registerFile} from "../_observablehq/stdlib.js";
+
+registerFile("../data/dfi-compass.csv", {"name":"../data/dfi-compass.csv","mimeType":"text/csv","path":"../data/dfi-compass.csv"});
+registerFile("../data/dfi.csv", {"name":"../data/dfi.csv","mimeType":"text/csv","path":"../data/dfi.csv"});
+
+define({id: "bc5ed9c6", outputs: ["colorScales","onlyUnique","heatmap"], body: async () => {
+const [{colorScales}, {onlyUnique}, {heatmap}] = await Promise.all([import("../_import/components/scales.bcdc1154.js"), import("../_import/components/onlyUnique.413399e1.js"), import("../_import/components/heatmap.60919e4a.js")]);
+
+return {colorScales,onlyUnique,heatmap};
+}});
+
+define({id: "99cd8b67", inputs: ["FileAttachment"], outputs: ["dfiParse","dfiCompassParse","colors","lookup"], body: (FileAttachment) => {
+const dfiParse = FileAttachment("../data/dfi.csv").csv({ typed: true });
+const dfiCompassParse = FileAttachment("../data/dfi-compass.csv").csv({
+  typed: true,
+});
+// global color palette
+// const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
+// const colors = ["#32baa7", "#63d8a2", "#b9f27b", "#fff200"];
+const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
+// lookup
+const lookup = {
+  3: {
+    pillar_txt: "Human Rights",
+    commitments: {
+      7: { commitment_txt: "Freedom on the Net" },
+      8: { commitment_txt: "Global index on Responsible Al" },
+      9: { commitment_txt: "Global Cyberlaw Tracker" },
+    },
+  },
+  2: {
+    pillar_txt: "Negative Obligations",
+    commitments: {
+      4: { commitment_txt: "Global Internet Shutdowns" },
+      5: { commitment_txt: "Global E-Waste Monitor" },
+      6: { commitment_txt: "Overall Resilience" },
+    },
+  },
+  4: {
+    pillar_txt: "Enabling Environment",
+    commitments: {
+      10: { commitment_txt: "Rule of Law Index" },
+      11: { commitment_txt: "Freedom of Expression Index" },
+      12: { commitment_txt: "Accountability Index" },
+    },
+  },
+  1: {
+    pillar_txt: "Positive Obligations",
+    commitments: {
+      1: { commitment_txt: "ICT Development Index" },
+      2: { commitment_txt: "Global Cybersecurity Index" },
+      3: { commitment_txt: "Network Readiness Index" },
+    },
+  },
+};
+return {dfiParse,dfiCompassParse,colors,lookup};
+}});
+
+define({id: "e9817645", inputs: ["dfiParse","lookup","dfiCompassParse"], outputs: ["dfi","dfiCompass"], body: (dfiParse,lookup,dfiCompassParse) => {
+const dfi = dfiParse.map((item) => {
+  const pillar = lookup[item.pillar_num];
+  const commitment = pillar?.commitments[item.commitment_num];
+
+  return {
+    ...item,
+    pillar_txt: pillar?.pillar_txt || item.pillar_txt,
+    commitment_txt: commitment?.commitment_txt || item.commitment_txt,
+  };
+});
+const dfiCompass = dfiCompassParse.map((item) => {
+  const pillar = lookup[item.pillar_num];
+  // const commitment = pillar?.commitments[item.commitment_num];
+
+  return {
+    ...item,
+    pillar_txt: pillar?.pillar_txt || item.pillar_txt,
+    // commitment_txt: commitment?.commitment_txt || item.commitment_txt,
+  };
+});
+return {dfi,dfiCompass};
+}});
+
+define({id: "9a3b87ad", body: () => {
+// console.log("dfi", dfi);
+// console.log("dfiCompass", dfiCompass);
+}});
+
+define({id: "b75d95f6", inputs: ["dfi","dfiCompass"], outputs: ["uniqueCommitments","uniquePillars"], body: (dfi,dfiCompass) => {
+const uniqueCommitments = [...new Set(dfi.map((item) => item.commitment_txt))];
+const uniquePillars = [...new Set(dfiCompass.map((item) => item.pillar_txt))];
+// console.log("uniqueCommitments:", uniqueCommitments);
+// console.log("uniquePillars", uniquePillars);
+return {uniqueCommitments,uniquePillars};
+}});
+
+define({id: "3d7195b2", mode: "inline", inputs: ["resize","heatmap","dfi","display"], body: async (resize,heatmap,dfi,display) => {
+display(await(
+resize((width) => heatmap(dfi, {width}))
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<!-- back to root button -->
+<a href="../" class="back-to-root">
+  <span class="arrow"></span>
+</a>
+<!-- import externals -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_file/style.b6bbf565.css">
+
+<!-- import components -->
+<div class="observablehq observablehq--block"><!--:bc5ed9c6:--></div>
+<!-- data -->
+<div class="observablehq observablehq--block"><!--:99cd8b67:--></div>
+<div class="observablehq observablehq--block"><!--:e9817645:--></div>
+<div class="observablehq observablehq--block"><!--:9a3b87ad:--></div>
+<!-- world map and data -->
+<!-- 0. data -->
+<div class="observablehq observablehq--block"><!--:b75d95f6:--></div>
+  <!-- 2. input  -->
+<h1 id="total-score" tabindex="-1"><a class="observablehq-header-anchor" href="#total-score">Total score</a></h1>
+<div class="card">
+    <observablehq-loading></observablehq-loading><!--:3d7195b2:-->
+</div>
+</main>
+</div>

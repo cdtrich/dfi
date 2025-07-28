@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Internet Accountability Compass</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/components/straightPlot.e044325e.js">
+<link rel="modulepreload" href="../_import/components/polarCountry.98aab214.js">
+<link rel="modulepreload" href="../_import/components/sources.ae6752f3.js">
+<link rel="modulepreload" href="../_import/components/onlyUnique.413399e1.js">
+<link rel="modulepreload" href="../_import/components/sidebar.6ab8b7a8.js">
+<link rel="modulepreload" href="../_import/components/scales.bcdc1154.js">
+<link rel="modulepreload" href="../_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="../_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="../_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="../_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="../_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+import {registerFile} from "../_observablehq/stdlib.js";
+
+registerFile("../data/dfiCardinal.csv", {"name":"../data/dfiCardinal.csv","mimeType":"text/csv","path":"../_file/data/dfiCardinal.bc7848bf.csv","lastModified":1753547558128});
+registerFile("../data/dfiFull.csv", {"name":"../data/dfiFull.csv","mimeType":"text/csv","path":"../_file/data/dfiFull.a5022bfa.csv","lastModified":1753547497627});
+registerFile("../data/sources.csv", {"name":"../data/sources.csv","mimeType":"text/csv","path":"../_file/data/sources.b55fd240.csv","lastModified":1753547496513});
+
+define({id: "1794840b", outputs: ["straightPlot","polarCountry","sources","onlyUnique","sidebar"], body: async () => {
+const [{straightPlot}, {polarCountry}, {sources}, {onlyUnique}, {sidebar}] = await Promise.all([import("../_import/components/straightPlot.e044325e.js"), import("../_import/components/polarCountry.98aab214.js"), import("../_import/components/sources.ae6752f3.js"), import("../_import/components/onlyUnique.413399e1.js"), import("../_import/components/sidebar.6ab8b7a8.js")]);
+
+return {straightPlot,polarCountry,sources,onlyUnique,sidebar};
+}});
+
+define({id: "488dff68", inputs: ["FileAttachment"], outputs: ["country","dfiFull","dfiCardinal","sourcesParse"], body: (FileAttachment) => {
+const country = "Yemen";
+const dfiFull = FileAttachment("../data/dfiFull.csv").csv({
+  typed: true,
+});
+const dfiCardinal = FileAttachment("../data/dfiCardinal.csv").csv({
+  typed: true,
+});
+const sourcesParse = FileAttachment("../data/sources.csv").csv({
+  typed: true,
+});
+return {country,dfiFull,dfiCardinal,sourcesParse};
+}});
+
+define({id: "6166b837", inputs: ["dfiFull","country","dfiCardinal"], outputs: ["dfiCountry","dfiCardinalCountry"], body: (dfiFull,country,dfiCardinal) => {
+const dfiCountry = dfiFull.filter((d) => d.NAME_ENGL == country)[0];
+const dfiCardinalCountry = dfiCardinal.filter((d) => d.NAME_ENGL == country);
+return {dfiCountry,dfiCardinalCountry};
+}});
+
+define({id: "8c701594", inputs: ["dfiCountry"], outputs: ["total","group"], body: (dfiCountry) => {
+const total = Math.round(dfiCountry.total);
+const group = dfiCountry.group;
+return {total,group};
+}});
+
+define({id: "ba8a0034", inputs: ["sourcesParse","country"], outputs: ["sourcesData"], body: (sourcesParse,country) => {
+const sourcesData = sourcesParse.filter((d) => d.NAME_ENGL === country);
+return {sourcesData};
+}});
+
+define({id: "aff64e4f", mode: "inline", inputs: ["country","display"], body: async (country,display) => {
+display(await(
+country
+))
+}});
+
+define({id: "f7ed4a1a", inputs: ["dfiFull","onlyUnique"], outputs: ["commitments","commitmentUnique"], body: (dfiFull,onlyUnique) => {
+var commitments = dfiFull.map((d) => d.commitment_txt);
+var commitmentUnique = commitments.filter(onlyUnique);
+return {commitments,commitmentUnique};
+}});
+
+define({id: "aff64e4f-1", mode: "inline", inputs: ["country","display"], body: async (country,display) => {
+display(await(
+country
+))
+}});
+
+define({id: "11239872", mode: "inline", inputs: ["total","display"], body: async (total,display) => {
+display(await(
+total
+))
+}});
+
+define({id: "ad936fcb", mode: "inline", inputs: ["group","display"], body: async (group,display) => {
+display(await(
+group
+))
+}});
+
+define({id: "ead309f7", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[0].value === "NA" ? dfiCardinalCountry[0].note : `${Math.round(dfiCardinalCountry[0].value)} (${dfiCardinalCountry[0].group_value})`
+))
+}});
+
+define({id: "f872e96f", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[0].pillar_txt
+))
+}});
+
+define({id: "e832ca86", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[1].value === "NA" ? dfiCardinalCountry[1].note : `${Math.round(dfiCardinalCountry[1].value)} (${dfiCardinalCountry[1].group_value})`
+))
+}});
+
+define({id: "79490ed4", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[1].pillar_txt
+))
+}});
+
+define({id: "5b54142f", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[2].value === "NA" ? dfiCardinalCountry[2].note : `${Math.round(dfiCardinalCountry[2].value)} (${dfiCardinalCountry[2].group_value})`
+))
+}});
+
+define({id: "12d25801", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[2].pillar_txt
+))
+}});
+
+define({id: "717d9c10", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[3].value === "NA" ? dfiCardinalCountry[3].note : `${Math.round(dfiCardinalCountry[3].value)} (${dfiCardinalCountry[3].group_value})`
+))
+}});
+
+define({id: "16349081", mode: "inline", inputs: ["dfiCardinalCountry","display"], body: async (dfiCardinalCountry,display) => {
+display(await(
+dfiCardinalCountry[3].pillar_txt
+))
+}});
+
+define({id: "4e63e941", mode: "inline", inputs: ["resize","polarCountry","dfiFull","country","display"], body: async (resize,polarCountry,dfiFull,country,display) => {
+display(await(
+resize((width) => polarCountry(dfiFull, country, {width}))
+))
+}});
+
+define({id: "2e8321a1", mode: "inline", inputs: ["resize","straightPlot","dfiFull","country","display"], body: async (resize,straightPlot,dfiFull,country,display) => {
+display(await(
+resize((width) => straightPlot(dfiFull, country, {width}))
+))
+}});
+
+define({id: "000fc6ff", inputs: ["sources","sourcesData"], body: (sources,sourcesData) => {
+sources(sourcesData);
+}});
+
+define({id: "561e4127", mode: "inline", inputs: ["sidebar","display"], body: async (sidebar,display) => {
+display(await(
+sidebar()
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+
+<link rel="stylesheet" href="../_file/style.b6bbf565.css">
+<!-- sidebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../_file/sidebar.f9df6791.css">
+
+<!-- back to root button -->
+<a href="../" class="back-to-root">
+  <span class="arrow"></span>
+</a>
+<!-- import components -->
+<div class="observablehq observablehq--block"><!--:1794840b:--></div>
+<!-- load countries -->
+<div class="observablehq observablehq--block"><!--:488dff68:--></div>
+<!-- calculate country specific data for intro -->
+<div class="observablehq observablehq--block"><!--:6166b837:--></div>
+<div class="observablehq observablehq--block"><!--:8c701594:--></div>
+<!-- to add -->
+<div class="observablehq observablehq--block"><!--:ba8a0034:--></div>
+<div class="hero">
+  <h1><observablehq-loading></observablehq-loading><!--:aff64e4f:--></h1>
+</div>
+<div class="observablehq observablehq--block"><!--:f7ed4a1a:--></div>
+<!-- text and polar -->
+<div class="body-text">
+<div class="grid grid-cols-3">
+  <div class="card grid-col-1">
+  <p><observablehq-loading></observablehq-loading><!--:aff64e4f-1:--> scores a total of <observablehq-loading></observablehq-loading><!--:11239872:--> points (<i><observablehq-loading></observablehq-loading><!--:ad936fcb:--></i>).</p>
+  <p>Cardinal point breakdown:</p>
+<ul>
+  <li><observablehq-loading></observablehq-loading><!--:ead309f7:--> in <span class="pillar-connectivity" style="font-weight: 700;"><observablehq-loading></observablehq-loading><!--:f872e96f:--></span></li>
+  <li><observablehq-loading></observablehq-loading><!--:e832ca86:--> in <span class="pillar-rights" style="font-weight: 700;"><observablehq-loading></observablehq-loading><!--:79490ed4:--></span></li>
+  <li><observablehq-loading></observablehq-loading><!--:5b54142f:--> in <span class="pillar-responsibility" style="font-weight: 700;"><observablehq-loading></observablehq-loading><!--:12d25801:--></span></li>
+  <li><observablehq-loading></observablehq-loading><!--:717d9c10:--> in <span class="pillar-trust" style="font-weight: 700;"><observablehq-loading></observablehq-loading><!--:16349081:--></span></li>
+</ul>
+    </div>
+  <div class="card grid-col-2">
+        <observablehq-loading></observablehq-loading><!--:4e63e941:-->
+    </div>
+</div>
+</div>
+<!-- # Scores -->
+  <div class="card size-full">
+      <observablehq-loading></observablehq-loading><!--:2e8321a1:-->
+    </div>
+  <div id="sources-section">
+  </div>
+<div class="observablehq observablehq--block"><!--:000fc6ff:--></div>
+<!-- sidebar -->
+<div>
+    <observablehq-loading></observablehq-loading><!--:561e4127:-->
+</div>
+</main>
+</div>

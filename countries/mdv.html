@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Internet Accountability Compass</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/components/straightPlot.e044325e.js">
+<link rel="modulepreload" href="../_import/components/polarCountry.98aab214.js">
+<link rel="modulepreload" href="../components/goodPracticeCards.js">
+<link rel="modulepreload" href="../_import/components/onlyUnique.413399e1.js">
+<link rel="modulepreload" href="../_import/components/sidebar.6ab8b7a8.js">
+<link rel="modulepreload" href="../_import/components/scales.bcdc1154.js">
+<link rel="modulepreload" href="../_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="../_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="../_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="../_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="../_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+import {registerFile} from "../_observablehq/stdlib.js";
+
+registerFile("../data/dfiFull.csv", {"name":"../data/dfiFull.csv","mimeType":"text/csv","path":"../_file/data/dfiFull.a5022bfa.csv","lastModified":1753547497627});
+registerFile("../data/sources.csv", {"name":"../data/sources.csv","mimeType":"text/csv","path":"../_file/data/sources.b55fd240.csv","lastModified":1753547496513});
+
+define({id: "f4f92dca", outputs: ["straightPlot","polarCountry","goodPracticeCards","onlyUnique","sidebar"], body: async () => {
+const [{straightPlot}, {polarCountry}, {goodPracticeCards}, {onlyUnique}, {sidebar}] = await Promise.all([import("../_import/components/straightPlot.e044325e.js"), import("../_import/components/polarCountry.98aab214.js"), import("../components/goodPracticeCards.js"), import("../_import/components/onlyUnique.413399e1.js"), import("../_import/components/sidebar.6ab8b7a8.js")]);
+
+return {straightPlot,polarCountry,goodPracticeCards,onlyUnique,sidebar};
+}});
+
+define({id: "9fde74af", inputs: ["FileAttachment"], outputs: ["country","dfi","goodpracticeParse"], body: (FileAttachment) => {
+const country = "Maldives";
+const dfi = FileAttachment("../data/dfiFull.csv").csv({
+  typed: true,
+});
+const goodpracticeParse = FileAttachment("../data/sources.csv").csv({
+  typed: true,
+});
+return {country,dfi,goodpracticeParse};
+}});
+
+define({id: "215326b8", inputs: ["dfi","country"], outputs: ["dfiCountry"], body: (dfi,country) => {
+const dfiCountry = dfi.filter((d) => d.NAME_ENGL == country)[0];
+return {dfiCountry};
+}});
+
+define({id: "8c701594", inputs: ["dfiCountry"], outputs: ["total","group"], body: (dfiCountry) => {
+const total = Math.round(dfiCountry.total);
+const group = dfiCountry.group;
+return {total,group};
+}});
+
+define({id: "ab5d3a8e", inputs: ["goodpracticeParse","country"], outputs: ["goodpracticeData"], body: (goodpracticeParse,country) => {
+const goodpracticeData = goodpracticeParse.filter(
+  (d) => d.NAME_ENGL === country
+);
+return {goodpracticeData};
+}});
+
+define({id: "aff64e4f", mode: "inline", inputs: ["country","display"], body: async (country,display) => {
+display(await(
+country
+))
+}});
+
+define({id: "f6f74a95", inputs: ["dfi","onlyUnique"], outputs: ["commitments","commitmentUnique"], body: (dfi,onlyUnique) => {
+var commitments = dfi.map((d) => d.commitment_txt);
+var commitmentUnique = commitments.filter(onlyUnique);
+return {commitments,commitmentUnique};
+}});
+
+define({id: "aff64e4f-1", mode: "inline", inputs: ["country","display"], body: async (country,display) => {
+display(await(
+country
+))
+}});
+
+define({id: "11239872", mode: "inline", inputs: ["total","display"], body: async (total,display) => {
+display(await(
+total
+))
+}});
+
+define({id: "ad936fcb", mode: "inline", inputs: ["group","display"], body: async (group,display) => {
+display(await(
+group
+))
+}});
+
+define({id: "edb0f7f4", mode: "inline", inputs: ["resize","polarCountry","dfi","country","display"], body: async (resize,polarCountry,dfi,country,display) => {
+display(await(
+resize((width) => polarCountry(dfi, country, {width}))
+))
+}});
+
+define({id: "934f1e3e", mode: "inline", inputs: ["resize","straightPlot","dfi","country","display"], body: async (resize,straightPlot,dfi,country,display) => {
+display(await(
+resize((width) => straightPlot(dfi, country, {width}))
+))
+}});
+
+define({id: "105720ef", inputs: ["goodPracticeCards","goodpracticeData"], body: (goodPracticeCards,goodpracticeData) => {
+goodPracticeCards(goodpracticeData);
+}});
+
+define({id: "561e4127", mode: "inline", inputs: ["sidebar","display"], body: async (sidebar,display) => {
+display(await(
+sidebar()
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+
+<link rel="stylesheet" href="../_file/style.b6bbf565.css">
+<!-- sidebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../_file/sidebar.f9df6791.css">
+
+<!-- back to root button -->
+<a href="../" class="back-to-root">
+  <span class="arrow"></span>
+</a>
+<!-- import components -->
+<div class="observablehq observablehq--block"><!--:f4f92dca:--></div>
+<!-- load countries -->
+<div class="observablehq observablehq--block"><!--:9fde74af:--></div>
+<!-- calculate country specific data for intro -->
+<div class="observablehq observablehq--block"><!--:215326b8:--></div>
+<div class="observablehq observablehq--block"><!--:8c701594:--></div>
+<div class="observablehq observablehq--block"><!--:ab5d3a8e:--></div>
+<div class="hero">
+  <h1><observablehq-loading></observablehq-loading><!--:aff64e4f:--></h1>
+</div>
+<div class="observablehq observablehq--block"><!--:f6f74a95:--></div>
+<!-- text and polar -->
+<div class="grid grid-cols-4">
+<div class="card grid-col-1"></div>
+<div class="card grid-col-2">
+<observablehq-loading></observablehq-loading><!--:aff64e4f-1:--> scores a total of <observablehq-loading></observablehq-loading><!--:11239872:--> points (<i><observablehq-loading></observablehq-loading><!--:ad936fcb:--></i>). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+  </div>
+<div class="card grid-col-3">
+      <observablehq-loading></observablehq-loading><!--:edb0f7f4:-->
+  </div>
+<div class="card grid-col-4"></div>
+</div>
+<!-- # Scores -->
+  <div class="card size-full">
+      <observablehq-loading></observablehq-loading><!--:934f1e3e:-->
+    </div>
+  <div id="goodpractice-section">
+  </div>
+<div class="observablehq observablehq--block"><!--:105720ef:--></div>
+<!-- sidebar -->
+<div>
+    <observablehq-loading></observablehq-loading><!--:561e4127:-->
+</div>
+</main>
+</div>

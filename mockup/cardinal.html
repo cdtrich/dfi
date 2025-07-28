@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Internet Accountability Compass</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/components/scales.bcdc1154.js">
+<link rel="modulepreload" href="../_import/components/onlyUnique.413399e1.js">
+<link rel="modulepreload" href="../components/polarPlotMultipleCol.js">
+<link rel="modulepreload" href="../_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="../_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+import {registerFile} from "../_observablehq/stdlib.js";
+
+registerFile("../data/dfi.csv", {"name":"../data/dfi.csv","mimeType":"text/csv","path":"../data/dfi.csv"});
+
+define({id: "39e26126", outputs: ["colorScales","onlyUnique","polarPlotMultipleCol"], body: async () => {
+const [{colorScales}, {onlyUnique}, {polarPlotMultipleCol}] = await Promise.all([import("../_import/components/scales.bcdc1154.js"), import("../_import/components/onlyUnique.413399e1.js"), import("../components/polarPlotMultipleCol.js")]);
+
+return {colorScales,onlyUnique,polarPlotMultipleCol};
+}});
+
+define({id: "98642dda", inputs: ["FileAttachment"], outputs: ["dfiParse","lookup"], body: (FileAttachment) => {
+const dfiParse = FileAttachment("../data/dfi.csv").csv({ typed: true });
+const lookup = {
+  3: {
+    pillar_txt: "Human Rights",
+    commitments: {
+      7: { commitment_txt: "Freedom on the Net" },
+      8: { commitment_txt: "Global index on Responsible Al" },
+      9: { commitment_txt: "Global Cyberlaw Tracker" },
+    },
+  },
+  2: {
+    pillar_txt: "Negative Obligations",
+    commitments: {
+      4: { commitment_txt: "Global Internet Shutdowns" },
+      5: { commitment_txt: "Global E-Waste Monitor" },
+      6: { commitment_txt: "Overall Resilience" },
+    },
+  },
+  4: {
+    pillar_txt: "Enabling Environment",
+    commitments: {
+      10: { commitment_txt: "Rule of Law Index" },
+      11: { commitment_txt: "Freedom of Expression Index" },
+      12: { commitment_txt: "Accountability Index" },
+    },
+  },
+  1: {
+    pillar_txt: "Positive Obligations",
+    commitments: {
+      1: { commitment_txt: "ICT Development Index" },
+      2: { commitment_txt: "Global Cybersecurity Index" },
+      3: { commitment_txt: "Network Readiness Index" },
+    },
+  },
+};
+return {dfiParse,lookup};
+}});
+
+define({id: "4e9073f7", inputs: ["dfiParse","lookup"], outputs: ["dfi"], body: (dfiParse,lookup) => {
+const dfi = dfiParse.map((item) => {
+  const pillar = lookup[item.pillar_num];
+  const commitment = pillar?.commitments[item.commitment_num];
+
+  return {
+    ...item,
+    pillar_txt: pillar?.pillar_txt || item.pillar_txt,
+    commitment_txt: commitment?.commitment_txt || item.commitment_txt,
+  };
+});
+return {dfi};
+}});
+
+define({id: "2c54e169", inputs: ["dfi"], outputs: ["countries"], body: (dfi) => {
+var countries = dfi.map((d) => d.NAME_ENGL);
+return {countries};
+}});
+
+define({id: "b80f4c4c", mode: "inline", inputs: ["resize","polarPlotMultipleCol","dfi","countries","display"], body: async (resize,polarPlotMultipleCol,dfi,countries,display) => {
+display(await(
+resize((width) => polarPlotMultipleCol(dfi, countries, {width}))
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<!-- back to root button -->
+<a href="../" class="back-to-root">
+  <span class="arrow"></span>
+</a>
+<!-- import externals -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_file/style.b6bbf565.css">
+
+<!-- import components -->
+<div class="observablehq observablehq--block"><!--:39e26126:--></div>
+<!-- data -->
+<div class="observablehq observablehq--block"><!--:98642dda:--></div>
+<div class="observablehq observablehq--block"><!--:4e9073f7:--></div>
+<div class="observablehq observablehq--block"><!--:2c54e169:--></div>
+<div class="card" id="polarPlotMultiple">
+    <observablehq-loading></observablehq-loading><!--:b80f4c4c:-->
+  </div>
+</main>
+</div>

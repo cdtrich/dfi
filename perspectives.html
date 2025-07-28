@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Internet Accountability Compass</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.9f8f5f1f.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.9f8f5f1f.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/components/scales.bcdc1154.js">
+<link rel="modulepreload" href="./_import/components/onlyUnique.413399e1.js">
+<link rel="modulepreload" href="./_import/components/sources.ae6752f3.js">
+<link rel="modulepreload" href="./_import/components/sidebar.6ab8b7a8.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/sources.csv", {"name":"./data/sources.csv","mimeType":"text/csv","path":"./_file/data/sources.b55fd240.csv","lastModified":1753547496513});
+
+define({id: "cf86eed9", outputs: ["colorScales","onlyUnique","sources","sidebar"], body: async () => {
+const [{colorScales}, {onlyUnique}, {sources}, {sidebar}] = await Promise.all([import("./_import/components/scales.bcdc1154.js"), import("./_import/components/onlyUnique.413399e1.js"), import("./_import/components/sources.ae6752f3.js"), import("./_import/components/sidebar.6ab8b7a8.js")]);
+
+return {colorScales,onlyUnique,sources,sidebar};
+}});
+
+define({id: "b7987888", inputs: ["FileAttachment"], outputs: ["sourcesData"], body: (FileAttachment) => {
+const sourcesData = FileAttachment("./data/sources.csv").csv({
+  typed: true,
+});
+return {sourcesData};
+}});
+
+define({id: "66acfd8d", inputs: ["sourcesData"], outputs: ["sourceTypeUnique","sourceCountryUnique"], body: (sourcesData) => {
+const sourceTypeUnique = [...new Set(sourcesData.map((d) => d.type))];
+const sourceCountryUnique = [...new Set(sourcesData.map((d) => d.NAME_ENGL))];
+return {sourceTypeUnique,sourceCountryUnique};
+}});
+
+define({id: "4ef4b8ed", inputs: ["view","Inputs","sourceTypeUnique","html","sourceCountryUnique"], outputs: ["selectSourceType","selectSourceCountry"], body: (view,Inputs,sourceTypeUnique,html,sourceCountryUnique) => {
+const selectSourceType = view(
+  Inputs.checkbox(sourceTypeUnique, {
+    label: "Source type",
+    format: (x) =>
+      html`<span style="font-weight: [400, 700, 200];">${x}</span>`,
+  })
+);
+const selectSourceCountry = view(
+  Inputs.search(sourceCountryUnique, {
+    value: "",
+    datalist: sourceCountryUnique,
+    placeholder: "Search countries",
+  })
+);
+return {selectSourceType,selectSourceCountry};
+}});
+
+define({id: "35be020b", inputs: ["sourcesData","selectSourceType","selectSourceCountry"], outputs: ["sourcesDataFiltered"], body: (sourcesData,selectSourceType,selectSourceCountry) => {
+const sourcesDataFiltered = sourcesData.filter((d) => {
+  const typeMatch =
+    !selectSourceType ||
+    selectSourceType.length === 0 ||
+    selectSourceType.includes(d.type);
+  const countryMatch =
+    !selectSourceCountry ||
+    selectSourceCountry.length === 0 ||
+    selectSourceCountry.includes(d.NAME_ENGL);
+  return typeMatch && countryMatch;
+});
+return {sourcesDataFiltered};
+}});
+
+define({id: "a4f74a87", inputs: ["sources","sourcesDataFiltered"], body: (sources,sourcesDataFiltered) => {
+sources(sourcesDataFiltered);
+}});
+
+define({id: "8ac5d2b8", inputs: ["Inputs","sourcesDataFiltered"], body: (Inputs,sourcesDataFiltered) => {
+Inputs.table(sourcesDataFiltered);
+}});
+
+define({id: "0e8840db", inputs: ["Inputs","sourcesData"], body: (Inputs,sourcesData) => {
+Inputs.table(sourcesData);
+}});
+
+define({id: "561e4127", mode: "inline", inputs: ["sidebar","display"], body: async (sidebar,display) => {
+display(await(
+sidebar()
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<!-- import externals -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./_file/style.b6bbf565.css">
+<link rel="stylesheet" href="./_file/sidebar.f9df6791.css">
+
+<!-- back to root button -->
+<a href="../" class="back-to-root">
+  <span class="arrow"></span>
+</a>
+<!-- import components -->
+<div class="observablehq observablehq--block"><!--:cf86eed9:--></div>
+<!-- data -->
+<div class="observablehq observablehq--block"><!--:b7987888:--></div>
+<!-- hero -->
+<div class="hero">
+  <h1>Perspectives</h1>
+  <h2>Sharing knowledge to accelerate progress.</h2>
+  <!-- <div id="hero-image"></div> -->
+</div>
+<div class="body-text">
+<p>Accountability in the digital realm is not a new concept—extensive research, advocacy, and policy innovation have shaped the global understanding of what it means to build a safe, inclusive, and rights-respecting Internet. Around the world, governments, civil society, international organisations, and research institutions have developed tools, frameworks, and initiatives to uphold commitments to connectivity, human rights, sustainability, and resilience.</p>
+<p>Yet this valuable knowledge often remains fragmented, siloed by region, sector, or theme. This section brings together a curated collection of complementary sources, analysis, and projects that highlight good practices, policy innovations, and real-world applications of the principles captured in the Internet Accountability Compass.</p>
+<p>Whether it's a successful regulatory reform, an inclusive AI policy, a transparent approach to digital trade, or a strong national cybersecurity framework—these examples demonstrate that progress is possible. They also offer insights into how shared digital principles, such as those in the Global Digital Compact, can be translated into meaningful action.</p>
+<p>Together, these resources help build a clearer picture of what digital accountability looks like in practice—and how it can be strengthened globally.</p>
+</div>
+<!-- data processing -->
+<div class="observablehq observablehq--block"><!--:66acfd8d:--></div>
+<!-- input controls -->
+<div class="observablehq observablehq--block"><!--:4ef4b8ed:--></div>
+<!-- filtered data -->
+<div class="observablehq observablehq--block"><!--:35be020b:--></div>
+<!-- output -->
+<div class="observablehq observablehq--block"><!--:a4f74a87:--></div>
+<!-- debug tables (optional) -->
+<div class="observablehq observablehq--block"><!--:8ac5d2b8:--></div>
+<div class="observablehq observablehq--block"><!--:0e8840db:--></div>
+<!-- sources section -->
+<div id="sources-section"></div>
+<!-- sidebar -->
+<div>
+    <observablehq-loading></observablehq-loading><!--:561e4127:-->
+</div>
+</main>
+</div>

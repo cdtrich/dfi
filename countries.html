@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Coutry overview | Internet Accountability Compass</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.9f8f5f1f.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.9f8f5f1f.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/components/scales.bcdc1154.js">
+<link rel="modulepreload" href="./_import/components/polar.f5dd5bb3.js">
+<link rel="modulepreload" href="./_import/components/heatmap.60919e4a.js">
+<link rel="modulepreload" href="./_import/components/sidebar.6ab8b7a8.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/dfiCardinal.csv", {"name":"./data/dfiCardinal.csv","mimeType":"text/csv","path":"./_file/data/dfiCardinal.bc7848bf.csv","lastModified":1753547558128});
+registerFile("./data/dfiFull.csv", {"name":"./data/dfiFull.csv","mimeType":"text/csv","path":"./_file/data/dfiFull.a5022bfa.csv","lastModified":1753547497627});
+
+define({id: "35335006", outputs: ["colorScales","polar","heatmap","sidebar"], body: async () => {
+const [{colorScales}, {polar}, {heatmap}, {sidebar}] = await Promise.all([import("./_import/components/scales.bcdc1154.js"), import("./_import/components/polar.f5dd5bb3.js"), import("./_import/components/heatmap.60919e4a.js"), import("./_import/components/sidebar.6ab8b7a8.js")]);
+
+return {colorScales,polar,heatmap,sidebar};
+}});
+
+define({id: "671fc78e", inputs: ["FileAttachment"], outputs: ["dfiFull","dfiCardinal","colors"], body: (FileAttachment) => {
+const dfiFull = FileAttachment("./data/dfiFull.csv").csv({ typed: true });
+const dfiCardinal = FileAttachment("./data/dfiCardinal.csv").csv({
+  typed: true,
+});
+const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
+return {dfiFull,dfiCardinal,colors};
+}});
+
+define({id: "98965364", inputs: ["view","Inputs"], outputs: ["selectType"], body: (view,Inputs) => {
+// console.log("dfiCardinal", dfiCardinal);
+const selectType = view(
+  Inputs.radio(["🧭 Compass view", "🏁 Table view"], {
+    datalist: ["🧭 Compass view", "🏁 Table view"],
+    value: "🧭 Compass view",
+  })
+);
+return {selectType};
+}});
+
+define({id: "4d5a3afa", inputs: ["selectType","html","resize","polar","dfiFull","heatmap","dfiCardinal"], outputs: ["chartView"], body: (selectType,html,resize,polar,dfiFull,heatmap,dfiCardinal) => {
+const chartView =
+  selectType === "🧭 Compass view"
+    ? html`<div class="card">
+        ${resize((width) => polar(dfiFull, { width }))}
+      </div>`
+    : html`<div class="card">
+        ${resize((width) => heatmap(dfiCardinal, { width }))}
+      </div>`;
+return {chartView};
+}});
+
+define({id: "eba86163", mode: "inline", inputs: ["chartView","display"], body: async (chartView,display) => {
+display(await(
+chartView
+))
+}});
+
+define({id: "561e4127", mode: "inline", inputs: ["sidebar","display"], body: async (sidebar,display) => {
+display(await(
+sidebar()
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<!-- import externals -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="./_file/style.b6bbf565.css">
+<!-- sidebar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./_file/sidebar.f9df6791.css">
+
+<!-- back to root button -->
+<a href="../" class="back-to-root">
+  <span class="arrow"></span>
+</a>
+<!-- import components -->
+<div class="observablehq observablehq--block"><!--:35335006:--></div>
+<!-- data -->
+<div class="observablehq observablehq--block"><!--:671fc78e:--></div>
+<div class="hero">
+  <h1>Country Insights</h1>
+  <h2>Reviewing progress. Learning from others.</h2>
+  <!-- <div id="hero-image"></div> -->
+  <p style="margin-top: 4em;">Understanding how countries are implementing digital principles and commitments requires visibility into their policies, actions, and progress. The aim is not to rank or rate countries, but to offer a clear and accessible overview of national records across the four cardinal points of the Internet Accountability Compass: Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience.
+  </p>
+  <p>This section provides a country-by-country view of how governments are translating digital commitments into action. The data presented here enables countries to reflect on their own progress—highlighting areas of strength, as well as opportunities for improvement. At the same time, it supports mutual learning by showing how other governments are approaching similar challenges. Whether looking within a region or across different governance models, this resource helps identify examples and good practices that may be relevant or inspiring in relation to fostering digital inclusion, safeguarding rights, strengthening trust, or advancing sustainable and responsible innovation.
+</p>
+  <p>By making information more accessible, the Compass aims to promote transparency and encourage constructive dialogue among policymakers, civil society, and international partners. It is intended to support collaboration and help align national efforts with global digital principles, including those outlined in the Global Digital Compact. This is a space for reflection, comparison, and shared progress—a tool for governments that are committed to building a more open, inclusive, and accountable digital future.
+</p>
+  <p>The country overview provides information about how each country performs across all dimensions of the Compass.
+</p>
+  <p>The table view provides the overall score per individual dimension. A blank field for an individual country indicates that the data for one or more categories is missing. 
+</p>
+<div class="observablehq observablehq--block"><!--:98965364:--></div>
+</div>
+<div class="observablehq observablehq--block"><!--:4d5a3afa:--></div>
+<div class="figure-w-full">
+  <observablehq-loading></observablehq-loading><!--:eba86163:-->
+</div>
+<!-- sidebar -->
+<div>
+    <observablehq-loading></observablehq-loading><!--:561e4127:-->
+</div>
+</main>
+</div>

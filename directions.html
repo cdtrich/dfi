@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Internet Accountability Compass</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.9f8f5f1f.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.9f8f5f1f.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/components/scales.bcdc1154.js">
+<link rel="modulepreload" href="./_import/components/onlyUnique.413399e1.js">
+<link rel="modulepreload" href="./_import/components/mapPillar.474e2cac.js">
+<link rel="modulepreload" href="./_import/components/mapTotal.9ecca478.js">
+<link rel="modulepreload" href="./_import/components/mapTotalScorecard.0b367518.js">
+<link rel="modulepreload" href="./_import/components/mapTotalCatGIFIquant5.fd2d1b0b.js">
+<link rel="modulepreload" href="./_import/components/mapPillarCommitment.7aa6bdcc.js">
+<link rel="modulepreload" href="./_import/components/customLegend.149984d7.js">
+<link rel="modulepreload" href="./_import/components/renderMapWithLegend.17eef911.js">
+<link rel="modulepreload" href="./_import/components/sidebar.6ab8b7a8.js">
+<link rel="modulepreload" href="./_import/components/pillarRenderer.1174c242.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.15/_esm.js">
+<link rel="modulepreload" href="./_import/components/pillarText.fa8c69b8.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="./_npm/topojson-client@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/CNTR_RG_60M_2024_4326.json", {"name":"./data/CNTR_RG_60M_2024_4326.json","mimeType":"application/json","path":"./_file/data/CNTR_RG_60M_2024_4326.21027f91.json","lastModified":1753547366135});
+registerFile("./data/dfiCardinal.csv", {"name":"./data/dfiCardinal.csv","mimeType":"text/csv","path":"./_file/data/dfiCardinal.bc7848bf.csv","lastModified":1753547558128});
+registerFile("./data/dfiFull.csv", {"name":"./data/dfiFull.csv","mimeType":"text/csv","path":"./_file/data/dfiFull.a5022bfa.csv","lastModified":1753547497627});
+
+define({id: "9a798cd6", outputs: ["colorScales","onlyUnique","mapPillar","mapTotal","mapTotalScorecard","mapTotalCatGIFIquant5","mapPillarCommitment","customLegend","viewofCustomLegend","renderMapWithLegend","sidebar","renderPillarContent"], body: async () => {
+const [{colorScales}, {onlyUnique}, {mapPillar}, {mapTotal}, {mapTotalScorecard}, {mapTotalCatGIFIquant5}, {mapPillarCommitment}, {customLegend, viewofCustomLegend}, {renderMapWithLegend}, {sidebar}, {renderPillarContent}] = await Promise.all([import("./_import/components/scales.bcdc1154.js"), import("./_import/components/onlyUnique.413399e1.js"), import("./_import/components/mapPillar.474e2cac.js"), import("./_import/components/mapTotal.9ecca478.js"), import("./_import/components/mapTotalScorecard.0b367518.js"), import("./_import/components/mapTotalCatGIFIquant5.fd2d1b0b.js"), import("./_import/components/mapPillarCommitment.7aa6bdcc.js"), import("./_import/components/customLegend.149984d7.js"), import("./_import/components/renderMapWithLegend.17eef911.js"), import("./_import/components/sidebar.6ab8b7a8.js"), import("./_import/components/pillarRenderer.1174c242.js")]);
+// import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
+
+return {colorScales,onlyUnique,mapPillar,mapTotal,mapTotalScorecard,mapTotalCatGIFIquant5,mapPillarCommitment,customLegend,viewofCustomLegend,renderMapWithLegend,sidebar,renderPillarContent};
+}});
+
+define({id: "9176973d", inputs: ["FileAttachment"], outputs: ["dfiFullParse","dfiCardinalParse"], body: (FileAttachment) => {
+const dfiFullParse = FileAttachment("./data/dfiFull.csv").csv({ typed: true });
+const dfiCardinalParse = FileAttachment("./data/dfiCardinal.csv").csv({
+  typed: true,
+});
+return {dfiFullParse,dfiCardinalParse};
+}});
+
+define({id: "e2828b5f", inputs: ["FileAttachment"], outputs: ["worldLoad"], body: (FileAttachment) => {
+var worldLoad = FileAttachment("./data/CNTR_RG_60M_2024_4326.json").json();
+return {worldLoad};
+}});
+
+define({id: "6a7fb059", inputs: ["topojson","worldLoad"], outputs: ["world"], body: (topojson,worldLoad) => {
+var world = topojson
+  .feature(worldLoad, worldLoad.objects.CNTR_RG_60M_2024_4326)
+  .features.filter((d) => d.properties.NAME_ENGL !== "Antarctica") // drop Antarctica directly
+  .filter((d) => d.properties.SVRG_UN === "UN Member State") // only UN member states
+  .map((d) => {
+    // only keep these properties
+    d.properties = {
+      CNTR_ID: d.properties.CNTR_ID,
+      ISO3_CODE: d.properties.ISO3_CODE,
+      NAME_ENGL: d.properties.NAME_ENGL,
+    };
+    return d;
+  });
+return {world};
+}});
+
+define({id: "fab2aa8e", inputs: ["dfiCardinalParse"], outputs: ["uniquePillars"], body: (dfiCardinalParse) => {
+const uniquePillars = [
+  ...new Set(dfiCardinalParse.map((item) => item.pillar_txt)),
+];
+// console.log("dfiCardinalParse", dfiCardinalParse);
+return {uniquePillars};
+}});
+
+define({id: "4efc1742", inputs: ["htl"], outputs: ["filterLegend"], body: (htl) => {
+const filterLegend = (domain, range) => {
+  const value = new Map(domain.map((d) => [d, true]));
+  const _set = () =>
+    Set(
+      node,
+      [...value].filter((d) => d[1]).map((d) => d[0])
+    );
+  const oninput = (e) => (value.set(e.target.id, e.target.checked), _set());
+  const node = htl.html`<div style="font-family: var(--sans-serif); font-size: 13px; display: flex; gap: 1em;">
+    ${domain.map(
+      (d, i) => htl.html`<div style="display: flex;">
+      <input type="checkbox" id="${d}" name="${d}" checked style="accent-color: ${range[i]}" oninput=${oninput}>
+      <label for="${d}">${d}</label>
+    </div>`
+    )}
+  </div>`;
+  _set();
+  return node;
+};
+return {filterLegend};
+}});
+
+define({id: "c7b0e76f", inputs: ["uniquePillars","view","viewofCustomLegend"], outputs: ["selectedPillar"], body: (uniquePillars,view,viewofCustomLegend) => {
+console.log("uniquePillars", uniquePillars);
+const selectedPillar = view(
+  viewofCustomLegend(uniquePillars, "Rights and freedoms", "pillar")
+);
+return {selectedPillar};
+}});
+
+define({id: "ac4e6dce", inputs: ["dfiFullParse","selectedPillar"], outputs: ["dfiFullFiltered"], body: (dfiFullParse,selectedPillar) => {
+const dfiFullFiltered = dfiFullParse.filter(
+  (d) => d.pillar_txt === selectedPillar
+);
+return {dfiFullFiltered};
+}});
+
+define({id: "9b3912fe", inputs: ["dfiFullFiltered"], outputs: ["commitments"], body: (dfiFullFiltered) => {
+const commitments = [
+  ...new Set(dfiFullFiltered.map((d) => d.commitment_txt_cardinal)),
+];
+return {commitments};
+}});
+
+define({id: "695c4ba4", mode: "inline", inputs: ["resize","mapPillar","world","dfiCardinalParse","uniquePillars","selectedPillar","display"], body: async (resize,mapPillar,world,dfiCardinalParse,uniquePillars,selectedPillar,display) => {
+display(await(
+resize((width) =>
+      mapPillar(
+        world,
+        dfiCardinalParse,
+        "value",
+        uniquePillars,
+        selectedPillar,
+        { width }
+      )
+    )
+))
+}});
+
+define({id: "3b397cd4", inputs: ["renderPillarContent","selectedPillar"], body: (renderPillarContent,selectedPillar) => {
+renderPillarContent(selectedPillar);
+}});
+
+define({id: "cdc14730", inputs: ["view","viewofCustomLegend","commitments","selectedPillar"], outputs: ["commitmentLegend"], body: (view,viewofCustomLegend,commitments,selectedPillar) => {
+// pass selected pillar for coloring
+const commitmentLegend = view(
+  viewofCustomLegend(commitments, commitments[0], "commitment", selectedPillar)
+);
+// console.log("commitments", commitments);
+// console.log("dfiFullFiltered", dfiFullFiltered);
+return {commitmentLegend};
+}});
+
+define({id: "7a0d739f", mode: "inline", inputs: ["resize","mapPillarCommitment","world","dfiFullFiltered","selectedPillar","commitmentLegend","display"], body: async (resize,mapPillarCommitment,world,dfiFullFiltered,selectedPillar,commitmentLegend,display) => {
+display(await(
+resize((width) =>
+      mapPillarCommitment(
+        world,
+        dfiFullFiltered,
+        selectedPillar,
+        commitmentLegend,
+        { width }
+      )
+    )
+))
+}});
+
+define({id: "c9639f52", body: () => {
+// console.log("commitmentLegend", commitmentLegend);
+}});
+
+define({id: "561e4127", mode: "inline", inputs: ["sidebar","display"], body: async (sidebar,display) => {
+display(await(
+sidebar()
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<!-- import externals -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="./_file/style.b6bbf565.css">
+<!-- sidebar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./_file/sidebar.f9df6791.css">
+<link rel="stylesheet" href="./_file/custom-legend.f74346f9.css">
+
+<!-- back to root button -->
+<a href="../" class="back-to-root">
+  <span class="arrow"></span>
+</a>
+<!-- import components -->
+<div class="observablehq observablehq--block"><!--:9a798cd6:--></div>
+<!-- hero -->
+<div class="hero">
+  <h1>Directions</h1>
+  <h2>Helping countries stay on course.</h2>
+  <!-- <div id="hero-image"></div> -->
+</div>
+<div class="body-text">
+  <p>The Internet Accountability Compass offers more than a snapshot—it provides a sense of direction. Designed for governments and the wider multistakeholder community, the Compass supports accountability by increasing transparency around national policies and actions that shape the digital space. It is both a tool for assessment and a catalyst for progress.
+  </p>
+  <p>By illuminating where countries stand and how far they have come, the Compass seeks to inspire ambition, encourage peer learning, and foster collective progress toward a digital future that is open, inclusive, secure, and rights-respecting. The Compass is not prescriptive—it does not claim to be the only path forward. Instead, it offers one possible constellation of indicators and data points that reflect shared aspirations.
+  </p>
+  <p>Rather than claiming to be definitive, the Compass presents one of many possible constellations of indicators and data points. Its purpose is to spark dialogue—about what matters, how progress should be measured, and how countries can hold themselves and each other accountable across four core dimensions: Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience.
+  </p>
+    <p>To interpret this progress, the Compass uses four categories to describe each country’s current trajectory:
+    </p>
+      <ol>
+        <li><b>Off Course:</b> The country’s current efforts diverge from international principles and commitments. A strategic shift is needed to align with shared goals.</li>
+        <li><b>Getting on Track:</b> The country has taken steps to align with global objectives; foundations are forming, but progress is still limited or uneven.
+        </li>
+        <li><b>On Track:</b> The country’s policies and actions are aligned with global objectives, showing steady and measurable advancement.
+        </li>
+        <li><b>Leading:</b> The country is not only on track but is setting a positive example—showing innovation, good practices, or leadership that others can learn from.
+        </li>
+      </ol>
+</div>
+<!-- data -->
+<div class="observablehq observablehq--block"><!--:9176973d:--></div>
+<!-- world map and data -->
+<div class="observablehq observablehq--block"><!--:e2828b5f:--></div>
+<div class="observablehq observablehq--block"><!--:6a7fb059:--></div>
+  <!-- 1. input data -->
+<div class="observablehq observablehq--block"><!--:fab2aa8e:--></div>
+  <!-- 2. input  -->
+<div class="observablehq observablehq--block"><!--:4efc1742:--></div>
+<div class="observablehq observablehq--block"><!--:c7b0e76f:--></div>
+<div class="observablehq observablehq--block"><!--:ac4e6dce:--></div>
+<div class="observablehq observablehq--block"><!--:9b3912fe:--></div>
+<div class="figure-w-full">
+    <observablehq-loading></observablehq-loading><!--:695c4ba4:-->
+</div>
+<!-- CONDITIONAL BODY TEXT PER PILLAR -->
+<div class="observablehq observablehq--block"><!--:3b397cd4:--></div>
+<div id="pillar-content"></div>
+<!-- CONDITIONAL COMMITMENT MAPS PER PILLAR -->
+<div class="observablehq observablehq--block"><!--:cdc14730:--></div>
+<div class="figure-w-full">
+    <observablehq-loading></observablehq-loading><!--:7a0d739f:-->
+</div>
+<div class="observablehq observablehq--block"><!--:c9639f52:--></div>
+<!-- sidebar -->
+<div>
+    <observablehq-loading></observablehq-loading><!--:561e4127:-->
+</div>
+</main>
+</div>
