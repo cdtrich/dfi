@@ -41,7 +41,7 @@ import { renderPillarContent } from "./components/pillarRenderer.js";
 <div class="hero">
   <h1>Directions</h1>
   <h2>Helping countries stay on course.</h2>
-  <div id="hero-image"></div>
+  <!-- <div id="hero-image"></div> -->
 </div>
 <div class="body-text">
   <p>The Internet Accountability Compass offers more than a snapshot—it provides a sense of direction. Designed for governments and the wider multistakeholder community, the Compass supports accountability by increasing transparency around national policies and actions that shape the digital space. It is both a tool for assessment and a catalyst for progress.

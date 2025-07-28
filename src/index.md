@@ -29,7 +29,7 @@ import { sidebar } from "./components/sidebar.js";
 <!-- hero -->
 
 <div class="hero">
-  <h1>Internet Accountability Compass</h1>
+  <h1>Internet <br>Accountability <br>Compass</h1>
   <h2 style="text-align: left !important;">Monitoring progress. Guiding policy. Strengthening accountability.</h2>
   <div id="hero-image"></div>
 </div>

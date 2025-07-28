@@ -36,7 +36,7 @@ const sourcesData = FileAttachment("./data/sources.csv").csv({
 <div class="hero">
   <h1>Perspectives</h1>
   <h2>Sharing knowledge to accelerate progress.</h2>
-  <div id="hero-image"></div>
+  <!-- <div id="hero-image"></div> -->
 </div>
 
 <div class="body-text">

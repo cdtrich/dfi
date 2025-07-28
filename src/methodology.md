@@ -35,7 +35,7 @@ import { sidebar } from "./components/sidebar.js";
 
 <div class="hero">
   <h1>Methodology</h1>
-  <div id="hero-image"></div>
+  <!-- <div id="hero-image"></div> -->
   </div>
 <div class="body-text">
   <p>The Internet Accountability Compass provides a structured, comparative view of how countries are implementing key digital policy commitments that shape the governance and experience of the Internet. It draws on selected, publicly available datasets and indices to promote transparency, support self-assessment, and enable peer learning—rather than ranking or naming and shaming.

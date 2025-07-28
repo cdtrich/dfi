@@ -44,7 +44,7 @@ const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
 <div class="hero">
   <h1>Country Insights</h1>
   <h2>Reviewing progress. Learning from others.</h2>
-  <div id="hero-image"></div>
+  <!-- <div id="hero-image"></div> -->
   <p style="margin-top: 4em;">Understanding how countries are implementing digital principles and commitments requires visibility into their policies, actions, and progress. The aim is not to rank or rate countries, but to offer a clear and accessible overview of national records across the four cardinal points of the Internet Accountability Compass: Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience.
   </p>
   <p>This section provides a country-by-country view of how governments are translating digital commitments into action. The data presented here enables countries to reflect on their own progress—highlighting areas of strength, as well as opportunities for improvement. At the same time, it supports mutual learning by showing how other governments are approaching similar challenges. Whether looking within a region or across different governance models, this resource helps identify examples and good practices that may be relevant or inspiring in relation to fostering digital inclusion, safeguarding rights, strengthening trust, or advancing sustainable and responsible innovation.
