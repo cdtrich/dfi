@@ -1,6 +1,6 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
-import colorScales from "./scales.js";
+// import colorScales from "./scales.js";
 // import { geoArea, geoCentroid } from "d3-geo";
 
 export function mapTotalCatGIFIquant5(

@@ -18,8 +18,8 @@
 <!-- import components -->
 
 ```js
-import { colorScales } from "./components/scales.js";
-import { onlyUnique } from "./components/onlyUnique.js";
+// import { colorScales } from "./components/scales.js";
+// import { onlyUnique } from "./components/onlyUnique.js";
 import { sources } from "./components/sources.js";
 import { sidebar } from "./components/sidebar.js";
 ```

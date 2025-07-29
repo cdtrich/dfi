@@ -26,12 +26,12 @@ import { colorScales } from "./components/scales.js";
 import { onlyUnique } from "./components/onlyUnique.js";
 // import { polarPlotMultiple } from "./components/polarPlotMultiple.js";
 import { mapPillar } from "./components/mapPillar.js";
-import { mapTotal } from "./components/mapTotal.js";
-import { mapTotalScorecard } from "./components/mapTotalScorecard.js";
+// import { mapTotal } from "./components/mapTotal.js";
+// import { mapTotalScorecard } from "./components/mapTotalScorecard.js";
 import { mapTotalCatGIFIquant5 } from "./components/mapTotalCatGIFIquant5.js";
 import { mapPillarCommitment } from "./components/mapPillarCommitment.js";
 import { customLegend, viewofCustomLegend } from "./components/customLegend.js";
-import { renderMapWithLegend } from "./components/renderMapWithLegend.js";
+// import { renderMapWithLegend } from "./components/renderMapWithLegend.js";
 import { sidebar } from "./components/sidebar.js";
 import { renderPillarContent } from "./components/pillarRenderer.js";
 ```

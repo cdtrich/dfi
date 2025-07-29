@@ -1,63 +1,50 @@
 name: Deploy
 
 on:
-  push:
-    branches: [main]
-  schedule:
-    - cron: "15 10 * * *"
+  # Run this workflow whenever a new commit is pushed to main.
+  push: { branches: [main] }
+  # Run this workflow once per day, at 10:15 UTC
+  schedule: [{ cron: "15 10 * * *" }]
+  # Run this workflow when triggered manually in GitHub’s UI.
   workflow_dispatch: {}
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     permissions:
       contents: read
       pages: write
       id-token: write
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # ⬇️ Install R
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
-
-      # ⬇️ Install any R packages your scripts need
-      - name: Install R dependencies
-        run: |
-          Rscript -e 'install.packages(c("readr", "dplyr", "jsonlite", "tidyr"), repos = "https://cloud.r-project.org")'
-
-      # ⬇️ Run your data loader R scripts
-      - name: Run data loaders
-        run: |
-          Rscript src/data/dfiFull.csv.R
-          # Add more R scripts here if needed
-
-      # ⬇️ Set up Node
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
-      # ⬇️ Install project deps
       - run: npm ci
-
-      # ⬇️ Build Observable site
+      - id: date
+        run: echo "date=$(TZ=America/Los_Angeles date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+      # - id: cache-data
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: src/.observablehq/cache
+      #     key: data-${{ hashFiles('src/data/*') }}-${{ steps.date.outputs.date }}
       - run: npm run build
-
-      # ⬇️ Configure and deploy GitHub Pages
+        env:
+          NODE_ENV: production
+      - name: Debug dist contents
+        run: |
+          echo "Contents of dist/_file/data/:"
+          ls -la dist/_file/data/ || echo "Directory doesn't exist"
+          echo "All CSV files in dist:"
+          find dist -name "*.csv" -type f || echo "No CSV files found"
       - uses: actions/configure-pages@v4
-
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
