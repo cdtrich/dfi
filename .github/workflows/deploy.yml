@@ -26,7 +26,7 @@ jobs:
           cache: npm
       - run: npm ci
       - id: date
-        run: echo "date=$(TZ=America/Los_Angeles date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        run: echo "date=$(TZ=CET date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
       # - id: cache-data
       #   uses: actions/cache@v4
       #   with:
