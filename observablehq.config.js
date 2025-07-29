@@ -3,6 +3,11 @@ export default {
   // The project’s title; used in the sidebar and webpage titles.
   title: "Internet Accountability Compass",
   base: "/dfi/",
+  root: "src",
+
+  assets: [
+    { from: "src/data", to: "data" }, // copies data
+  ],
 
   // The pages and sections in the sidebar. If you don’t specify this option,
   // all pages will be listed in alphabetical order. Listing pages explicitly
@@ -21,9 +26,6 @@ export default {
   theme: "air", // try "light", "dark", "slate", etc.
   // custom stylesheet
   style: "style.css",
-
-  // The path to the source root.
-  root: "src",
 
   // Some additional configuration options and their defaults:
   // header: "Internet Accountability Compass", // what to show in the header (HTML)
