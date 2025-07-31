@@ -30,6 +30,7 @@ import { polarCountry } from "../components/polarCountry.js";
 import { sources } from "../components/sources.js";
 import { onlyUnique } from "../components/onlyUnique.js";
 import { sidebar } from "../components/sidebar.js";
+import { pillarTextShort } from "../components/pillarTextShort.js";
 ```
 
 <!-- load countries -->
@@ -45,6 +46,7 @@ const dfiCardinal = FileAttachment("../data/dfiCardinal.csv").csv({
 const sourcesParse = FileAttachment("../data/sources.csv").csv({
   typed: true,
 });
+// const pillarTextShort = FileAttachment("../components/pillarTextShort.js");
 ```
 
 <!-- calculate country specific data for intro -->
@@ -59,10 +61,15 @@ const total = Math.round(dfiCountry.total);
 const group = dfiCountry.group;
 ```
 
-<!-- to add -->
+<!-- only unique sources, and filtered by country -->
 
 ```js
-const sourcesData = sourcesParse.filter((d) => d.NAME_ENGL === country);
+const sourcesData = sourcesParse
+  .filter((d) => d.NAME_ENGL === country)
+  .filter(
+    (d, index, self) =>
+      index === self.findIndex((item) => item.title === d.title)
+  );
 ```
 
 <div class="hero">
@@ -98,8 +105,32 @@ var commitmentUnique = commitments.filter(onlyUnique);
 
 <!-- # Scores -->
 
+<p><span class="pillar-connectivity" style="font-weight: 700;">${dfiCardinalCountry[0].pillar_txt}</span></p>
+<p>${pillarTextShort.filter(d => d.title == dfiCardinalCountry[0].pillar_txt)[0].paragraphs}</p>
+
   <div class="card size-full">
-      ${resize((width) => straightPlot(dfiFull, country, {width}))}
+      ${resize((width) => straightPlot(dfiFull, country, dfiCardinalCountry[0].pillar_txt, {width}))}
+    </div>
+
+<p><span class="pillar-rights" style="font-weight: 700;">${dfiCardinalCountry[1].pillar_txt}</span></p>
+<p>${pillarTextShort.filter(d => d.title == dfiCardinalCountry[1].pillar_txt)[0].paragraphs}</p>
+
+  <div class="card size-full">
+      ${resize((width) => straightPlot(dfiFull, country, dfiCardinalCountry[1].pillar_txt, {width}))}
+    </div>
+
+<p><span class="pillar-responsibility" style="font-weight: 700;">${dfiCardinalCountry[2].pillar_txt}</span></p>
+<p>${pillarTextShort.filter(d => d.title == dfiCardinalCountry[2].pillar_txt)[0].paragraphs}</p>
+
+  <div class="card size-full">
+      ${resize((width) => straightPlot(dfiFull, country, dfiCardinalCountry[2].pillar_txt, {width}))}
+    </div>
+
+<p><span class="pillar-trust" style="font-weight: 700;">${dfiCardinalCountry[3].pillar_txt}</span></p>
+<p>${pillarTextShort.filter(d => d.title == dfiCardinalCountry[3].pillar_txt)[0].paragraphs}</p>
+
+  <div class="card size-full">
+      ${resize((width) => straightPlot(dfiFull, country, dfiCardinalCountry[3].pillar_txt, {width}))}
     </div>
 
   <div id="sources-section">

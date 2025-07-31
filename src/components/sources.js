@@ -59,21 +59,24 @@ export function sources(data) {
       const link = document.createElement("a");
       link.href = item.url;
       link.target = "_blank";
-      link.style.display = "block";
-      link.style.textDecoration = "none";
-      link.style.color = "inherit";
+      link.style.display = "block"; // Ensure the link wraps the entire card
+      link.style.textDecoration = "none"; // Remove underline
+      // link.style.color = "inherit"; // Inherit text color
+      // link.style.margin = "0"; // Reset margin
+      // link.style.padding = "0"; // Reset padding
 
       link.appendChild(card);
       gridContainer.appendChild(link);
     } else {
       // Create a non-clickable wrapper (still an <a> but no href)
       const wrapper = document.createElement("a");
+      wrapper.href = "../_file/data/sources/" + item.filename + ".pdf"; // Assuming the file is in the sources directory
       wrapper.style.display = "block";
       wrapper.style.textDecoration = "none";
-      wrapper.style.color = "inherit";
-      wrapper.style.cursor = "default";
+      // wrapper.style.color = "inherit";
+      // wrapper.style.cursor = "default";
 
-      card.style.opacity = "0.5"; // Visual indicator
+      // card.style.opacity = "0.5"; // Visual indicator
 
       wrapper.appendChild(card);
       gridContainer.appendChild(wrapper);

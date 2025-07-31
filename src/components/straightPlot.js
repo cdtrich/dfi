@@ -2,14 +2,18 @@ import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
 import colorScales from "./scales.js";
 
-export function straightPlot(data, country, { width, height } = {}) {
+export function straightPlot(data, country, pillar, { width, height } = {}) {
   // filter data for selected country
-  const filterData = data.filter((d) => d.NAME_ENGL === country);
+  const filterData = data
+    .filter((d) => d.NAME_ENGL === country)
+    .filter((d) => d.pillar_txt === pillar);
+
+  const pillarData = data.filter((d) => d.pillar_txt === pillar);
   // console.log("filterData", filterData);
 
   // calculate mean
   const mean = d3.flatRollup(
-    data,
+    pillarData,
     (v) => d3.mean(v, (d) => d.value),
     (d) => d.commitment_num_cardinal
   );
@@ -47,13 +51,15 @@ export function straightPlot(data, country, { width, height } = {}) {
 
   // manual facet labels
   const n = 1; // number of facet columns
-  const keys = Array.from(d3.union(data.map((d) => d.commitment_txt_cardinal)));
+  const keys = Array.from(
+    d3.union(pillarData.map((d) => d.commitment_txt_cardinal))
+  );
   // const index = new Map(keys.map((key, i) => [key, i]));
   // const fx = (key) => index.get(key) % n;
   // const fy = (key) => Math.floor(index.get(key) / n);
 
   // Get the extent (min and max) of the `value` property
-  const [min, max] = d3.extent(data, (d) => d.value);
+  const [min, max] = d3.extent(pillarData, (d) => d.value);
   const fact = 0.05; // factor to subtract/add to range
 
   // Round down the min and round up the max
@@ -64,7 +70,7 @@ export function straightPlot(data, country, { width, height } = {}) {
 
   // Use a Set to track unique commitment_num values
   const uniqueCommitments = new Set();
-  const filteredData = data.filter((item) => {
+  const filteredData = pillarData.filter((item) => {
     if (!uniqueCommitments.has(item.commitment_txt_cardinal)) {
       uniqueCommitments.add(item.commitment_txt_cardinal);
       return true;
@@ -99,7 +105,7 @@ export function straightPlot(data, country, { width, height } = {}) {
   }, {});
 
   // Finalize and clean up results
-  const groupedCounts = Object.values(summarized).map((item) => {
+  const groupedCountsGlobal = Object.values(summarized).map((item) => {
     // Replace NAME_ENGL with a dynamic string if there are multiple unique values
     if (item.uniqueNames.size > 1) {
       item.NAME_ENGL = `${item.n} countries`;
@@ -111,6 +117,10 @@ export function straightPlot(data, country, { width, height } = {}) {
 
     return item;
   });
+
+  const groupedCounts = groupedCountsGlobal.filter(
+    (d) => d.pillar_txt === pillar
+  );
   // console.log("groupedCounts", groupedCounts);
 
   // get colorsScales()
@@ -127,9 +137,16 @@ export function straightPlot(data, country, { width, height } = {}) {
     height: (vh / 5) * mean.length,
     marginRight: 4,
     marginTop: 100,
+    marginBottom: 55,
     x: { label: null, domain: [0, 105], ticks: [0, 25, 50, 75, 100] },
     y: { label: null, axis: null, tickSize: 0 },
-    r: { range: [2, dotSize] },
+    r: {
+      range: [dotSize / 4, dotSize * 3],
+      domain: [
+        d3.min(groupedCountsGlobal, (d) => d.n),
+        d3.max(groupedCountsGlobal, (d) => d.n),
+      ],
+    },
     color: {
       legend: true,
     },
@@ -264,6 +281,8 @@ export function straightPlot(data, country, { width, height } = {}) {
           fy: "commitment_num_cardinal",
           text: "NAME_ENGL",
           textAnchor: "middle",
+          lineWidth: 7,
+          lineAnchor: "top",
           fontWeight: 700,
           stroke: "#fff",
           strokeWidth: 4,
@@ -278,7 +297,7 @@ export function straightPlot(data, country, { width, height } = {}) {
           x: (d) => (d.x1 + d.value) / 2,
           // y: (d) => (d.value - d.x1 < 0 ? -1 : 1),
           y: 0,
-          dy: 30,
+          dy: 40,
           lineWidth: 8,
           lineAnchor: "top",
           fy: (d) => distance[0].commitment_num_cardinal,
@@ -291,7 +310,7 @@ export function straightPlot(data, country, { width, height } = {}) {
         })
       ),
       // FACET LABELS
-      Plot.text(data, {
+      Plot.text(pillarData, {
         x: 0,
         // dx: -30,
         y: 0,

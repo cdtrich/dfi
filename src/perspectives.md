@@ -49,11 +49,19 @@ const sourcesData = FileAttachment("./data/sources.csv").csv({
 <p>Together, these resources help build a clearer picture of what digital accountability looks like in practice—and how it can be strengthened globally.</p>
 </div>
 
-<!-- data processing -->
+<!-- data processing: unique types and countries for dropdown, and deduplicated data -->
 
 ```js
 const sourceTypeUnique = [...new Set(sourcesData.map((d) => d.type))];
 const sourceCountryUnique = [...new Set(sourcesData.map((d) => d.NAME_ENGL))];
+// console.log(sourcesParse.filter((d) => d.NAME_ENGL === country));
+const sourcesDataUnique = sourcesData.filter(
+  (d, index, self) =>
+    index ===
+    self.findIndex(
+      (item) => item.NAME_ENGL === d.NAME_ENGL && item.title === d.title
+    )
+);
 ```
 
 <!-- input controls -->
@@ -78,7 +86,7 @@ const selectSourceCountry = view(
 <!-- filtered data -->
 
 ```js
-const sourcesDataFiltered = sourcesData.filter((d) => {
+const sourcesDataFiltered = sourcesDataUnique.filter((d) => {
   const typeMatch =
     !selectSourceType ||
     selectSourceType.length === 0 ||
@@ -100,11 +108,8 @@ sources(sourcesDataFiltered);
 <!-- debug tables (optional) -->
 
 ```js
-Inputs.table(sourcesDataFiltered);
-```
-
-```js
-Inputs.table(sourcesData);
+// Inputs.table(sourcesDataFiltered);
+// Inputs.table(sourcesData);
 ```
 
 <!-- sources section -->
