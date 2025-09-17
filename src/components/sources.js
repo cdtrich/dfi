@@ -70,7 +70,19 @@ export function sources(data) {
     } else {
       // Create a non-clickable wrapper (still an <a> but no href)
       const wrapper = document.createElement("a");
-      wrapper.href = "../_file/data/sources/" + item.filename + ".pdf"; // Assuming the file is in the sources directory
+      // native, not working
+      // wrapper.href = "../_file/data/sources/" + item.filename + ".pdf"; // Assuming the file is in the sources directory
+      // github permark, doesn't open, just downloads
+      // wrapper.href =
+      //   "https://raw.githubusercontent.com/cdtrich/dfi/46978462ce4d3bc30f6305b4e03ce11104e3cc00/src/data/sources/" +
+      //   item.filename +
+      //   ".pdf"; // Assuming the file is in the sources directory
+      // pdf.js viewer, opens in new tab
+      wrapper.href = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
+        "https://raw.githubusercontent.com/cdtrich/dfi/46978462ce4d3bc30f6305b4e03ce11104e3cc00/src/data/sources/" +
+          item.filename +
+          ".pdf"
+      )}`;
       wrapper.style.display = "block";
       wrapper.style.textDecoration = "none";
       // wrapper.style.color = "inherit";

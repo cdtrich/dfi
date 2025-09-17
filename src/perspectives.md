@@ -21,6 +21,8 @@
 // import { colorScales } from "./components/scales.js";
 // import { onlyUnique } from "./components/onlyUnique.js";
 import { sources } from "./components/sources.js";
+import { mapSources } from "./components/mapSources.js";
+import { mapSourcesd3 } from "./components/mapSourcesd3.js";
 import { sidebar } from "./components/sidebar.js";
 ```
 
@@ -54,7 +56,8 @@ const sourcesData = FileAttachment("./data/sources.csv").csv({
 ```js
 const sourceTypeUnique = [...new Set(sourcesData.map((d) => d.type))];
 const sourceCountryUnique = [...new Set(sourcesData.map((d) => d.NAME_ENGL))];
-// console.log(sourcesParse.filter((d) => d.NAME_ENGL === country));
+const sourceISOUnique = [...new Set(sourcesData.map((d) => d.ISO3_CODE))];
+
 const sourcesDataUnique = sourcesData.filter(
   (d, index, self) =>
     index ===
@@ -63,6 +66,38 @@ const sourcesDataUnique = sourcesData.filter(
     )
 );
 ```
+
+<!-- load world map -->
+
+```js
+var worldLoad = FileAttachment("./data/CNTR_RG_60M_2024_4326.json").json();
+var coastLoad = FileAttachment("./data/COAS_RG_60M_2016_4326.json").json();
+```
+
+```js
+const world = topojson
+  .feature(worldLoad, worldLoad.objects.CNTR_RG_60M_2024_4326)
+  .features.filter((d) => d.properties.NAME_ENGL !== "Antarctica")
+  .filter((d) => d.properties.SVRG_UN === "UN Member State")
+  .map((d) => {
+    d.properties = {
+      CNTR_ID: d.properties.CNTR_ID,
+      ISO3_CODE: d.properties.ISO3_CODE,
+      NAME_ENGL: d.properties.NAME_ENGL,
+    };
+    return d;
+  });
+
+const coast = topojson.feature(
+  coastLoad,
+  coastLoad.objects.COAS_RG_60M_2016_4326
+);
+```
+
+<!-- map -->
+<div class="figure-w-full">
+      ${resize((width) => mapSourcesd3(world, coast, sourceISOUnique, {width, height: 400 }))}
+</div>
 
 <!-- input controls -->
 
@@ -97,19 +132,65 @@ const sourcesDataFiltered = sourcesDataUnique.filter((d) => {
     selectSourceCountry.includes(d.NAME_ENGL);
   return typeMatch && countryMatch;
 });
-```
-
-<!-- output -->
-
-```js
 sources(sourcesDataFiltered);
 ```
 
-<!-- debug tables (optional) -->
+<!-- interactivity -->
 
 ```js
-// Inputs.table(sourcesDataFiltered);
-// Inputs.table(sourcesData);
+// Debounce helper to speed up text input
+function debounce(fn, delay) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn(...args), delay);
+  };
+}
+```
+
+```js
+{
+  if (!window._mapCountryListenerSet) {
+    window._mapCountryListenerSet = true;
+
+    const input = document.querySelector(
+      "input[placeholder='Search countries']"
+    );
+    if (!input) {
+      console.warn("❌ Input element not found. Skipping input/map sync.");
+    } else {
+      // 🖱️ Map click → input update
+      window.addEventListener("map-country-selected", (e) => {
+        const country = e.detail;
+        console.log("🗺️ Map clicked:", country);
+
+        input.value = country || "";
+        input.dispatchEvent(new Event("input", { bubbles: true }));
+      });
+
+      // ⌨️ Typing → map update (debounced)
+      input.addEventListener(
+        "input",
+        debounce((e) => {
+          const typed = e.target.value;
+          console.log("⌨️ Input typed:", typed);
+
+          window.dispatchEvent(
+            new CustomEvent("map-country-selected", { detail: typed })
+          );
+        }, 150)
+      );
+    }
+
+    function debounce(fn, delay) {
+      let timeout;
+      return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => fn(...args), delay);
+      };
+    }
+  }
+}
 ```
 
 <!-- sources section -->

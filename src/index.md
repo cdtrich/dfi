@@ -191,6 +191,7 @@ const uniquePillars = [...new Set(dfiCardinal.map((item) => item.pillar_txt))];
       ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
 </div>
 
+<p>Off course = 0-49, Getting on track = 50-64, On track = 65-79, Leading = 80-100</p>
 <!-- sidebar -->
 
 <div>
