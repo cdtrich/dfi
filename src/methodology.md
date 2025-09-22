@@ -59,7 +59,8 @@ import { sidebar } from "./components/sidebar.js";
 
 </li>
 </ol>
-  <p>These dimensions reflect widely recognised principles and commitments articulated in international political declarations, including the Global Digital Compact and the Declaration for the Future of the Internet. For a full mapping of commitments and their relevance to the Compass framework, see Methodological Note 1.
+  <p>These dimensions reflect widely recognised principles and commitments articulated in international political declarations, including the Global Digital Compact and the Declaration for the Future of the Internet. For a full mapping of commitments and their relevance to the Compass framework, see <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/cdtrich/dfi/41c7c50f91bc510847fe7199428d0361fb0bd7db/src/data/sources/Methodological Note 1.pdf" target="_blank"> Methodological Note 1</a>.
+
 </p>
   <p>Given the methodological complexity and time constraints involved in producing original data, each dimension is informed by established external sources that capture legal, institutional, and practical conditions across countries.
 </p>
@@ -110,9 +111,9 @@ import { sidebar } from "./components/sidebar.js";
 </ol>
   <p>As the Compass relies on secondary data, results may be influenced by variations in methodology, data quality, or temporal gaps between sources. While directional assessments offer comparative insights, they do not capture the full nuance of local implementation or informal practices.
 </p>
-  <p>All indicator sources, any modifications made to original datasets, and detailed scoring methodology are documented in Methodological Note 2. The data used for this edition of the Compass was collected as of 1 April 2025. The Compass might be updated annually, subject to the availability of new data, methodological refinements and resources.
+  <p>All indicator sources, any modifications made to original datasets, and detailed scoring methodology are documented in <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/cdtrich/dfi/41c7c50f91bc510847fe7199428d0361fb0bd7db/src/data/sources/Methodological Note 2.pdf" target="_blank"> Methodological Note 2</a>. The data used for this edition of the Compass was collected as of 1 April 2025. The Compass might be updated annually, subject to the availability of new data, methodological refinements and resources.
 </p>
-  <p>Although indicators are weighted equally in score calculations, we acknowledge that overlapping variables across indices may result in implicit weighting effects. Methodological Note 3 explains these overlaps and potential biases.
+  <p>Although indicators are weighted equally in score calculations, we acknowledge that overlapping variables across indices may result in implicit weighting effects. <a href="https://raw.githubusercontent.com/cdtrich/dfi/9aaeaffcd8f029cae294672ed765eae247e7a894/src/data/sources/Methodological%20Note%203.xlsx" target="_blank">Methodological Note 3</a> explains these overlaps and potential biases.
 </p>
 <h2>Purpose and Use</h2>
 <p>The Internet Accountability Compass is not an audit mechanism or compliance checklist. It serves as a reference tool for governments, researchers, and civil society to assess national progress, identify trends, and learn from comparative practice. It is intended to bridge the gap between high-level digital commitments and their implementation—contributing to a more inclusive, rights-based, and accountable digital future.

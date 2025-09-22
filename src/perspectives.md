@@ -21,7 +21,7 @@
 // import { colorScales } from "./components/scales.js";
 // import { onlyUnique } from "./components/onlyUnique.js";
 import { sources } from "./components/sources.js";
-import { mapSources } from "./components/mapSources.js";
+// import { mapSources } from "./components/mapSources.js";
 import { mapSourcesd3 } from "./components/mapSourcesd3.js";
 import { sidebar } from "./components/sidebar.js";
 ```
@@ -153,12 +153,26 @@ function debounce(fn, delay) {
   if (!window._mapCountryListenerSet) {
     window._mapCountryListenerSet = true;
 
-    const input = document.querySelector(
-      "input[placeholder='Search countries']"
-    );
-    if (!input) {
-      console.warn("❌ Input element not found. Skipping input/map sync.");
-    } else {
+    function debounce(fn, delay) {
+      let timeout;
+      return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => fn(...args), delay);
+      };
+    }
+
+    function trySetupMapInputSync() {
+      const input = document.querySelector(
+        "input[placeholder='Search countries']"
+      );
+      if (!input) {
+        console.log("⏳ Input not yet mounted, trying again...");
+        requestAnimationFrame(trySetupMapInputSync);
+        return;
+      }
+
+      console.log("✅ Input found. Setting up sync...");
+
       // 🖱️ Map click → input update
       window.addEventListener("map-country-selected", (e) => {
         const country = e.detail;
@@ -169,26 +183,25 @@ function debounce(fn, delay) {
       });
 
       // ⌨️ Typing → map update (debounced)
-      input.addEventListener(
-        "input",
-        debounce((e) => {
-          const typed = e.target.value;
-          console.log("⌨️ Input typed:", typed);
+      let lastDispatched = null;
 
+      const sendToMap = debounce((value) => {
+        if (value !== lastDispatched) {
+          lastDispatched = value;
           window.dispatchEvent(
-            new CustomEvent("map-country-selected", { detail: typed })
+            new CustomEvent("map-country-selected", { detail: value })
           );
-        }, 150)
-      );
+        }
+      }, 150);
+
+      input.addEventListener("input", (e) => {
+        const typed = e.target.value;
+        console.log("⌨️ Input typed:", typed);
+        sendToMap(typed);
+      });
     }
 
-    function debounce(fn, delay) {
-      let timeout;
-      return (...args) => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => fn(...args), delay);
-      };
-    }
+    trySetupMapInputSync();
   }
 }
 ```

@@ -85,6 +85,7 @@ export function sources(data) {
       )}`;
       wrapper.style.display = "block";
       wrapper.style.textDecoration = "none";
+      wrapper.target = "_blank";
       // wrapper.style.color = "inherit";
       // wrapper.style.cursor = "default";
 
