@@ -128,7 +128,7 @@ div > div > form > #inputs-3a86ea-1 {
   width: 50vh;
   height: 50vh;
   /* rotate: -30deg; */
-  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/compass.svg");
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.svg");
   background-size: cover;
   opacity: 0.3; /* Adjust opacity for the background image */
   z-index: -1;
@@ -379,7 +379,7 @@ html {
 body {
   font: 20px/1.5 var(--sans-serif);
   margin: 0;
-  background-image: url("your-image.jpg");
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
