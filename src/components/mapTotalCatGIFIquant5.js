@@ -1,7 +1,6 @@
 import * as Plot from "npm:@observablehq/plot";
 import * as d3 from "npm:d3";
-// import colorScales from "./scales.js";
-// import { geoArea, geoCentroid } from "d3-geo";
+// import { html } from "htl";
 
 export function mapTotalCatGIFIquant5(
   world,
@@ -146,6 +145,10 @@ export function mapTotalCatGIFIquant5(
     //   range: [0, 1],
     //   domain: [min, max],
     // },
+    // caption: html`<figcaption style="text-align: right; width: 100%;">
+    //   Off course = 0-49, Getting on track = 50-64, On track = 65-79, Leading =
+    //   80-100
+    // </figcaption>`,
     color: {
       legend: true,
       type: "ordinal",

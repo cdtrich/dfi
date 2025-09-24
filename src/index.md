@@ -31,8 +31,15 @@ import { sidebar } from "./components/sidebar.js";
 <div class="hero">
   <h1>Internet <br>Accountability <br>Compass</h1>
   <h2 style="text-align: left !important;">Monitoring progress. Guiding policy. Strengthening accountability.</h2>
-  <div id="hero-image"></div>
+  <!-- <div id="hero-image"></div> -->
 </div>
+
+<!-- # Total score -->
+<div class="figure-w-full">
+      ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
+</div>
+
+<!-- sidebar -->
 
 <div class="body-text">
 
@@ -183,16 +190,6 @@ const uniquePillars = [...new Set(dfiCardinal.map((item) => item.pillar_txt))];
 // console.log("uniquePillars", uniquePillars);
 // console.log("dfiCardinal", dfiCardinal);
 ```
-
-  <!-- 2. input  -->
-
-<!-- # Total score -->
-<div class="figure-w-full">
-      ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
-</div>
-
-<p>Off course = 0-49, Getting on track = 50-64, On track = 65-79, Leading = 80-100</p>
-<!-- sidebar -->
 
 <div>
     ${sidebar()}

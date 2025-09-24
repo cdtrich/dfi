@@ -114,6 +114,7 @@ const selectSourceCountry = view(
     value: "",
     datalist: sourceCountryUnique,
     placeholder: "Search countries",
+    output: null,
   })
 );
 ```

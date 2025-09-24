@@ -59,7 +59,7 @@ import { sidebar } from "./components/sidebar.js";
 
 </li>
 </ol>
-  <p>These dimensions reflect widely recognised principles and commitments articulated in international political declarations, including the Global Digital Compact and the Declaration for the Future of the Internet. For a full mapping of commitments and their relevance to the Compass framework, see <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/cdtrich/dfi/41c7c50f91bc510847fe7199428d0361fb0bd7db/src/data/sources/Methodological Note 1.pdf" target="_blank"> Methodological Note 1</a>.
+  <p>These dimensions reflect widely recognised principles and commitments articulated in international political declarations, including the Global Digital Compact and the Declaration for the Future of the Internet. For a full mapping of commitments and their relevance to the Compass framework, see <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/cdtrich/dfi/b76f824bb5009098599dd71e1cd206d73f9d61fa/src/data/sources/Methodological%20Note%201.pdf" target="_blank"> Methodological Note 1</a>.
 
 </p>
   <p>Given the methodological complexity and time constraints involved in producing original data, each dimension is informed by established external sources that capture legal, institutional, and practical conditions across countries.

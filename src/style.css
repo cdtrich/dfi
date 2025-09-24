@@ -379,6 +379,10 @@ html {
 body {
   font: 20px/1.5 var(--sans-serif);
   margin: 0;
+  background-image: url("your-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 a[href] {
   color: var(--theme-foreground-focus);
@@ -1540,6 +1544,11 @@ p .plot-d6a7b5 {
 }
 :root {
   --theme-foreground: #1b1e23;
-  --theme-foreground-focus: #3b5fc0;
+  --theme-foreground-focus: #32baa7;
   --theme-background-a: #ffffff;
+}
+
+/* hide output of search bar */
+.inputs-3a86ea > * > output {
+  display: none;
 }
