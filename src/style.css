@@ -148,7 +148,7 @@ div > div > form > #inputs-3a86ea-1 {
   line-height: 1;
   /* color: #d9d4eaff; */
   /* color: #040404; */
-  color: #222;
+  color: var(--theme-foreground);
   /* background-clip: text; */
 }
 
@@ -163,7 +163,7 @@ heading-center {
 }
 
 a.observablehq-header-anchor {
-  /* color: #222 !important; */
+  /* color: var(--theme-foreground) !important; */
 }
 
 /* toc */
@@ -230,7 +230,7 @@ div[class*="-swatches-"] {
   border-radius: 8px; /* Rounded edges */
   font-size: 1em;
   /* font-size: 0.9em; */
-  /* color: #222; White text (including the span text) */
+  /* color: var(--theme-foreground); White text (including the span text) */
   padding: 16px; /* Add some padding inside the card */
   text-align: left; /* Center the text */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
@@ -277,7 +277,7 @@ a:hover {
   width: 50px;
   height: 50px;
   /* background-color: #0d0d0d; */
-  border: 1px solid #222;
+  border: 1px solid var(--theme-foreground);
   background-color: #fff;
   /* background-color: #efeee9; */
   border-radius: 50%;
@@ -301,7 +301,7 @@ a:hover {
 
 .back-to-root .arrow {
   display: inline-block;
-  border: solid #222;
+  border: solid var(--theme-foreground);
   border-width: 0px 0px 2px 2px;
   padding: 5px;
   transform: rotate(45deg);
@@ -337,7 +337,7 @@ g[aria-label="tip"] path {
 
 /* Target the text color inside the tooltip */
 g[aria-label="tip"] text {
-  fill: #222; /* Tooltip text color */
+  fill: var(--theme-foreground); /* Tooltip text color */
 }
 
 .img-col {
@@ -385,11 +385,11 @@ html {
 body {
   font: 20px/1.5 var(--sans-serif);
   margin: 0;
-  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
-  background-repeat: repeat-y; /* only downwards */
-  background-position: top center; /* start at very top */
-  background-size: auto; /* keep natural size */
-  background-attachment: scroll; /* ensures tiling follows page height */
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png") !important;
+  background-repeat: repeat-y !important; /* only downwards */
+  background-position: top center !important; /* start at very top */
+  background-size: contain !important; /* use natural image size */
+  background-attachment: scroll !important;
 }
 a[href] {
   color: var(--theme-foreground-focus);
@@ -677,13 +677,7 @@ a[href].observablehq-header-anchor {
   content: "Next page";
 }
 #observablehq-center {
-  margin: 0;
-  /* margin: 1rem 2rem; */
-  /* background image */
-  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
+  background: none !important;
 }
 #observablehq-sidebar {
   position: fixed;
@@ -1557,7 +1551,7 @@ p .plot-d6a7b5 {
   color-scheme: light;
 }
 :root {
-  --theme-foreground: #1b1e23;
+  --theme-foreground: #000;
   --theme-foreground-focus: #32baa7;
   --theme-background-a: #fff;
 }

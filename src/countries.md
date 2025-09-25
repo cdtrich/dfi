@@ -18,9 +18,9 @@ title: "Coutry overview"
 
 <!-- back to root button -->
 
-<a href="../" class="back-to-root">
+<!-- <a href="../" class="back-to-root">
   <span class="arrow"></span>
-</a>
+</a> -->
 
 <!-- import components -->
 

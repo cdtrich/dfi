@@ -13,7 +13,18 @@ sources <- read_excel("./data/Sources-sep24.xlsx") %>%
         title = document
     ) %>%
     # only entries with titles (for cards)
-    drop_na(type)
+    drop_na(type) %>%
+    mutate(
+        icon = case_match(
+            type,
+            "Analysis" ~ "📄︎",
+            "Source" ~ "🔍︎",
+            "Project" ~ "📌︎",
+            .default = type
+        ),
+        type = paste0(icon, " ", type),
+        title = paste0(icon, " ", title)
+    )
 
 # write data
 cat(format_csv(sources))
