@@ -16,13 +16,6 @@
   /* --hover-color: #2980b9; */
 }
 
-body {
-  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
-}
-
 .sidebar {
   position: fixed;
   top: 50%;

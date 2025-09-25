@@ -44,7 +44,8 @@ export function sources(data) {
     // 👉 Apply border color using pillar_txt and colorScales
     const borderColor = fillScale.getColor(item.pillar_txt);
     card.style.borderStyle = "solid";
-    card.style.borderColor = borderColor;
+    // card.style.borderColor = borderColor;
+    card.style.backgroundColor = borderColor;
 
     const span = document.createElement("span");
     span.textContent = item.title;

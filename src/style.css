@@ -23,7 +23,8 @@
   --pillar-responsibility: #034ea2;
   --pillar-trust: #3c4099;
   /* hovered card color */
-  --hovered-card-color: rgba(0, 0, 0, 0.1);
+  /* --hovered-card-color: rgba(0, 0, 0, 0.1); */
+  --hovered-card-color: #fff;
   --hovered-card-border: #000;
 }
 
@@ -131,7 +132,7 @@ div > div > form > #inputs-3a86ea-1 {
   width: 50vh;
   height: 50vh;
   /* rotate: -30deg; */
-  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.svg");
+  /* background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.svg"); */
   background-size: cover;
   opacity: 0.3; /* Adjust opacity for the background image */
   z-index: -1;
@@ -148,7 +149,7 @@ div > div > form > #inputs-3a86ea-1 {
   /* color: #d9d4eaff; */
   /* color: #040404; */
   color: #222;
-  background-clip: text;
+  /* background-clip: text; */
 }
 
 .hero > h1 {
@@ -225,11 +226,11 @@ div[class*="-swatches-"] {
 
 /* country practices cards */
 .sourcecard {
-  border: 1px solid #444; /* Thin white outline */
+  border: 1px solid #fff; /* Thin white outline */
   border-radius: 8px; /* Rounded edges */
   font-size: 1em;
   /* font-size: 0.9em; */
-  color: #222; /* White text (including the span text) */
+  /* color: #222; White text (including the span text) */
   padding: 16px; /* Add some padding inside the card */
   text-align: left; /* Center the text */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
@@ -237,7 +238,7 @@ div[class*="-swatches-"] {
 
 /* Ensure the text inside the card (span) is white */
 .sourcecard span {
-  color: #222; /* Text color inside the card */
+  color: #fff; /* Text color inside the card */
 }
 
 /* Remove underline from link text inside the card */
@@ -252,9 +253,10 @@ a:hover {
 
 /* Hover effect */
 .sourcecard:hover {
-  background-color: var(--hovered-card-color); /* Fill with white on hover */
-  border-color: var(--hovered-card-border); /* Thin white outline */
-  border-width: 10px; /* Thin white outline */
+  /* background-color: var(--hovered-card-color); Fill with white on hover */
+  /* border-color: 1px var(--hovered-card-border); Thin white outline */
+  /* border-width: 10px; Thin white outline */
+  box-shadow: 0 0 8px 4px #00000037;
   /* color: #000; Change the general text color on hover */
 }
 
@@ -384,9 +386,10 @@ body {
   font: 20px/1.5 var(--sans-serif);
   margin: 0;
   background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
+  background-repeat: repeat-y; /* only downwards */
+  background-position: top center; /* start at very top */
+  background-size: auto; /* keep natural size */
+  background-attachment: scroll; /* ensures tiling follows page height */
 }
 a[href] {
   color: var(--theme-foreground-focus);
@@ -1556,10 +1559,47 @@ p .plot-d6a7b5 {
 :root {
   --theme-foreground: #1b1e23;
   --theme-foreground-focus: #32baa7;
-  --theme-background-a: #ffffff;
+  --theme-background-a: #fff;
 }
 
 /* hide output of search bar */
 .inputs-3a86ea > * > output {
   display: none;
+}
+
+/* scroll down arrow */
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 80px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }

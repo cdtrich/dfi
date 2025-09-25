@@ -39,7 +39,12 @@ import { sidebar } from "./components/sidebar.js";
       ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
 </div>
 
-<!-- sidebar -->
+<!-- scroll down arrow -->
+
+<!-- Scroll down for further information -->
+<!-- <div class="down-arrow"></div> -->
+
+<!-- key stats -->
 
 <div class="body-text">
 
@@ -59,6 +64,8 @@ import { sidebar } from "./components/sidebar.js";
     <span class="big">12</span>
   </div>
 </div>
+
+<!-- body text -->
 
 The Internet is a cornerstone of modern life—shaping how states govern, businesses operate, organisations function, and individuals connect. Recognising its transformative power, the international community has rallied around shared principles to foster a global, open, free, secure, and trustworthy Internet. These principles are enshrined in key political declarations, including the Global Digital Compact and the Declaration on the Future of the Internet.
 
@@ -179,7 +186,7 @@ var coast = topojson.feature(
 // console.log("world (in index", world);
 ```
 
-  <!-- 1. input data -->
+<!-- 1. input data -->
 
 ```js
 const uniqueCommitments = [
@@ -190,6 +197,8 @@ const uniquePillars = [...new Set(dfiCardinal.map((item) => item.pillar_txt))];
 // console.log("uniquePillars", uniquePillars);
 // console.log("dfiCardinal", dfiCardinal);
 ```
+
+<!-- sidebar -->
 
 <div>
     ${sidebar()}
