@@ -77,11 +77,11 @@ df_long <- df %>%
         # slice groups
         group = cut(`Total Index Score`,
             breaks = c(-Inf, 50, 65, 79, Inf),
-            labels = c("Off course", "Getting on track", "On track", "Leading")
+            labels = c("Off track", "Getting on track", "On track", "Leading")
         ),
         group_value = cut(value,
             breaks = c(-Inf, 50, 65, 79, Inf),
-            labels = c("Off course", "Getting on track", "On track", "Leading")
+            labels = c("Off track", "Getting on track", "On track", "Leading")
         )
     )
 

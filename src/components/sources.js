@@ -1,17 +1,13 @@
-export function sources(data) {
-  // Get the container for good practices
-  const container = document.getElementById("sources-section");
-  // console.log("goodPracticeCards data", data);
+import colorScales from "./scales.js"; // 👈 Import the color scale
 
-  // Clear the container first
+export function sources(data) {
+  const container = document.getElementById("sources-section");
   container.innerHTML = "";
 
-  // Check if data exists and has elements
-  if (!data || data.length === 0) {
-    return;
-  }
+  if (!data || data.length === 0) return;
 
-  // Create the main heading
+  const fillScale = colorScales(); // 👈 Initialize the scale
+
   const mainHeading = document.createElement("h1");
   mainHeading.id = "sources";
   mainHeading.tabIndex = -1;
@@ -25,22 +21,19 @@ export function sources(data) {
   mainHeading.appendChild(anchor);
   container.appendChild(mainHeading);
 
-  // Empty div b/c otherwise first heading looks different
   const emptyDiv = document.createElement("div");
   emptyDiv.textContent = "";
   container.appendChild(emptyDiv);
 
-  // Create the grid container
   const gridContainer = document.createElement("div");
   gridContainer.className = "grid grid-cols-3";
   container.appendChild(gridContainer);
 
-  // Create cards for each document
   data.forEach((item) => {
     const card = document.createElement("div");
     card.className = "sourcecard";
 
-    // Apply different styles based on type
+    // Style type
     if (item.type === "Source") {
       card.style.borderWidth = "3px";
     } else if (item.type === "Analysis") {
@@ -48,51 +41,30 @@ export function sources(data) {
       card.style.fontWeight = "700";
     }
 
-    // Create the span element for the document text
+    // 👉 Apply border color using pillar_txt and colorScales
+    const borderColor = fillScale.getColor(item.pillar_txt);
+    card.style.borderStyle = "solid";
+    card.style.borderColor = borderColor;
+
     const span = document.createElement("span");
     span.textContent = item.title;
     card.appendChild(span);
 
-    // Check if URL exists and is not "NA"
-    if (item.url && item.url.trim() !== "NA") {
-      // Create a clickable link
-      const link = document.createElement("a");
-      link.href = item.url;
-      link.target = "_blank";
-      link.style.display = "block"; // Ensure the link wraps the entire card
-      link.style.textDecoration = "none"; // Remove underline
-      // link.style.color = "inherit"; // Inherit text color
-      // link.style.margin = "0"; // Reset margin
-      // link.style.padding = "0"; // Reset padding
+    const isValidURL = item.url && item.url.trim() !== "NA";
 
-      link.appendChild(card);
-      gridContainer.appendChild(link);
-    } else {
-      // Create a non-clickable wrapper (still an <a> but no href)
-      const wrapper = document.createElement("a");
-      // native, not working
-      // wrapper.href = "../_file/data/sources/" + item.filename + ".pdf"; // Assuming the file is in the sources directory
-      // github permark, doesn't open, just downloads
-      // wrapper.href =
-      //   "https://raw.githubusercontent.com/cdtrich/dfi/46978462ce4d3bc30f6305b4e03ce11104e3cc00/src/data/sources/" +
-      //   item.filename +
-      //   ".pdf"; // Assuming the file is in the sources directory
-      // pdf.js viewer, opens in new tab
-      wrapper.href = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
-        "https://raw.githubusercontent.com/cdtrich/dfi/46978462ce4d3bc30f6305b4e03ce11104e3cc00/src/data/sources/" +
-          item.filename +
-          ".pdf"
-      )}`;
-      wrapper.style.display = "block";
-      wrapper.style.textDecoration = "none";
-      wrapper.target = "_blank";
-      // wrapper.style.color = "inherit";
-      // wrapper.style.cursor = "default";
+    const wrapper = document.createElement("a");
+    wrapper.href = isValidURL
+      ? item.url
+      : `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
+          "https://raw.githubusercontent.com/cdtrich/dfi/46978462ce4d3bc30f6305b4e03ce11104e3cc00/src/data/sources/" +
+            item.filename +
+            ".pdf"
+        )}`;
+    wrapper.target = "_blank";
+    wrapper.style.display = "block";
+    wrapper.style.textDecoration = "none";
 
-      // card.style.opacity = "0.5"; // Visual indicator
-
-      wrapper.appendChild(card);
-      gridContainer.appendChild(wrapper);
-    }
+    wrapper.appendChild(card);
+    gridContainer.appendChild(wrapper);
   });
 }

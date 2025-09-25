@@ -22,6 +22,9 @@
   --pillar-rights: #643291;
   --pillar-responsibility: #034ea2;
   --pillar-trust: #3c4099;
+  /* hovered card color */
+  --hovered-card-color: rgba(0, 0, 0, 0.1);
+  --hovered-card-border: #000;
 }
 
 /* pillar colors */
@@ -249,14 +252,15 @@ a:hover {
 
 /* Hover effect */
 .sourcecard:hover {
-  background-color: #32baa8; /* Fill with white on hover */
-  border: 5px solid #32baa8; /* Thin white outline */
-  color: #fff; /* Change the general text color on hover */
+  background-color: var(--hovered-card-color); /* Fill with white on hover */
+  border-color: var(--hovered-card-border); /* Thin white outline */
+  border-width: 10px; /* Thin white outline */
+  /* color: #000; Change the general text color on hover */
 }
 
 /* Ensure the span text changes color on hover */
 .sourcecard:hover span {
-  color: #fff; /* Change span text color to #3c4099 on hover */
+  /* color: #fff; Change span text color to #3c4099 on hover */
 }
 
 .card .key {
@@ -379,13 +383,14 @@ html {
 body {
   font: 20px/1.5 var(--sans-serif);
   margin: 0;
-  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.jpg");
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
 }
 a[href] {
   color: var(--theme-foreground-focus);
+  font-weight: 700;
 }
 h1,
 h2,
@@ -669,7 +674,13 @@ a[href].observablehq-header-anchor {
   content: "Next page";
 }
 #observablehq-center {
-  margin: 1rem 2rem;
+  margin: 0;
+  /* margin: 1rem 2rem; */
+  /* background image */
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
 }
 #observablehq-sidebar {
   position: fixed;

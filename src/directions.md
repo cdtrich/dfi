@@ -53,7 +53,7 @@ import { renderPillarContent } from "./components/pillarRenderer.js";
     <p>To interpret this progress, the Compass uses four categories to describe each country’s current trajectory:
     </p>
       <ol>
-        <li><b>Off Course:</b> The country’s current efforts diverge from international principles and commitments. A strategic shift is needed to align with shared goals.</li>
+        <li><b>Off Track:</b> The country’s current efforts diverge from international principles and commitments. A strategic shift is needed to align with shared goals.</li>
         <li><b>Getting on Track:</b> The country has taken steps to align with global objectives; foundations are forming, but progress is still limited or uneven.
         </li>
         <li><b>On Track:</b> The country’s policies and actions are aligned with global objectives, showing steady and measurable advancement.

@@ -43,14 +43,6 @@ import { sidebar } from "./components/sidebar.js";
 
 <div class="body-text">
 
-The Internet is a cornerstone of modern life—shaping how states govern, businesses operate, organisations function, and individuals connect. Recognising its transformative power, the international community has rallied around shared principles to foster a global, open, free, secure, and trustworthy Internet. These principles are enshrined in key political declarations, including the Global Digital Compact and the Declaration on the Future of the Internet.
-
-Yet, despite widespread consensus on these goals, progress toward their realisation remains uneven and often untracked.
-
-The Internet Accountability Compass is designed to fill this gap. It serves as a reference point to assess how countries are advancing from high-level commitments to tangible implementation. By charting national performance across four cardinal dimensions—Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience—the Compass contributed to bringing clarity to the state of Internet governance worldwide.
-
-Through rigorous, country-specific data and comparative indicators, the Internet Accountability Compass promotes greater transparency, strengthens public accountability, and empowers policymakers, businesses, and civil society to align action with aspiration.
-
 <p style="font-weight: 700;"><a href="./countries.html">Go to country overview →</a></p>
 
 <div class="grid grid-cols-3">
@@ -67,6 +59,14 @@ Through rigorous, country-specific data and comparative indicators, the Internet
     <span class="big">12</span>
   </div>
 </div>
+
+The Internet is a cornerstone of modern life—shaping how states govern, businesses operate, organisations function, and individuals connect. Recognising its transformative power, the international community has rallied around shared principles to foster a global, open, free, secure, and trustworthy Internet. These principles are enshrined in key political declarations, including the Global Digital Compact and the Declaration on the Future of the Internet.
+
+Yet, despite widespread consensus on these goals, progress toward their realisation remains uneven and often untracked.
+
+The Internet Accountability Compass is designed to fill this gap. It serves as a reference point to assess how countries are advancing from high-level commitments to tangible implementation. By charting national performance across four cardinal dimensions—Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience—the Compass contributed to bringing clarity to the state of Internet governance worldwide.
+
+Through rigorous, country-specific data and comparative indicators, the Internet Accountability Compass promotes greater transparency, strengthens public accountability, and empowers policymakers, businesses, and civil society to align action with aspiration.
 
 </div>
 

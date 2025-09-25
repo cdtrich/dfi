@@ -153,13 +153,17 @@ export function mapTotalCatGIFIquant5(
       legend: true,
       type: "ordinal",
       range: [
-        "#e6b95e", // 50% tint
-        "#fffccc",
-        "#91d4c8",
+        // "#e6b95e", // 50% tint
+        // "#fffccc",
+        // "#ff4671", // 50% tint
+        // "hsla(346, 100%, 83%, 1.00)",
+        "#333", // 50% tint
+        "#999",
+        "#b6e2da",
         "#32baa8",
       ],
       // domain: ["<50", "51-61", "62-67", "68-74", ">74"],
-      domain: ["Off course", "Getting on track", "On track", "Leading"],
+      domain: ["Off track", "Getting on track", "On track", "Leading"],
       // domain: labels,
       // interval: 20,
       // range: [fillScale.getColor("Total", 0), fillScale.getColor("Total", 100)],

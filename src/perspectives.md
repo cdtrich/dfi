@@ -101,14 +101,21 @@ const coast = topojson.feature(
 
 <!-- input controls -->
 
+Select a source type.
+
 ```js
 const selectSourceType = view(
   Inputs.checkbox(sourceTypeUnique, {
-    label: "Source type",
+    // label: "Source type",
     format: (x) =>
       html`<span style="font-weight: [400, 700, 200];">${x}</span>`,
   })
 );
+```
+
+Select a country.
+
+```js
 const selectSourceCountry = view(
   Inputs.search(sourceCountryUnique, {
     value: "",

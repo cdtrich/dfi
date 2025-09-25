@@ -4,6 +4,7 @@
   --sidebar-height: 500px;
   --transition-speed: 0.3s;
   --primary-color: #2c3e5022;
+  --sidebar-color: rgba(255, 255, 255, 1);
   --secondary-color: #3498db;
   --text-color: #999;
   --sans-serif: "Nunito Sans", -apple-system, BlinkMacSystemFont, "avenir next",
@@ -16,9 +17,10 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--sans-serif);
+  background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .sidebar {
@@ -28,7 +30,7 @@ body {
   left: 0;
   width: var(--sidebar-width);
   height: min(var(--sidebar-height), 80vh, 800px);
-  background-color: var(--primary-color);
+  background-color: var(--sidebar-color);
   transition: width var(--transition-speed);
   overflow: hidden; /* Prevent  scrolling */
   z-index: 1000;

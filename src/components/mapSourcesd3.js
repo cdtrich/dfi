@@ -10,6 +10,7 @@ export function mapSourcesd3(
     .create("svg")
     .attr("viewBox", `0 0 ${width} ${height}`)
     .style("width", "100%")
+    // .style("margin-top", "100px")
     .style("height", "auto");
 
   const projection = d3.geoEqualEarth().fitSize([width, height], {
@@ -101,7 +102,7 @@ export function mapSourcesd3(
     .style("dominant-baseline", "hanging");
 
   // Utility: wrap text every ~15 characters
-  function wrapText(text, lineLength = 15) {
+  function wrapText(text, lineLength = 25) {
     const words = text.split(" ");
     const lines = [];
     let current = "";
@@ -128,7 +129,7 @@ export function mapSourcesd3(
       // Clear previous tspans
       tooltipText.selectAll("tspan").remove();
 
-      const lines = wrapText(name, 15);
+      const lines = wrapText(name, 25);
 
       lines.forEach((line, i) => {
         tooltipText
@@ -150,7 +151,7 @@ export function mapSourcesd3(
 
       tooltipGroup.attr(
         "transform",
-        `translate(${x}, ${y - bbox.height - padding - 6})`
+        `translate(${x}, ${y - bbox.height - padding + 20})`
       );
       tooltipGroup.style("visibility", "visible");
     })
