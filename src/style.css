@@ -226,9 +226,10 @@ div[class*="-swatches-"] {
 
 /* country practices cards */
 .sourcecard {
-  border: 1px solid #fff; /* Thin white outline */
-  border-radius: 8px; /* Rounded edges */
+  /* border: 1px solid #fff; Thin white outline */
+  border-radius: 10px; /* Rounded edges */
   font-size: 1em;
+  font-weight: 500;
   /* font-size: 0.9em; */
   /* color: var(--theme-foreground); White text (including the span text) */
   padding: 16px; /* Add some padding inside the card */
@@ -253,10 +254,12 @@ a:hover {
 
 /* Hover effect */
 .sourcecard:hover {
+  /* border: 2px solid #fff; */
+  transform: scale(1.05);
   /* background-color: var(--hovered-card-color); Fill with white on hover */
   /* border-color: 1px var(--hovered-card-border); Thin white outline */
   /* border-width: 10px; Thin white outline */
-  box-shadow: 0 0 8px 4px #00000037;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   /* color: #000; Change the general text color on hover */
 }
 
@@ -388,7 +391,7 @@ body {
   background-image: url("https://raw.githubusercontent.com/cdtrich/dfi/refs/heads/main/img/GIFI background.png") !important;
   background-repeat: repeat-y !important; /* only downwards */
   background-position: top center !important; /* start at very top */
-  background-size: contain !important; /* use natural image size */
+  background-size: 100% !important; /* use natural image size */
   background-attachment: scroll !important;
 }
 a[href] {

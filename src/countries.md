@@ -59,9 +59,9 @@ const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
 ```js
 // console.log("dfiCardinal", dfiCardinal);
 const selectType = view(
-  Inputs.radio(["🧭 Compass view", "🏁 Table view"], {
-    datalist: ["🧭 Compass view", "🏁 Table view"],
-    value: "🧭 Compass view",
+  Inputs.radio(["⎈ Compass view", "⚑ Table view"], {
+    datalist: ["⎈ Compass view", "⚑ Table view"],
+    value: "⎈ Compass view",
   })
 );
 ```
@@ -70,7 +70,7 @@ const selectType = view(
 
 ```js
 const chartView =
-  selectType === "🧭 Compass view"
+  selectType === "⎈ Compass view"
     ? html`<div class="card">
         ${resize((width) => polar(dfiFull, { width }))}
       </div>`

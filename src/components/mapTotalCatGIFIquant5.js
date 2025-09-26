@@ -157,10 +157,16 @@ export function mapTotalCatGIFIquant5(
         // "#fffccc",
         // "#ff4671", // 50% tint
         // "hsla(346, 100%, 83%, 1.00)",
-        "#333", // 50% tint
-        "#999",
-        "#b6e2da",
-        "#32baa8",
+        // "#333", // 50% tint
+        // "#999",
+        "#FDE74C",
+        // "#aec8c0ff",
+        // "#b0b0b0ff",
+        "#afb6b5ff",
+        "#4ed0bfff",
+        "#007162ff",
+        // "#6BB6C7",
+        // "#3891A6",
       ],
       // domain: ["<50", "51-61", "62-67", "68-74", ">74"],
       domain: ["Off track", "Getting on track", "On track", "Leading"],

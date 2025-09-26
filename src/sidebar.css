@@ -18,7 +18,7 @@
 
 .sidebar {
   position: fixed;
-  top: 50%;
+  top: 38%;
   transform: translateY(-50%);
   left: 0;
   width: var(--sidebar-width);
@@ -165,5 +165,14 @@
 
   .sidebar.collapsed {
     width: var(--sidebar-width-collapsed);
+  }
+}
+
+@media (max-height: 600px) {
+  .sidebar-menu span {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
 }

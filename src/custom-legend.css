@@ -20,12 +20,14 @@
 
 .legend-item:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
+  transform: scale(1.05);
 }
 
 .legend-item.selected {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
+  transform: scale(1.05);
 }
 
 .legend-item.selected::after {
@@ -34,7 +36,7 @@
   bottom: -6px;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%;
+  /* width: 40%; */
   height: 2px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 2px;

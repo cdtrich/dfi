@@ -53,7 +53,7 @@ const colorScales = () => {
     return d3
       .scaleOrdinal()
       .domain(["Off course", "Getting on track", "On track", "Leading"])
-      .range(["#e6b95e", "#fffccc", tintColor, baseHex]);
+      .range(["#FDE74C", "#afb6b5ff", tintColor, baseHex]);
   };
 
   // Function to get the correct color

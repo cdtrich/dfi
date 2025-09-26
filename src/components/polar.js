@@ -91,9 +91,9 @@ export function polar(data, { width, height } = {}) {
       Plot.geo([1.0, 0.8, 0.6, 0.4, 0.2], {
         geometry: (r) => d3.geoCircle().center([0, 90]).radius(r)(),
         stroke: "black",
-        fill: "black",
+        fill: "#fff",
         strokeOpacity: 0.3,
-        fillOpacity: 0.01,
+        fillOpacity: 1,
         strokeWidth: 0.5,
       }),
 
