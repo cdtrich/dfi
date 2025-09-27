@@ -48,8 +48,6 @@ import { sidebar } from "./components/sidebar.js";
 
 <div class="body-text">
 
-<p style="font-weight: 700;"><a href="./countries.html">Go to country overview →</a></p>
-
 <div class="grid grid-cols-3">
   <div class="card key">
     <h2>Datapoints</h2>
@@ -64,6 +62,8 @@ import { sidebar } from "./components/sidebar.js";
     <span class="big">12</span>
   </div>
 </div>
+
+<p style="font-weight: 700;"><a href="./countries.html">Go to country overview →</a></p>
 
 <!-- body text -->
 

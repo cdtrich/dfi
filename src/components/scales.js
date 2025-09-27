@@ -11,7 +11,7 @@ const colorScales = () => {
       "Trust and resilience",
       "Total",
     ])
-    .range(["#962c8c", "#643291", "#034ea2", "#3c4099", "#000"]);
+    .range(["#962c8c", "#643291", "#034ea2", "#3c4099", "#007162ff"]);
 
   // Function to get the sequential scale
   const getSequentialScale = (category) => {
@@ -20,14 +20,14 @@ const colorScales = () => {
       "Rights and freedoms": "#643291",
       "Responsibility and sustainability": "#034ea2",
       "Trust and resilience": "#3c4099",
-      Total: "#000",
+      "Total score": "#000",
     };
     const lowestMap = {
       "Connectivity and infrastructure": "#f3e6f1", // 20% tint https://chatgpt.com/share/e/680d362f-646c-800a-962a-29844656f32b
       "Rights and freedoms": "#f1eaf7",
       "Responsibility and sustainability": "#e6eef7",
       "Trust and resilience": "#e7e8f5",
-      Total: "#cccccc",
+      "Total score": "#FDE74C",
     };
     return d3.scaleSequential(
       d3.interpolateRgb(lowestMap[category], colorMap[category])
@@ -41,7 +41,7 @@ const colorScales = () => {
       "Rights and freedoms": "#643291",
       "Responsibility and sustainability": "#034ea2",
       "Trust and resilience": "#3c4099",
-      Total: "#000000",
+      "Total score": "#007162ff",
     };
 
     const baseHex = baseColorMap[category];
@@ -49,6 +49,14 @@ const colorScales = () => {
     const tintColor = baseColor
       ? d3.interpolateRgb("#ffffff", baseHex)(0.5)
       : "#cccccc";
+
+    // Special case for "Total score" - use custom color for "On track"
+    if (category === "Total score") {
+      return d3
+        .scaleOrdinal()
+        .domain(["Off course", "Getting on track", "On track", "Leading"])
+        .range(["#FDE74C", "#afb6b5ff", "#4ed0bfff", baseHex]);
+    }
 
     return d3
       .scaleOrdinal()

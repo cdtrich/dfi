@@ -14,6 +14,14 @@ export function polar(data, { width, height } = {}) {
     (d, index, self) =>
       self.findIndex((item) => item.NAME_ENGL === d.NAME_ENGL) === index
   );
+  // total label
+  const dataTotal = data;
+  // .filter((d) => d.commitment_num_cardinal === 11)
+  // .map((d) => ({
+  //   ...d,
+  //   total_label: `${Math.round(d.total)} (${d.group})`,
+  // }));
+  console.log("polar dataTotal", dataTotal);
 
   // get colorsScales()
   const fillScale = colorScales();
@@ -74,19 +82,6 @@ export function polar(data, { width, height } = {}) {
       axis: null,
     },
     marks: [
-      // Facet name (country name)
-      Plot.text(
-        data,
-        Plot.selectFirst({
-          text: "NAME_ENGL",
-          frameAnchor: "top",
-          fontWeight: "700",
-          fontSize: 14 * 2,
-          lineWidth: 8,
-          href: (d) => d.country_url,
-        })
-      ),
-
       // grey discs
       Plot.geo([1.0, 0.8, 0.6, 0.4, 0.2], {
         geometry: (r) => d3.geoCircle().center([0, 90]).radius(r)(),
@@ -97,19 +92,19 @@ export function polar(data, { width, height } = {}) {
         strokeWidth: 0.5,
       }),
 
-      // tick labels
-      Plot.text([0, 20, 40, 60, 80, 100], {
-        fx: 0,
-        fy: 0,
-        x: 147 + 93,
-        y: (d) => 90 - d / 100 + 0.05,
-        dx: 2,
-        textAnchor: "middle",
-        text: (d) => d,
-        fill: "currentColor",
-        stroke: "white",
-        fontSize: 12,
-      }),
+      // Facet name (country name)
+      Plot.text(
+        data,
+        Plot.selectFirst({
+          text: "NAME_ENGL",
+          frameAnchor: "top",
+          fontWeight: "700",
+          fontSize: 14 * 2,
+          lineAnchor: "top",
+          lineWidth: 8,
+          href: (d) => d.country_url,
+        })
+      ),
 
       // axes labels (in legend)
       Plot.text(longitude.domain(), {
@@ -201,6 +196,15 @@ export function polar(data, { width, height } = {}) {
         fillOpacity: 1,
       }),
 
+      // total score
+      Plot.lineX(data, {
+        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
+        y: ({ total }) => 90 - total / 100,
+        color: "#000",
+        strokeWidth: 1,
+        curve: "catmull-rom-closed",
+      }),
+
       // cardinal points
       Plot.dot(data, {
         x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
@@ -224,6 +228,33 @@ export function polar(data, { width, height } = {}) {
       //   fontSize: ".8em",
       //   stroke: "#fff",
       // }),
+      // total score label
+      Plot.text(
+        dataTotal,
+        Plot.selectFirst({
+          x: ({ commitment_num_cardinal }) => longitude(5),
+          y: ({ value }) => 90 - 110 / 100,
+          text: (d) => Math.round(d.total),
+          frameAnchor: "bottom",
+          fontSize: 14,
+          fontWeight: 500,
+          dy: 10,
+        })
+      ),
+      Plot.text(
+        dataTotal,
+        Plot.selectFirst({
+          x: ({ commitment_num_cardinal }) => longitude(5),
+          y: ({ value }) => 90 - 110 / 100,
+          // y: (d) => 0.1,
+          // text: Math.round("total"),
+          text: (d) => `(${d.group})`,
+          // text: "NAME_ENGL",
+          frameAnchor: "bottom",
+          fontSize: 14,
+          dy: 25,
+        })
+      ),
 
       // tooltip
       Plot.tip(
@@ -243,22 +274,46 @@ export function polar(data, { width, height } = {}) {
           // fontSize: 12,
         })
       ),
-      // Plot.text(
-      //   data,
-      //   Plot.pointer({
-      //     x: ({ commitment_num_cardinal }) =>
-      //       longitude(commitment_num_cardinal),
-      //     y: ({ value }) => 90 - value / 100,
-      //     text: (d) => `${d.commitment_txt_cardinal}`,
-      //     // text: (d) => `${d.commitment_txt}\n${Math.round(d.value)}`,
-      //     textAnchor: "start",
-      //     dx: 4,
-      //     fill: "currentColor",
-      //     stroke: "white",
-      //     maxRadius: 10,
-      //     fontSize: 12,
-      //   })
-      // ),
+
+      // average
+      Plot.geo([0.7], {
+        fx: 0,
+        fy: 0,
+        geometry: (r) => d3.geoCircle().center([0, 90]).radius(r)(),
+        stroke: "black",
+        fill: "#ffffff",
+        strokeOpacity: 1,
+        fillOpacity: 0,
+        strokeWidth: 1,
+      }),
+      Plot.text(["Average"], {
+        fx: 0,
+        fy: 0,
+        x: 147 - 180 + 93,
+        y: 90 - 0.65,
+        dx: 2,
+        textAnchor: "middle",
+        text: (d) => d,
+        fill: "currentColor",
+        stroke: "white",
+        strokeWidth: 5,
+        fontSize: 12,
+      }),
+
+      // tick labels
+      Plot.text([0, 20, 40, 60, 80, 100], {
+        fx: 0,
+        fy: 0,
+        x: 147 + 93,
+        y: (d) => 90 - d / 100 + 0.05,
+        dx: 2,
+        textAnchor: "middle",
+        text: (d) => d,
+        fill: "currentColor",
+        stroke: "white",
+        fontSize: 12,
+        strokeWidth: 5,
+      }),
     ],
   });
 

@@ -221,7 +221,9 @@ export function mapTotalCatGIFIquant5(
             [
               // `━ ${d.properties.NAME_ENGL} ━`,
               // `Status: ${d.properties.group}`,
-              `${d.properties.NAME_ENGL} ━ ${d.properties.group}`,
+              `${d.properties.NAME_ENGL} ━ ${d.properties.group} (${Math.round(
+                d.properties.total
+              )} total)`,
               ``, // empty line
               `𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝘃𝗶𝘁𝘆 𝗮𝗻𝗱 𝗶𝗻𝗳𝗿𝗮𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲: ${
                 d.properties["Connectivity and infrastructure"] === "NA"

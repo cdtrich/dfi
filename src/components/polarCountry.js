@@ -7,9 +7,15 @@ export function polarCountry(data, country) {
   // chart width
   const vw = window.innerWidth;
   const dotSize = window.innerWidth * 0.006;
-  // console.log("dotSize", dotSize);
 
   const dataFiltered = data.filter((d) => d.NAME_ENGL === country);
+  // console.log("polarCountry dataFiltered", dataFiltered);
+  // total label
+  const dataTotal = dataFiltered.filter((d) => d.commitment_num_cardinal === 5);
+  // console.log("polarCountry dataTotal", dataTotal);
+  // total line
+  // var dataTotalLine = dataFiltered;
+  // dataTotalLine.push({ ...dataTotalLine[0] });
 
   // get colorsScales()
   const fillScale = colorScales();
@@ -28,10 +34,12 @@ export function polarCountry(data, country) {
 
   // PLOT //////////////////////////
   const plot = Plot.plot({
-    width: vw / 3,
+    width: vw / 4,
     marginTop: -60,
     // x: { axis: "top", label: null },
     // y: { label: null },
+    // title: `${Math.round(dataFiltered[0].total)}`,
+    // subtitle: (${dataFiltered[0].group)},
     projection: {
       type: "azimuthal-equidistant",
       rotate: [-60, -90],
@@ -120,6 +128,21 @@ export function polarCountry(data, country) {
         fillOpacity: 1,
       }),
 
+      // total score
+      Plot.lineX(dataFiltered, {
+        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
+        y: ({ total }) => 90 - total / 100,
+        // y: (d) => 0.1,
+        // text: Math.round("total"),
+        text: (d) => Math.round(d.total),
+        color: "#000",
+        // strokeWidth: 0,
+        // strokeWidth: 5,
+        curve: "catmull-rom-closed",
+        fontWeight: "bold",
+        // title: (d) => Math.round(d.total),
+      }),
+
       // cardinal points
       Plot.dot(dataFiltered, {
         x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
@@ -128,6 +151,33 @@ export function polarCountry(data, country) {
         stroke: "#fff",
         strokeWidth: dotSize / 2,
         r: dotSize,
+      }),
+
+      // total score label
+      Plot.text(dataTotal, {
+        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
+        y: ({ value }) => 90 - 110 / 100,
+        // y: (d) => 0.1,
+        // text: Math.round("total"),
+        text: (d) => Math.round(d.total),
+        color: "#000",
+        fontSize: 20,
+        // strokeWidth: 0,
+        // strokeWidth: 5,
+        fontWeight: 500,
+        // title: (d) => Math.round(d.total),
+      }),
+      Plot.text(dataTotal, {
+        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
+        y: ({ value }) => 90 - 120 / 100,
+        // y: (d) => 0.1,
+        // text: Math.round("total"),
+        text: (d) => d.group,
+        color: "#000",
+        fontSize: 30,
+        // strokeWidth: 0,
+        // strokeWidth: 5,
+        // title: (d) => Math.round(d.total),
       }),
 
       // cardinal point labels

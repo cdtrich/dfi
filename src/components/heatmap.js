@@ -4,9 +4,10 @@ import colorScales from "./scales.js";
 
 // https://observablehq.com/@observablehq/plot-radar-chart
 
-export function heatmap(data, { width, height } = {}) {
+export function heatmap(data, { width } = {}) {
   // chart width
   const vw = window.innerWidth;
+  const height = data.length * 5;
   const dotSize = window.innerWidth * 0.006;
   // console.log("heatmap data", data);
 
@@ -20,15 +21,28 @@ export function heatmap(data, { width, height } = {}) {
   );
 
   const dataDropNA = data.filter((d) => d.group_value !== "NA");
+  console.log("dataDropNA", dataDropNA);
+
+  // Order dataDropNA by d.total (ascending order)
+  const yDomainOrder = dataDropNA
+    .filter((d) => d.pillar_txt === "Total score")
+    .sort((a, b) => b.total - a.total);
+
+  console.log("yDomainOrder", yDomainOrder);
+
+  // Create an array of the values in d.NAME_ENGL
+  const yDomain = yDomainOrder.map((d) => d.NAME_ENGL);
 
   const plot = Plot.plot({
     width: width,
+    height: height < 3000 ? 3000 : height,
     // height: vw * 3,
     // height: vw * 2,
     aspectRatio: 15,
     marginLeft: width / 4,
     marginRight: width / 4,
     marginTop: width / 20,
+    // marginTop: height < 32000 ? width / 20 : width / 10,
     // margin: 0,
     // x: { axis: "top", label: null, lineWidth: 10 },
     x: {
@@ -38,15 +52,19 @@ export function heatmap(data, { width, height } = {}) {
         "Rights and freedoms",
         "Responsibility and sustainability",
         "Trust and resilience",
+        "Total score",
       ],
+      anchor: "bottom",
+      // tickRotate: -45,
     },
-    // y: { label: null },
+    y: { padding: "", domain: yDomain },
     // y: { domain: [-100, 100], axis: null },
     // length: { range: [0, vw / 18] },
     // r: { range: [0, vw / 16] },
     color: {
       legend: true,
       type: "ordinal",
+      // dummy for legend only
       range: [
         fillScale.getOrdinalCategoryScale("Rights and freedomds")("Off course"),
         fillScale.getOrdinalCategoryScale("Rights and freedomds")(
@@ -73,6 +91,8 @@ export function heatmap(data, { width, height } = {}) {
       Plot.rect(dataDropNA, {
         x: "pillar_txt",
         y: "NAME_ENGL",
+        stroke: "#fff",
+        strokeWidth: 2,
         fill: (d) =>
           fillScale.getOrdinalCategoryScale(d.pillar_txt)(d.group_value),
         // tip: true,
@@ -99,7 +119,9 @@ export function heatmap(data, { width, height } = {}) {
           stroke: "white",
           // tip: true,
           title: (d) =>
-            `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.round(d.value)}`,
+            `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.round(d.value)}\n(${
+              d.group_value
+            })`,
         }),
         // clickable invisible country names
         Plot.text(countryNames, {

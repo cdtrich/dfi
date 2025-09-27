@@ -16,12 +16,6 @@ theme: air
     <link rel="stylesheet" href="../sidebar.css" />
 </head>
 
-<!-- back to root button -->
-
-<a href="../" class="back-to-root">
-  <span class="arrow"></span>
-</a>
-
 <!-- import components -->
 
 ```js
@@ -86,7 +80,7 @@ var commitmentUnique = commitments.filter(onlyUnique);
 <div class="grid grid-cols-3">
 
   <div class="card grid-col-1">
-  <p>${country} scores a total of ${total} points (<i>${group}</i>).</p>
+  <p>${country} scores a <span style="font-weight: 700;">total of ${total} </span>points (<i>${group}</i>).</p>
   <p>Cardinal point breakdown:</p>
 <ul>
   <li>${dfiCardinalCountry[0].value === "NA" ? dfiCardinalCountry[0].note : `${Math.round(dfiCardinalCountry[0].value)} (${dfiCardinalCountry[0].group_value})`} in <span class="pillar-connectivity" style="font-weight: 700;">${dfiCardinalCountry[0].pillar_txt}</span></li>

@@ -57,7 +57,7 @@ const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
 </p>
 
 ```js
-// console.log("dfiCardinal", dfiCardinal);
+console.log("dfiCardinal", dfiCardinal);
 const selectType = view(
   Inputs.radio(["⎈ Compass view", "⚑ Table view"], {
     datalist: ["⎈ Compass view", "⚑ Table view"],
@@ -68,6 +68,42 @@ const selectType = view(
 
 </div>
 
+<!-- add total row to dfiCardinal -->
+
+```js
+// Assuming `dfiCardinal` is your original array
+const grouped = {};
+
+// Group all entries by ISO3_CODE
+dfiCardinal.forEach((d) => {
+  if (!grouped[d.ISO3_CODE]) {
+    grouped[d.ISO3_CODE] = [];
+  }
+  grouped[d.ISO3_CODE].push(d);
+});
+
+// Create new array with original data + total row per country
+const dfiCardinalLong = [];
+
+Object.values(grouped).forEach((entries) => {
+  dfiCardinalLong.push(...entries);
+
+  const first = entries[0];
+
+  dfiCardinalLong.push({
+    ...first,
+    pillar_txt: "Total score",
+    group_value: first.group,
+    value: first.total,
+  });
+});
+```
+
+```js
+console.log("dfiCardinalLong", dfiCardinalLong);
+// console.log("dfiFull", dfiFull);
+```
+
 ```js
 const chartView =
   selectType === "⎈ Compass view"
@@ -75,7 +111,7 @@ const chartView =
         ${resize((width) => polar(dfiFull, { width }))}
       </div>`
     : html`<div class="card">
-        ${resize((width) => heatmap(dfiCardinal, { width }))}
+        ${resize((width) => heatmap(dfiCardinalLong, { width }))}
       </div>`;
 ```
 

@@ -22,12 +22,14 @@
 .legend-item:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   /* transform: translateY(-2px); */
+  transition: font-weight 0.3s ease, scale 0.3s ease;
   transform: scale(1.1);
   font-weight: 700;
 }
 
 .legend-item.selected {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: font-weight 0.3s ease, scale 0.3s ease;
   transform: translateY(-2px);
   transform: scale(1.1);
   font-weight: 700;

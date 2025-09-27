@@ -51,4 +51,5 @@ foreach(i = 1:length(country)) %do% {
         countryLines,
         paste0("src/", country_url[i], ".md")
     )
+    print(paste0(country[i], " (", i, "/", length(country), ") written to file."))
 }
