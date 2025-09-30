@@ -37,14 +37,14 @@ const sourcesData = FileAttachment("./data/sources.csv").csv({
 <!-- hero -->
 <div class="hero">
   <h1>Perspectives</h1>
-  <h2>Sharing knowledge to accelerate progress.</h2>
+  <h2 class="subheader">Sharing knowledge to accelerate progress.</h2>
   <!-- <div id="hero-image"></div> -->
 </div>
 
 <div class="body-text">
 <p>Accountability in the digital realm is not a new concept—extensive research, advocacy, and policy innovation have shaped the global understanding of what it means to build a safe, inclusive, and rights-respecting Internet. Around the world, governments, civil society, international organisations, and research institutions have developed tools, frameworks, and initiatives to uphold commitments to connectivity, human rights, sustainability, and resilience.</p>
 
-<p>Yet this valuable knowledge often remains fragmented, siloed by region, sector, or theme. This section brings together a curated collection of complementary sources, analysis, and projects that highlight good practices, policy innovations, and real-world applications of the principles captured in the Internet Accountability Compass.</p>
+<p>Yet this valuable knowledge often remains fragmented, siloed by region, sector, or theme. This section brings together <b>a curated collection of complementary sources, analysis, and projects</b> that highlight good practices, policy innovations, and real-world applications of the principles captured in the Internet Accountability Compass.</p>
 
 <p>Whether it's a successful regulatory reform, an inclusive AI policy, a transparent approach to digital trade, or a strong national cybersecurity framework—these examples demonstrate that progress is possible. They also offer insights into how shared digital principles, such as those in the Global Digital Compact, can be translated into meaningful action.</p>
 
@@ -94,16 +94,25 @@ const coast = topojson.feature(
 );
 ```
 
+```js
+const worldFiltered = world.filter((feature) =>
+  sourceISOUnique.includes(feature.properties.ISO3_CODE)
+);
+```
+
 <!-- map -->
 <div class="figure-w-full">
-      ${resize((width) => mapSourcesd3(world, coast, sourceISOUnique, {width, height: 400 }))}
+      ${resize((width) => mapSourcesd3(worldFiltered, coast, sourceISOUnique, {width, height: 400 }))}
 </div>
 
 <!-- input controls -->
 
-Select a source type.
+<h1>Resources</h1>
+
+<!-- <p>Select a resource type.</p> -->
 
 ```js
+// console.log("worldFiltered", worldFiltered);
 const selectSourceType = view(
   Inputs.checkbox(sourceTypeUnique, {
     // label: "Source type",
@@ -113,7 +122,7 @@ const selectSourceType = view(
 );
 ```
 
-Select a country.
+<!-- Select a country. -->
 
 ```js
 const selectSourceCountry = view(

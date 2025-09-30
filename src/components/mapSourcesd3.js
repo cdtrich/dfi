@@ -22,6 +22,21 @@ export function mapSourcesd3(
 
   let selectedCountry = null;
 
+  // Background rectangle to capture clicks on empty space
+  svg
+    .append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("fill", "transparent")
+    .style("cursor", "default")
+    .on("click", function () {
+      selectedCountry = null;
+      updateStyles();
+      window.dispatchEvent(
+        new CustomEvent("map-country-selected", { detail: null })
+      );
+    });
+
   // Coastlines
   svg
     .append("g")
@@ -31,7 +46,8 @@ export function mapSourcesd3(
     .attr("d", path)
     .attr("fill", "none")
     .attr("stroke", "#ccc")
-    .attr("stroke-width", 0.5);
+    .attr("stroke-width", 0.5)
+    .style("pointer-events", "none");
 
   // Country paths
   const countryPaths = svg
@@ -47,7 +63,8 @@ export function mapSourcesd3(
     .attr("stroke-width", 0.5)
     .attr("cursor", "pointer")
     .attr("opacity", 1)
-    .on("click", (event, d) => {
+    .on("click", function (event, d) {
+      event.stopPropagation();
       selectedCountry = d.properties.NAME_ENGL;
       updateStyles();
       window.dispatchEvent(

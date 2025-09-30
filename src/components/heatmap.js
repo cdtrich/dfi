@@ -10,6 +10,10 @@ export function heatmap(data, { width } = {}) {
   const height = data.length * 5;
   const dotSize = window.innerWidth * 0.006;
   // console.log("heatmap data", data);
+  // console.log(
+  //   "heatmap data",
+  //   data.filter((d) => d.NAME_ENGL === "Ireland")
+  // );
 
   // get colorsScales()
   const fillScale = colorScales();
@@ -21,14 +25,14 @@ export function heatmap(data, { width } = {}) {
   );
 
   const dataDropNA = data.filter((d) => d.group_value !== "NA");
-  console.log("dataDropNA", dataDropNA);
+  // console.log("dataDropNA", dataDropNA);
 
   // Order dataDropNA by d.total (ascending order)
   const yDomainOrder = dataDropNA
-    .filter((d) => d.pillar_txt === "Total score")
-    .sort((a, b) => b.total - a.total);
+    // .sort((a, b) => b.total - a.total)
+    .filter((d) => d.pillar_txt === "Total score");
 
-  console.log("yDomainOrder", yDomainOrder);
+  // console.log("yDomainOrder", yDomainOrder);
 
   // Create an array of the values in d.NAME_ENGL
   const yDomain = yDomainOrder.map((d) => d.NAME_ENGL);
@@ -62,18 +66,18 @@ export function heatmap(data, { width } = {}) {
     // length: { range: [0, vw / 18] },
     // r: { range: [0, vw / 16] },
     color: {
-      legend: true,
+      legend: false,
       type: "ordinal",
       // dummy for legend only
       range: [
         fillScale.getOrdinalCategoryScale("Rights and freedomds")("Off course"),
         fillScale.getOrdinalCategoryScale("Rights and freedomds")(
-          "Getting on track"
+          "Catching up"
         ),
         "#00000080",
         "#000",
       ],
-      domain: ["Off course", "Getting on track", "On track", "Leading"],
+      domain: ["Off course", "Catching up", "On track", "Leading"],
     },
     marks: [
       Plot.axisX({
@@ -95,14 +99,15 @@ export function heatmap(data, { width } = {}) {
         strokeWidth: 2,
         fill: (d) =>
           fillScale.getOrdinalCategoryScale(d.pillar_txt)(d.group_value),
+        href: (d) => d.country_url,
         // tip: true,
-        // title: (d) => `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.round(d.value)}`,
+        // title: (d) => `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.floor(d.value)}`,
       }),
       // value labels
       Plot.text(data, {
         x: "pillar_txt",
         y: "NAME_ENGL",
-        text: (d) => (isNaN(d.value) ? "" : Math.round(d.value)),
+        text: (d) => (isNaN(d.value) ? "" : Math.floor(d.value)),
         fill: (d) => (d.value > 79 ? "#fff" : "#000"),
         fontSize: 10,
         textAnchor: "middle",
@@ -119,22 +124,19 @@ export function heatmap(data, { width } = {}) {
           stroke: "white",
           // tip: true,
           title: (d) =>
-            `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.round(d.value)}\n(${
+            `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.floor(d.value)}\n(${
               d.group_value
             })`,
-        }),
-        // clickable invisible country names
-        Plot.text(countryNames, {
-          x: (d) => "Connectivity and infrastructure",
-          y: "NAME_ENGL",
-          text: "ISO3_CODE",
-          fill: "#000",
-          href: "country_url",
-          color: "#000",
-          // fontSize: 10,
-          textAnchor: "middle",
-          // dy: -5,
         })
+        // clickable invisible country names
+        // Plot.text(data, {
+        //   x: "pillar_txt",
+        //   y: "NAME_ENGL",
+        //   text: (d) => d.NAME_ENGL,
+        //   fill: "#871236",
+        //   fontSize: 10,
+        //   textAnchor: "middle",
+        // })
       ),
     ],
   });

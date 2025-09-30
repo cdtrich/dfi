@@ -8,18 +8,18 @@ export function sources(data) {
 
   const fillScale = colorScales(); // 👈 Initialize the scale
 
-  const mainHeading = document.createElement("h1");
-  mainHeading.id = "sources";
-  mainHeading.tabIndex = -1;
-  mainHeading.style.paddingTop = "50px";
+  // const mainHeading = document.createElement("h1");
+  // mainHeading.id = "sources";
+  // mainHeading.tabIndex = -1;
+  // mainHeading.style.paddingTop = "50px";
 
   const anchor = document.createElement("h1");
   anchor.className = "observablehq-header-anchor";
   anchor.href = "#sources";
-  anchor.textContent = "Sources";
+  anchor.textContent = "Resources";
 
-  mainHeading.appendChild(anchor);
-  container.appendChild(mainHeading);
+  // mainHeading.appendChild(anchor);
+  // container.appendChild(mainHeading);
 
   const emptyDiv = document.createElement("div");
   emptyDiv.textContent = "";

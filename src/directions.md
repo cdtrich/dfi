@@ -34,27 +34,26 @@ import { customLegend, viewofCustomLegend } from "./components/customLegend.js";
 // import { renderMapWithLegend } from "./components/renderMapWithLegend.js";
 import { sidebar } from "./components/sidebar.js";
 import { renderPillarContent } from "./components/pillarRenderer.js";
+import { sources } from "./components/sources.js";
 ```
 
 <!-- hero -->
 
 <div class="hero">
   <h1>Directions</h1>
-  <h2>Helping countries stay on course.</h2>
+  <h2 class="subheader">Helping countries stay on course.</h2>
   <!-- <div id="hero-image"></div> -->
 </div>
 <div class="body-text">
-  <p>The Internet Accountability Compass offers more than a snapshot—it provides a sense of direction. Designed for governments and the wider multistakeholder community, the Compass supports accountability by increasing transparency around national policies and actions that shape the digital space. It is both a tool for assessment and a catalyst for progress.
+  <p>The Internet Accountability Compass offers more than a snapshot—it provides a sense of direction. Designed for governments and the wider multistakeholder community, the Compass supports accountability by <b>increasing transparency</b> around national policies and actions that shape the digital space. It is both a tool for assessment and a catalyst for progress.
   </p>
-  <p>By illuminating where countries stand and how far they have come, the Compass seeks to inspire ambition, encourage peer learning, and foster collective progress toward a digital future that is open, inclusive, secure, and rights-respecting. The Compass is not prescriptive—it does not claim to be the only path forward. Instead, it offers one possible constellation of indicators and data points that reflect shared aspirations.
-  </p>
-  <p>Rather than claiming to be definitive, the Compass presents one of many possible constellations of indicators and data points. Its purpose is to spark dialogue—about what matters, how progress should be measured, and how countries can hold themselves and each other accountable across four core dimensions: Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience.
+  <p>By illuminating where countries stand and how far they have come, the Compass seeks to <b>inspire ambition</b>, <b>encourage peer learning</b>, and <b>foster collective progress</b> toward a digital future that is open, inclusive, secure, and rights-respecting. The Compass is not prescriptive—it does not claim to be the only path forward. Instead, it offers one possible constellation of indicators and data points that reflect shared aspirations.
   </p>
     <p>To interpret this progress, the Compass uses four categories to describe each country’s current trajectory:
     </p>
       <ol>
         <li><b>Off Track:</b> The country’s current efforts diverge from international principles and commitments. A strategic shift is needed to align with shared goals.</li>
-        <li><b>Getting on Track:</b> The country has taken steps to align with global objectives; foundations are forming, but progress is still limited or uneven.
+        <li><b>Catching Up:</b> The country has taken steps to align with global objectives; foundations are forming, but progress is still limited or uneven.
         </li>
         <li><b>On Track:</b> The country’s policies and actions are aligned with global objectives, showing steady and measurable advancement.
         </li>
@@ -68,6 +67,9 @@ import { renderPillarContent } from "./components/pillarRenderer.js";
 ```js
 const dfiFullParse = FileAttachment("./data/dfiFull.csv").csv({ typed: true });
 const dfiCardinalParse = FileAttachment("./data/dfiCardinal.csv").csv({
+  typed: true,
+});
+const sourcesData = FileAttachment("./data/sources.csv").csv({
   typed: true,
 });
 ```
@@ -94,7 +96,7 @@ var world = topojson
   });
 ```
 
-  <!-- 1. input data -->
+<!-- 1. input data -->
 
 ```js
 const uniquePillars = [
@@ -130,7 +132,7 @@ const filterLegend = (domain, range) => {
 ```js
 console.log("uniquePillars", uniquePillars);
 const selectedPillar = view(
-  viewofCustomLegend(uniquePillars, "Rights and freedoms", "pillar")
+  viewofCustomLegend(uniquePillars, "Connectivity and infrastructure", "pillar")
 );
 ```
 
@@ -190,12 +192,64 @@ const commitmentLegend = view(
     )}
 </div>
 
+<!-- sources section -->
+
+<h1>Resources</h1>
+
 ```js
-// console.log("commitmentLegend", commitmentLegend);
+// unique source types and countries
+const sourceTypeUnique = [...new Set(sourcesData.map((d) => d.type))];
+const sourceCountryUnique = [...new Set(sourcesData.map((d) => d.NAME_ENGL))];
+// inputs
+const selectSourceType = view(
+  Inputs.checkbox(sourceTypeUnique, {
+    // label: "Source type",
+    format: (x) =>
+      html`<span style="font-weight: [400, 700, 200];">${x}</span>`,
+  })
+);
+const selectSourceCountry = view(
+  Inputs.search(sourceCountryUnique, {
+    value: "",
+    datalist: sourceCountryUnique,
+    placeholder: "Search countries",
+    output: null,
+  })
+);
 ```
 
-<!-- sidebar -->
+```js
+// remove duplicate sources
+const sourcesDataUnique = sourcesData.filter(
+  (d, index, self) =>
+    index ===
+    self.findIndex(
+      (item) => item.NAME_ENGL === d.NAME_ENGL && item.title === d.title
+    )
+);
+// filter by pillar
+const sourcesDataPillar = sourcesDataUnique.filter(
+  (d) => d.pillar_txt === selectedPillar
+);
+// filter by input
+const sourcesDataFiltered = sourcesDataPillar.filter((d) => {
+  const typeMatch =
+    !selectSourceType ||
+    selectSourceType.length === 0 ||
+    selectSourceType.includes(d.type);
+  const countryMatch =
+    !selectSourceCountry ||
+    selectSourceCountry.length === 0 ||
+    selectSourceCountry.includes(d.NAME_ENGL);
+  return typeMatch && countryMatch;
+});
 
+sources(sourcesDataFiltered);
+```
+
+<div id="sources-section"></div>
+
+<!-- sidebar -->
 <div>
     ${sidebar()}
 </div>

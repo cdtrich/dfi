@@ -19,9 +19,9 @@ export function polar(data, { width, height } = {}) {
   // .filter((d) => d.commitment_num_cardinal === 11)
   // .map((d) => ({
   //   ...d,
-  //   total_label: `${Math.round(d.total)} (${d.group})`,
+  //   total_label: `${Math.floor(d.total)} (${d.group})`,
   // }));
-  console.log("polar dataTotal", dataTotal);
+  // console.log("polar dataTotal", dataTotal);
 
   // get colorsScales()
   const fillScale = colorScales();
@@ -54,6 +54,7 @@ export function polar(data, { width, height } = {}) {
     width: width * 0.9,
     marginLeft: width * 0.1,
     marginTop: 10,
+    // subtitle: "Click on a country name to go to the country profile",
     // x: { axis: "top", label: null },
     // y: { label: null },
     projection: {
@@ -101,6 +102,7 @@ export function polar(data, { width, height } = {}) {
           fontWeight: "700",
           fontSize: 14 * 2,
           lineAnchor: "top",
+          fill: "#000",
           lineWidth: 8,
           href: (d) => d.country_url,
         })
@@ -129,18 +131,18 @@ export function polar(data, { width, height } = {}) {
       // }),
 
       // grey areas
-      Plot.area(data, {
-        x1: (d) => longitude(d.commitment_num_cardinal),
-        y1: (d) => (isNaN(d.value) ? 90 : 90 - d.value / 100),
-        x2: 0,
-        y2: 90,
-        z: "ISO3_CODE",
-        stroke: "#ccc",
-        fill: (d) => fillScale.getColor("Total", d.total),
-        // fill: "#ccc",
-        fillOpacity: 0.1,
-        curve: "cardinal-closed",
-      }),
+      // Plot.area(data, {
+      //   x1: (d) => longitude(d.commitment_num_cardinal),
+      //   y1: (d) => (isNaN(d.value) ? 90 : 90 - d.value / 100),
+      //   x2: 0,
+      //   y2: 90,
+      //   z: "ISO3_CODE",
+      //   stroke: "#ccc",
+      //   fill: (d) => fillScale.getColor("Total", d.total),
+      //   // fill: "#ccc",
+      //   fillOpacity: 0.1,
+      //   curve: "cardinal-closed",
+      // }),
 
       // connecting lines at top
       // Plot.line(data, {
@@ -150,6 +152,19 @@ export function polar(data, { width, height } = {}) {
       //   stroke: (d) => fillScale.getColor(d.pillar_txt),
       //   curve: "cardinal-closed",
       // }),
+
+      // total score
+      Plot.lineX(data, {
+        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
+        y: ({ total }) => 90 - total / 100,
+        // color: "#000",
+        strokeWidth: 1,
+        fill: "#000",
+        stroke: "#aaa",
+        fillOpacity: 0.1,
+        strokeOpacity: 1,
+        curve: "catmull-rom-closed",
+      }),
 
       // cardinal lines
       Plot.link(data, {
@@ -196,15 +211,6 @@ export function polar(data, { width, height } = {}) {
         fillOpacity: 1,
       }),
 
-      // total score
-      Plot.lineX(data, {
-        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
-        y: ({ total }) => 90 - total / 100,
-        color: "#000",
-        strokeWidth: 1,
-        curve: "catmull-rom-closed",
-      }),
-
       // cardinal points
       Plot.dot(data, {
         x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
@@ -216,45 +222,33 @@ export function polar(data, { width, height } = {}) {
         r: dotSize / 3,
       }),
 
-      // cardinal point labels
-      // Plot.text(data, {
-      //   x: (d) => longitude(d.commitment_num_cardinal),
-      //   y: (d) => 90 - d.value / 100,
-      //   // fill: (d) => fillScale.getColor(d.pillar_txt),
-      //   // fill: (d) =>
-      //   //   fillScale.getOrdinalCategoryScale(d.pillar_txt)(d.group_value),
-      //   fill: "#000",
-      //   text: (d) => (d.value < 50 ? "" : Math.round(d.value)),
-      //   fontSize: ".8em",
-      //   stroke: "#fff",
-      // }),
       // total score label
       Plot.text(
         dataTotal,
         Plot.selectFirst({
           x: ({ commitment_num_cardinal }) => longitude(5),
           y: ({ value }) => 90 - 110 / 100,
-          text: (d) => Math.round(d.total),
+          text: (d) => `${Math.floor(d.total)} (${d.group})`,
           frameAnchor: "bottom",
           fontSize: 14,
-          fontWeight: 500,
+          fontWeight: 400,
           dy: 10,
         })
       ),
-      Plot.text(
-        dataTotal,
-        Plot.selectFirst({
-          x: ({ commitment_num_cardinal }) => longitude(5),
-          y: ({ value }) => 90 - 110 / 100,
-          // y: (d) => 0.1,
-          // text: Math.round("total"),
-          text: (d) => `(${d.group})`,
-          // text: "NAME_ENGL",
-          frameAnchor: "bottom",
-          fontSize: 14,
-          dy: 25,
-        })
-      ),
+      // Plot.text(
+      //   dataTotal,
+      //   Plot.selectFirst({
+      //     x: ({ commitment_num_cardinal }) => longitude(5),
+      //     y: ({ value }) => 90 - 110 / 100,
+      //     // y: (d) => 0.1,
+      //     // text: Math.floor("total"),
+      //     text: (d) => `(${d.group})`,
+      //     // text: "NAME_ENGL",
+      //     frameAnchor: "bottom",
+      //     fontSize: 14,
+      //     dy: 25,
+      //   })
+      // ),
 
       // tooltip
       Plot.tip(
@@ -264,8 +258,8 @@ export function polar(data, { width, height } = {}) {
             longitude(commitment_num_cardinal),
           y: ({ value }) => 90 - value / 100,
           title: (d) =>
-            `${Math.round(d.value)}` + "\n" + `${d.commitment_txt_cardinal}`,
-          // text: (d) => `${d.commitment_txt}\n${Math.round(d.value)}`,
+            `${Math.floor(d.value)}` + "\n" + `${d.commitment_txt_cardinal}`,
+          // text: (d) => `${d.commitment_txt}\n${Math.floor(d.value)}`,
           textAnchor: "center",
           dx: 4,
           // fill: "currentColor",
@@ -281,12 +275,14 @@ export function polar(data, { width, height } = {}) {
         fy: 0,
         geometry: (r) => d3.geoCircle().center([0, 90]).radius(r)(),
         stroke: "black",
-        fill: "#ffffff",
+        fill: "#000",
+        stroke: "#ccc",
+        fillOpacity: 0.1,
         strokeOpacity: 1,
-        fillOpacity: 0,
+        // fillOpacity: 0,
         strokeWidth: 1,
       }),
-      Plot.text(["Average"], {
+      Plot.text(["Total"], {
         fx: 0,
         fy: 0,
         x: 147 - 180 + 93,

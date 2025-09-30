@@ -30,19 +30,21 @@ import { sidebar } from "./components/sidebar.js";
 
 <div class="hero">
   <h1>Internet <br>Accountability <br>Compass</h1>
-  <h2 style="text-align: left !important;">Monitoring progress. Guiding policy. Strengthening accountability.</h2>
+  <h2 class="subheader">Monitoring progress.<br>Guiding policy.<br>Strengthening accountability.</h2>
   <!-- <div id="hero-image"></div> -->
 </div>
 
-<!-- # Total score -->
-<div class="figure-w-full">
-      ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
+<div class="body-text">
+
+<p style="font-size: 1.1em !important">
+The Internet Accountability Compass is an <b>interactive tool</b> to promote greater transparency, strengthen public accountability, and empower policymakers, businesses, and civil society to align their actions with aspirations in the digital domain. The inaugural version of the Compass features global and country-specific insights, thematic overviews, and additional resources.
+</p>
+
+<p style="font-size: 1.1em !important">
+The Compass is not a definitive answer to the challenge of accountability. Rather, it is one of many possible constellations of indicators and data points. Its purpose is to spark dialogue—about what matters, how progress should be measured, and how countries can hold themselves and each other accountable across <a href="./directions">four core dimensions</a>: connectivity and infrastructure, rights and freedoms,responsibility and sustainability, and trust and resilience.
+</p>
+
 </div>
-
-<!-- scroll down arrow -->
-
-<!-- Scroll down for further information -->
-<!-- <div class="down-arrow"></div> -->
 
 <!-- key stats -->
 
@@ -62,18 +64,69 @@ import { sidebar } from "./components/sidebar.js";
     <span class="big">12</span>
   </div>
 </div>
-
 <p style="font-weight: 700;"><a href="./countries.html">Go to country overview →</a></p>
+</div>
+
+<!-- # Total score -->
+<div class="figure-w-full">
+      ${resize((width) => mapTotalCatGIFIquant5(world, coast, dfiFull, dfiCardinal, {width}))}
+</div>
+
+<!-- scroll down arrow -->
+
+<!-- Scroll down for further information -->
+<!-- <div class="down-arrow"></div> -->
 
 <!-- body text -->
+<div class="body-text">
 
-The Internet is a cornerstone of modern life—shaping how states govern, businesses operate, organisations function, and individuals connect. Recognising its transformative power, the international community has rallied around shared principles to foster a global, open, free, secure, and trustworthy Internet. These principles are enshrined in key political declarations, including the Global Digital Compact and the Declaration on the Future of the Internet.
+<h2>Why the Compass?</h2>
+<p>
+The Internet is a cornerstone of modern life—shaping how states govern, businesses operate, organisations function, and individuals connect. Recognising its transformative power, the international community has rallied around shared principles to foster a global, open, free, secure, and trustworthy Internet. These principles are enshrined in key political declarations, including the <a href="https://www.un.org/digital-emerging-technologies/global-digital-compact" target="_blank">
+Global Digital Compact</a> and the <a href="https://digital-strategy.ec.europa.eu/en/library/declaration-future-internet" target="_blank">Declaration on the Future of the Internet</a>.
+</p>
 
+<p>
 Yet, despite widespread consensus on these goals, progress toward their realisation remains uneven and often untracked.
+</p>
 
-The Internet Accountability Compass is designed to fill this gap. It serves as a reference point to assess how countries are advancing from high-level commitments to tangible implementation. By charting national performance across four cardinal dimensions—Connectivity and infrastructure, Rights and freedoms, Responsibility and sustainability, and Trust and resilience—the Compass contributed to bringing clarity to the state of Internet governance worldwide.
+<p>
+The <b>Internet Accountability Compass</b> is designed to fill this gap. It serves as a reference point to assess how countries are advancing from high-level commitments to tangible implementation. By charting national performance across four cardinal dimensions—connectivity and infrastructure, rights and freedoms, responsibility and sustainability, and trust and resilience—the Compass contributed to bringing clarity to the state of Internet governance worldwide.
+</p>
 
+<p>
 Through rigorous, country-specific data and comparative indicators, the Internet Accountability Compass promotes greater transparency, strengthens public accountability, and empowers policymakers, businesses, and civil society to align action with aspiration.
+</p>
+
+<h2>What does the compass show?</h2>
+
+<p>The Compass translates broad commitments into <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/cdtrich/dfi/b76f824bb5009098599dd71e1cd206d73f9d61fa/src/data/sources/Methodological%20Note%201.pdf" target="_blank"> measurable national and regional performance</a>, showing not only where practices align with promises, but also how the commitments themselves give shape to the digital landscape.</p>
+
+<p>
+The Internet Accountability Compass is not an audit mechanism or compliance checklist. It serves as a reference tool for governments, researchers, and civil society to assess national progress, identify trends, and learn from comparative practice. It is intended to bridge the gap between high-level digital commitments and their implementation—contributing to a more inclusive, rights-based, and accountable digital future.
+</p>
+<p>
+By charting national performance across <a href="./directions">four cardinal dimensions</a>—Connectivity and infrastructure, Rights and
+freedoms, Responsibility and sustainability, and Trust and resilience—the Compass contributed to bringing clarity to the state of Internet governance worldwide.
+</p>
+  <!-- funding reference -->
+  <h2>Team behind the Compass</h2>
+  <p>
+  The Compass was developed by the <a href="https://globalgovernanceprogramme.eui.eu/gifi/" target="_blank">Global Initiative on the Future of the Internet</a> at the European University Institute. Dr Patryk Pawlak and Nils Berglund are responsible for the concept, data collection and development of the Compass. The <a href="./methodology">methodology section</a> explains the approach and procedures adopted by the team. During the process, the authors benefited from numerous inputs through interviews and workshops. Christian Dietrich prepared and implemented the visual design for the Compass.
+  </p>
+  
+  <p>
+  The Global Initiative on the Future of the Internet is funded by the European Union. However, the Compass is the result of independent research conducted at the EUI. As such, the views and material presented in the Compass cannot be attributed to the EU or any of its bodies and agencies.
+  </p>
+
+  <div class="grid grid-cols-4 gap-4">
+  <div>
+    <img src="https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/eu_funded_en.jpg" width="100%">
+  </div>
+  <div class="col-span-3">
+  </div>
+
+  </div>
 
 </div>
 
@@ -85,8 +138,6 @@ const dfiCardinalParse = FileAttachment("./data/dfiCardinal.csv").csv({
   typed: true,
 });
 // global color palette
-// const colors = ["#32baa7", "#ceeae4", "#fff200", "#e6b95e", "#e87461"];
-// const colors = ["#32baa7", "#63d8a2", "#b9f27b", "#fff200"];
 const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
 // lookup
 const lookup = {
@@ -126,8 +177,6 @@ const lookup = {
 ```
 
 ```js
-// console.log("dfiCardinalParse", dfiCardinalParse);
-// console.log("dfiFullParse", dfiFullParse);
 const dfiFull = dfiFullParse.map((item) => {
   const pillar = lookup[item.pillar_num];
   const commitment = pillar?.commitments[item.commitment_num];
@@ -140,12 +189,10 @@ const dfiFull = dfiFullParse.map((item) => {
 });
 const dfiCardinal = dfiCardinalParse.map((item) => {
   const pillar = lookup[item.pillar_num];
-  // const commitment = pillar?.commitments[item.commitment_num];
 
   return {
     ...item,
     pillar_txt: pillar?.pillar_txt || item.pillar_txt,
-    // commitment_txt: commitment?.commitment_txt || item.commitment_txt,
   };
 });
 ```
@@ -156,8 +203,6 @@ const dfiCardinal = dfiCardinalParse.map((item) => {
 ```
 
 <!-- world map and data -->
-
-<!-- 0. data -->
 
 ```js
 var worldLoad = FileAttachment("./data/CNTR_RG_60M_2024_4326.json").json();
@@ -182,8 +227,6 @@ var coast = topojson.feature(
   coastLoad,
   coastLoad.objects.COAS_RG_60M_2016_4326
 );
-
-// console.log("world (in index", world);
 ```
 
 <!-- 1. input data -->
@@ -193,9 +236,6 @@ const uniqueCommitments = [
   ...new Set(dfiFull.map((item) => item.commitment_txt)),
 ];
 const uniquePillars = [...new Set(dfiCardinal.map((item) => item.pillar_txt))];
-// console.log("uniqueCommitments:", uniqueCommitments);
-// console.log("uniquePillars", uniquePillars);
-// console.log("dfiCardinal", dfiCardinal);
 ```
 
 <!-- sidebar -->

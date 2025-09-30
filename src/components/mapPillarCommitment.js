@@ -56,11 +56,11 @@ export function mapPillarCommitment(
       type: "ordinal",
       range: [
         fillScale.getOrdinalCategoryScale(selectPillar)("Off track"),
-        fillScale.getOrdinalCategoryScale(selectPillar)("Getting on track"),
+        fillScale.getOrdinalCategoryScale(selectPillar)("Catching up"),
         fillScale.getOrdinalCategoryScale(selectPillar)("On track"),
         fillScale.getOrdinalCategoryScale(selectPillar)("Leading"),
       ],
-      domain: ["Off track", "Getting on track", "On track", "Leading"],
+      domain: ["Off track", "Catching up", "On track", "Leading"],
     },
     marks: [
       // colored countries

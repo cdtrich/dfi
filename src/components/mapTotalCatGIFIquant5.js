@@ -146,7 +146,7 @@ export function mapTotalCatGIFIquant5(
     //   domain: [min, max],
     // },
     // caption: html`<figcaption style="text-align: right; width: 100%;">
-    //   Off course = 0-49, Getting on track = 50-64, On track = 65-79, Leading =
+    //   Off course = 0-49, Catching up = 50-64, On track = 65-79, Leading =
     //   80-100
     // </figcaption>`,
     color: {
@@ -169,7 +169,7 @@ export function mapTotalCatGIFIquant5(
         // "#3891A6",
       ],
       // domain: ["<50", "51-61", "62-67", "68-74", ">74"],
-      domain: ["Off track", "Getting on track", "On track", "Leading"],
+      domain: ["Off track", "Catching up", "On track", "Leading"],
       // domain: labels,
       // interval: 20,
       // range: [fillScale.getColor("Total", 0), fillScale.getColor("Total", 100)],

@@ -25,6 +25,7 @@ import { sources } from "../components/sources.js";
 import { onlyUnique } from "../components/onlyUnique.js";
 import { sidebar } from "../components/sidebar.js";
 import { pillarTextShort } from "../components/pillarTextShort.js";
+import { sourcesLegend } from "../components/sourcesLegend.js";
 ```
 
 <!-- load countries -->
@@ -126,6 +127,22 @@ var commitmentUnique = commitments.filter(onlyUnique);
   <div class="card size-full">
       ${resize((width) => straightPlot(dfiFull, country, dfiCardinalCountry[3].pillar_txt, {width}))}
     </div>
+
+<!-- sources -->
+
+```js
+var resourcesHeading = sourcesData.length === 0 ? "" : "Resources";
+```
+
+<h1>${resourcesHeading}</h1>
+
+  <div class="grid grid-cols-4 gap-4">
+  <div>
+      ${resize((width) => sourcesLegend(sourcesData, {width}))}
+    </div>
+  </div>
+  <div class="col-span-3">
+  </div>
 
   <div id="sources-section">
   </div>

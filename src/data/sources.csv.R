@@ -17,9 +17,9 @@ sources <- read_excel("./data/Sources-sep24.xlsx") %>%
     mutate(
         icon = case_match(
             type,
-            "Analysis" ~ "📄︎",
-            "Source" ~ "🔍︎",
-            "Project" ~ "📌︎",
+            "Analysis" ~ "⌕",
+            "Source" ~ "¶",
+            "Project" ~ "⚑",
             .default = type
         ),
         type = paste0(icon, " ", type),

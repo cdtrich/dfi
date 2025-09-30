@@ -3,11 +3,8 @@ export function sidebar() {
 
   const container = document.createElement("div");
   container.innerHTML = `
-    <div class="sidebar" id="sidebar">
+    <div class="sidebar collapsed" id="sidebar">
       <div class="sidebar-content">
-        <button class="toggle-btn" id="toggleBtn">
-          <!-- <i class="fas fa-chevron-left"></i> -->
-        </button>
         <ul class="sidebar-menu">
           <li>
             <a href="${basePath}/index">
@@ -45,25 +42,28 @@ export function sidebar() {
   `;
 
   const sidebarEl = container.querySelector("#sidebar");
-  const toggleBtn = container.querySelector("#toggleBtn");
 
-  // Function to check if device is mobile
-  function isMobile() {
-    return window.matchMedia("(max-width: 768px)").matches;
-  }
+  // Add hover event listeners
+  sidebarEl.addEventListener("mouseenter", function () {
+    sidebarEl.classList.remove("collapsed");
+  });
 
-  // Initialize sidebar state based on device type
-  function setSidebarState() {
-    if (isMobile()) {
+  sidebarEl.addEventListener("mouseleave", function () {
+    sidebarEl.classList.add("collapsed");
+  });
+
+  // For touch devices, add touch events
+  let touchTimeout;
+
+  sidebarEl.addEventListener("touchstart", function () {
+    clearTimeout(touchTimeout);
+    sidebarEl.classList.remove("collapsed");
+  });
+
+  sidebarEl.addEventListener("touchend", function () {
+    touchTimeout = setTimeout(() => {
       sidebarEl.classList.add("collapsed");
-    } else {
-      sidebarEl.classList.remove("collapsed");
-    }
-  }
-
-  // Toggle sidebar on button click
-  toggleBtn.addEventListener("click", function () {
-    sidebarEl.classList.toggle("collapsed");
+    }, 2000); // Keep expanded for 2 seconds after touch
   });
 
   function highlightCurrentPage() {
@@ -90,11 +90,7 @@ export function sidebar() {
   }
 
   // Initialize
-  setSidebarState();
   highlightCurrentPage();
-
-  // Reinitialize when window is resized
-  window.addEventListener("resize", setSidebarState);
 
   return container.firstElementChild;
 }

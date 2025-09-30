@@ -100,7 +100,7 @@ form > * {
 }
 
 .figure-w-full {
-  width: 95vw;
+  width: min(95vw, 1780px);
   transform: translateX(-10vw);
 }
 
@@ -427,6 +427,13 @@ h1 + h2 {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.5em;
+}
+h2.subheader {
+  text-align: left !important;
+  font-size: 1.5em !important;
 }
 a[href] {
   text-decoration: none;
@@ -1556,7 +1563,7 @@ p .plot-d6a7b5 {
 }
 :root {
   --theme-foreground: #000;
-  --theme-foreground-focus: #32baa7;
+  --theme-foreground-focus: #007162;
   --theme-background-a: #fff;
 }
 

@@ -38,7 +38,7 @@ export function polarCountry(data, country) {
     marginTop: -60,
     // x: { axis: "top", label: null },
     // y: { label: null },
-    // title: `${Math.round(dataFiltered[0].total)}`,
+    // title: `${Math.floor(dataFiltered[0].total)}`,
     // subtitle: (${dataFiltered[0].group)},
     projection: {
       type: "azimuthal-equidistant",
@@ -71,16 +71,29 @@ export function polarCountry(data, country) {
       }),
 
       // grey areas
-      Plot.area(dataFiltered, {
-        x1: (d) => longitude(d.commitment_num_cardinal),
-        y1: (d) => (isNaN(d.value) ? 90 : 90 - d.value / 100),
-        x2: 0,
-        y2: 90,
-        z: "ISO3_CODE",
-        stroke: "#ccc",
-        fill: (d) => fillScale.getColor("Total", d.total),
+      // Plot.area(dataFiltered, {
+      //   x1: (d) => longitude(d.commitment_num_cardinal),
+      //   y1: (d) => (isNaN(d.value) ? 90 : 90 - d.value / 100),
+      //   x2: 0,
+      //   y2: 90,
+      //   z: "ISO3_CODE",
+      //   stroke: "#ccc",
+      //   fill: (d) => fillScale.getColor("Total", d.total),
+      //   fillOpacity: 0.1,
+      //   curve: "cardinal-closed",
+      // }),
+
+      // total score
+      Plot.lineX(dataFiltered, {
+        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
+        y: ({ total }) => 90 - total / 100,
+        text: (d) => Math.floor(d.total),
+        strokeWidth: 1,
+        fill: "#000",
+        stroke: "#aaa",
         fillOpacity: 0.1,
-        curve: "cardinal-closed",
+        strokeOpacity: 1,
+        curve: "catmull-rom-closed",
       }),
 
       // cardinal lines
@@ -128,22 +141,6 @@ export function polarCountry(data, country) {
         fillOpacity: 1,
       }),
 
-      // total score
-      Plot.lineX(dataFiltered, {
-        x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
-        y: ({ total }) => 90 - total / 100,
-        // y: (d) => 0.1,
-        // text: Math.round("total"),
-        text: (d) => Math.round(d.total),
-        color: "#000",
-        // strokeWidth: 0,
-        // strokeWidth: 5,
-        curve: "catmull-rom-closed",
-        fontWeight: "bold",
-        // title: (d) => Math.round(d.total),
-      }),
-
-      // cardinal points
       Plot.dot(dataFiltered, {
         x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
         y: ({ value }) => 90 - value / 100,
@@ -158,38 +155,27 @@ export function polarCountry(data, country) {
         x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
         y: ({ value }) => 90 - 110 / 100,
         // y: (d) => 0.1,
-        // text: Math.round("total"),
-        text: (d) => Math.round(d.total),
+        // text: Math.floor("total"),
+        text: (d) => Math.floor(d.total),
         color: "#000",
         fontSize: 20,
         // strokeWidth: 0,
         // strokeWidth: 5,
         fontWeight: 500,
-        // title: (d) => Math.round(d.total),
+        // title: (d) => Math.floor(d.total),
       }),
       Plot.text(dataTotal, {
         x: ({ commitment_num_cardinal }) => longitude(commitment_num_cardinal),
         y: ({ value }) => 90 - 120 / 100,
         // y: (d) => 0.1,
-        // text: Math.round("total"),
-        text: (d) => d.group,
+        // text: Math.floor("total"),
+        text: (d) => `(${d.group})`,
         color: "#000",
         fontSize: 30,
         // strokeWidth: 0,
         // strokeWidth: 5,
-        // title: (d) => Math.round(d.total),
+        // title: (d) => Math.floor(d.total),
       }),
-
-      // cardinal point labels
-      // Plot.text(dataFiltered, {
-      //   x: (d) => longitude(d.commitment_num_cardinal),
-      //   y: (d) => 90 - d.value / 100,
-      //   fill: (d) => fillScale.getColor(d.pillar_txt),
-      //   text: (d) => Math.round(d.value),
-      //   stroke: "#fff",
-      //   strokeWidth: 5,
-      //   fontSize: 20,
-      // }),
 
       // interactive labels
       Plot.tip(
@@ -199,7 +185,7 @@ export function polarCountry(data, country) {
             longitude(commitment_num_cardinal),
           y: ({ value }) => 90 - value / 100,
           title: (d) =>
-            `${Math.round(d.value)}` + "\n" + `${d.commitment_txt_cardinal}`,
+            `${Math.floor(d.value)}` + "\n" + `${d.commitment_txt_cardinal}`,
           dx: 4,
           stroke: "white",
           anchor: "bottom",

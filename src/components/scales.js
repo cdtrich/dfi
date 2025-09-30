@@ -54,13 +54,13 @@ const colorScales = () => {
     if (category === "Total score") {
       return d3
         .scaleOrdinal()
-        .domain(["Off course", "Getting on track", "On track", "Leading"])
+        .domain(["Off course", "Catching up", "On track", "Leading"])
         .range(["#FDE74C", "#afb6b5ff", "#4ed0bfff", baseHex]);
     }
 
     return d3
       .scaleOrdinal()
-      .domain(["Off course", "Getting on track", "On track", "Leading"])
+      .domain(["Off course", "Catching up", "On track", "Leading"])
       .range(["#FDE74C", "#afb6b5ff", tintColor, baseHex]);
   };
 

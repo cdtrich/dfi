@@ -46,17 +46,17 @@ export function mapPillar(
       range: [0, 1],
       domain: [0, 100],
     },
-    // color: {
-    //   legend: true,
-    //   type: "ordinal",
-    //   range: [
-    //     fillScale.getOrdinalCategoryScale(selectPillar)("Below average"),
-    //     fillScale.getOrdinalCategoryScale(selectPillar)("Average"),
-    //     fillScale.getOrdinalCategoryScale(selectPillar)("Above average"),
-    //     fillScale.getOrdinalCategoryScale(selectPillar)("Pioneers"),
-    //   ],
-    //   domain: ["Below average", "Average", "Above average", "Pioneers"],
-    // },
+    color: {
+      legend: true,
+      type: "ordinal",
+      range: [
+        fillScale.getOrdinalCategoryScale(select)("Off track"),
+        fillScale.getOrdinalCategoryScale(select)("Catching up"),
+        fillScale.getOrdinalCategoryScale(select)("On track"),
+        fillScale.getOrdinalCategoryScale(select)("Leading"),
+      ],
+      domain: ["Off track", "Catching up", "On track", "Leading"],
+    },
     marks: [
       // colored countries
       Plot.geo(worldWithData, {
