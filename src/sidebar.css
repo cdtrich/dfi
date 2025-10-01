@@ -19,7 +19,7 @@
   transform: translateY(-50%);
   left: 0;
   width: var(--sidebar-width);
-  height: min(var(--sidebar-height), 80vh, 800px);
+  height: min(var(--sidebar-height), 80vh, 700px);
   background-color: var(--sidebar-color);
   transition: width var(--transition-speed), opacity var(--transition-speed);
   overflow: hidden;
