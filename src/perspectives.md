@@ -111,6 +111,8 @@ const worldFiltered = world.filter((feature) =>
 
 <!-- <p>Select a resource type.</p> -->
 
+<div class="body-text body-input">
+
 ```js
 // console.log("worldFiltered", worldFiltered);
 const selectSourceType = view(
@@ -223,8 +225,12 @@ function debounce(fn, delay) {
 }
 ```
 
-<!-- sources section -->
-<div id="sources-section"></div>
+</div>
+
+<div class="body-text body-input">
+  <!-- sources section -->
+  <div id="sources-section"></div>
+</div>
 
 <!-- sidebar -->
 <div>

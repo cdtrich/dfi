@@ -196,6 +196,8 @@ const commitmentLegend = view(
 
 <h1>Resources</h1>
 
+<div class="body-text body-input">
+
 ```js
 // unique source types and countries
 const sourceTypeUnique = [...new Set(sourcesData.map((d) => d.type))];
@@ -217,6 +219,8 @@ const selectSourceCountry = view(
   })
 );
 ```
+
+</div>
 
 ```js
 // remove duplicate sources
@@ -247,7 +251,9 @@ const sourcesDataFiltered = sourcesDataPillar.filter((d) => {
 sources(sourcesDataFiltered);
 ```
 
-<div id="sources-section"></div>
+<div class="body-text">
+  <div id="sources-section"></div>
+</div>
 
 <!-- sidebar -->
 <div>

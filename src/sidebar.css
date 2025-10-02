@@ -172,7 +172,7 @@
 }
 
 /* For touch devices, ensure the sidebar is visible when touched */
-@media (hover: none) {
+/* @media (hover: none) {
   .sidebar.collapsed:active {
     width: var(--sidebar-width);
     opacity: 1;
@@ -184,4 +184,4 @@
     height: auto;
     overflow: visible;
   }
-}
+} */

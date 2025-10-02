@@ -46,7 +46,7 @@ export function heatmap(data, isMobile, { width } = {}) {
     aspectRatio: 15,
     marginLeft: isMobile ? width / 2 : width / 4,
     marginRight: isMobile ? 0 : width / 4,
-    marginTop: isMobile ? width / 3 : width / 20,
+    marginTop: isMobile ? width / 2 : width / 20,
     // marginTop: height < 32000 ? width / 20 : width / 10,
     // margin: 0,
     // x: { axis: "top", label: null, lineWidth: 10 },

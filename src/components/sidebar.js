@@ -1,5 +1,6 @@
 export function sidebar() {
   const basePath = window.location.pathname.includes("/dfi") ? "/dfi" : "";
+  const isMobile = window.innerWidth <= 768;
 
   const container = document.createElement("div");
   container.innerHTML = `
@@ -43,28 +44,30 @@ export function sidebar() {
 
   const sidebarEl = container.querySelector("#sidebar");
 
-  // Add hover event listeners
-  sidebarEl.addEventListener("mouseenter", function () {
-    sidebarEl.classList.remove("collapsed");
-  });
+  // Add hover event listeners (desktop only)
+  if (!isMobile) {
+    sidebarEl.addEventListener("mouseenter", function () {
+      sidebarEl.classList.remove("collapsed");
+    });
 
-  sidebarEl.addEventListener("mouseleave", function () {
-    sidebarEl.classList.add("collapsed");
-  });
-
-  // For touch devices, add touch events
-  let touchTimeout;
-
-  sidebarEl.addEventListener("touchstart", function () {
-    clearTimeout(touchTimeout);
-    sidebarEl.classList.remove("collapsed");
-  });
-
-  sidebarEl.addEventListener("touchend", function () {
-    touchTimeout = setTimeout(() => {
+    sidebarEl.addEventListener("mouseleave", function () {
       sidebarEl.classList.add("collapsed");
-    }, 2000); // Keep expanded for 2 seconds after touch
-  });
+    });
+
+    // Touch events for tablets/touch laptops
+    let touchTimeout;
+
+    sidebarEl.addEventListener("touchstart", function () {
+      clearTimeout(touchTimeout);
+      sidebarEl.classList.remove("collapsed");
+    });
+
+    sidebarEl.addEventListener("touchend", function () {
+      touchTimeout = setTimeout(() => {
+        sidebarEl.classList.add("collapsed");
+      }, 2000);
+    });
+  }
 
   function highlightCurrentPage() {
     const currentPath = window.location.pathname.replace(basePath, "") || "/";
