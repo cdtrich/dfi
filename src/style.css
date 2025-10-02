@@ -142,7 +142,7 @@ div > div > form > #inputs-3a86ea-1 {
   margin: 2rem 0;
   max-width: none;
   text-align: left;
-  /* font-size: 14vw; */
+  font-size: 3em;
   font-family: var(--sans-serif);
   /* font-weight: 900; */
   line-height: 1;
@@ -320,9 +320,25 @@ a:hover {
   outline: none;
 }
 
+.desktop-notice {
+  background-color: #4ed0bf33;
+  color: #333;
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #d0e8ff;
+  font-size: 14px;
+}
+
+/* Hide on desktop screens */
+@media (min-width: 1024px) {
+  .desktop-notice {
+    display: none;
+  }
+}
+
 @media (min-width: 640px) {
   .hero h1 {
-    font-size: 90px;
+    font-size: 6em;
   }
 }
 

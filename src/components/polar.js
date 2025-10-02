@@ -4,11 +4,11 @@ import colorScales from "./scales.js";
 
 // https://observablehq.com/@observablehq/plot-radar-chart
 
-export function polar(data, { width, height } = {}) {
+export function polar(data, isMobile, { width, height } = {}) {
   // chart width
   const vw = window.innerWidth;
   const dotSize = window.innerWidth * 0.006;
-  // console.log("dotSize", dotSize);
+  console.log("polar data", data);
   // get unique country names
   const countryNames = data.filter(
     (d, index, self) =>
@@ -16,12 +16,6 @@ export function polar(data, { width, height } = {}) {
   );
   // total label
   const dataTotal = data;
-  // .filter((d) => d.commitment_num_cardinal === 11)
-  // .map((d) => ({
-  //   ...d,
-  //   total_label: `${Math.floor(d.total)} (${d.group})`,
-  // }));
-  // console.log("polar dataTotal", dataTotal);
 
   // get colorsScales()
   const fillScale = colorScales();
@@ -29,9 +23,6 @@ export function polar(data, { width, height } = {}) {
     .scalePoint(new Set(Plot.valueof(data, "commitment_num")), [180, -180])
     .padding(0.5)
     .align(1);
-  // console.log("data", data);
-  // console.log("longitude.domain()", longitude.domain());
-  // console.log("longitude.range()", longitude.range());
 
   // select first occurence of each country for facets
   const uniqueByName = [];
@@ -47,13 +38,12 @@ export function polar(data, { width, height } = {}) {
   // legend items
   const legend = [...new Set(data.map((item) => item.pillar_txt))];
 
-  // console.log("uniqueByName", uniqueByName);
-
   // PLOT //////////////////////////
   const plot = Plot.plot({
     width: width * 0.9,
     marginLeft: width * 0.1,
     marginTop: 10,
+    height: isMobile ? width * 80 : width * 6,
     // subtitle: "Click on a country name to go to the country profile",
     // x: { axis: "top", label: null },
     // y: { label: null },
@@ -78,8 +68,8 @@ export function polar(data, { width, height } = {}) {
     },
     facet: {
       data,
-      x: "fx",
-      y: "fy",
+      x: (d) => (isMobile ? 0 : d.fx),
+      y: (d) => (isMobile ? d.NAME_ENGL : d.fy),
       axis: null,
     },
     marks: [
@@ -110,8 +100,8 @@ export function polar(data, { width, height } = {}) {
 
       // axes labels (in legend)
       Plot.text(longitude.domain(), {
-        fx: 0,
-        fy: 0,
+        fx: isMobile ? -1 : 0,
+        fy: isMobile ? -1 : 0,
         x: longitude,
         y: 90 - 1.15,
         text: Plot.identity,
@@ -271,8 +261,8 @@ export function polar(data, { width, height } = {}) {
 
       // average
       Plot.geo([0.7], {
-        fx: 0,
-        fy: 0,
+        fx: isMobile ? -1 : 0,
+        fy: isMobile ? -1 : 0,
         geometry: (r) => d3.geoCircle().center([0, 90]).radius(r)(),
         stroke: "black",
         fill: "#000",
@@ -283,8 +273,8 @@ export function polar(data, { width, height } = {}) {
         strokeWidth: 1,
       }),
       Plot.text(["Total"], {
-        fx: 0,
-        fy: 0,
+        fx: isMobile ? -1 : 0,
+        fy: isMobile ? -1 : 0,
         x: 147 - 180 + 93,
         y: 90 - 0.65,
         dx: 2,
@@ -298,8 +288,8 @@ export function polar(data, { width, height } = {}) {
 
       // tick labels
       Plot.text([0, 20, 40, 60, 80, 100], {
-        fx: 0,
-        fy: 0,
+        fx: isMobile ? -1 : 0,
+        fy: isMobile ? -1 : 0,
         x: 147 + 93,
         y: (d) => 90 - d / 100 + 0.05,
         dx: 2,

@@ -38,7 +38,12 @@ const dfiFull = FileAttachment("./data/dfiFull.csv").csv({ typed: true });
 const dfiCardinal = FileAttachment("./data/dfiCardinal.csv").csv({
   typed: true,
 });
-const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
+// const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
+```
+
+```js
+// check if viewed on mobile
+const isMobile = window.innerWidth <= 768;
 ```
 
 <div class="hero">
@@ -58,12 +63,12 @@ const colors = ["#32baa7", "#0e4876", "#643291", "#962c8c"];
 <ol>
 <li>The Total Score is calculated as the equally weighted average of all available indicators. Countries with data for fewer than 8 of the 12 indicators are excluded from total scoring.
 </li>
-<li>A Directional Score reflects the average of the three indicators within a given category. At least 2 out of 3 indicators are required for a directional score to be assigned.
+<li>A Directional Score reflects the average of the three indicators within a given category. All 3 indicators are required for a directional score to be assigned.
 </li>
 </ol>
 
 ```js
-console.log("dfiCardinal", dfiCardinal);
+// console.log("dfiCardinal", dfiCardinal);
 const selectType = view(
   Inputs.radio(["⎈ Compass view", "⚑ Table view"], {
     datalist: ["⎈ Compass view", "⚑ Table view"],
@@ -106,7 +111,7 @@ Object.values(grouped).forEach((entries) => {
 ```
 
 ```js
-console.log("dfiCardinalLong", dfiCardinalLong);
+// console.log("dfiCardinalLong", dfiCardinalLong);
 // console.log("dfiFull", dfiFull);
 ```
 
@@ -114,10 +119,10 @@ console.log("dfiCardinalLong", dfiCardinalLong);
 const chartView =
   selectType === "⎈ Compass view"
     ? html`<div class="card">
-        ${resize((width) => polar(dfiFull, { width }))}
+        ${resize((width) => polar(dfiFull, isMobile, { width }))}
       </div>`
     : html`<div class="card">
-        ${resize((width) => heatmap(dfiCardinalLong, { width }))}
+        ${resize((width) => heatmap(dfiCardinalLong, isMobile, { width }))}
       </div>`;
 ```
 

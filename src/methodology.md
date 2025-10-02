@@ -108,7 +108,7 @@ Global Digital Compact</a> and the <a href="https://digital-strategy.ec.europa.e
 <ol>
 <li>The <b>Total Score</b> is calculated as the equally weighted average of all available indicators. Countries with data for fewer than 8 of the 12 indicators are excluded from total scoring.
 </li>
-<li>A <b>Directional Score</b> reflects the average of the three indicators within a given category. At least 2 out of 3 indicators are required for a directional score to be assigned.
+<li>A <b>Directional Score</b> reflects the average of the three indicators within a given category. All 3 indicators are required for a directional score to be assigned.
 </li>
 </ol>
   <p>As the Compass relies on secondary data, results may be influenced by variations in methodology, data quality, or temporal gaps between sources. While directional assessments offer comparative insights, they do not capture the full nuance of local implementation or informal practices.

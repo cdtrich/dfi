@@ -4,7 +4,7 @@ import colorScales from "./scales.js";
 
 // https://observablehq.com/@observablehq/plot-radar-chart
 
-export function heatmap(data, { width } = {}) {
+export function heatmap(data, isMobile, { width } = {}) {
   // chart width
   const vw = window.innerWidth;
   const height = data.length * 5;
@@ -27,15 +27,16 @@ export function heatmap(data, { width } = {}) {
   const dataDropNA = data.filter((d) => d.group_value !== "NA");
   // console.log("dataDropNA", dataDropNA);
 
-  // Order dataDropNA by d.total (ascending order)
+  // filter dataDropNA to total score
   const yDomainOrder = dataDropNA
     // .sort((a, b) => b.total - a.total)
     .filter((d) => d.pillar_txt === "Total score");
-
   // console.log("yDomainOrder", yDomainOrder);
 
   // Create an array of the values in d.NAME_ENGL
-  const yDomain = yDomainOrder.map((d) => d.NAME_ENGL);
+  const yDomain = yDomainOrder.map((d) =>
+    isMobile ? d.ISO3_CODE : d.NAME_ENGL
+  );
 
   const plot = Plot.plot({
     width: width,
@@ -43,9 +44,9 @@ export function heatmap(data, { width } = {}) {
     // height: vw * 3,
     // height: vw * 2,
     aspectRatio: 15,
-    marginLeft: width / 4,
-    marginRight: width / 4,
-    marginTop: width / 20,
+    marginLeft: isMobile ? width / 2 : width / 4,
+    marginRight: isMobile ? 0 : width / 4,
+    marginTop: isMobile ? width / 3 : width / 20,
     // marginTop: height < 32000 ? width / 20 : width / 10,
     // margin: 0,
     // x: { axis: "top", label: null, lineWidth: 10 },
@@ -85,6 +86,7 @@ export function heatmap(data, { width } = {}) {
         lineWidth: 10,
         label: null,
         tickSize: 0,
+        tickRotate: isMobile ? -90 : 0,
       }),
       Plot.axisY({
         // anchor: "top",
@@ -94,7 +96,7 @@ export function heatmap(data, { width } = {}) {
       }),
       Plot.rect(dataDropNA, {
         x: "pillar_txt",
-        y: "NAME_ENGL",
+        y: (d) => (isMobile ? d.ISO3_CODE : d.NAME_ENGL),
         stroke: "#fff",
         strokeWidth: 2,
         fill: (d) =>
@@ -106,7 +108,7 @@ export function heatmap(data, { width } = {}) {
       // value labels
       Plot.text(data, {
         x: "pillar_txt",
-        y: "NAME_ENGL",
+        y: (d) => (isMobile ? d.ISO3_CODE : d.NAME_ENGL),
         text: (d) => (isNaN(d.value) ? "" : Math.floor(d.value)),
         fill: (d) => (d.value > 79 ? "#fff" : "#000"),
         fontSize: 10,
@@ -118,7 +120,7 @@ export function heatmap(data, { width } = {}) {
         data,
         Plot.pointer({
           x: "pillar_txt",
-          y: "NAME_ENGL",
+          y: (d) => (isMobile ? d.ISO3_CODE : d.NAME_ENGL),
           fill: (d) => fillScale.getColor(d.pillar_txt, d.value),
           textAnchor: "center",
           stroke: "white",

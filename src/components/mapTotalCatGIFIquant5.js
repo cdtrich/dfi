@@ -9,7 +9,6 @@ export function mapTotalCatGIFIquant5(
   dataCardinal,
   { width, height }
 ) {
-  // console.log("mapTotal data", data);
   // Filter data if a pillar is selected
   const filteredData = data.filter(
     (d) => d.commitment_num === 1
@@ -65,9 +64,8 @@ export function mapTotalCatGIFIquant5(
   });
 
   const dataCardinalSimplified = Object.values(simplified);
-  // console.log("dataCardinalSimplified", dataCardinalSimplified);
-  // join to world shape for centroids
 
+  // join to world shape for centroids
   const dataCardinalMap = new Map(
     dataCardinalSimplified.map((item) => [item.ISO3_CODE, item])
   );
@@ -82,9 +80,7 @@ export function mapTotalCatGIFIquant5(
           properties: { ...feature.properties, ...matchingDataCardinal },
         }
       : feature;
-    // and filter undefined groups
   });
-  // .filter((d) => d.properties.group !== undefined);
 
   // calculate centroids of largest polygon for tooltip
   function largestPolygonCentroid(feature) {
@@ -125,55 +121,15 @@ export function mapTotalCatGIFIquant5(
   // console.log("worldWithData", worldWithData);
   const labels = [...new Set(worldWithData.map((d) => d.properties.group))];
 
-  // find undefined groups
-  // const undefinedGroup = worldWithData.filter(
-  //   (d) => d.properties.group === undefined
-  // );
-
-  // console.log("labels", labels);
-  // console.log("worldWithData", worldWithData);
-  // console.log("undefinedGroup", undefinedGroup);
-
   // Render the map
   const map = Plot.plot({
     projection: "equal-earth",
     width: width,
-    // title: "GIFI colors-derived diverging color scale",
-    // subtitle: "five equally-sized groups",
-    // opacity: {
-    //   legend: true,
-    //   range: [0, 1],
-    //   domain: [min, max],
-    // },
-    // caption: html`<figcaption style="text-align: right; width: 100%;">
-    //   Off course = 0-49, Catching up = 50-64, On track = 65-79, Leading =
-    //   80-100
-    // </figcaption>`,
     color: {
       legend: true,
       type: "ordinal",
-      range: [
-        // "#e6b95e", // 50% tint
-        // "#fffccc",
-        // "#ff4671", // 50% tint
-        // "hsla(346, 100%, 83%, 1.00)",
-        // "#333", // 50% tint
-        // "#999",
-        "#FDE74C",
-        // "#aec8c0ff",
-        // "#b0b0b0ff",
-        "#afb6b5ff",
-        "#4ed0bfff",
-        "#007162ff",
-        // "#6BB6C7",
-        // "#3891A6",
-      ],
-      // domain: ["<50", "51-61", "62-67", "68-74", ">74"],
+      range: ["#FDE74C", "#afb6b5ff", "#4ed0bfff", "#007162ff"],
       domain: ["Off track", "Catching up", "On track", "Leading"],
-      // domain: labels,
-      // interval: 20,
-      // range: [fillScale.getColor("Total", 0), fillScale.getColor("Total", 100)],
-      // domain: [0, 100],
     },
     marks: [
       // coast
@@ -199,19 +155,6 @@ export function mapTotalCatGIFIquant5(
         strokeWidth: 0.5,
       }),
       // black country outline
-      // Plot.geo(world),
-      // country labels
-      // Plot.dot(
-      //   worldWithCentroids,
-      //   Plot.pointer({
-      //     x: (d) => d.properties.centroid[0],
-      //     y: (d) => d.properties.centroid[1],
-      //     // stroke: null,
-      //     href: (d) => d.country_url,
-      //     tip: true,
-      //     title: (d) => d.NAME_ENGL,
-      //   })
-      // ),
       Plot.tip(
         worldWithCentroids,
         Plot.pointer({
@@ -219,8 +162,6 @@ export function mapTotalCatGIFIquant5(
           y: (d) => d.properties.centroid[1],
           title: (d) =>
             [
-              // `━ ${d.properties.NAME_ENGL} ━`,
-              // `Status: ${d.properties.group}`,
               `${d.properties.NAME_ENGL} ━ ${d.properties.group} (${Math.round(
                 d.properties.total
               )} total)`,
@@ -248,35 +189,9 @@ export function mapTotalCatGIFIquant5(
                   : Math.round(d.properties["Trust and resilience"])
               }`,
             ].join("\n"),
-          // channels: {
-          //   "": (d) => d.properties.NAME_ENGL,
-          //   Status: (d) => d.properties.group,
-          //   "Connectivity and infrastructure": (d) =>
-          //     Math.round(d.properties["Connectivity and infrastructure"]),
-          //   "Rights and freedoms": (d) =>
-          //     Math.round(d.properties["Rights and freedoms"]),
-          //   "Responsibility and sustainability": (d) =>
-          //     Math.round(d.properties["Responsibility and sustainability"]),
-          //   "Trust and resilience": (d) =>
-          //     Math.round(d.properties["Trust and resilience"]),
-          // },
           stroke: "#fff",
         })
       ),
-      // Plot.tip(
-      //   worldWithData,
-      //   Plot.centroid(
-      //     Plot.pointer({
-      //       title: (d) =>
-      //         `${
-      //           isNaN(d.properties.total)
-      //             ? "no data"
-      //             : Math.round(d.properties.total, 1)
-      //         }\n${d.properties.NAME_ENGL}`,
-      //       stroke: "#fff",
-      //     })
-      //   )
-      // ),
     ],
   });
 

@@ -44,6 +44,10 @@ The Internet Accountability Compass is an <b>interactive tool</b> to promote gre
 The Compass is not a definitive answer to the challenge of accountability. Rather, it is one of many possible constellations of indicators and data points. Its purpose is to spark dialogue—about what matters, how progress should be measured, and how countries can hold themselves and each other accountable across <a href="./directions">four core dimensions</a>: connectivity and infrastructure, rights and freedoms,responsibility and sustainability, and trust and resilience.
 </p>
 
+<div class="desktop-notice" id="notice">
+  Desktop recommended for full interactivity
+  <button onclick="document.getElementById('notice').style.display='none'" style="margin-left: 10px; cursor: pointer;">×</button>
+</div>
 </div>
 
 <!-- key stats -->
@@ -125,7 +129,6 @@ freedoms, Responsibility and sustainability, and Trust and resilience—the Comp
   </div>
   <div class="col-span-3">
   </div>
-
   </div>
 
 </div>
