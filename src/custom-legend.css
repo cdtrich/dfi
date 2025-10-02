@@ -1,3 +1,9 @@
+@media (max-width: 640px) {
+  .custom-legend {
+    margin-left: 12%;
+  }
+}
+
 .custom-legend {
   display: flex;
   flex-wrap: wrap;

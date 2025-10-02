@@ -126,7 +126,7 @@ Global Digital Compact</a> and the <a href="https://digital-strategy.ec.europa.e
 <!-- funding -->
   <div class="grid grid-cols-4 gap-4">
   <div>
-    <img src="https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/eu_funded_en.jpg" width="100%">
+    <img class="keystats" src="https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/eu_funded_en.jpg" width="100%">
   </div>
   <div class="col-span-3">
   </div>

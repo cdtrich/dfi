@@ -55,7 +55,7 @@ The Compass is not a definitive answer to the challenge of accountability. Rathe
 <div class="body-text">
 
 <div class="grid grid-cols-3">
-  <div class="card key">
+  <div class="card key keystats">
     <h2>Datapoints</h2>
     <span class="big">${dfiFull.length.toLocaleString("en-US")}</span>
   </div>
@@ -125,7 +125,7 @@ freedoms, Responsibility and sustainability, and Trust and resilience—the Comp
 
   <div class="grid grid-cols-4 gap-4">
   <div>
-    <img src="https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/eu_funded_en.jpg" width="100%">
+    <img class="keystats" src="https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/eu_funded_en.jpg" width="100%">
   </div>
   <div class="col-span-3">
   </div>

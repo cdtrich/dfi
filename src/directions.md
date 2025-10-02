@@ -194,7 +194,9 @@ const commitmentLegend = view(
 
 <!-- sources section -->
 
-<h1>Resources</h1>
+<div class="body-text">
+  <h2>Resources</h2>
+</div>
 
 <div class="body-text body-input">
 

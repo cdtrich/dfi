@@ -107,8 +107,9 @@ const worldFiltered = world.filter((feature) =>
 
 <!-- input controls -->
 
-<h1>Resources</h1>
-
+<div class="body-text">
+  <h2>Resources</h2>
+</div>
 <!-- <p>Select a resource type.</p> -->
 
 <div class="body-text body-input">
@@ -227,7 +228,7 @@ function debounce(fn, delay) {
 
 </div>
 
-<div class="body-text body-input">
+<div class="body-text">
   <!-- sources section -->
   <div id="sources-section"></div>
 </div>

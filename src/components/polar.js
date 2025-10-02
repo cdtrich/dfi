@@ -100,8 +100,8 @@ export function polar(data, isMobile, { width, height } = {}) {
 
       // axes labels (in legend)
       Plot.text(longitude.domain(), {
-        fx: isMobile ? -1 : 0,
-        fy: isMobile ? -1 : 0,
+        fx: isMobile ? 0 : 0,
+        fy: isMobile ? 0 : 0,
         x: longitude,
         y: 90 - 1.15,
         text: Plot.identity,
@@ -178,7 +178,7 @@ export function polar(data, isMobile, { width, height } = {}) {
         stroke: (d) => fillScale.getColor(d.pillar_txt, d.value),
         // stroke: (d) =>
         //   fillScale.getOrdinalCategoryScale(d.pillar_txt)(d.group_value),
-        strokeWidth: dotSize / 3,
+        strokeWidth: isMobile ? dotSize * 2 : dotSize / 3,
         opacity: 0.5,
       }),
       Plot.link(data, {
@@ -189,7 +189,7 @@ export function polar(data, isMobile, { width, height } = {}) {
         stroke: (d) => fillScale.getColor(d.pillar_txt),
         // stroke: (d) =>
         //   fillScale.getOrdinalCategoryScale(d.pillar_txt)(d.group_value),
-        strokeWidth: dotSize / 3,
+        strokeWidth: isMobile ? dotSize * 2 : dotSize / 3,
         opacity: 0.5,
       }),
 
@@ -209,7 +209,7 @@ export function polar(data, isMobile, { width, height } = {}) {
         // fill: (d) =>
         //   fillScale.getOrdinalCategoryScale(d.pillar_txt)(d.group_value),
         stroke: "#fff",
-        r: dotSize / 3,
+        r: isMobile ? dotSize * 1.5 : dotSize / 3,
       }),
 
       // total score label
@@ -261,8 +261,8 @@ export function polar(data, isMobile, { width, height } = {}) {
 
       // average
       Plot.geo([0.7], {
-        fx: isMobile ? -1 : 0,
-        fy: isMobile ? -1 : 0,
+        fx: isMobile ? 0 : 0,
+        fy: isMobile ? 0 : 0,
         geometry: (r) => d3.geoCircle().center([0, 90]).radius(r)(),
         stroke: "black",
         fill: "#000",
@@ -273,8 +273,8 @@ export function polar(data, isMobile, { width, height } = {}) {
         strokeWidth: 1,
       }),
       Plot.text(["Total"], {
-        fx: isMobile ? -1 : 0,
-        fy: isMobile ? -1 : 0,
+        fx: isMobile ? 0 : 0,
+        fy: isMobile ? 0 : 0,
         x: 147 - 180 + 93,
         y: 90 - 0.65,
         dx: 2,
@@ -288,8 +288,8 @@ export function polar(data, isMobile, { width, height } = {}) {
 
       // tick labels
       Plot.text([0, 20, 40, 60, 80, 100], {
-        fx: isMobile ? -1 : 0,
-        fy: isMobile ? -1 : 0,
+        fx: isMobile ? 0 : 0,
+        fy: isMobile ? 0 : 0,
         x: 147 + 93,
         y: (d) => 90 - d / 100 + 0.05,
         dx: 2,

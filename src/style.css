@@ -60,18 +60,47 @@ h1,
   margin: 1rem 0 1rem;
 }
 
-@media (max-width: 1024px) {
-  .hero,
+@media (max-width: 640px) {
   body,
   h1,
   h2,
+  .hero,
   .body-text,
   .body-text > .body-input,
   .body-text > p,
   .body-text > ol,
-  #pillar-content {
-    margin-left: 15%;
+  #pillar-content,
+  .card .key,
+  .keystats,
+  .big {
+    margin-left: 12%;
     padding-right: 10%;
+  }
+  h2.subheader {
+    margin-left: 0;
+  }
+  .hero > h1,
+  h1 {
+    margin: 2rem 0;
+    max-width: none;
+    text-align: left;
+    font-size: 2.5em !important;
+    font-family: var(--sans-serif);
+    line-height: 1;
+    color: var(--theme-foreground);
+    font-weight: 900;
+  }
+  figure,
+  .figure-w-full {
+    width: min(100vw, 1780px);
+    margin: 0;
+    transform: translateX(10vw);
+  }
+  .keystats {
+    width: 80%;
+  }
+  .body-input {
+    margin-left: 12% !important;
   }
 }
 
@@ -152,24 +181,6 @@ div > div > form > #inputs-3a86ea-1 {
   background-size: cover;
   opacity: 0.3; /* Adjust opacity for the background image */
   z-index: -1;
-}
-
-.hero h1 {
-  margin: 2rem 0;
-  max-width: none;
-  text-align: left;
-  font-size: 3em;
-  font-family: var(--sans-serif);
-  /* font-weight: 900; */
-  line-height: 1;
-  /* color: #d9d4eaff; */
-  /* color: #040404; */
-  color: var(--theme-foreground);
-  /* background-clip: text; */
-}
-
-.hero > h1 {
-  font-weight: 900;
 }
 
 heading-center {
@@ -346,16 +357,14 @@ a:hover {
 }
 
 /* Hide on desktop screens */
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .desktop-notice {
     display: none;
   }
 }
 
-@media (min-width: 640px) {
-  .hero h1 {
-    font-size: 6em;
-  }
+.hero h1 {
+  font-size: 6em;
 }
 
 /* prevent native tooltip on polarplot */
