@@ -182,7 +182,7 @@ export function mapTotalCatGIFIquant5(
                     d.properties["Rights and freedoms_note"]
               }`,
               `𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝗯𝗶𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝘀𝘂𝘀𝘁𝗮𝗶𝗻𝗮𝗯𝗶𝗹𝗶𝘁𝘆: ${
-                d.properties["Responsibility and sustainability"] === "NA"
+                d.properties["Responsibility and sustainability_note"] === "NA"
                   ? Math.round(
                       d.properties["Responsibility and sustainability"]
                     )
@@ -191,7 +191,7 @@ export function mapTotalCatGIFIquant5(
                     ) + d.properties["Responsibility and sustainability_note"]
               }`,
               `𝗧𝗿𝘂𝘀𝘁 𝗮𝗻𝗱 𝗿𝗲𝘀𝗶𝗹𝗶𝗲𝗻𝗰𝗲: ${
-                d.properties["Trust and resilience"] === "NA"
+                d.properties["Trust and resilience_note"] === "NA"
                   ? Math.round(d.properties["Trust and resilience"])
                   : Math.round(d.properties["Trust and resilience"]) +
                     d.properties["Trust and resilience_note"]
