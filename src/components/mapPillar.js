@@ -72,6 +72,15 @@ export function mapPillar(
         strokeWidth: 0.5,
         href: (d) => d.properties.country_url,
       }),
+      // Hashing overlay - only for partial data
+      Plot.geo(
+        worldWithData.filter((d) => d.properties.note === " (partial data)"),
+        {
+          fill: "url(#white-diagonal-lines)",
+          stroke: "none",
+          pointerEvents: "none",
+        }
+      ),
       // World outline
       Plot.geo(worldWithData, {
         stroke: (d) => (isNaN(d.properties.value) ? "#aaa" : "#fff"),
@@ -84,8 +93,8 @@ export function mapPillar(
           Plot.pointer({
             title: (d) =>
               `${
-                isNaN(d.properties.value)
-                  ? "no data"
+                d.properties.note === " (partial data)"
+                  ? Math.round(d.properties.value, 1) + d.properties.note
                   : Math.round(d.properties.value, 1)
               }\n${d.properties.NAME_ENGL}`,
             stroke: "#fff",
@@ -94,6 +103,14 @@ export function mapPillar(
       ),
     ],
   });
+
+  // Add the pattern definition after creating the plot
+  const svg = d3.select(map).select("svg");
+  svg.insert("defs", ":first-child").html(`
+  <pattern id="white-diagonal-lines" patternUnits="userSpaceOnUse" width="4.2425" height="4.2425" patternTransform="rotate(45)">
+    <rect x="0" y="0" width="1.5" height="4.2425" fill="white"/>
+  </pattern>
+`);
 
   return map;
 }

@@ -48,6 +48,7 @@ export function mapTotalCatGIFIquant5(
       total,
       pillar_txt,
       value,
+      note,
     } = entry;
 
     if (!simplified[ISO3_CODE]) {
@@ -61,6 +62,7 @@ export function mapTotalCatGIFIquant5(
     }
 
     simplified[ISO3_CODE][pillar_txt] = value;
+    simplified[ISO3_CODE][`${pillar_txt}_note`] = note;
   });
 
   const dataCardinalSimplified = Object.values(simplified);
@@ -151,7 +153,7 @@ export function mapTotalCatGIFIquant5(
       // World outline
       Plot.geo(worldWithData, {
         stroke: (d) =>
-          d.properties.group === "Not enough data" ? "#aaa" : "#fff",
+          d.properties.note === " (partial data)" ? "#aaa" : "#fff",
         strokeWidth: 0.5,
       }),
       // black country outline
@@ -167,26 +169,32 @@ export function mapTotalCatGIFIquant5(
               )} total)`,
               ``, // empty line
               `𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝘃𝗶𝘁𝘆 𝗮𝗻𝗱 𝗶𝗻𝗳𝗿𝗮𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲: ${
-                d.properties["Connectivity and infrastructure"] === "NA"
-                  ? "Not enough data"
-                  : Math.round(d.properties["Connectivity and infrastructure"])
+                d.properties["Connectivity and infrastructure_note"] === "NA"
+                  ? Math.round(d.properties["Connectivity and infrastructure"])
+                  : Math.round(
+                      d.properties["Connectivity and infrastructure"]
+                    ) + d.properties["Connectivity and infrastructure_note"]
               }`,
               `𝗥𝗶𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗳𝗿𝗲𝗲𝗱𝗼𝗺𝘀: ${
-                d.properties["Rights and freedoms"] === "NA"
-                  ? "Not enough data"
-                  : Math.round(d.properties["Rights and freedoms"])
+                d.properties["Rights and freedoms_note"] === "NA"
+                  ? Math.round(d.properties["Rights and freedoms"])
+                  : Math.round(d.properties["Rights and freedoms"]) +
+                    d.properties["Rights and freedoms_note"]
               }`,
               `𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝗯𝗶𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝘀𝘂𝘀𝘁𝗮𝗶𝗻𝗮𝗯𝗶𝗹𝗶𝘁𝘆: ${
                 d.properties["Responsibility and sustainability"] === "NA"
-                  ? "Not enough data"
-                  : Math.round(
+                  ? Math.round(
                       d.properties["Responsibility and sustainability"]
                     )
+                  : Math.round(
+                      d.properties["Responsibility and sustainability"]
+                    ) + d.properties["Responsibility and sustainability_note"]
               }`,
               `𝗧𝗿𝘂𝘀𝘁 𝗮𝗻𝗱 𝗿𝗲𝘀𝗶𝗹𝗶𝗲𝗻𝗰𝗲: ${
                 d.properties["Trust and resilience"] === "NA"
-                  ? "Not enough data"
-                  : Math.round(d.properties["Trust and resilience"])
+                  ? Math.round(d.properties["Trust and resilience"])
+                  : Math.round(d.properties["Trust and resilience"]) +
+                    d.properties["Trust and resilience_note"]
               }`,
             ].join("\n"),
           stroke: "#fff",

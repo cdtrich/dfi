@@ -109,7 +109,10 @@ export function heatmap(data, isMobile, { width } = {}) {
       Plot.text(data, {
         x: "pillar_txt",
         y: (d) => (isMobile ? d.ISO3_CODE : d.NAME_ENGL),
-        text: (d) => (isNaN(d.value) ? "" : Math.floor(d.value)),
+        text: (d) =>
+          isNaN(d.value)
+            ? ""
+            : Math.floor(d.value) + (d.note === " (partial data)" ? "*" : ""),
         fill: (d) => (d.value > 79 ? "#fff" : "#000"),
         fontSize: 10,
         textAnchor: "middle",
@@ -126,9 +129,9 @@ export function heatmap(data, isMobile, { width } = {}) {
           stroke: "white",
           // tip: true,
           title: (d) =>
-            `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.floor(d.value)}\n(${
-              d.group_value
-            })`,
+            `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.floor(d.value)}${
+              d.note === " (partial data)" ? " (partial data)" : ""
+            }\n(${d.group_value})`,
         })
         // clickable invisible country names
         // Plot.text(data, {

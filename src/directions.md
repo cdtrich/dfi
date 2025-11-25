@@ -161,6 +161,32 @@ const commitments = [
     )}
 </div>
 
+<!-- partial data legend -->
+
+```html
+<p style="text-align: right">
+  <svg width="10" height="10">
+    <defs>
+      <pattern
+        id="white-diagonal-lines"
+        patternUnits="userSpaceOnUse"
+        width="4.2425"
+        height="4.2425"
+        patternTransform="rotate(45)"
+      >
+        <rect x="0" y="0" width="1.5" height="4.2425" fill="white" />
+      </pattern>
+    </defs>
+
+    <!-- square using black + hashed overlay -->
+    <rect width="10" height="10" fill="black"></rect>
+    <rect width="10" height="10" fill="url(#white-diagonal-lines)"></rect>
+  </svg>
+
+  partial data
+</p>
+```
+
 <!-- CONDITIONAL BODY TEXT PER PILLAR -->
 
 ```js

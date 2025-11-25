@@ -130,6 +130,8 @@ const chartView =
   ${chartView}
 </div>
 
+<p style="text-align: right">* partial data</p>
+
 <!-- sidebar -->
 
 <div>

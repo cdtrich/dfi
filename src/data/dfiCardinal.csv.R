@@ -8,10 +8,10 @@ library(here)
 # READ ALL DATA FILES ---------------------------------------------------------
 
 # Read the file
-df <- read_excel(paste0(here(), "/src/data/Internet Accountability Index-V5.xlsx"),
+df <- read_excel(paste0(here(), "/src/data/Internet Accountability Index-V6.xlsx"),
     sheet = "By Pillar 21-07"
 ) %>%
-    bind_cols(read_excel(paste0(here(), "/src/data/Internet Accountability Index-V5.xlsx"),
+    bind_cols(read_excel(paste0(here(), "/src/data/Internet Accountability Index-V6.xlsx"),
         sheet = "Full Index by indicator 21-07", na = "NA",
         skip = 2
     ) %>% select(`Total Index Score`))
@@ -23,19 +23,20 @@ df_long <- df %>%
         names_to = "pillar_txt",
         values_to = "value"
     ) %>%
+    separate(value, into = c("value", "note"), sep = "\\*", extra = "merge") %>%
     # make all numeric
     # detect not enough data comments
     mutate(
-        note_total = ifelse(
-            str_detect(`Total Index Score`, "ot enough data"),
-            "Not enough data",
-            NA
-        ),
-        note = ifelse(
-            str_detect(value, "ot enough data"),
-            "Not enough data",
-            NA
-        ),
+        # note_total = ifelse(
+        #     str_detect(`Total Index Score`, "ot enough data"),
+        #     "Not enough data",
+        #     NA
+        # ),
+        # note = ifelse(
+        #     str_detect(value, "ot enough data"),
+        #     "Not enough data",
+        #     NA
+        # ),
         `Total Index Score` = ifelse(
             str_detect(`Total Index Score`, "ot enough data"),
             NA,
