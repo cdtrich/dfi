@@ -10,9 +10,12 @@ export function heatmap(data, isMobile, { width } = {}) {
   const height = data.length * 5;
   const dotSize = window.innerWidth * 0.006;
   // console.log("heatmap data", data);
+
+  // console check hashing data
+  // console.log("data", data);
   // console.log(
-  //   "heatmap data",
-  //   data.filter((d) => d.NAME_ENGL === "Ireland")
+  //   "filtered hashing data",
+  //   data.filter((d) => d.note === " (partial data)")
   // );
 
   // get colorsScales()
@@ -89,8 +92,6 @@ export function heatmap(data, isMobile, { width } = {}) {
         tickRotate: isMobile ? -90 : 0,
       }),
       Plot.axisY({
-        // anchor: "top",
-        // lineWidth: 15,
         label: null,
         tickSize: 0,
       }),
@@ -102,9 +103,16 @@ export function heatmap(data, isMobile, { width } = {}) {
         fill: (d) =>
           fillScale.getOrdinalCategoryScale(d.pillar_txt)(d.group_value),
         href: (d) => d.country_url,
-        // tip: true,
-        // title: (d) => `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.floor(d.value)}`,
       }),
+      // Hashing overlay - only for partial data
+      Plot.rect(
+        dataDropNA.filter((d) => d.note === " (partial data)"),
+        {
+          fill: "url(#white-diagonal-lines)",
+          stroke: "none",
+          pointerEvents: "none",
+        }
+      ),
       // value labels
       Plot.text(data, {
         x: "pillar_txt",
@@ -116,7 +124,6 @@ export function heatmap(data, isMobile, { width } = {}) {
         fill: (d) => (d.value > 79 ? "#fff" : "#000"),
         fontSize: 10,
         textAnchor: "middle",
-        // dy: -5,
       }),
       // tooltip
       Plot.tip(
@@ -127,24 +134,22 @@ export function heatmap(data, isMobile, { width } = {}) {
           fill: (d) => fillScale.getColor(d.pillar_txt, d.value),
           textAnchor: "center",
           stroke: "white",
-          // tip: true,
           title: (d) =>
             `${d.NAME_ENGL}\n${d.pillar_txt}\n${Math.floor(d.value)}${
               d.note === " (partial data)" ? " (partial data)" : ""
             }\n(${d.group_value})`,
         })
-        // clickable invisible country names
-        // Plot.text(data, {
-        //   x: "pillar_txt",
-        //   y: "NAME_ENGL",
-        //   text: (d) => d.NAME_ENGL,
-        //   fill: "#871236",
-        //   fontSize: 10,
-        //   textAnchor: "middle",
-        // })
       ),
     ],
   });
+
+  // Add the pattern definition after creating the plot
+  const svg = d3.select(plot).select("svg");
+  svg.insert("defs", ":first-child").html(`
+    <pattern id="white-diagonal-lines" patternUnits="userSpaceOnUse" width="4.2425" height="4.2425" patternTransform="rotate(45)">
+      <rect x="0" y="0" width="1.5" height="4.2425" fill="white"/>
+    </pattern>
+  `);
 
   return plot;
 }

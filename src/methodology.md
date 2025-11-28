@@ -110,6 +110,7 @@ Global Digital Compact</a> and the <a href="https://digital-strategy.ec.europa.e
 </li>
 <li>A <b>Directional Score</b> reflects the average of the three indicators within a given category. All 3 indicators are required for a directional score to be assigned.
 </li>
+<li><b>Partial Data</b> indicates that a country is missing one or more indicators in a given category. Countries with only partial data may be skewed and should be evaluated solely based on existing indicators.
 </ol>
   <p>As the Compass relies on secondary data, results may be influenced by variations in methodology, data quality, or temporal gaps between sources. While directional assessments offer comparative insights, they do not capture the full nuance of local implementation or informal practices.
 </p>

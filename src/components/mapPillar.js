@@ -41,6 +41,7 @@ export function mapPillar(
   const map = Plot.plot({
     projection: "equal-earth",
     width: width,
+    marginTop: 20,
     opacity: {
       legend: false,
       range: [0, 1],
@@ -112,5 +113,84 @@ export function mapPillar(
   </pattern>
 `);
 
+  // Find the existing color legend
+  // Observable Plot typically uses aria-label="color" or aria-label="color-legend"
+  let existingLegend = svg.select('[aria-label*="color"]');
+
+  // If not found, try to find it by looking for the swatches
+  if (existingLegend.empty()) {
+    existingLegend = svg.select("g").filter(function () {
+      return d3.select(this).select(".plot-swatch").size() > 0;
+    });
+  }
+
+  // Calculate position based on existing legend
+  // let translateX = 10;
+  // let translateY = height;
+
+  if (!existingLegend.empty()) {
+    const legendNode = existingLegend.node();
+    const bbox = legendNode.getBBox();
+    const transform = legendNode.getAttribute("transform");
+
+    // Parse the transform to get the legend's position
+    const match = transform
+      ? transform.match(/translate\(([^,]+),([^)]+)\)/)
+      : null;
+    if (match) {
+      translateX = parseFloat(match[1]);
+      translateY = parseFloat(match[2]) + bbox.height + 20; // 20px gap below existing legend
+    }
+  }
+
+  // Add custom legend for partial data
+  // const legendG = svg
+  //   .append("g")
+  //   .attr("class", "partial-data-legend")
+  //   .attr("transform", `translate(${translateX}, ${translateY})`);
+
+  // fixed offset
+  const legendG = svg
+    .append("g")
+    .attr("class", "partial-data-legend")
+    .attr("transform", `translate(0, 20)`); // Adjust this value based on your needs
+
+  // Add background rect for visibility
+  // legendG
+  //   .append("rect")
+  //   .attr("x", -5)
+  //   .attr("y", -5)
+  //   .attr("width", 180)
+  //   .attr("height", 25)
+  //   .attr("fill", "white")
+  //   .attr("fill-opacity", 0.8)
+  //   .attr("stroke", "none")
+  //   .attr("stroke-width", 0.5);
+
+  // Add the pattern square
+  legendG
+    .append("rect")
+    .attr("width", 14)
+    .attr("height", 14)
+    .attr("fill", "#aaa");
+
+  legendG
+    .append("rect")
+    .attr("width", 14)
+    .attr("height", 14)
+    .attr("fill", "url(#white-diagonal-lines)");
+
+  // Add the text
+  legendG
+    .append("text")
+    .attr("x", 23)
+    .attr("y", 9)
+    .attr("font-size", "12px")
+    .attr("font-family", "system-ui, sans-serif")
+    .attr("fill", "#000")
+    .style("dominant-baseline", "middle")
+    .text("Partial data (≥1 indicator missing)");
+
+  // return
   return map;
 }

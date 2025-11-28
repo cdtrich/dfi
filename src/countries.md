@@ -61,9 +61,11 @@ const isMobile = window.innerWidth <= 768;
   <p>The Compass comprises 12 secondary indicators, grouped into the four directional categories.
 </p>
 <ol>
-<li>The Total Score is calculated as the equally weighted average of all available indicators. Countries with data for fewer than 8 of the 12 indicators are excluded from total scoring.
+<li>The <b>Total Score</b> is calculated as the equally weighted average of all available indicators. Countries with data for fewer than 8 of the 12 indicators are excluded from total scoring.
 </li>
-<li>A Directional Score reflects the average of the three indicators within a given category. All 3 indicators are required for a directional score to be assigned.
+<li>A <b>Directional Score</b> reflects the average of the three indicators within a given category. All 3 indicators are required for a directional score to be assigned.
+</li>
+<li><b>Partial Data</b> indicates that a country is missing one or more indicators in a given category. Countries with only partial data may be skewed and should be evaluated solely based on existing indicators.
 </li>
 </ol>
 
@@ -118,19 +120,24 @@ Object.values(grouped).forEach((entries) => {
 ```js
 const chartView =
   selectType === "⎈ Compass view"
-    ? html`<div class="card">
-        ${resize((width) => polar(dfiFull, isMobile, { width }))}
+    ? html`<div class="figure-w-full">
+        <div class="card">
+          ${resize((width) => polar(dfiFull, isMobile, { width }))}
+        </div>
       </div>`
-    : html`<div class="card">
-        ${resize((width) => heatmap(dfiCardinalLong, isMobile, { width }))}
-      </div>`;
+    : html`<div class="hero">
+          <p>* partial data</p>
+        </div>
+        <div class="figure-w-full">
+          <div class="card">
+            ${resize((width) => heatmap(dfiCardinalLong, isMobile, { width }))}
+          </div>
+        </div>`;
 ```
 
-<div class="figure-w-full">
+<div>
   ${chartView}
 </div>
-
-<p style="text-align: right">* partial data</p>
 
 <!-- sidebar -->
 

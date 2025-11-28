@@ -8,7 +8,7 @@ export function polar(data, isMobile, { width, height } = {}) {
   // chart width
   const vw = window.innerWidth;
   const dotSize = window.innerWidth * 0.006;
-  console.log("polar data", data);
+  // console.log("polar data", data);
   // get unique country names
   const countryNames = data.filter(
     (d, index, self) =>
