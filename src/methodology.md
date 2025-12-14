@@ -118,7 +118,7 @@ Global Digital Compact</a> and the <a href="https://digital-strategy.ec.europa.e
 </p>
   <p>Although indicators are weighted equally in score calculations, we acknowledge that overlapping variables across indices may result in implicit weighting effects. <a href="https://raw.githubusercontent.com/cdtrich/dfi/9aaeaffcd8f029cae294672ed765eae247e7a894/src/data/sources/Methodological%20Note%203.xlsx" target="_blank">Methodological Note 3</a> explains these overlaps and potential biases.
 </p>
-<p><a href="https://github.com/cdtrich/dfi/raw/refs/heads/main/data/Internet%20Accountability%20Index-V5_web.xlsx" target="_blank">Download the dataset</a>.</p>
+<p><a href="https://github.com/cdtrich/dfi/raw/963c0d80a3b2bc5394532dc295b3c1cede1ad64e/src/data/Internet%20Accountability%20Index-V6.xlsx" target="_blank">Download the dataset</a>.</p>
 <h2>Feedback</h2>
 <p>The authors welcome feedback and suggestions to improve the Compass. To contribute, please contact: <a href="mailto:gifi@eui.eu">gifi@eui.eu</a></p>
 <h2>Disclaimer</h2>
